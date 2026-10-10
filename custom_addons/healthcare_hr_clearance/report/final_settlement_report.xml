@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_final_settlement" model="ir.actions.report">
+        <field name="name">Final Settlement</field>
+        <field name="model">healthcare.hr.final.settlement</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">healthcare_hr_clearance.report_final_settlement</field>
+        <field name="report_file">healthcare_hr_clearance.report_final_settlement</field>
+        <field name="print_report_name">'Final Settlement - %s' % object.employee_id.name</field>
+        <field name="binding_model_id" ref="model_healthcare_hr_final_settlement"/>
+        <field name="binding_type">report</field>
+    </record>
+    <template id="report_final_settlement">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>Final Settlement</h2>
+                        <table class="table table-sm table-borderless mb-4">
+                            <tr><td><strong>Employee</strong></td><td t-field="doc.employee_id"/>
+                                <td><strong>Department</strong></td><td t-field="doc.department_id"/></tr>
+                            <tr><td><strong>Last Working Date</strong></td><td t-field="doc.last_working_date"/>
+                                <td><strong>Exit Reason</strong></td><td t-field="doc.exit_reason"/></tr>
+                        </table>
+                        <table class="table table-sm">
+                            <thead><tr><th>Component</th><th>Detail</th><th class="text-end">Amount</th></tr></thead>
+                            <tbody>
+                                <tr t-foreach="doc.line_ids" t-as="line">
+                                    <td t-field="line.name"/>
+                                    <td t-field="line.computation_note"/>
+                                    <td class="text-end"><span t-field="line.amount" t-options="{'widget': 'monetary', 'display_currency': doc.currency_id}"/></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td colspan="2"><strong>Total Earnings</strong></td>
+                                    <td class="text-end" t-field="doc.total_earnings" t-options="{'widget': 'monetary', 'display_currency': doc.currency_id}"/></tr>
+                                <tr><td colspan="2"><strong>Total Deductions</strong></td>
+                                    <td class="text-end" t-field="doc.total_deductions" t-options="{'widget': 'monetary', 'display_currency': doc.currency_id}"/></tr>
+                                <tr><td colspan="2"><strong>Net Amount</strong></td>
+                                    <td class="text-end fw-bold" t-field="doc.net_amount" t-options="{'widget': 'monetary', 'display_currency': doc.currency_id}"/></tr>
+                            </tfoot>
+                        </table>
+                        <div class="row mt-5">
+                            <div class="col-4 text-center">HR<br/><br/>____________</div>
+                            <div class="col-4 text-center">Finance<br/><br/>____________</div>
+                            <div class="col-4 text-center">Employee<br/><br/>____________</div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,1835 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_core
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_needaction
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__message_needaction
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__message_needaction
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__active
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__active
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__active
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__active
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__active
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employment_status__active
+msgid "Active"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__address_id
+msgid "Address"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.department,name:healthcare_hr_core.demo_dept_administration
+msgid "Administration"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_unit__unit_type__administrative
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_department__healthcare_department_type__administrative
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__administrative
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__administrative
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_search_healthcare
+msgid "Administrative"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Alerts"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,comment:healthcare_hr_core.group_hc_manager
+msgid "All branches, configuration and final approvals."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_users__healthcare_branch_ids
+msgid "Allowed Healthcare Branches"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_anesthesia
+msgid "Anesthesiology"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__arabic_name
+msgid "Arabic Name"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_branch_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_branch_view_search
+msgid "Archived"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_attachment_count
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__message_attachment_count
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__message_attachment_count
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_attendance
+msgid "Attendance"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_attendance_manager
+msgid "Attendance Manager"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_attendance_officer
+msgid "Attendance Officer"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_biometric_enrollment
+msgid "Biometric Enrollment"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_department__healthcare_branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__healthcare_branch_id
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_branch__branch_type__branch
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_unit_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_search_healthcare
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.onboarding_view_search
+msgid "Branch"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.branch,name:healthcare_hr_core.demo_branch_1
+msgid "Branch 1"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.branch,name:healthcare_hr_core.demo_branch_2
+msgid "Branch 2"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_branch_assigned
+msgid "Branch Assigned"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__branch_type
+msgid "Branch Type"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_res_users__healthcare_branch_ids
+msgid ""
+"Branch-level record rules restrict Healthcare HR officers and schedulers to "
+"these branches (and their sub-branches). Leave empty to allow every branch."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__child_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_branch_view_form
+msgid "Branches"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__call_center
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__call_center
+msgid "Call Center"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.onboarding_view_form
+msgid "Cancel"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_onboarding__state__cancel
+msgid "Cancelled"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_cardiology
+msgid "Cardiology"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__line_ids
+msgid "Checklist"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_branch__branch_type__clinic
+msgid "Clinic"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_unit__unit_type__clinical
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_department__healthcare_department_type__clinical
+msgid "Clinical"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__clinical_only
+msgid "Clinical Only"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_pharmacy
+msgid "Clinical Pharmacy"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_form_healthcare
+msgid "Clinical Profile"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_search_healthcare
+msgid "Clinical Staff"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_form_healthcare
+msgid "Clinical System Links"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_hr_employee__medical_department_id
+msgid ""
+"Clinical department when it differs from the administrative department (e.g."
+" a nurse administratively in Nursing, clinically in ICU)."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_employee_practitioner_link__external_system
+msgid "Clinical system name, e.g. EMR, LIS, RIS, PACS, pharmacy."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__code
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__code
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__code
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__code
+msgid "Code"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_hr_employee__practitioner_reference
+msgid "Code of the practitioner in the clinical system (EMR / scheduling)."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_res_company__hc_probation_alert_days
+#: model:ir.model.fields,help:healthcare_hr_core.field_res_config_settings__hc_probation_alert_days
+msgid ""
+"Comma separated number of days before the probation end date at which a "
+"review activity is raised."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_res_company__hc_credential_alert_days
+#: model:ir.model.fields,help:healthcare_hr_core.field_res_config_settings__hc_credential_alert_days
+msgid "Comma separated reminder thresholds for expiring credentials."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__company_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_branch_view_search
+msgid "Company"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.onboarding_view_form
+msgid "Complete"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__complete_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__complete_name
+msgid "Complete Name"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_onboarding__state__done
+msgid "Completed"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_config
+msgid "Configuration"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_company__hc_contract_alert_days
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_config_settings__hc_contract_alert_days
+msgid "Contract Expiry Alert Days"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_contract_signed
+msgid "Contract Signed"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Contract expiry alert"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_contracts
+msgid "Contracts"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.actions.act_window,help:healthcare_hr_core.action_healthcare_branch
+msgid "Create your first hospital, clinic or branch"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_company__hc_credential_alert_days
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_config_settings__hc_credential_alert_days
+msgid "Credential Alert Days"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Credential alerts"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_credentials
+msgid "Credentials"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_credentials_verified
+msgid "Credentials Verified"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_unit__unit_type__critical_care
+msgid "Critical Care"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_critical_care
+msgid "Critical Care Medicine"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_icu_nursing
+msgid "Critical Care Nursing"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_dashboard
+msgid "Dashboard"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Days before a mandatory training expires"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Days before contract end"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Days before credential expiry (comma separated)"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Days before probation end (comma separated)"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_company__hc_alert_user_id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_config_settings__hc_alert_user_id
+msgid "Default HR Alert Responsible"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Default alert responsible"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_hr_job__employee_category
+msgid ""
+"Default healthcare category for employees holding this position. Drives "
+"credential requirements, coverage rules and allowances."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_res_company__hc_contract_alert_days
+#: model:ir.model.fields,help:healthcare_hr_core.field_res_config_settings__hc_contract_alert_days
+msgid ""
+"Default number of days before contract end at which renewal activities are "
+"raised."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_dentistry
+msgid "Dentistry"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_hr_department
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__department_id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__department_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_unit_view_search
+msgid "Department"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_department_assigned
+msgid "Department Assigned"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_onboarding_item_template__responsible_role__department
+#: model:res.groups,name:healthcare_hr_core.group_hc_department_manager
+msgid "Department Manager"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.actions.act_window,name:healthcare_hr_core.action_healthcare_department
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__department_ids
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_config_department
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_branch_view_form
+msgid "Departments"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_unit__unit_type__diagnostic
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_department__healthcare_department_type__diagnostic
+msgid "Diagnostic"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_alert__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_department__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_job__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_company__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_users__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__doctor
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__doctor
+msgid "Doctor"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_search_healthcare
+msgid "Doctors"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_hr_employee__is_clinical
+msgid "Doctors, nurses, pharmacists and technicians."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__done
+msgid "Done"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__done_by
+msgid "Done By"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__done_date
+msgid "Done Date"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_onboarding__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.department,name:healthcare_hr_core.demo_dept_er
+msgid "ER"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.unit,name:healthcare_hr_core.demo_unit_er_triage
+msgid "ER Triage"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_unit__unit_type__emergency
+msgid "Emergency"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_emergency
+msgid "Emergency Medicine"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_er_nursing
+msgid "Emergency Nursing"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.job,name:healthcare_hr_core.demo_job_er_physician
+msgid "Emergency Physician"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_hr_employee
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__employee_id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__employee_id
+msgid "Employee"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_healthcare_employee_practitioner_link
+msgid "Employee / Practitioner Link"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__employee_count
+msgid "Employee Count"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_exit
+msgid "Employee Exit"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.actions.act_window,name:healthcare_hr_core.action_healthcare_employee_master
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_report_employee_master
+msgid "Employee Master Data"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__employee_number
+msgid "Employee Number"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_healthcare_hr_onboarding
+msgid "Employee Onboarding"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_employee_record
+msgid "Employee Record"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_self_service
+msgid "Employee Self Service"
+msgstr ""
+
+#. module: healthcare_hr_core
+#. odoo-python
+#: code:addons/healthcare_hr_core/models/healthcare_branch.py:0
+#: model:ir.actions.act_window,name:healthcare_hr_core.action_healthcare_employee
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_employee_list
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_employees
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_branch_view_form
+msgid "Employees"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_hr_job__medical_license_required
+msgid ""
+"Employees in this position must hold a valid professional/medical license."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__employment_status
+msgid "Employment Status"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_users_view_form_healthcare
+msgid "Empty = access to every branch of the allowed companies."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employment_status__exited
+msgid "Exited"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__external_system
+msgid "External System"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.actions.act_window,name:healthcare_hr_core.action_healthcare_branch
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_config_branch
+msgid "Facilities & Branches"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_family_medicine
+msgid "Family Medicine"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__finance
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__finance
+msgid "Finance"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_follower_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__message_follower_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__message_follower_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_partner_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__message_partner_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__message_partner_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_onboarding__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_gastroenterology
+msgid "Gastroenterology"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_surgery
+msgid "General Surgery"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_onboarding_item_template__responsible_role__hr
+msgid "HR"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.job,name:healthcare_hr_core.demo_job_hr_admin
+msgid "HR Administrator"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__has_message
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__has_message
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__has_message
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_form_healthcare
+msgid "Healthcare"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups.privilege,name:healthcare_hr_core.privilege_hc_attendance
+msgid "Healthcare Attendance"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_users_view_form_healthcare
+msgid "Healthcare Branches"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__employee_category
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_job__employee_category
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_search_healthcare
+msgid "Healthcare Category"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_healthcare_hr_branch
+msgid "Healthcare Facility / Branch"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.module.category,name:healthcare_hr_core.module_category_healthcare_hr
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_root
+#: model:res.groups.privilege,name:healthcare_hr_core.privilege_healthcare_hr
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Healthcare HR"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_healthcare_hr_alert
+msgid "Healthcare HR Alert Service"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_manager
+msgid "Healthcare HR Manager"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_officer
+msgid "Healthcare HR Officer"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_user
+msgid "Healthcare HR User"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups.privilege,name:healthcare_hr_core.privilege_hc_management
+msgid "Healthcare Management"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups.privilege,name:healthcare_hr_core.privilege_hc_payroll
+msgid "Healthcare Payroll"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups.privilege,name:healthcare_hr_core.privilege_hc_talent
+msgid "Healthcare Talent"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_department__healthcare_department_type
+msgid "Healthcare Type"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_healthcare_hr_unit
+msgid "Healthcare Unit"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__hire_date
+msgid "Hire Date"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_branch__branch_type__hospital
+msgid "Hospital"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.branch,name:healthcare_hr_core.demo_hospital_a
+msgid "Hospital A"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_director
+msgid "Hospital Director"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_branch_view_search
+msgid "Hospitals & Clinics"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__hr
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__hr
+msgid "Human Resources"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.department,name:healthcare_hr_core.demo_dept_icu
+msgid "ICU"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.unit,name:healthcare_hr_core.demo_unit_icu_a
+msgid "ICU Bay A"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.job,name:healthcare_hr_core.demo_job_icu_consultant
+msgid "ICU Consultant"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.job,name:healthcare_hr_core.demo_job_icu_nurse
+msgid "ICU Nurse"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_alert__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_department__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_job__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_company__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_config_settings__id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_users__id
+msgid "ID"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_id_documents
+msgid "ID Documents"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_onboarding_item_template__responsible_role__it
+msgid "IT"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_onboarding__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_form_healthcare
+msgid "Identification"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_needaction
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_branch__message_needaction
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_onboarding__message_needaction
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_unit__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_has_sms_error
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_branch__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_branch__message_has_sms_error
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_onboarding__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_onboarding__message_has_sms_error
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_unit__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_unit__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_onboarding__state__in_progress
+msgid "In Progress"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_internal_medicine
+msgid "Internal Medicine"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_interventional_radiology
+msgid "Interventional Radiology"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__is_clinical
+msgid "Is Clinical"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_is_follower
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__message_is_follower
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__message_is_follower
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_hr_job
+msgid "Job Position"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.actions.act_window,name:healthcare_hr_core.action_healthcare_job
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_config_job
+msgid "Job Positions"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.department,name:healthcare_hr_core.demo_dept_laboratory
+msgid "Laboratory"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.job,name:healthcare_hr_core.demo_job_lab_tech
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__lab_technician
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__lab_technician
+msgid "Laboratory Technician"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_leave
+msgid "Leave"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__management
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__management
+msgid "Management"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__manager_id
+msgid "Manager"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,comment:healthcare_hr_core.group_hc_officer
+msgid ""
+"Manages employees, contracts, credentials, onboarding and exits of the "
+"allowed branches."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__mandatory
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__mandatory
+msgid "Mandatory"
+msgstr ""
+
+#. module: healthcare_hr_core
+#. odoo-python
+#: code:addons/healthcare_hr_core/models/onboarding.py:0
+msgid "Mandatory onboarding items are still open: %s"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_branch__branch_type__medical_center
+msgid "Medical Center"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__medical_department_id
+msgid "Medical Department"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_job__medical_license_required
+msgid "Medical License Required"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.actions.act_window,name:healthcare_hr_core.action_medical_specialty
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_config_specialty
+msgid "Medical Specialties"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_healthcare_medical_specialty
+msgid "Medical Specialty"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__medical_technician
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__medical_technician
+msgid "Medical Technician"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_has_error
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__message_has_error
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__message_has_error
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__name
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__name
+msgid "Name"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_neonatology
+msgid "Neonatology"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_nephrology
+msgid "Nephrology"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_neurosurgery
+msgid "Neurosurgery"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__note
+msgid "Note"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employment_status__notice
+msgid "Notice Period"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_needaction_counter
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__message_needaction_counter
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__message_needaction_counter
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_has_error_counter
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__message_has_error_counter
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__message_has_error_counter
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_needaction_counter
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_branch__message_needaction_counter
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_onboarding__message_needaction_counter
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_unit__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_has_error_counter
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_branch__message_has_error_counter
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_onboarding__message_has_error_counter
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_unit__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__nurse
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__nurse
+msgid "Nurse"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_search_healthcare
+msgid "Nurses"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_nursing
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_department__healthcare_department_type__nursing
+msgid "Nursing"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.unit,name:healthcare_hr_core.demo_unit_opd_clinics
+msgid "OPD Clinics"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_obgyn
+msgid "Obstetrics & Gynecology"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employment_status__probation
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_search_healthcare
+msgid "On Probation"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.actions.act_window,name:healthcare_hr_core.action_onboarding
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__onboarding_id
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__onboarding_ids
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employment_status__onboarding
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_onboarding
+msgid "Onboarding"
+msgstr ""
+
+#. module: healthcare_hr_core
+#. odoo-python
+#: code:addons/healthcare_hr_core/models/onboarding.py:0
+msgid "Onboarding - %s"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_healthcare_hr_onboarding_item_template
+msgid "Onboarding Checklist Item"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.actions.act_window,name:healthcare_hr_core.action_onboarding_item
+msgid "Onboarding Checklist Items"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_healthcare_hr_onboarding_line
+msgid "Onboarding Checklist Line"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_config_onboarding
+msgid "Onboarding Items"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__clinical_only
+msgid "Only added for clinical employees (doctors, nurses, technicians)."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.onboarding_view_search
+msgid "Open"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_config_organisation
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_form_healthcare
+msgid "Organisation"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_hr_employee__hire_date
+msgid "Original hiring date, kept across contract versions."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_orthopedics
+msgid "Orthopedic Surgery"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__other
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__other
+msgid "Other"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.department,name:healthcare_hr_core.demo_dept_outpatient
+msgid "Outpatient"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,comment:healthcare_hr_core.group_hc_self_service
+msgid ""
+"Own shifts, attendance, credentials, training, loans and exit requests."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__parent_id
+msgid "Parent Facility"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__parent_path
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__parent_path
+msgid "Parent Path"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_medical_specialty__parent_id
+msgid "Parent Specialty"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__parent_id
+msgid "Parent Unit"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_pathology
+msgid "Pathology & Laboratory Medicine"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_onboarding_item_template__responsible_role__payroll
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_payroll
+msgid "Payroll"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_bank_information
+msgid "Payroll Bank Information"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_payroll_manager
+msgid "Payroll Manager"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_payroll_officer
+msgid "Payroll Officer"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_pediatrics
+msgid "Pediatrics"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_performance
+msgid "Performance"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_hr_employee__employee_number
+msgid ""
+"Personnel number. Generated from the 'Healthcare Employee Number' sequence "
+"when empty."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.job,name:healthcare_hr_core.demo_job_pharmacist
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__pharmacist
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__pharmacist
+msgid "Pharmacist"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.department,name:healthcare_hr_core.demo_dept_pharmacy
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_department__healthcare_department_type__pharmacy
+msgid "Pharmacy"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__external_code
+msgid "Practitioner Code"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.actions.act_window,name:healthcare_hr_core.action_practitioner_link
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__practitioner_link_ids
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_practitioner_link
+msgid "Practitioner Links"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__practitioner_model
+msgid "Practitioner Model"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__practitioner_id
+msgid "Practitioner Record"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__practitioner_reference
+msgid "Practitioner Reference"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_company__hc_probation_alert_days
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_config_settings__hc_probation_alert_days
+msgid "Probation Alert Days"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_probation_started
+msgid "Probation Started"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Probation alerts"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_license_verified
+msgid "Professional License Verified"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__professional_registration_number
+msgid "Professional Registration No."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__progress
+msgid "Progress"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.medical.specialty,name:healthcare_hr_core.specialty_radiology
+#: model:hr.department,name:healthcare_hr_core.demo_dept_radiology
+msgid "Radiology"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__radiology_doctor
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__radiology_doctor
+msgid "Radiology Doctor"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.job,name:healthcare_hr_core.demo_job_rad_tech
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__radiology_technician
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__radiology_technician
+msgid "Radiology Technician"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,comment:healthcare_hr_core.group_hc_director
+msgid "Read access across all branches and dashboards."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,comment:healthcare_hr_core.group_hc_user
+msgid ""
+"Read access to the healthcare organisation, schedules and compliance data of"
+" the allowed branches."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_res_company__hc_alert_user_id
+#: model:ir.model.fields,help:healthcare_hr_core.field_res_config_settings__hc_alert_user_id
+msgid ""
+"Receives healthcare HR alerts when no HR responsible is set on the employee."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employee_category__reception
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_job__employee_category__reception
+msgid "Reception"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.job,name:healthcare_hr_core.demo_job_receptionist
+msgid "Receptionist"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_recruitment
+msgid "Recruitment"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_recruitment_officer
+msgid "Recruitment Officer"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_hr_employee__professional_registration_number
+msgid ""
+"Registration with the health authority / professional council. License "
+"numbers, dates and verification are tracked on credential records."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_reports
+msgid "Reports"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__responsible_id
+msgid "Responsible"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__responsible_role
+msgid "Responsible Role"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__message_has_sms_error
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__message_has_sms_error
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__message_has_sms_error
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,comment:healthcare_hr_core.group_hc_payroll_officer
+msgid "Salary, allowances, loans, payroll inputs and bank batches."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_onboarding_item_template__responsible_role__scheduling
+msgid "Scheduling"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_scheduling_manager
+msgid "Scheduling Manager"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_scheduling_officer
+msgid "Scheduling Officer"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,comment:healthcare_hr_core.group_hc_department_manager
+msgid ""
+"Sees the employees of the departments they manage and approves their swaps, "
+"overtime and clearance items. No payroll access."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_item_template__sequence
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: healthcare_hr_core
+#. odoo-python
+#: code:addons/healthcare_hr_core/models/practitioner_link.py:0
+msgid "Set a practitioner code or a practitioner record."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_medical_specialty__parent_id
+msgid "Set for a sub-specialty."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.actions.act_window,name:healthcare_hr_core.action_healthcare_settings
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_config_settings
+msgid "Settings"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_shift_eligibility
+msgid "Shift Eligibility"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_branch__code
+msgid "Short code used on schedules, exports and biometric devices."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__medical_specialty_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_search_healthcare
+msgid "Specialty"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:hr.job,name:healthcare_hr_core.demo_job_staff_nurse
+msgid "Staff Nurse"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.onboarding_view_form
+msgid "Start"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__state
+msgid "State"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.onboarding_view_search
+msgid "Status"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_onboarding__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__sub_specialty_id
+msgid "Sub-specialty"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_unit__unit_type__support
+msgid "Support"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_department__healthcare_department_type__support
+msgid "Support Services"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_unit__unit_type__surgical
+msgid "Surgical / Operating Room"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__hr_employee__employment_status__suspended
+msgid "Suspended"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_system_access
+msgid "System Access"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_admin
+msgid "System Administrator"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_employee_practitioner_link__practitioner_model
+msgid "Technical name of the Odoo model holding practitioners, if any."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_search_healthcare
+msgid "Technicians"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding_line__template_id
+msgid "Template"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.constraint,message:healthcare_hr_core.constraint_healthcare_hr_branch_code_company_uniq
+msgid "The branch code must be unique per company."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.constraint,message:healthcare_hr_core.constraint_hr_employee_employee_number_company_uniq
+msgid "The employee number must be unique per company."
+msgstr ""
+
+#. module: healthcare_hr_core
+#. odoo-python
+#: code:addons/healthcare_hr_core/models/practitioner_link.py:0
+msgid "The link end date cannot be before its start date."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.constraint,message:healthcare_hr_core.constraint_healthcare_hr_onboarding_item_template_code_uniq
+msgid "The onboarding item code must be unique."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.constraint,message:healthcare_hr_core.constraint_healthcare_medical_specialty_code_uniq
+msgid "The specialty code must be unique."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.constraint,message:healthcare_hr_core.constraint_healthcare_hr_unit_code_branch_uniq
+msgid "The unit code must be unique per branch."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__tz
+msgid "Timezone"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields.selection,name:healthcare_hr_core.selection__healthcare_hr_onboarding_item_template__responsible_role__training
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_training
+msgid "Training"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_company__hc_training_alert_days
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_res_config_settings__hc_training_alert_days
+msgid "Training Alert Days"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.onboarding.item.template,name:healthcare_hr_core.onboarding_item_training_assigned
+msgid "Training Assigned"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups,name:healthcare_hr_core.group_hc_training_officer
+msgid "Training Officer"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Training alerts"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_branch_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_unit_view_search
+msgid "Type"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_onboarding__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_employee__healthcare_unit_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.hr_employee_view_search_healthcare
+msgid "Unit"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__manager_id
+msgid "Unit Manager"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__unit_type
+msgid "Unit Type"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.actions.act_window,name:healthcare_hr_core.action_healthcare_unit
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_hr_department__healthcare_unit_ids
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_config_unit
+msgid "Units"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.res_config_settings_view_form_healthcare
+msgid "Used when the employee has no HR responsible"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model,name:healthcare_hr_core.model_res_users
+msgid "User"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__valid_from
+msgid "Valid From"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__valid_to
+msgid "Valid To"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_employee_practitioner_link__website_message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_branch__website_message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_onboarding__website_message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_core.field_healthcare_hr_unit__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_employee_practitioner_link__website_message_ids
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_branch__website_message_ids
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_onboarding__website_message_ids
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_unit__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.model.fields,help:healthcare_hr_core.field_healthcare_hr_branch__tz
+msgid ""
+"When printing documents and exporting/importing data, time values are computed according to this timezone.\n"
+"If the timezone is not set, UTC (Coordinated Universal Time) is used.\n"
+"Anywhere else, time values are computed according to the time offset of your web client."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:ir.ui.menu,name:healthcare_hr_core.menu_workforce
+msgid "Workforce Planning"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:res.groups.privilege,name:healthcare_hr_core.privilege_hc_scheduling
+msgid "Workforce Scheduling"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model:healthcare.hr.unit,name:healthcare_hr_core.demo_unit_xray
+msgid "X-Ray"
+msgstr ""
+
+#. module: healthcare_hr_core
+#. odoo-python
+#: code:addons/healthcare_hr_core/models/healthcare_branch.py:0
+msgid "You cannot create recursive facility hierarchies."
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_branch_view_form
+msgid "e.g. Al Noor Hospital - North Branch"
+msgstr ""
+
+#. module: healthcare_hr_core
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_core.healthcare_unit_view_form
+msgid "e.g. ICU - Bay A"
+msgstr ""
+
+#. module: healthcare_hr_core
+#. odoo-python
+#: code:addons/healthcare_hr_core/models/healthcare_branch.py:0
+msgid "healthcare_branch_id"
+msgstr ""

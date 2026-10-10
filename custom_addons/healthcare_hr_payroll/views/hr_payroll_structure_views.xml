@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_payroll_structure_view_form_healthcare" model="ir.ui.view">
+        <field name="name">hr.payroll.structure.form.healthcare</field>
+        <field name="model">hr.payroll.structure</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_employee_grade_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button name="action_hc_add_healthcare_rules" type="object" string="Add Healthcare Input Rules"
+                            groups="healthcare_hr_core.group_hc_payroll_manager"
+                            help="Adds one rule per healthcare payroll input (allowances, overtime, bonus, deductions, loans)."/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>

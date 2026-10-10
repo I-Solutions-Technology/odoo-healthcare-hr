@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_recruitment_stage_form_healthcare" model="ir.ui.view">
+        <field name="name">hr.recruitment.stage.form.healthcare</field>
+        <field name="model">hr.recruitment.stage</field>
+        <field name="inherit_id" ref="hr_recruitment.hr_recruitment_stage_form"/>
+        <field name="arch" type="xml">
+            <field name="hired_stage" position="after">
+                <field name="hc_credential_verification"/>
+            </field>
+        </field>
+    </record>
+</odoo>

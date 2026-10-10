@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_training_assignment" name="Assignments" parent="healthcare_hr_core.menu_training"
+              action="action_training_assignment" sequence="1" groups="healthcare_hr_core.group_hc_user"/>
+    <menuitem id="menu_my_training" name="My Training" parent="healthcare_hr_core.menu_training"
+              action="action_my_training" sequence="2"/>
+    <menuitem id="menu_training_requirement" name="Requirement Matrix" parent="healthcare_hr_core.menu_training"
+              action="action_training_requirement" sequence="10" groups="healthcare_hr_core.group_hc_training_officer,healthcare_hr_core.group_hc_manager"/>
+    <menuitem id="menu_config_training_requirement" name="Training Requirements" parent="healthcare_hr_core.menu_config"
+              action="action_training_requirement" sequence="25"/>
+    <menuitem id="menu_report_missing_training" name="Missing Training" parent="healthcare_hr_core.menu_reports"
+              action="action_missing_training_report" sequence="60"/>
+    <menuitem id="menu_report_expiring_certification" name="Expiring Certifications" parent="healthcare_hr_core.menu_reports"
+              action="action_expiring_certification_report" sequence="61"/>
+    <menuitem id="menu_report_training_compliance" name="Training Compliance" parent="healthcare_hr_core.menu_reports"
+              action="action_training_compliance_report" sequence="62"/>
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="ir_cron_credential_alerts" model="ir.cron">
+        <field name="name">Healthcare HR: credential status and expiry alerts</field>
+        <field name="model_id" ref="model_healthcare_hr_credential"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_credential_alerts()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+    </record>
+</odoo>

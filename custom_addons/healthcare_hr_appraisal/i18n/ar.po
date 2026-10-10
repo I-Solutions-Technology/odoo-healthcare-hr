@@ -1,0 +1,648 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_appraisal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. module: healthcare_hr_appraisal
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.hr_appraisal_view_form_healthcare_kpi
+msgid "<span>to</span>"
+msgstr "<span>إلى</span>"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.constraint,message:healthcare_hr_appraisal.constraint_healthcare_appraisal_kpi_line_score_range
+msgid "A KPI score must be between 0 and 100."
+msgstr "يجب أن تكون درجة مؤشر الأداء بين 0 و100."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.constraint,message:healthcare_hr_appraisal.constraint_healthcare_appraisal_kpi_template_line_weight_positive
+msgid "A KPI weight cannot be negative."
+msgstr "لا يمكن أن يكون وزن مؤشر الأداء سالباً."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,help:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__job_ids
+msgid ""
+"A template listing the employee's job wins over a category-only template."
+msgstr "تكون الأولوية للنموذج الذي يتضمن وظيفة الموظف على النموذج الخاص بالفئة فقط."
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_administrative_kpi_achievement
+msgid "Achievement of the objectives agreed with the manager (%)."
+msgstr "تحقيق الأهداف المتفق عليها مع المدير (%)."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__actual
+msgid "Actual"
+msgstr "الفعلي"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template,name:healthcare_hr_appraisal.kpi_template_administrative
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__administrative
+msgid "Administrative"
+msgstr "إداري"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__appraisal_id
+msgid "Appraisal"
+msgstr "تقييم الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model,name:healthcare_hr_appraisal.model_healthcare_appraisal_kpi_line
+msgid "Appraisal Healthcare KPI"
+msgstr "مؤشر الأداء الصحي لتقييم الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.ui.menu,name:healthcare_hr_appraisal.menu_config_kpi_template
+msgid "Appraisal KPI Templates"
+msgstr "نماذج مؤشرات الأداء لتقييم الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.ui.menu,name:healthcare_hr_appraisal.menu_hc_appraisal
+msgid "Appraisals"
+msgstr "تقييمات الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.kpi_template_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.kpi_template_view_search
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_administrative_attendance
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_doctor_attendance
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_nurse_attendance
+msgid "Attendance"
+msgstr "الحضور"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_line__source__attendance_rate
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template_line__measurement__attendance_rate
+msgid "Attendance Rate (%)"
+msgstr "نسبة الحضور (%)"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_administrative_attendance
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_doctor_attendance
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_nurse_attendance
+msgid "Attended / planned shifts over the period."
+msgstr "الورديات التي تم حضورها / الورديات المخططة خلال الفترة."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__call_center
+msgid "Call Center"
+msgstr "مركز الاتصال"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_doctor_clinical_quality
+msgid "Clinical Quality KPI"
+msgstr "مؤشر الجودة السريرية"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,help:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__score
+msgid ""
+"Computed from the actual and the target; can be adjusted by the appraiser "
+"for manual KPIs."
+msgstr "تُحتسب من القيمة الفعلية والمستهدف؛ ويمكن للمقيِّم تعديلها لمؤشرات الأداء اليدوية."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_doctor_clinical_quality
+msgid "Department clinical quality indicator (%)."
+msgstr "مؤشر الجودة السريرية للقسم (%)."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__description
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__description
+msgid "Description"
+msgstr "الوصف"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_hr_appraisal__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_hr_employee__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__doctor
+msgid "Doctor"
+msgstr "طبيب"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template,name:healthcare_hr_appraisal.kpi_template_doctor
+msgid "Doctors"
+msgstr "الأطباء"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_doctor_documentation
+msgid "Documentation Compliance"
+msgstr "الامتثال للتوثيق"
+
+#. module: healthcare_hr_appraisal
+#. odoo-python
+#: code:addons/healthcare_hr_appraisal/models/hr_appraisal.py:0
+msgid "Done appraisals are frozen."
+msgstr "تقييمات الأداء المنتهية مجمدة."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model,name:healthcare_hr_appraisal.model_hr_employee
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model,name:healthcare_hr_appraisal.model_hr_appraisal
+msgid "Employee Appraisal"
+msgstr "تقييم أداء الموظف"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,help:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__company_id
+msgid "Empty = every company."
+msgstr "فارغ = جميع الشركات."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__evaluated
+msgid "Evaluated"
+msgstr "تم التقييم"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,help:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__target
+msgid "Expected value. Percentages for the automatic measurements."
+msgstr "القيمة المتوقعة. نسب مئوية للقياسات التلقائية."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__finance
+msgid "Finance"
+msgstr "المالية"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model,name:healthcare_hr_appraisal.model_healthcare_appraisal_kpi_template
+msgid "Healthcare Appraisal KPI Template"
+msgstr "نموذج مؤشرات الأداء لتقييم الأداء الصحي"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model,name:healthcare_hr_appraisal.model_healthcare_appraisal_kpi_template_line
+msgid "Healthcare Appraisal KPI Template Line"
+msgstr "بند نموذج مؤشرات الأداء لتقييم الأداء الصحي"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__employee_category
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.kpi_template_view_search
+msgid "Healthcare Category"
+msgstr "الفئة الصحية"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_hr_appraisal__hc_kpi_line_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.hr_appraisal_view_form_healthcare_kpi
+msgid "Healthcare KPIs"
+msgstr "مؤشرات الأداء الصحية"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__higher_is_better
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__higher_is_better
+msgid "Higher Is Better"
+msgstr "الأعلى هو الأفضل"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__hr
+msgid "Human Resources"
+msgstr "الموارد البشرية"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__id
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__id
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__id
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_hr_appraisal__id
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_hr_employee__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_doctor_incident_rate
+msgid "Incident Rate"
+msgstr "معدل الحوادث"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,help:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__evaluated
+msgid ""
+"Included in the total: an actual was entered (manual KPI) or data exists for"
+" the period (automatic KPI)."
+msgstr "مُدرج في الإجمالي: تم إدخال قيمة فعلية (مؤشر أداء يدوي) أو توجد بيانات للفترة (مؤشر أداء تلقائي)."
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_administrative_service_quality
+msgid "Internal / patient service quality score (%)."
+msgstr "درجة جودة الخدمة الداخلية / خدمة المرضى (%)."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__job_ids
+msgid "Job Positions"
+msgstr "المسميات الوظيفية"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__name
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__name
+msgid "KPI"
+msgstr "KPI"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_administrative_kpi_achievement
+msgid "KPI Achievement"
+msgstr "تحقيق مؤشر الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.hr_appraisal_view_form_healthcare_kpi
+msgid "KPI Period"
+msgstr "فترة مؤشرات الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_hr_appraisal__hc_period_end
+msgid "KPI Period End"
+msgstr "نهاية فترة مؤشرات الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_hr_appraisal__hc_period_start
+msgid "KPI Period Start"
+msgstr "بداية فترة مؤشرات الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_hr_appraisal__hc_kpi_score
+msgid "KPI Score"
+msgstr "درجة مؤشرات الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_hr_appraisal__hc_kpi_template_id
+msgid "KPI Template"
+msgstr "نموذج مؤشرات الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.actions.act_window,name:healthcare_hr_appraisal.action_kpi_template
+#: model:ir.ui.menu,name:healthcare_hr_appraisal.menu_hc_kpi_template
+msgid "KPI Templates"
+msgstr "نماذج مؤشرات الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.hr_appraisal_view_form_healthcare_kpi
+msgid ""
+"KPI scores are decision support only. Contracts, renewals and probations are never\n"
+"                        terminated or renewed automatically from an appraisal score."
+msgstr ""
+"درجات مؤشرات الأداء مجرد أداة لدعم القرار. لا يتم أبداً إنهاء العقود أو تجديداتها أو فترات التجربة\n"
+"                        أو تجديدها تلقائياً بناءً على درجة تقييم الأداء."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__line_ids
+msgid "KPIs"
+msgstr "مؤشرات الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__lab_technician
+msgid "Laboratory Technician"
+msgstr "فني مختبر"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_line__source__late_rate
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template_line__measurement__late_rate
+msgid "Late Arrival Rate (%)"
+msgstr "نسبة التأخير (%)"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_nurse_shift_compliance
+msgid "Late shifts / attended shifts (lower is better)."
+msgstr "الورديات المتأخرة / الورديات التي تم حضورها (الأقل هو الأفضل)."
+
+#. module: healthcare_hr_appraisal
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.hr_appraisal_view_form_healthcare_kpi
+msgid "Load KPIs"
+msgstr "تحميل مؤشرات الأداء"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__management
+msgid "Management"
+msgstr "الإدارة"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_line__source__manual
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template_line__measurement__manual
+msgid "Manual"
+msgstr "يدوي"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__measurement
+msgid "Measurement"
+msgstr "القياس"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__medical_technician
+msgid "Medical Technician"
+msgstr "فني طبي"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_doctor_documentation
+msgid "Medical records audit compliance (%)."
+msgstr "الامتثال في تدقيق السجلات الطبية (%)."
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_nurse_medication
+msgid "Medication Compliance"
+msgstr "الامتثال الدوائي"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_nurse_medication
+msgid "Medication administration audit compliance (%)."
+msgstr "الامتثال في تدقيق إعطاء الأدوية (%)."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: healthcare_hr_appraisal
+#. odoo-python
+#: code:addons/healthcare_hr_appraisal/models/hr_appraisal.py:0
+msgid "No KPI template matches the category or job of %s."
+msgstr "لا يوجد نموذج مؤشرات أداء يطابق فئة أو وظيفة %s."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: healthcare_hr_appraisal
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.kpi_template_view_form
+msgid "Notes..."
+msgstr "ملاحظات..."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__nurse
+msgid "Nurse"
+msgstr "ممرض"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template,name:healthcare_hr_appraisal.kpi_template_nurse
+msgid "Nurses"
+msgstr "الممرضون"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__other
+msgid "Other"
+msgstr "أخرى"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_nurse_patient_feedback
+msgid "Patient Feedback"
+msgstr "ملاحظات المرضى"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_doctor_patient_satisfaction
+msgid "Patient Satisfaction"
+msgstr "رضا المرضى"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_nurse_patient_feedback
+msgid "Patient feedback score (%)."
+msgstr "درجة ملاحظات المرضى (%)."
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_doctor_patient_satisfaction
+msgid "Patient satisfaction survey score (%)."
+msgstr "درجة استبيان رضا المرضى (%)."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__pharmacist
+msgid "Pharmacist"
+msgstr "صيدلي"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__radiology_doctor
+msgid "Radiology Doctor"
+msgstr "طبيب أشعة"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__radiology_technician
+msgid "Radiology Technician"
+msgstr "فني أشعة"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template__employee_category__reception
+msgid "Reception"
+msgstr "الاستقبال"
+
+#. module: healthcare_hr_appraisal
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.hr_appraisal_view_form_healthcare_kpi
+msgid "Refresh Automatic KPIs"
+msgstr "تحديث مؤشرات الأداء التلقائية"
+
+#. module: healthcare_hr_appraisal
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.hr_appraisal_view_form_healthcare_kpi
+msgid "Reload the KPI lines from the template? Entered values are lost."
+msgstr "هل تريد إعادة تحميل بنود مؤشرات الأداء من النموذج؟ ستفقد القيم المدخلة."
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_doctor_incident_rate
+msgid ""
+"Reported clinical incidents per 1,000 patient contacts (lower is better)."
+msgstr "الحوادث السريرية المُبلغ عنها لكل 1,000 تواصل مع المرضى (الأقل هو الأفضل)."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__score
+msgid "Score (0-100)"
+msgstr "الدرجة (0-100)"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,help:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__weighted_score
+msgid "Score x weight / 100."
+msgstr "الدرجة × الوزن / 100."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__sequence
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__sequence
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_administrative_service_quality
+msgid "Service Quality"
+msgstr "جودة الخدمة"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_nurse_shift_compliance
+msgid "Shift Compliance (late arrivals)"
+msgstr "الالتزام بالورديات (حالات التأخير)"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__source
+msgid "Source"
+msgstr "المصدر"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__target
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__target
+msgid "Target"
+msgstr "المستهدف"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_administrative_task_completion
+msgid "Task Completion"
+msgstr "إنجاز المهام"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_administrative_task_completion
+msgid "Tasks completed on time (%)."
+msgstr "المهام المنجزة في الوقت المحدد (%)."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__template_id
+msgid "Template"
+msgstr "النموذج"
+
+#. module: healthcare_hr_appraisal
+#. odoo-python
+#: code:addons/healthcare_hr_appraisal/models/hr_appraisal.py:0
+msgid "The KPI period start must be before its end."
+msgstr "يجب أن تكون بداية فترة مؤشرات الأداء قبل نهايتها."
+
+#. module: healthcare_hr_appraisal
+#. odoo-python
+#: code:addons/healthcare_hr_appraisal/models/kpi_template.py:0
+msgid "The KPI weights of \"%s\" must sum to 100."
+msgstr "يجب أن يكون مجموع أوزان مؤشرات الأداء لـ \"%s\" مساوياً 100."
+
+#. module: healthcare_hr_appraisal
+#. odoo-python
+#: code:addons/healthcare_hr_appraisal/models/hr_appraisal.py:0
+msgid "The appraisal of %s is done: its KPIs cannot be reloaded."
+msgstr "تقييم أداء %s منتهي: لا يمكن إعادة تحميل مؤشرات الأداء الخاصة به."
+
+#. module: healthcare_hr_appraisal
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.hr_appraisal_view_form_healthcare_kpi
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.kpi_template_view_form
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template__total_weight
+msgid "Total Weight"
+msgstr "إجمالي الوزن"
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_doctor_training
+#: model:healthcare.appraisal.kpi.template.line,name:healthcare_hr_appraisal.kpi_template_nurse_training
+msgid "Training Compliance"
+msgstr "الامتثال للتدريب"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_line__source__training_compliance
+#: model:ir.model.fields.selection,name:healthcare_hr_appraisal.selection__healthcare_appraisal_kpi_template_line__measurement__training_compliance
+msgid "Training Compliance (%)"
+msgstr "الامتثال للتدريب (%)"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,help:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__higher_is_better
+msgid "Unset for rates that must stay low (late arrivals, incidents)."
+msgstr "ألغِ التحديد للمعدلات التي يجب أن تبقى منخفضة (حالات التأخير، الحوادث)."
+
+#. module: healthcare_hr_appraisal
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_doctor_training
+#: model:healthcare.appraisal.kpi.template.line,description:healthcare_hr_appraisal.kpi_template_nurse_training
+msgid "Valid mandatory certifications / required."
+msgstr "الشهادات الإلزامية السارية / المطلوبة."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__weight
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__weight
+msgid "Weight"
+msgstr "الوزن"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,field_description:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_line__weighted_score
+msgid "Weighted Score"
+msgstr "الدرجة المرجحة"
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,help:healthcare_hr_appraisal.field_hr_appraisal__hc_kpi_score
+msgid ""
+"Weighted average (0-100) of the evaluated KPIs. Decision support only: the "
+"KPI score never terminates, renews or extends a contract or a probation "
+"automatically. Those decisions are taken explicitly by HR."
+msgstr "المتوسط المرجح (0-100) لمؤشرات الأداء التي تم تقييمها. أداة لدعم القرار فقط: لا تؤدي درجة مؤشرات الأداء أبداً إلى إنهاء أو تجديد أو تمديد العقد أو فترة التجربة تلقائياً. تُتخذ هذه القرارات صراحةً من قِبل الموارد البشرية."
+
+#. module: healthcare_hr_appraisal
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.kpi_template_view_form
+msgid ""
+"Weights must sum to 100. Automatic measurements are percentages computed over the\n"
+"                        appraisal period. KPI scores support the appraisal decision only: contracts and\n"
+"                        probations are never terminated or renewed automatically from a score."
+msgstr ""
+"يجب أن يكون مجموع الأوزان 100. القياسات التلقائية نسب مئوية تُحتسب على مدى\n"
+"                        فترة تقييم الأداء. درجات مؤشرات الأداء تدعم قرار التقييم فقط: لا يتم أبداً إنهاء أو تجديد العقود\n"
+"                        وفترات التجربة تلقائياً بناءً على الدرجة."
+
+#. module: healthcare_hr_appraisal
+#: model:ir.model.fields,help:healthcare_hr_appraisal.field_healthcare_appraisal_kpi_template_line__weight
+msgid "Weights of a template sum to 100."
+msgstr "مجموع أوزان النموذج يساوي 100."
+
+#. module: healthcare_hr_appraisal
+#. odoo-python
+#: code:addons/healthcare_hr_appraisal/models/hr_appraisal.py:0
+msgid "You cannot edit the KPIs of your own appraisal."
+msgstr "لا يمكنك تعديل مؤشرات الأداء الخاصة بتقييم أدائك."
+
+#. module: healthcare_hr_appraisal
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_appraisal.kpi_template_view_form
+msgid "e.g. ICU Nurses"
+msgstr "مثال: ممرضو ICU"

@@ -1,0 +1,25 @@
+# --- local instance & runtime (never commit) ---
+odoo.conf
+odoo.conf.bak*
+.odoo_data/
+logs/
+backups/
+*.log
+# --- build / editor artefacts ---
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+.DS_Store
+*.zip
+# --- binary deliverables live in I Solutions Workspace, not git ---
+*.docx
+*.pdf
+*.pptx
+*.xlsx
+# --- secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key

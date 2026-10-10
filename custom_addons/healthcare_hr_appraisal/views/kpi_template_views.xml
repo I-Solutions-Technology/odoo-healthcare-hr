@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="kpi_template_view_list" model="ir.ui.view">
+        <field name="name">healthcare.appraisal.kpi.template.list</field>
+        <field name="model">healthcare.appraisal.kpi.template</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="employee_category"/>
+                <field name="job_ids" widget="many2many_tags"/>
+                <field name="total_weight"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+    <record id="kpi_template_view_form" model="ir.ui.view">
+        <field name="name">healthcare.appraisal.kpi.template.form</field>
+        <field name="model">healthcare.appraisal.kpi.template</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="oe_title"><h1><field name="name" placeholder="e.g. ICU Nurses"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="employee_category"/>
+                            <field name="job_ids" widget="many2many_tags"/>
+                        </group>
+                        <group>
+                            <field name="total_weight"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                    </group>
+                    <field name="line_ids">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="name"/>
+                            <field name="measurement"/>
+                            <field name="weight" sum="Total"/>
+                            <field name="target"/>
+                            <field name="higher_is_better"/>
+                            <field name="description" optional="hide"/>
+                        </list>
+                    </field>
+                    <div class="alert alert-info mt-3" role="status">
+                        Weights must sum to 100. Automatic measurements are percentages computed over the
+                        appraisal period. KPI scores support the appraisal decision only: contracts and
+                        probations are never terminated or renewed automatically from a score.
+                    </div>
+                    <field name="note" placeholder="Notes..."/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="kpi_template_view_search" model="ir.ui.view">
+        <field name="name">healthcare.appraisal.kpi.template.search</field>
+        <field name="model">healthcare.appraisal.kpi.template</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="job_ids"/>
+                <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter name="group_category" string="Healthcare Category" context="{'group_by': 'employee_category'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_kpi_template" model="ir.actions.act_window">
+        <field name="name">KPI Templates</field>
+        <field name="res_model">healthcare.appraisal.kpi.template</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

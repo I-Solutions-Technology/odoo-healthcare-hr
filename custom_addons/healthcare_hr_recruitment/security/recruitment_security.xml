@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Healthcare recruitment officers work in the standard Recruitment application -->
+    <record id="healthcare_hr_core.group_hc_recruitment_officer" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('hr_recruitment.group_hr_recruitment_user'))]"/>
+    </record>
+</odoo>

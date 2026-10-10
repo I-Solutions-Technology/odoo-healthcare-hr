@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_shift_assignment" name="Shift Assignments" parent="healthcare_hr_core.menu_workforce"
+              action="action_shift_assignment" sequence="10" groups="healthcare_hr_core.group_hc_user"/>
+    <menuitem id="menu_my_shifts" name="My Shifts" parent="healthcare_hr_core.menu_workforce"
+              action="action_my_shifts" sequence="5"/>
+    <menuitem id="menu_shift_generate" name="Generate Shifts" parent="healthcare_hr_core.menu_workforce"
+              action="action_shift_generate_wizard" sequence="11" groups="healthcare_hr_core.group_hc_scheduling_officer"/>
+    <menuitem id="menu_shift_publish" name="Publish Roster" parent="healthcare_hr_core.menu_workforce"
+              action="action_shift_publish_wizard" sequence="12" groups="healthcare_hr_core.group_hc_scheduling_officer"/>
+    <menuitem id="menu_shift_template" name="Shift Templates" parent="healthcare_hr_core.menu_workforce"
+              action="action_shift_template" sequence="20" groups="healthcare_hr_core.group_hc_user"/>
+    <menuitem id="menu_coverage" name="Coverage" parent="healthcare_hr_core.menu_workforce" sequence="30"
+              groups="healthcare_hr_core.group_hc_user"/>
+    <menuitem id="menu_coverage_snapshot" name="Coverage Status" parent="menu_coverage" action="action_coverage_snapshot" sequence="1"/>
+    <menuitem id="menu_coverage_refresh" name="Refresh Coverage" parent="menu_coverage" action="action_refresh_coverage" sequence="2"
+              groups="healthcare_hr_core.group_hc_scheduling_officer"/>
+    <menuitem id="menu_coverage_rule" name="Coverage Rules" parent="menu_coverage" action="action_coverage_rule" sequence="3"/>
+    <menuitem id="menu_shift_swap" name="Shift Swaps" parent="healthcare_hr_core.menu_workforce" action="action_shift_swap" sequence="40"/>
+    <menuitem id="menu_shift_oncall" name="On-Call" parent="healthcare_hr_core.menu_workforce" action="action_shift_oncall" sequence="50"/>
+
+    <menuitem id="menu_leave_requests" name="Time Off" parent="healthcare_hr_core.menu_leave"
+              action="hr_holidays.hr_leave_action_action_approve_department" sequence="1" groups="healthcare_hr_core.group_hc_user"/>
+    <menuitem id="menu_leave_my" name="My Time Off" parent="healthcare_hr_core.menu_leave"
+              action="hr_holidays.hr_leave_action_my" sequence="2"/>
+    <menuitem id="menu_leave_balance" name="Leave Balance" parent="healthcare_hr_core.menu_reports"
+              action="hr_holidays.action_hr_holidays_by_employee_and_type_report" sequence="70" groups="healthcare_hr_core.group_hc_user"/>
+    <menuitem id="menu_leave_utilization" name="Leave Utilization" parent="healthcare_hr_core.menu_reports"
+              action="hr_holidays.hr_leave_report_action" sequence="71" groups="healthcare_hr_core.group_hc_user"/>
+
+    <menuitem id="menu_report_coverage" name="Shift Coverage" parent="healthcare_hr_core.menu_reports" action="action_coverage_snapshot" sequence="20"/>
+    <menuitem id="menu_report_shortage" name="Shift Shortage" parent="healthcare_hr_core.menu_reports" action="action_coverage_shortage" sequence="21"/>
+    <menuitem id="menu_report_night" name="Night Shifts" parent="healthcare_hr_core.menu_reports" action="action_shift_report_night" sequence="22"/>
+    <menuitem id="menu_report_weekend" name="Weekend Shifts" parent="healthcare_hr_core.menu_reports" action="action_shift_report_weekend" sequence="23"/>
+    <menuitem id="menu_report_overtime" name="Overtime" parent="healthcare_hr_core.menu_reports" action="action_shift_report_overtime" sequence="24"/>
+    <menuitem id="menu_config_shift_template" name="Shift Templates" parent="healthcare_hr_core.menu_config" action="action_shift_template" sequence="30"/>
+    <menuitem id="menu_config_coverage_rule" name="Coverage Rules" parent="healthcare_hr_core.menu_config" action="action_coverage_rule" sequence="31"/>
+</odoo>

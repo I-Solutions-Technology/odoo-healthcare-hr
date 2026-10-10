@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="biometric_log_view_list" model="ir.ui.view">
+        <field name="name">healthcare.biometric.log.list</field>
+        <field name="model">healthcare.biometric.log</field>
+        <field name="arch" type="xml">
+            <list create="0" decoration-danger="processing_status == 'error'" decoration-muted="processing_status in ('duplicate', 'ignored')">
+                <header>
+                    <button name="action_process" type="object" string="Process"/>
+                    <button name="action_retry" type="object" string="Retry"/>
+                </header>
+                <field name="event_datetime"/>
+                <field name="device_id"/>
+                <field name="device_employee_code"/>
+                <field name="employee_id" widget="many2one_avatar_employee"/>
+                <field name="event_type"/>
+                <field name="source" optional="hide"/>
+                <field name="processing_status" widget="badge"
+                       decoration-success="processing_status == 'done'"
+                       decoration-info="processing_status == 'pending'"
+                       decoration-warning="processing_status in ('duplicate', 'ignored')"
+                       decoration-danger="processing_status == 'error'"/>
+                <field name="error_message" optional="show"/>
+                <field name="attendance_id" optional="hide"/>
+                <field name="batch_id" optional="hide"/>
+                <field name="retry_count" optional="hide"/>
+                <field name="branch_id" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="biometric_log_view_form" model="ir.ui.view">
+        <field name="name">healthcare.biometric.log.form</field>
+        <field name="model">healthcare.biometric.log</field>
+        <field name="arch" type="xml">
+            <form create="0">
+                <header>
+                    <button name="action_process" type="object" string="Process" class="btn-primary"
+                            invisible="processing_status != 'pending'"/>
+                    <button name="action_retry" type="object" string="Retry" class="btn-primary"
+                            invisible="processing_status != 'error' or invalid_payload"/>
+                    <field name="processing_status" widget="statusbar" statusbar_visible="pending,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_open_attendance" type="object" class="oe_stat_button" icon="fa-clock-o"
+                                invisible="not attendance_id" string="Attendance"/>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="device_id"/>
+                            <field name="device_employee_code"/>
+                            <field name="employee_id"/>
+                            <field name="event_datetime"/>
+                            <field name="event_type"/>
+                        </group>
+                        <group>
+                            <field name="source"/>
+                            <field name="batch_id"/>
+                            <field name="attendance_id"/>
+                            <field name="retry_count"/>
+                            <field name="invalid_payload" invisible="not invalid_payload"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                    <field name="error_message" invisible="not error_message" class="text-danger"/>
+                    <group string="Raw Payload">
+                        <field name="raw_payload" nolabel="1" colspan="2"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="biometric_log_view_search" model="ir.ui.view">
+        <field name="name">healthcare.biometric.log.search</field>
+        <field name="model">healthcare.biometric.log</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="device_employee_code"/>
+                <field name="employee_id"/>
+                <field name="device_id"/>
+                <field name="batch_id"/>
+                <filter name="pending" string="Pending" domain="[('processing_status', '=', 'pending')]"/>
+                <filter name="done" string="Done" domain="[('processing_status', '=', 'done')]"/>
+                <filter name="duplicate" string="Duplicates / Ignored" domain="[('processing_status', 'in', ('duplicate', 'ignored'))]"/>
+                <filter name="error" string="Errors" domain="[('processing_status', '=', 'error')]"/>
+                <separator/>
+                <filter name="unknown_employee" string="Unknown employee" domain="[('employee_id', '=', False)]"/>
+                <separator/>
+                <filter name="event_date" string="Event Date" date="event_datetime"/>
+                <group>
+                    <filter name="group_status" string="Status" context="{'group_by': 'processing_status'}"/>
+                    <filter name="group_device" string="Device" context="{'group_by': 'device_id'}"/>
+                    <filter name="group_employee" string="Employee" context="{'group_by': 'employee_id'}"/>
+                    <filter name="group_date" string="Day" context="{'group_by': 'event_datetime:day'}"/>
+                    <filter name="group_batch" string="Batch" context="{'group_by': 'batch_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_biometric_log" model="ir.actions.act_window">
+        <field name="name">Raw Logs</field>
+        <field name="res_model">healthcare.biometric.log</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No punch received yet</p>
+            <p>Punches pushed, pulled or imported from biometric devices appear here before becoming attendances.</p>
+        </field>
+    </record>
+</odoo>

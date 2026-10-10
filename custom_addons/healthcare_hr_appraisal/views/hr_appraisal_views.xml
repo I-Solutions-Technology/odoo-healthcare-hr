@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_appraisal_view_form_healthcare_kpi" model="ir.ui.view">
+        <field name="name">hr.appraisal.form.healthcare.kpi</field>
+        <field name="model">hr.appraisal</field>
+        <field name="inherit_id" ref="hr_appraisal.view_hr_appraisal_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='appraisal']" position="after">
+                <page string="Healthcare KPIs" name="healthcare_kpi">
+                    <div class="alert alert-info" role="status">
+                        KPI scores are decision support only. Contracts, renewals and probations are never
+                        terminated or renewed automatically from an appraisal score.
+                    </div>
+                    <group>
+                        <group>
+                            <field name="hc_kpi_template_id" readonly="state == '3_done'"
+                                   options="{'no_create': True}"/>
+                            <label for="hc_period_start" string="KPI Period"/>
+                            <div class="o_row">
+                                <field name="hc_period_start" readonly="state == '3_done'"/>
+                                <span>to</span>
+                                <field name="hc_period_end" readonly="state == '3_done'"/>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="hc_kpi_score" widget="progressbar"/>
+                        </group>
+                    </group>
+                    <div class="mb-2" invisible="state == '3_done' or uid == employee_user_id">
+                        <button name="action_hc_load_kpis" type="object" string="Load KPIs" class="btn-secondary"
+                                confirm="Reload the KPI lines from the template? Entered values are lost."/>
+                        <button name="action_hc_refresh_kpis" type="object" string="Refresh Automatic KPIs"
+                                class="btn-link" invisible="not hc_kpi_line_ids"/>
+                    </div>
+                    <field name="hc_kpi_line_ids" readonly="state == '3_done' or uid == employee_user_id">
+                        <list editable="bottom" create="0">
+                            <field name="sequence" widget="handle"/>
+                            <field name="name"/>
+                            <field name="source"/>
+                            <field name="weight" sum="Total"/>
+                            <field name="target"/>
+                            <field name="actual" readonly="source != 'manual'"/>
+                            <field name="higher_is_better" column_invisible="1"/>
+                            <field name="score" readonly="source != 'manual'"/>
+                            <field name="weighted_score" sum="Total"/>
+                            <field name="evaluated" readonly="source != 'manual'"/>
+                            <field name="description" optional="hide"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_appraisal_view_list_healthcare_kpi" model="ir.ui.view">
+        <field name="name">hr.appraisal.list.healthcare.kpi</field>
+        <field name="model">hr.appraisal</field>
+        <field name="inherit_id" ref="hr_appraisal.view_hr_appraisal_tree"/>
+        <field name="arch" type="xml">
+            <field name="assessment_note" position="after">
+                <field name="hc_kpi_score" optional="show" widget="progressbar"/>
+            </field>
+        </field>
+    </record>
+</odoo>

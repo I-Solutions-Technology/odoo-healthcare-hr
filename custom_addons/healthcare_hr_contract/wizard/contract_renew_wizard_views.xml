@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="contract_renew_wizard_view_form" model="ir.ui.view">
+        <field name="name">healthcare.hr.contract.renew.wizard.form</field>
+        <field name="model">healthcare.hr.contract.renew.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="employee_id" readonly="1"/>
+                    <field name="version_id" invisible="1"/>
+                    <field name="current_end_date"/>
+                    <field name="months"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="new_wage"/>
+                </group>
+                <footer>
+                    <button name="action_renew" type="object" string="Renew" class="btn-primary"/>
+                    <button special="cancel" string="Cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

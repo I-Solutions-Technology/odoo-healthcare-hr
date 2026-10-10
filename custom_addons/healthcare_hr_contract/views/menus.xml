@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_contracts_list" name="Contracts" parent="healthcare_hr_core.menu_contracts"
+              action="action_healthcare_contracts" sequence="1" groups="hr.group_hr_manager"/>
+    <menuitem id="menu_contract_expiry" name="Contract Expiry" parent="healthcare_hr_core.menu_contracts"
+              action="action_healthcare_contract_expiry" sequence="2" groups="hr.group_hr_manager"/>
+    <menuitem id="menu_probation" name="Probation" parent="healthcare_hr_core.menu_contracts"
+              action="action_healthcare_probation" sequence="10"/>
+    <menuitem id="menu_probation_review" name="Probation Reviews" parent="healthcare_hr_core.menu_contracts"
+              action="action_probation_review" sequence="11"/>
+    <menuitem id="menu_report_contract_expiry" name="Contract Expiry" parent="healthcare_hr_core.menu_reports"
+              action="action_healthcare_contract_expiry" sequence="40" groups="hr.group_hr_manager"/>
+    <menuitem id="menu_report_probation_expiry" name="Probation Expiry" parent="healthcare_hr_core.menu_reports"
+              action="action_healthcare_probation" sequence="41" groups="healthcare_hr_core.group_hc_officer"/>
+</odoo>

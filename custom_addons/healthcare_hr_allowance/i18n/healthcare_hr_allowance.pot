@@ -1,0 +1,997 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_allowance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: healthcare_hr_allowance
+#. odoo-python
+#: code:addons/healthcare_hr_allowance/models/allowance_rule.py:0
+msgid "%(qty)s x %(rate)s"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_type__twelve_hour
+msgid "12 Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_type__twenty_four_hour
+msgid "24 Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#. odoo-python
+#: code:addons/healthcare_hr_allowance/models/allowance_rule.py:0
+msgid "A formula rule needs a formula."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__message_needaction
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__active
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__active
+msgid "Active"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__administrative
+msgid "Administrative"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.actions.act_window,name:healthcare_hr_allowance.action_allowance_analysis
+#: model:ir.ui.menu,name:healthcare_hr_allowance.menu_report_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_pivot
+msgid "Allowance Analysis"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model,name:healthcare_hr_allowance.model_healthcare_allowance_result
+msgid "Allowance Result"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#. odoo-python
+#: code:addons/healthcare_hr_allowance/wizard/allowance_compute_wizard.py:0
+#: model:ir.actions.act_window,name:healthcare_hr_allowance.action_allowance_result
+#: model:ir.ui.menu,name:healthcare_hr_allowance.menu_allowance_result
+msgid "Allowance Results"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model,name:healthcare_hr_allowance.model_healthcare_allowance_rule
+msgid "Allowance Rule"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.actions.act_window,name:healthcare_hr_allowance.action_allowance_rule
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_shift_template__allowance_rule_ids
+#: model:ir.ui.menu,name:healthcare_hr_allowance.menu_allowance_rule
+#: model:ir.ui.menu,name:healthcare_hr_allowance.menu_config_allowance_rule
+msgid "Allowance Rules"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model,name:healthcare_hr_allowance.model_healthcare_allowance_type
+msgid "Allowance Type"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.actions.act_window,name:healthcare_hr_allowance.action_allowance_type
+#: model:ir.ui.menu,name:healthcare_hr_allowance.menu_config_allowance_type
+msgid "Allowance Types"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_shift_template__allowance_rule_ids
+msgid "Allowance rules restricted to this shift template."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.ui.menu,name:healthcare_hr_allowance.menu_allowances
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_graph
+msgid "Allowances"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#. odoo-python
+#: code:addons/healthcare_hr_allowance/models/allowance_result.py:0
+msgid "Allowances already in payroll cannot be cancelled."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#. odoo-python
+#: code:addons/healthcare_hr_allowance/models/allowance_result.py:0
+msgid "Allowances already in payroll cannot be deleted."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#. odoo-python
+#: code:addons/healthcare_hr_allowance/models/allowance_result.py:0
+msgid "Allowances already in payroll cannot be reset."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_type__code
+msgid "Also used as the payroll input code (prefixed HC_ when mapped)."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__amount
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__amount
+msgid "Amount"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_rule_view_form
+msgid "Applies To"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_rule_view_form
+msgid "Archived"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__message_attachment_count
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__branch_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_search
+msgid "Branch"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_rule_view_form
+msgid "Calculation"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__calculation_method
+msgid "Calculation Method"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__call_center
+msgid "Call Center"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_callin
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__call_in
+msgid "Call In"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.rule,name:healthcare_hr_allowance.demo_rule_callin
+msgid "Call-in (per worked hour)"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_compute_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_form
+msgid "Cancel"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_result__state__cancelled
+msgid "Cancelled"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__category
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__category
+msgid "Category"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__code
+msgid "Code"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__company_id
+msgid "Company"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__computation_note
+msgid "Computation Note"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_compute_wizard_view_form
+msgid "Compute"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.actions.act_window,name:healthcare_hr_allowance.action_allowance_compute_wizard
+#: model:ir.model,name:healthcare_hr_allowance.model_healthcare_allowance_compute_wizard
+#: model:ir.ui.menu,name:healthcare_hr_allowance.menu_allowance_compute
+msgid "Compute Allowances"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_list
+msgid "Confirm"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__confirm
+msgid "Confirm results"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__confirm
+msgid "Confirm the computed results for payroll right away."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_result__state__confirmed
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_search
+msgid "Confirmed"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__contract_type_id
+msgid "Contract Type"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__currency_id
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_type__custom
+msgid "Custom"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__date_from
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__date_from
+msgid "Date From"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__date_to
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__date_to
+msgid "Date To"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__department_id
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__department_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_search
+msgid "Department"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_shift_template__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__doctor
+msgid "Doctor"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_result__state__draft
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_search
+msgid "Draft"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_er
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__er
+msgid "ER"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__effective_from
+msgid "Effective From"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__effective_to
+msgid "Effective To"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__employee_ids
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__employee_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_search
+msgid "Employee"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__employee_category
+msgid "Employee Category"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#. odoo-python
+#: code:addons/healthcare_hr_allowance/models/allowance_rule.py:0
+msgid "Error in the formula of allowance rule \"%(rule)s\": %(error)s"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_type__evening
+msgid "Evening"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_basis__all
+msgid "Every Shift"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__finance
+msgid "Finance"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__calculation_method__fixed
+msgid "Fixed Amount per Period"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__amount
+msgid "Fixed amount, amount per shift or rate per hour."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__message_follower_ids
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__message_partner_ids
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__formula
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__calculation_method__formula
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_rule_view_form
+msgid "Formula"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__has_message
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__hour_basis
+msgid "Hour Basis"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_housing
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__housing
+msgid "Housing"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__hr
+msgid "Human Resources"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_icu
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__icu
+msgid "ICU"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.rule,name:healthcare_hr_allowance.demo_rule_icu
+msgid "ICU allowance (per ICU shift)"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__id
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__id
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__id
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__id
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_shift_template__id
+msgid "ID"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_result__message_needaction
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_result__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_result__message_has_sms_error
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_result__state__processed
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_search
+msgid "In Payroll"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_infection
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__infection_risk
+msgid "Infection Risk"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.rule,name:healthcare_hr_allowance.demo_rule_infection
+msgid "Infection risk - nurses (fixed)"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_result__taxable
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__taxable
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_type__taxable
+msgid "Informative flag for localisations deciding the tax treatment."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__message_is_follower
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__job_id
+msgid "Job"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__lab_technician
+msgid "Laboratory Technician"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_compute_wizard__employee_ids
+msgid "Leave empty for every employee of the company."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__management
+msgid "Management"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__maximum
+msgid "Maximum"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__maximum
+msgid "Maximum per period (0 = none)."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__medical_technician
+msgid "Medical Technician"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__message_has_error
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__minimum
+msgid "Minimum"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__minimum
+msgid "Minimum per period when the rule applies (0 = none)."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_type__morning
+msgid "Morning"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__name
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__name
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__name
+msgid "Name"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_type__night
+msgid "Night"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__hour_basis__night_hours
+msgid "Night Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_night
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__night_shift
+msgid "Night Shift"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.rule,name:healthcare_hr_allowance.demo_rule_night
+msgid "Night allowance (per night hour)"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__message_needaction_counter
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__message_has_error_counter
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_result__message_needaction_counter
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_result__message_has_error_counter
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__nurse
+msgid "Nurse"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_oncall
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_type__on_call
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__on_call
+msgid "On Call"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_form
+msgid "On-call"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_basis__callin
+msgid "On-call Call-ins"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__oncall_ids
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_basis__oncall
+msgid "On-call Duties"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__hour_basis__oncall_standby_hours
+msgid "On-call Standby Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__hour_basis__oncall_worked_hours
+msgid "On-call Worked (Call-in) Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.rule,name:healthcare_hr_allowance.demo_rule_oncall
+msgid "On-call standby (per hour)"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.constraint,message:healthcare_hr_allowance.constraint_healthcare_allowance_result_period_uniq
+msgid "One result per employee, rule and period."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_compute_wizard_view_form
+msgid ""
+"Only approved shifts and on-call duties are used. Running the computation "
+"again updates the same results."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_or
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__operating_room
+msgid "Operating Room"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_other
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__other
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__other
+msgid "Other"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.ui.menu,name:healthcare_hr_allowance.menu_payroll_overtime
+msgid "Overtime"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__hour_basis__overtime_hours
+msgid "Payroll Overtime Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__calculation_method__per_hour
+msgid "Per Hour"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__calculation_method__per_shift
+msgid "Per Shift"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__percentage
+msgid "Percentage"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__calculation_method__percentage_basic
+msgid "Percentage of Basic"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__calculation_method__percentage_gross
+msgid "Percentage of Gross"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_performance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__performance
+msgid "Performance"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_search
+msgid "Period"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__pharmacist
+msgid "Pharmacist"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__hour_basis__planned_hours
+msgid "Planned Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_holiday
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__public_holiday
+msgid "Public Holiday"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__hour_basis__holiday_hours
+msgid "Public Holiday Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__formula
+msgid ""
+"Python code setting `result`. Available: employee, version (contract), wage,"
+" hours (dict of night_hours, weekend_hours, holiday_hours, worked_hours, "
+"planned_hours, overtime_hours, oncall_standby_hours, oncall_worked_hours), "
+"shifts (dict of all, night, weekend, holiday, oncall, callin counts), days "
+"(period length)."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__quantity
+msgid "Quantity"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__radiology_doctor
+msgid "Radiology Doctor"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__radiology_technician
+msgid "Radiology Technician"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__rate
+msgid "Rate"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__employee_category__reception
+msgid "Reception"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_remote
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__remote_area
+msgid "Remote Area"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_list
+msgid "Reset to Draft"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_responsibility
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__responsibility
+msgid "Responsibility"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_risk
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__risk
+msgid "Risk"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__rule_id
+msgid "Rule"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__rule_ids
+msgid "Rules"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__sequence
+msgid ""
+"Rules are computed in this order (percentage of gross uses the amounts of "
+"the rules computed before it)."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__message_has_sms_error
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__sequence
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__shift_basis
+msgid "Shift Basis"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model,name:healthcare_hr_allowance.model_healthcare_shift_template
+msgid "Shift Template"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__shift_template_ids
+msgid "Shift Templates"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__shift_type
+msgid "Shift Type"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__department_id
+msgid ""
+"Shift-based rules: department of the shift. Others: employee department."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__assignment_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_form
+msgid "Shifts"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_basis__holiday
+msgid "Shifts on Public Holidays"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_basis__night
+msgid "Shifts with Night Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__shift_basis__weekend
+msgid "Shifts with Weekend Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__state
+msgid "State"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__taxable
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__taxable
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_type__taxable
+msgid "Taxable"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.constraint,message:healthcare_hr_allowance.constraint_healthcare_allowance_type_code_uniq
+msgid "The allowance type code must be unique."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#. odoo-python
+#: code:addons/healthcare_hr_allowance/models/allowance_rule.py:0
+#: code:addons/healthcare_hr_allowance/wizard/allowance_compute_wizard.py:0
+msgid "The end date is before the start date."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#. odoo-python
+#: code:addons/healthcare_hr_allowance/models/allowance_rule.py:0
+msgid "The maximum cannot be lower than the minimum."
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_list
+msgid "Total"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_transport
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__transportation
+msgid "Transportation"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.rule,name:healthcare_hr_allowance.demo_rule_transport
+msgid "Transportation (10% of basic)"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__type_id
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__type_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_result_view_search
+msgid "Type"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__unit_id
+msgid "Unit"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_result__website_message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_allowance.field_healthcare_allowance_rule__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_result__website_message_ids
+#: model:ir.model.fields,help:healthcare_hr_allowance.field_healthcare_allowance_rule__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.type,name:healthcare_hr_allowance.allowance_type_weekend
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_type__category__weekend
+msgid "Weekend"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__hour_basis__weekend_hours
+msgid "Weekend Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:healthcare.allowance.rule,name:healthcare_hr_allowance.demo_rule_weekend
+msgid "Weekend allowance (per shift)"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_allowance.selection__healthcare_allowance_rule__hour_basis__worked_hours
+msgid "Worked Hours"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#. odoo-python
+#: code:addons/healthcare_hr_allowance/wizard/allowance_compute_wizard.py:0
+msgid "date_from"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_rule_view_form
+msgid "e.g. ICU night allowance"
+msgstr ""
+
+#. module: healthcare_hr_allowance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_allowance.allowance_rule_view_form
+msgid "result = hours['night_hours'] * 30 if shifts['night'] >= 4 else 0"
+msgstr ""

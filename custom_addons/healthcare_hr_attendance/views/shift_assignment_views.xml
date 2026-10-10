@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="shift_assignment_view_form_attendance" model="ir.ui.view">
+        <field name="name">healthcare.shift.assignment.form.attendance</field>
+        <field name="model">healthcare.shift.assignment</field>
+        <field name="inherit_id" ref="healthcare_hr_shift.shift_assignment_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='actual_worked_hours']" position="before">
+                <field name="attendance_status"/>
+                <field name="late_minutes"/>
+                <field name="early_leave_minutes"/>
+            </xpath>
+            <xpath expr="//field[@name='note']" position="before">
+                <field name="attendance_ids" readonly="1">
+                    <list>
+                        <field name="check_in"/>
+                        <field name="check_out"/>
+                        <field name="worked_hours" widget="float_time"/>
+                        <field name="late_minutes"/>
+                        <field name="early_leave_minutes"/>
+                        <field name="attendance_status"/>
+                    </list>
+                </field>
+            </xpath>
+        </field>
+    </record>
+    <record id="shift_assignment_view_list_attendance" model="ir.ui.view">
+        <field name="name">healthcare.shift.assignment.list.attendance</field>
+        <field name="model">healthcare.shift.assignment</field>
+        <field name="inherit_id" ref="healthcare_hr_shift.shift_assignment_view_list"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="before">
+                <field name="attendance_status" optional="show"/>
+                <field name="late_minutes" optional="hide" sum="Late"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="shift_assignment_view_search_attendance" model="ir.ui.view">
+        <field name="name">healthcare.shift.assignment.search.attendance</field>
+        <field name="model">healthcare.shift.assignment</field>
+        <field name="inherit_id" ref="healthcare_hr_shift.shift_assignment_view_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='with_overtime']" position="after">
+                <filter name="absent" string="Absent" domain="[('attendance_status', '=', 'absent')]"/>
+                <filter name="late" string="Late" domain="[('late_minutes', '&gt;', 0)]"/>
+            </xpath>
+            <xpath expr="//filter[@name='group_state']" position="after">
+                <filter name="group_attendance_status" string="Attendance Status" context="{'group_by': 'attendance_status'}"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="action_absenteeism_report" model="ir.actions.act_window">
+        <field name="name">Absenteeism</field>
+        <field name="res_model">healthcare.shift.assignment</field>
+        <field name="view_mode">pivot,list,graph</field>
+        <field name="domain">[('attendance_status', '!=', False)]</field>
+        <field name="context">{'search_default_group_attendance_status': 1, 'pivot_row_groupby': ['department_id'], 'pivot_column_groupby': ['attendance_status']}</field>
+    </record>
+</odoo>

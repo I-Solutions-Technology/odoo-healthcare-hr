@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="training_requirement_view_list" model="ir.ui.view">
+        <field name="name">healthcare.training.requirement.list</field>
+        <field name="model">healthcare.training.requirement</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="job_id"/>
+                <field name="employee_category"/>
+                <field name="department_id"/>
+                <field name="credential_type_id"/>
+                <field name="mandatory"/>
+                <field name="renewal_period_months"/>
+                <field name="due_days" optional="hide"/>
+                <field name="auto_verify_credential" optional="hide"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+    <record id="training_requirement_view_form" model="ir.ui.view">
+        <field name="name">healthcare.training.requirement.form</field>
+        <field name="model">healthcare.training.requirement</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_assignments" type="object" class="oe_stat_button" icon="fa-graduation-cap">
+                            <field name="assignment_count" widget="statinfo" string="Assignments"/>
+                        </button>
+                    </div>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="oe_title"><h1><field name="name" placeholder="e.g. ICU Nurse - ACLS"/></h1></div>
+                    <group>
+                        <group string="Applies to">
+                            <field name="job_id"/>
+                            <field name="employee_category"/>
+                            <field name="department_id"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                        <group string="Certification">
+                            <field name="credential_type_id"/>
+                            <field name="mandatory"/>
+                            <field name="renewal_period_months"/>
+                            <field name="due_days"/>
+                            <field name="auto_verify_credential"/>
+                        </group>
+                    </group>
+                    <div class="text-muted">
+                        Empty criteria match every employee. Completing the training renews the employee's
+                        credential of the selected certification type.
+                    </div>
+                    <field name="note" placeholder="Notes..."/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="training_requirement_view_search" model="ir.ui.view">
+        <field name="name">healthcare.training.requirement.search</field>
+        <field name="model">healthcare.training.requirement</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="credential_type_id"/>
+                <field name="job_id"/>
+                <field name="department_id"/>
+                <filter name="mandatory" string="Mandatory" domain="[('mandatory', '=', True)]"/>
+                <separator/>
+                <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter name="group_type" string="Certification" context="{'group_by': 'credential_type_id'}"/>
+                    <filter name="group_category" string="Healthcare Category" context="{'group_by': 'employee_category'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_training_requirement" model="ir.actions.act_window">
+        <field name="name">Training Requirement Matrix</field>
+        <field name="res_model">healthcare.training.requirement</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Define which certification each job, category or department needs</p>
+            <p>e.g. Nurse: BLS, ICU nurse: ACLS, Radiology technician: Radiation Safety.</p>
+        </field>
+    </record>
+    <record id="action_generate_training_assignments" model="ir.actions.server">
+        <field name="name">Generate training assignments</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="binding_model_id" ref="hr.model_hr_employee"/>
+        <field name="group_ids" eval="[(4, ref('healthcare_hr_core.group_hc_training_officer'))]"/>
+        <field name="state">code</field>
+        <field name="code">env['healthcare.training.assignment']._generate_assignments(records)</field>
+    </record>
+</odoo>

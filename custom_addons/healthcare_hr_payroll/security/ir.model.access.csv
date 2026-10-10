@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_payroll_input_officer,payroll.input.officer,model_healthcare_payroll_input,healthcare_hr_core.group_hc_payroll_officer,1,1,1,1
+access_payroll_input_generate_wizard,payroll.input.generate.wizard,model_healthcare_payroll_input_generate_wizard,healthcare_hr_core.group_hc_payroll_officer,1,1,1,1

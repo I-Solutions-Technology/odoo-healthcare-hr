@@ -1,0 +1,712 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_credentials
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. module: healthcare_hr_credentials
+#. odoo-python
+#: code:addons/healthcare_hr_credentials/models/credential.py:0
+msgid "%(type)s EXPIRED: %(name)s"
+msgstr "%(type)s منتهي: %(name)s"
+
+#. module: healthcare_hr_credentials
+#. odoo-python
+#: code:addons/healthcare_hr_credentials/models/credential.py:0
+msgid "%(type)s expires in %(days)s days: %(name)s"
+msgstr "%(type)s ينتهي خلال %(days)s يوماً: %(name)s"
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.hr_employee_view_form_credentials
+msgid "<span class=\"o_stat_text\">Credentials</span>"
+msgstr "<span class=\"o_stat_text\">الاعتمادات المهنية</span>"
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_acls
+msgid "ACLS"
+msgstr "ACLS"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__active
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: healthcare_hr_credentials
+#. odoo-python
+#: code:addons/healthcare_hr_credentials/models/credential.py:0
+msgid "Add the credential number or a scanned document before verifying."
+msgstr "أضف رقم الاعتماد المهني أو مستنداً ممسوحاً ضوئياً قبل التحقق."
+
+#. module: healthcare_hr_credentials
+#: model:ir.ui.menu,name:healthcare_hr_credentials.menu_credential_all
+msgid "All Credentials"
+msgstr "جميع الاعتمادات المهنية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential_type__blocks_shift_assignment
+msgid ""
+"An employee without a valid credential of this type cannot be published on a"
+" shift."
+msgstr "لا يمكن نشر موظف على وردية ما لم يكن لديه اعتماد مهني ساري من هذا النوع."
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_bls
+msgid "BLS"
+msgstr "BLS"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__blocks_shift_assignment
+msgid "Blocks Shift Assignment"
+msgstr "يمنع تكليف الوردية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__branch_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Branch"
+msgstr "الفرع"
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Certifications"
+msgstr "الشهادات"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential_type__credential_category__certification
+msgid "Clinical Certification"
+msgstr "شهادة سريرية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__clinical_only
+msgid "Clinical Only"
+msgstr "السريريون فقط"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__code
+msgid "Code"
+msgstr "الرمز"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__confidential
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__confidential
+msgid "Confidential"
+msgstr "سري"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__credential_category
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__credential_category
+msgid "Credential Category"
+msgstr "فئة الاعتماد المهني"
+
+#. module: healthcare_hr_credentials
+#: model:ir.actions.act_window,name:healthcare_hr_credentials.action_credential_compliance_report
+#: model:ir.ui.menu,name:healthcare_hr_credentials.menu_report_credential_compliance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_pivot
+msgid "Credential Compliance"
+msgstr "الامتثال للاعتمادات المهنية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_hr_employee__credential_count
+msgid "Credential Count"
+msgstr "عدد الاعتمادات المهنية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_hr_employee__credential_issue_count
+msgid "Credential Issue Count"
+msgstr "عدد مشكلات الاعتمادات المهنية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__credential_number
+msgid "Credential Number"
+msgstr "رقم الاعتماد المهني"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model,name:healthcare_hr_credentials.model_healthcare_hr_credential_type
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__credential_type_id
+msgid "Credential Type"
+msgstr "نوع الاعتماد المهني"
+
+#. module: healthcare_hr_credentials
+#: model:ir.actions.act_window,name:healthcare_hr_credentials.action_credential_type
+#: model:ir.ui.menu,name:healthcare_hr_credentials.menu_config_credential_type
+msgid "Credential Types"
+msgstr "أنواع الاعتمادات المهنية"
+
+#. module: healthcare_hr_credentials
+#. odoo-python
+#: code:addons/healthcare_hr_credentials/models/hr_employee.py:0
+#: model:ir.actions.act_window,name:healthcare_hr_credentials.action_credential
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_hr_employee__credential_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_graph
+msgid "Credentials"
+msgstr "الاعتمادات المهنية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__days_to_expiry
+msgid "Days To Expiry"
+msgstr "الأيام المتبقية حتى الانتهاء"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__default_alert_days
+msgid "Default Alert Days"
+msgstr "أيام التنبيه الافتراضية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__department_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Department"
+msgstr "القسم"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_hr_employee__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__attachment_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_form
+msgid "Documents"
+msgstr "المستندات"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model,name:healthcare_hr_credentials.model_hr_employee
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Employee Category"
+msgstr "فئة الموظف"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model,name:healthcare_hr_credentials.model_healthcare_hr_credential
+msgid "Employee Credential"
+msgstr "الاعتماد المهني للموظف"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential__status__expired
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Expired"
+msgstr "منتهي"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_hr_employee__credential_issue_count
+msgid "Expired, missing or unverified credentials."
+msgstr "اعتمادات مهنية منتهية أو غير متوفرة أو لم يتم التحقق منها."
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential__status__expiring
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Expiring"
+msgstr "قارب على الانتهاء"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__expiry_date
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Expiry Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential_type__default_alert_days
+msgid "First reminder before expiry. Empty = company thresholds (Settings)."
+msgstr "التذكير الأول قبل الانتهاء. فارغ = حدود الشركة (الإعدادات)."
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__message_follower_ids
+msgid "Followers"
+msgstr "المتابِعون"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابِعون (الشركاء)"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome مثل fa-tasks"
+
+#. module: healthcare_hr_credentials
+#: model:ir.actions.server,name:healthcare_hr_credentials.action_generate_missing_credentials
+msgid "Generate missing mandatory credentials"
+msgstr "إنشاء الاعتمادات المهنية الإلزامية غير المتوفرة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__has_expiry
+msgid "Has Expiry"
+msgstr "له تاريخ انتهاء"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__has_message
+msgid "Has Message"
+msgstr "يحتوي على رسالة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__employee_category
+msgid "Healthcare Category"
+msgstr "الفئة الصحية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.actions.server,name:healthcare_hr_credentials.ir_cron_credential_alerts_ir_actions_server
+msgid "Healthcare HR: credential status and expiry alerts"
+msgstr "الموارد البشرية الصحية: تنبيهات حالة الاعتمادات المهنية وانتهائها"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__id
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__id
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_hr_employee__id
+msgid "ID"
+msgstr "ID"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__activity_exception_icon
+msgid "Icon"
+msgstr "الأيقونة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "الأيقونة للإشارة إلى نشاط استثنائي."
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential_type__credential_category__identity
+msgid "Identity Document"
+msgstr "وثيقة الهوية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا كان محدداً، فهناك رسائل جديدة تتطلب انتباهك."
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا كان محدداً، فقد حدث خطأ في تسليم بعض الرسائل."
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential_type__clinical_only
+msgid "In scope: clinical employees only (doctors, nurses, technicians)."
+msgstr "النطاق: الموظفون السريريون فقط (الأطباء والممرضون والفنيون)."
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_infection_control
+msgid "Infection Control"
+msgstr "مكافحة العدوى"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential_type__credential_category__insurance
+msgid "Insurance"
+msgstr "التأمين"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__message_is_follower
+msgid "Is Follower"
+msgstr "متابِع"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__issue_date
+msgid "Issue Date"
+msgstr "تاريخ الإصدار"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__issuing_authority
+msgid "Issuing Authority"
+msgstr "جهة الإصدار"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: healthcare_hr_credentials
+#: model:ir.actions.act_window,name:healthcare_hr_credentials.action_license_expiry_report
+#: model:ir.ui.menu,name:healthcare_hr_credentials.menu_report_license_expiry
+msgid "License Expiry"
+msgstr "انتهاء الترخيص"
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Licenses"
+msgstr "التراخيص"
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_malpractice_insurance
+msgid "Malpractice Insurance"
+msgstr "تأمين الأخطاء الطبية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__mandatory
+msgid "Mandatory"
+msgstr "إلزامي"
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_medical_license
+msgid "Medical License"
+msgstr "ترخيص مزاولة المهنة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential__status__missing
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Missing"
+msgstr "غير متوفر"
+
+#. module: healthcare_hr_credentials
+#. odoo-python
+#: code:addons/healthcare_hr_credentials/models/credential.py:0
+msgid "Missing mandatory %(type)s: %(name)s"
+msgstr "%(type)s إلزامي غير متوفر: %(name)s"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "موعد نشاطي النهائي"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__name
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: healthcare_hr_credentials
+#: model:ir.actions.act_window,name:healthcare_hr_credentials.action_credential_attention
+#: model:ir.ui.menu,name:healthcare_hr_credentials.menu_credential_attention
+msgid "Needs Attention"
+msgstr "يحتاج إلى متابعة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "فعالية تقويم النشاط التالي"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__notes
+msgid "Notes"
+msgstr "الملاحظات"
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_form
+msgid "Notes..."
+msgstr "ملاحظات..."
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential_type__credential_category__other
+msgid "Other"
+msgstr "أخرى"
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_pals
+msgid "PALS"
+msgstr "PALS"
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_passport
+msgid "Passport"
+msgstr "جواز السفر"
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_prof_classification
+msgid "Professional Classification"
+msgstr "التصنيف المهني"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential_type__credential_category__license
+msgid "Professional License"
+msgstr "الترخيص المهني"
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_radiation_safety
+msgid "Radiation Safety"
+msgstr "السلامة الإشعاعية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential_type__credential_category__registration
+msgid "Registration / Classification"
+msgstr "التسجيل / التصنيف"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__job_ids
+msgid "Required for Jobs"
+msgstr "مطلوب للوظائف"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential_type__mandatory
+msgid "Required for the employees in scope (see Jobs / Clinical only)."
+msgstr "مطلوب للموظفين ضمن النطاق (انظر الوظائف / السريريون فقط)."
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_type_view_form
+msgid "Requirement"
+msgstr "المتطلب"
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_form
+msgid "Reset Verification"
+msgstr "إعادة تعيين التحقق"
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_residency_permit
+msgid "Residency Permit"
+msgstr "تصريح الإقامة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential_type__job_ids
+msgid ""
+"Restrict the requirement to these positions. Empty = every employee in "
+"scope."
+msgstr "قصر المتطلب على هذه الوظائف. فارغ = جميع الموظفين ضمن النطاق."
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل النصية"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential_type__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_specialty_registration
+msgid "Specialty Registration"
+msgstr "تسجيل التخصص"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__status
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخرة: تجاوز تاريخ الاستحقاق\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط لها: أنشطة مستقبلية."
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.constraint,message:healthcare_hr_credentials.constraint_healthcare_hr_credential_type_code_uniq
+msgid "The credential type code must be unique."
+msgstr "يجب أن يكون رمز نوع الاعتماد المهني فريداً."
+
+#. module: healthcare_hr_credentials
+#. odoo-python
+#: code:addons/healthcare_hr_credentials/models/credential.py:0
+msgid "The expiry date cannot be before the issue date."
+msgstr "لا يمكن أن يكون تاريخ الانتهاء قبل تاريخ الإصدار."
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Type"
+msgstr "النوع"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي في السجل."
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential__status__under_verification
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Under Verification"
+msgstr "قيد التحقق"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential__status__valid
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_search
+msgid "Valid"
+msgstr "ساري"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__verification_date
+msgid "Verification Date"
+msgstr "تاريخ التحقق"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__verified
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_form
+msgid "Verified"
+msgstr "تم التحقق"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__verified_by
+msgid "Verified By"
+msgstr "تم التحقق بواسطة"
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_view_form
+msgid "Verify"
+msgstr "تحقق"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential__confidential
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential_type__confidential
+msgid "Visible to Healthcare HR officers only (not to department managers)."
+msgstr "مرئي لمسؤولي الموارد البشرية الصحية فقط (وليس لمديري الأقسام)."
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,field_description:healthcare_hr_credentials.field_healthcare_hr_credential__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع الإلكتروني"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields,help:healthcare_hr_credentials.field_healthcare_hr_credential__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع الإلكتروني"
+
+#. module: healthcare_hr_credentials
+#: model:ir.model.fields.selection,name:healthcare_hr_credentials.selection__healthcare_hr_credential_type__credential_category__permit
+msgid "Work / Residency Permit"
+msgstr "تصريح العمل / الإقامة"
+
+#. module: healthcare_hr_credentials
+#: model:healthcare.hr.credential.type,name:healthcare_hr_credentials.credential_type_work_permit
+msgid "Work Permit"
+msgstr "تصريح العمل"
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.credential_type_view_form
+msgid "e.g. ACLS"
+msgstr "مثال: ACLS"
+
+#. module: healthcare_hr_credentials
+#. odoo-python
+#: code:addons/healthcare_hr_credentials/models/hr_employee.py:0
+msgid "employee_id"
+msgstr "employee_id"
+
+#. module: healthcare_hr_credentials
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_credentials.hr_employee_view_form_credentials
+msgid "to fix"
+msgstr "بحاجة إلى معالجة"

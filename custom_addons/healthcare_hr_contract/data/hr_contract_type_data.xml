@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Permanent and Temporary are provided by the standard hr module (hr.contract_type_permanent / hr.contract_type_temporary) -->
+    <record id="contract_type_full_time" model="hr.contract.type">
+        <field name="name">Full-Time</field>
+        <field name="code">Full-Time</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="contract_type_part_time" model="hr.contract.type">
+        <field name="name">Part-Time</field>
+        <field name="code">Part-Time</field>
+        <field name="sequence">21</field>
+    </record>
+    <record id="contract_type_hourly" model="hr.contract.type">
+        <field name="name">Hourly</field>
+        <field name="code">Hourly</field>
+        <field name="sequence">22</field>
+    </record>
+    <record id="contract_type_locum" model="hr.contract.type">
+        <field name="name">Locum Doctor</field>
+        <field name="code">Locum Doctor</field>
+        <field name="sequence">23</field>
+    </record>
+    <record id="contract_type_visiting" model="hr.contract.type">
+        <field name="name">Visiting Doctor</field>
+        <field name="code">Visiting Doctor</field>
+        <field name="sequence">24</field>
+    </record>
+    <record id="contract_type_consultant" model="hr.contract.type">
+        <field name="name">Consultant</field>
+        <field name="code">Consultant</field>
+        <field name="sequence">25</field>
+    </record>
+    <record id="contract_type_trainee" model="hr.contract.type">
+        <field name="name">Trainee</field>
+        <field name="code">Trainee</field>
+        <field name="sequence">26</field>
+    </record>
+    <record id="contract_type_intern" model="hr.contract.type">
+        <field name="name">Intern</field>
+        <field name="code">Intern</field>
+        <field name="sequence">27</field>
+    </record>
+    <record id="contract_type_outsourced" model="hr.contract.type">
+        <field name="name">Outsourced</field>
+        <field name="code">Outsourced</field>
+        <field name="sequence">28</field>
+    </record>
+</odoo>

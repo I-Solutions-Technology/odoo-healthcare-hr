@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="shift_template_view_list" model="ir.ui.view">
+        <field name="name">healthcare.shift.template.list</field>
+        <field name="model">healthcare.shift.template</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="shift_type"/>
+                <field name="start_time" widget="float_time"/>
+                <field name="end_time" widget="float_time"/>
+                <field name="duration_hours" widget="float_time"/>
+                <field name="break_minutes"/>
+                <field name="night_shift"/>
+                <field name="minimum_rest_hours"/>
+                <field name="branch_id" optional="hide"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+    <record id="shift_template_view_form" model="ir.ui.view">
+        <field name="name">healthcare.shift.template.form</field>
+        <field name="model">healthcare.shift.template</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="oe_title"><h1><field name="name" placeholder="e.g. 12 Hour Night"/></h1></div>
+                    <group>
+                        <group string="Timing">
+                            <field name="code"/>
+                            <field name="shift_type"/>
+                            <field name="start_time" widget="float_time"/>
+                            <field name="end_time" widget="float_time"/>
+                            <field name="duration_hours" widget="float_time"/>
+                            <field name="crosses_midnight"/>
+                            <field name="break_minutes"/>
+                            <field name="paid_hours" widget="float_time"/>
+                            <field name="grace_minutes"/>
+                        </group>
+                        <group string="Rules">
+                            <field name="night_shift"/>
+                            <field name="weekend_shift"/>
+                            <field name="public_holiday_shift"/>
+                            <field name="overtime_allowed"/>
+                            <field name="minimum_rest_hours"/>
+                            <field name="job_ids" widget="many2many_tags"/>
+                            <field name="branch_id"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="color" widget="color_picker"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_shift_template" model="ir.actions.act_window">
+        <field name="name">Shift Templates</field>
+        <field name="res_model">healthcare.shift.template</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

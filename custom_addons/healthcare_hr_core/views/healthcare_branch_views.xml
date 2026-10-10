@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="healthcare_branch_view_list" model="ir.ui.view">
+        <field name="name">healthcare.hr.branch.list</field>
+        <field name="model">healthcare.hr.branch</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="complete_name"/>
+                <field name="code"/>
+                <field name="branch_type"/>
+                <field name="manager_id" widget="many2one_avatar_employee" optional="show"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="healthcare_branch_view_form" model="ir.ui.view">
+        <field name="name">healthcare.hr.branch.form</field>
+        <field name="model">healthcare.hr.branch</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_employees" type="object" class="oe_stat_button" icon="fa-users">
+                            <field name="employee_count" widget="statinfo" string="Employees"/>
+                        </button>
+                    </div>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="e.g. Al Noor Hospital - North Branch"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                            <field name="branch_type"/>
+                            <field name="parent_id"/>
+                        </group>
+                        <group>
+                            <field name="manager_id" widget="many2one_avatar_employee"/>
+                            <field name="address_id"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Departments" name="departments">
+                            <field name="department_ids" readonly="1">
+                                <list>
+                                    <field name="complete_name"/>
+                                    <field name="manager_id"/>
+                                    <field name="healthcare_department_type"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Branches" name="branches" invisible="branch_type == 'branch'">
+                            <field name="child_ids" readonly="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="healthcare_branch_view_search" model="ir.ui.view">
+        <field name="name">healthcare.hr.branch.search</field>
+        <field name="model">healthcare.hr.branch</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="code"/>
+                <filter name="facilities" string="Hospitals &amp; Clinics" domain="[('parent_id', '=', False)]"/>
+                <separator/>
+                <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter name="group_type" string="Type" context="{'group_by': 'branch_type'}"/>
+                    <filter name="group_company" string="Company" context="{'group_by': 'company_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_healthcare_branch" model="ir.actions.act_window">
+        <field name="name">Facilities &amp; Branches</field>
+        <field name="res_model">healthcare.hr.branch</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first hospital, clinic or branch</p>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_employee_view_form_healthcare_contract" model="ir.ui.view">
+        <field name="name">hr.employee.form.healthcare.contract</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='payroll_information']/group[@name='payroll_group']" position="inside">
+                <group name="hc_contract" string="Healthcare Contract Terms">
+                    <field name="renewal_type"/>
+                    <field name="medical_license_required"/>
+                    <field name="professional_license_required"/>
+                    <field name="insurance_required"/>
+                    <label for="probation_status" string="Probation"/>
+                    <div class="o_row">
+                        <field name="probation_status" readonly="1"/>
+                    </div>
+                    <field name="probation_start_date"/>
+                    <field name="trial_date_end" string="Probation End"/>
+                    <div colspan="2" class="d-flex gap-2">
+                        <button name="action_hc_start_probation" type="object" string="Start Probation"
+                                class="btn-secondary" invisible="probation_status not in ('none', 'draft')"/>
+                        <button name="action_hc_probation_review" type="object" string="Probation Review"
+                                class="btn-secondary" invisible="probation_status in ('none', 'draft', 'passed')"/>
+                        <button name="action_hc_renew_contract" type="object" string="Renew Contract"
+                                class="btn-secondary" invisible="not contract_date_end or renewal_type == 'non_renewable'"/>
+                    </div>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_version_view_list_healthcare" model="ir.ui.view">
+        <field name="name">hr.version.list.healthcare</field>
+        <field name="model">hr.version</field>
+        <field name="inherit_id" ref="hr.hr_version_list_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='contract_type_id']" position="after">
+                <field name="renewal_type" optional="show"/>
+                <field name="probation_status" optional="show" widget="badge"
+                       decoration-warning="probation_status in ('review_due', 'extended')"
+                       decoration-danger="probation_status == 'terminate_recommended'"
+                       decoration-success="probation_status == 'passed'"/>
+                <field name="trial_date_end" string="Probation End" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_version_view_search_healthcare" model="ir.ui.view">
+        <field name="name">hr.version.search.healthcare</field>
+        <field name="model">hr.version</field>
+        <field name="inherit_id" ref="hr.hr_version_search_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='expired_contracts']" position="after">
+                <filter string="Expiring in 60 days" name="hc_expiring"
+                        domain="[('contract_date_end', '!=', False), ('contract_date_end', '&gt;=', 'today'),
+                                 ('contract_date_end', '&lt;=', (context_today() + relativedelta(days=60)).strftime('%Y-%m-%d'))]"/>
+                <filter string="On Probation" name="hc_on_probation"
+                        domain="[('probation_status', 'in', ('started', 'review_due', 'extended', 'reviewed'))]"/>
+                <filter string="Probation Review Due" name="hc_review_due" domain="[('probation_status', '=', 'review_due')]"/>
+            </xpath>
+            <xpath expr="//filter[@name='group_by_department']" position="after">
+                <filter string="Contract Type" name="hc_group_contract_type" context="{'group_by': 'contract_type_id'}"/>
+                <filter string="Probation Status" name="hc_group_probation" context="{'group_by': 'probation_status'}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_healthcare_contracts" model="ir.actions.act_window">
+        <field name="name">Contracts</field>
+        <field name="res_model">hr.version</field>
+        <field name="view_mode">list,pivot,graph</field>
+        <field name="domain">[('employee_id', '!=', False), ('contract_date_start', '!=', False)]</field>
+        <field name="context">{'search_default_running_contract': 1}</field>
+        <field name="search_view_id" ref="hr.hr_version_search_view"/>
+    </record>
+    <record id="action_healthcare_contract_expiry" model="ir.actions.act_window">
+        <field name="name">Contract Expiry</field>
+        <field name="res_model">hr.version</field>
+        <field name="view_mode">list,pivot</field>
+        <field name="domain">[('employee_id', '!=', False), ('contract_date_end', '!=', False)]</field>
+        <field name="context">{'search_default_hc_expiring': 1}</field>
+    </record>
+    <record id="action_healthcare_probation" model="ir.actions.act_window">
+        <field name="name">Probation Expiry</field>
+        <field name="res_model">hr.version</field>
+        <field name="view_mode">list,pivot</field>
+        <field name="domain">[('employee_id', '!=', False)]</field>
+        <field name="context">{'search_default_hc_on_probation': 1}</field>
+    </record>
+</odoo>

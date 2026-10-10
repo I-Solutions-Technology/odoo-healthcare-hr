@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="probation_review_view_list" model="ir.ui.view">
+        <field name="name">healthcare.hr.probation.review.list</field>
+        <field name="model">healthcare.hr.probation.review</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="employee_id" widget="many2one_avatar_employee"/>
+                <field name="branch_id" optional="show"/>
+                <field name="department_id" optional="show"/>
+                <field name="review_date"/>
+                <field name="reviewer_id" optional="show"/>
+                <field name="score"/>
+                <field name="recommendation"/>
+                <field name="state" widget="badge" decoration-info="state == 'submitted'" decoration-success="state == 'approved'"/>
+            </list>
+        </field>
+    </record>
+    <record id="probation_review_view_form" model="ir.ui.view">
+        <field name="name">healthcare.hr.probation.review.form</field>
+        <field name="model">healthcare.hr.probation.review</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_submit" type="object" string="Submit" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_approve" type="object" string="Approve" class="btn-primary" invisible="state != 'submitted'"
+                            groups="healthcare_hr_core.group_hc_officer"/>
+                    <button name="action_draft" type="object" string="Reset to Draft" invisible="state not in ('submitted', 'cancel')"/>
+                    <button name="action_cancel" type="object" string="Cancel" invisible="state in ('approved', 'cancel')"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,submitted,approved"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name" readonly="1"/></h1></div>
+                    <div class="alert alert-info" role="alert" invisible="recommendation != 'terminate'">
+                        A termination recommendation never ends the employment automatically: HR receives an activity to decide and open the exit process.
+                    </div>
+                    <group>
+                        <group>
+                            <field name="employee_id" readonly="state != 'draft'"/>
+                            <field name="version_id" readonly="state != 'draft'"/>
+                            <field name="probation_end_date"/>
+                            <field name="reviewer_id"/>
+                            <field name="review_date"/>
+                        </group>
+                        <group>
+                            <field name="attendance_score" readonly="state != 'draft'"/>
+                            <field name="competency_score" readonly="state != 'draft'"/>
+                            <field name="conduct_score" readonly="state != 'draft'"/>
+                            <field name="score" readonly="state != 'draft'"/>
+                            <field name="recommendation" readonly="state != 'draft'"/>
+                            <field name="extension_end_date" invisible="recommendation != 'extend'"
+                                   required="recommendation == 'extend'" readonly="state != 'draft'"/>
+                            <field name="approved_by" invisible="not approved_by"/>
+                        </group>
+                    </group>
+                    <field name="comments" placeholder="Strengths, gaps and objectives..."/>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+    <record id="probation_review_view_search" model="ir.ui.view">
+        <field name="name">healthcare.hr.probation.review.search</field>
+        <field name="model">healthcare.hr.probation.review</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="employee_id"/>
+                <field name="department_id"/>
+                <filter name="to_approve" string="To Approve" domain="[('state', '=', 'submitted')]"/>
+                <group>
+                    <filter name="group_recommendation" string="Recommendation" context="{'group_by': 'recommendation'}"/>
+                    <filter name="group_branch" string="Branch" context="{'group_by': 'branch_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_probation_review" model="ir.actions.act_window">
+        <field name="name">Probation Reviews</field>
+        <field name="res_model">healthcare.hr.probation.review</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

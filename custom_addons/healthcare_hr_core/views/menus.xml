@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_root" name="Healthcare HR" sequence="70"
+              web_icon="healthcare_hr_core,static/description/icon.png"
+              groups="group_hc_user,group_hc_self_service"/>
+
+    <menuitem id="menu_dashboard" name="Dashboard" parent="menu_root" sequence="1"/>
+    <menuitem id="menu_employees" name="Employees" parent="menu_root" sequence="10" groups="group_hc_user"/>
+    <menuitem id="menu_employee_list" name="Employees" parent="menu_employees" action="action_healthcare_employee" sequence="1"/>
+    <menuitem id="menu_onboarding" name="Onboarding" parent="menu_employees" action="action_onboarding" sequence="20"/>
+    <menuitem id="menu_practitioner_link" name="Practitioner Links" parent="menu_employees" action="action_practitioner_link" sequence="30" groups="group_hc_officer"/>
+
+    <menuitem id="menu_contracts" name="Contracts" parent="menu_root" sequence="20" groups="group_hc_officer"/>
+    <menuitem id="menu_attendance" name="Attendance" parent="menu_root" sequence="30"/>
+    <menuitem id="menu_workforce" name="Workforce Planning" parent="menu_root" sequence="40"/>
+    <menuitem id="menu_leave" name="Leave" parent="menu_root" sequence="50"/>
+    <menuitem id="menu_payroll" name="Payroll" parent="menu_root" sequence="60" groups="group_hc_payroll_officer"/>
+    <menuitem id="menu_credentials" name="Credentials" parent="menu_root" sequence="70"/>
+    <menuitem id="menu_training" name="Training" parent="menu_root" sequence="80"/>
+    <menuitem id="menu_recruitment" name="Recruitment" parent="menu_root" sequence="90" groups="group_hc_recruitment_officer,group_hc_officer"/>
+    <menuitem id="menu_performance" name="Performance" parent="menu_root" sequence="100"/>
+    <menuitem id="menu_exit" name="Employee Exit" parent="menu_root" sequence="110"/>
+    <menuitem id="menu_reports" name="Reports" parent="menu_root" sequence="120" groups="group_hc_user"/>
+    <menuitem id="menu_report_employee_master" name="Employee Master Data" parent="menu_reports" action="action_healthcare_employee_master" sequence="1"/>
+
+    <menuitem id="menu_config" name="Configuration" parent="menu_root" sequence="200" groups="group_hc_manager,group_hc_admin"/>
+    <menuitem id="menu_config_settings" name="Settings" parent="menu_config" action="action_healthcare_settings" sequence="0" groups="group_hc_manager"/>
+    <menuitem id="menu_config_organisation" name="Organisation" parent="menu_config" sequence="1"/>
+    <menuitem id="menu_config_branch" name="Facilities &amp; Branches" parent="menu_config_organisation" action="action_healthcare_branch" sequence="1"/>
+    <menuitem id="menu_config_department" name="Departments" parent="menu_config_organisation" action="action_healthcare_department" sequence="2"/>
+    <menuitem id="menu_config_unit" name="Units" parent="menu_config_organisation" action="action_healthcare_unit" sequence="3"/>
+    <menuitem id="menu_config_job" name="Job Positions" parent="menu_config_organisation" action="action_healthcare_job" sequence="4"/>
+    <menuitem id="menu_config_specialty" name="Medical Specialties" parent="menu_config_organisation" action="action_medical_specialty" sequence="5"/>
+    <menuitem id="menu_config_onboarding" name="Onboarding Items" parent="menu_config_organisation" action="action_onboarding_item" sequence="10"/>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Funnel = applications per pipeline stage, built on the standard recruitment analysis views -->
+    <record id="action_recruitment_funnel" model="ir.actions.act_window">
+        <field name="name">Recruitment Funnel</field>
+        <field name="res_model">hr.applicant</field>
+        <field name="view_mode">graph,pivot,list</field>
+        <field name="search_view_id" ref="hr_recruitment.hr_applicant_view_search"/>
+        <field name="view_ids" eval="[
+            (5, 0, 0),
+            (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_recruitment.hr_applicant_view_graph')}),
+            (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_recruitment.hr_applicant_view_pivot')})]"/>
+        <field name="context">{'search_default_stage': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No application yet</p>
+            <p>Applications by pipeline stage, from application to credential verification and hiring.</p>
+        </field>
+    </record>
+</odoo>

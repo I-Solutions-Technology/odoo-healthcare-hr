@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="ir_cron_process_logs" model="ir.cron">
+        <field name="name">Healthcare HR: process biometric punches</field>
+        <field name="model_id" ref="model_healthcare_biometric_log"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_process_pending(limit=5000)</field>
+        <field name="interval_number">10</field>
+        <field name="interval_type">minutes</field>
+    </record>
+    <record id="ir_cron_pull_devices" model="ir.cron">
+        <field name="name">Healthcare HR: pull biometric devices</field>
+        <field name="model_id" ref="model_healthcare_biometric_device"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_pull()</field>
+        <field name="interval_number">15</field>
+        <field name="interval_type">minutes</field>
+    </record>
+</odoo>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <function model="healthcare.attendance.reconciliation" name="_hc_load_demo_attendance"/>
+</odoo>

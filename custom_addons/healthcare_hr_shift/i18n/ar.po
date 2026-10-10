@@ -1,0 +1,2171 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_shift
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/wizard/shift_publish_wizard.py:0
+msgid " (blocking)"
+msgstr " (مانع)"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/wizard/shift_publish_wizard.py:0
+msgid "%(date)s  %(rule)s: %(n)s/%(min)s%(block)s"
+msgstr "%(date)s  %(rule)s: %(n)s/%(min)s%(block)s"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "%(name)s (%(job)s) is not qualified for the \"%(shift)s\" shift."
+msgstr "%(name)s (%(job)s) غير مؤهل للوردية \"%(shift)s\"."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "%(name)s has no active contract on %(date)s (inactive or expired)."
+msgstr "لا يوجد لدى %(name)s عقد نشط بتاريخ %(date)s (غير نشط أو منتهي)."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "%(name)s has no valid %(types)s on %(date)s."
+msgstr "لا يوجد لدى %(name)s %(types)s ساري بتاريخ %(date)s."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid ""
+"%(name)s is assigned to branch %(branch)s at the same time (%(shift)s)."
+msgstr "%(name)s مسند إلى الفرع %(branch)s في نفس الوقت (%(shift)s)."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "%(name)s is on approved leave (%(type)s) from %(from)s to %(to)s."
+msgstr "%(name)s في إجازة معتمدة (%(type)s) من %(from)s إلى %(to)s."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid ""
+"%(name)s would work %(hours).1f h in the week of %(week)s (limit %(max).1f "
+"h)."
+msgstr "سيعمل %(name)s %(hours).1f ساعة في أسبوع %(week)s (الحد الأقصى %(max).1f ساعة)."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_assignment.py:0
+msgid "%(ok)s shift(s) published, %(ko)s in conflict"
+msgstr "تم نشر %(ok)s وردية، و%(ko)s في حالة تعارض"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_swap.py:0
+msgid "%(target)s does not belong to %(dept)s."
+msgstr "%(target)s لا ينتمي إلى %(dept)s."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_swap.py:0
+msgid "%(target)s is not in the same healthcare category as %(req)s."
+msgstr "%(target)s ليس ضمن نفس الفئة الصحية التي ينتمي إليها %(req)s."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "%s is archived."
+msgstr "%s مؤرشف."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "%s is not authorised for 24-hour shifts."
+msgstr "%s غير مصرح له بورديات 24 ساعة."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "%s is not authorised to work on weekends."
+msgstr "%s غير مصرح له بالعمل في عطلة نهاية الأسبوع."
+
+#. module: healthcare_hr_shift
+#: model:healthcare.shift.template,name:healthcare_hr_shift.shift_template_day12
+msgid "12 Hour Day"
+msgstr "نهارية 12 ساعة"
+
+#. module: healthcare_hr_shift
+#: model:healthcare.shift.template,name:healthcare_hr_shift.shift_template_night12
+msgid "12 Hour Night"
+msgstr "ليلية 12 ساعة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_template__shift_type__twelve_hour
+msgid "12 Hours"
+msgstr "12 ساعة"
+
+#. module: healthcare_hr_shift
+#: model:healthcare.shift.template,name:healthcare_hr_shift.shift_template_h24
+msgid "24 Hour"
+msgstr "24 ساعة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_template__shift_type__twenty_four_hour
+msgid "24 Hours"
+msgstr "24 ساعة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_hr_employee__allow_24h_shift
+msgid "24-hour Shifts Allowed"
+msgstr "مسموح بورديات 24 ساعة"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_publish_wizard_view_form
+msgid "<strong>Coverage shortages (warning only):</strong>"
+msgstr "<strong>عجز في التغطية (تحذير فقط):</strong>"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_publish_wizard_view_form
+msgid "<strong>Publication blocked by coverage rules:</strong>"
+msgstr "<strong>النشر ممنوع بسبب قواعد التغطية:</strong>"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_res_company__hc_shift_match_window
+#: model:ir.model.fields,help:healthcare_hr_shift.field_res_config_settings__hc_shift_match_window
+msgid ""
+"A check-in up to this many hours before a shift start is matched to that "
+"shift."
+msgstr "يُطابَق تسجيل الدخول الذي يتم قبل بداية الوردية بهذا العدد من الساعات أو أقل مع تلك الوردية."
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_form
+msgid "Accept"
+msgstr "قبول"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__message_needaction
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_needaction
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__message_needaction
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__active
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__activity_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__activity_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__activity_exception_decoration
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_exception_decoration
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__activity_exception_decoration
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__activity_state
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_state
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__activity_state
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__activity_type_icon
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_type_icon
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__activity_type_icon
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+msgid "Actual"
+msgstr "الفعلي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__actual_check_in
+msgid "Actual Check In"
+msgstr "تسجيل الدخول الفعلي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__actual_check_out
+msgid "Actual Check Out"
+msgstr "تسجيل الخروج الفعلي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__actual_worked_hours
+msgid "Actual Worked Hours"
+msgstr "ساعات العمل الفعلية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__administrative
+msgid "Administrative"
+msgstr "إداري"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_oncall_view_list
+msgid "Allowance"
+msgstr "البدل"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__allowance_amount
+msgid "Allowance Amount"
+msgstr "مبلغ البدل"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__job_ids
+msgid "Allowed Jobs"
+msgstr "الوظائف المسموح بها"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_swap__state__applied
+msgid "Applied"
+msgstr "مطبق"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_oncall_view_form
+msgid "Approve"
+msgstr "اعتماد"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_form
+msgid "Approve & Apply"
+msgstr "اعتماد وتطبيق"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+msgid "Approve Work"
+msgstr "اعتماد العمل"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_assignment__state__approved
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_oncall__state__approved
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Approved"
+msgstr "معتمد"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__overtime_hours
+msgid "Approved Overtime"
+msgstr "العمل الإضافي المعتمد"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/hr_leave.py:0
+msgid "Approved leave %(leave)s overlaps this shift."
+msgstr "الإجازة المعتمدة %(leave)s تتداخل مع هذه الوردية."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_assignment.py:0
+msgid "Approved or payroll-posted shifts cannot be cancelled."
+msgstr "لا يمكن إلغاء الورديات المعتمدة أو المرحّلة للرواتب."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_assignment.py:0
+msgid ""
+"Approved or payroll-posted shifts cannot be modified. Reset them first "
+"(payroll-posted shifts cannot be reset)."
+msgstr "لا يمكن تعديل الورديات المعتمدة أو المرحّلة للرواتب. أعد تعيينها أولاً (لا يمكن إعادة تعيين الورديات المرحّلة للرواتب)."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__payroll_overtime_hours
+msgid "Approved overtime after the payroll rounding policy."
+msgstr "العمل الإضافي المعتمد بعد تطبيق سياسة التقريب الخاصة بالرواتب."
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_template_view_form
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__assigned
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.coverage_snapshot_view_list
+msgid "Assigned"
+msgstr "مسند"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__message_attachment_count
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_attachment_count
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__message_attachment_count
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_company__hc_shift_match_window
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_config_settings__hc_shift_match_window
+msgid "Attendance Matching Window (h)"
+msgstr "نافذة مطابقة الحضور (ساعة)"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.res_config_settings_view_form_shift
+msgid "Attendance matching window (h)"
+msgstr "نافذة مطابقة الحضور (ساعة)"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__block_publication
+msgid "Block Publication"
+msgstr "منع النشر"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__blocking
+msgid "Blocking"
+msgstr "مانع"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__branch_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Branch"
+msgstr "الفرع"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__break_minutes
+msgid "Break Minutes"
+msgstr "دقائق الاستراحة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__call_center
+msgid "Call Center"
+msgstr "مركز الاتصال"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__call_end_datetime
+msgid "Call Ended At"
+msgstr "انتهى الاستدعاء في"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__called_in
+msgid "Called In"
+msgstr "تم الاستدعاء"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__actual_call_datetime
+msgid "Called In At"
+msgstr "وقت الاستدعاء"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_list
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_generate_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_oncall_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_publish_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_assignment__state__cancelled
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_oncall__state__cancelled
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_swap__state__cancelled
+msgid "Cancelled"
+msgstr "ملغي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__employee_category
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Category"
+msgstr "الفئة"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_list
+msgid "Check Conflicts"
+msgstr "فحص التعارضات"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.res_config_settings_view_form_shift
+msgid "Check-ins up to this long before a shift start are matched to it"
+msgstr "تُطابَق عمليات تسجيل الدخول التي تتم قبل بداية الوردية بهذه المدة أو أقل مع الوردية"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_swap.py:0
+msgid "Choose a different colleague."
+msgstr "اختر زميلاً آخر."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__code
+msgid "Code"
+msgstr "الرمز"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__target_employee_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_form
+msgid "Colleague"
+msgstr "الزميل"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_swap__state__accepted
+msgid "Colleague Accepted"
+msgstr "وافق الزميل"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__color
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__color
+msgid "Color"
+msgstr "اللون"
+
+#. module: healthcare_hr_shift
+#: model:ir.model,name:healthcare_hr_shift.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_assignment__state__completed
+msgid "Completed"
+msgstr "مكتمل"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_oncall__allowance_amount
+msgid "Computed by the allowance engine."
+msgstr "يُحتسب بواسطة محرك البدلات."
+
+#. module: healthcare_hr_shift
+#: model:ir.model,name:healthcare_hr_shift.model_res_config_settings
+msgid "Config Settings"
+msgstr "إعدادات التهيئة"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_assignment__state__confirmed
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_assignment__state__conflict
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Conflict"
+msgstr "تعارض"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__conflict_reason
+msgid "Conflict Reason"
+msgstr "سبب التعارض"
+
+#. module: healthcare_hr_shift
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_coverage
+msgid "Coverage"
+msgstr "التغطية"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_coverage_rule
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_config_coverage_rule
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_coverage_rule
+msgid "Coverage Rules"
+msgstr "قواعد التغطية"
+
+#. module: healthcare_hr_shift
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_coverage_snapshot
+msgid "Coverage Status"
+msgstr "حالة التغطية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__crosses_midnight
+msgid "Crosses Midnight"
+msgstr "تمتد بعد منتصف الليل"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_template__shift_type__custom
+msgid "Custom"
+msgstr "مخصص"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__date
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.coverage_snapshot_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__date_from
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__date_from
+msgid "Date From"
+msgstr "من تاريخ"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__date_to
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__date_to
+msgid "Date To"
+msgstr "إلى تاريخ"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__datetime_end
+msgid "Datetime End"
+msgstr "تاريخ ووقت النهاية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__datetime_start
+msgid "Datetime Start"
+msgstr "تاريخ ووقت البداية"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.res_config_settings_view_form_shift
+msgid ""
+"Days without working hours in the company working schedule are weekend days"
+msgstr "الأيام التي لا تحتوي على ساعات عمل في جدول عمل الشركة تُعد أيام عطلة نهاية الأسبوع"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_company__hc_default_rest_hours
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_config_settings__hc_default_rest_hours
+msgid "Default Minimum Rest (h)"
+msgstr "الحد الأدنى الافتراضي للراحة (ساعة)"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.res_config_settings_view_form_shift
+msgid "Default minimum rest (h)"
+msgstr "الحد الأدنى الافتراضي للراحة (ساعة)"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.actions.act_window,help:healthcare_hr_shift.action_coverage_rule
+msgid "Define minimum staffing, e.g. ICU / Night / Nurse &gt;= 8"
+msgstr "حدد الحد الأدنى من الكوادر، مثال: ICU / ليلية / ممرض &gt;= 8"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__department_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__department_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__department_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__department_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__department_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__department_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.coverage_snapshot_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_search
+msgid "Department"
+msgstr "القسم"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_validator__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_hr_leave__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_company__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__doctor
+msgid "Doctor"
+msgstr "طبيب"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Doctors"
+msgstr "الأطباء"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_oncall__state__done
+msgid "Done"
+msgstr "منتهي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_assignment__state__draft
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_oncall__state__draft
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_swap__state__draft
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__draft_count
+msgid "Draft Count"
+msgstr "عدد المسودات"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid ""
+"Duplicate assignment: %(name)s already has the \"%(shift)s\" shift on "
+"%(date)s."
+msgstr "تكليف مكرر: لدى %(name)s بالفعل الوردية \"%(shift)s\" بتاريخ %(date)s."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__duration_hours
+msgid "Duration Hours"
+msgstr "المدة بالساعات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_template__paid_hours
+msgid "Duration minus unpaid break."
+msgstr "المدة مخصوماً منها الاستراحة غير مدفوعة الأجر."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__effective_from
+msgid "Effective From"
+msgstr "سارية من"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__effective_to
+msgid "Effective To"
+msgstr "سارية حتى"
+
+#. module: healthcare_hr_shift
+#: model:ir.model,name:healthcare_hr_shift.model_hr_employee
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__employee_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__employee_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__employee_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__employee_category
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__employee_category
+msgid "Employee Category"
+msgstr "فئة الموظف"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_template__company_id
+msgid "Empty = shared by all companies."
+msgstr "فارغ = مشترك بين جميع الشركات."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__end_datetime
+msgid "End Datetime"
+msgstr "تاريخ ووقت النهاية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__end_time
+msgid "End Time"
+msgstr "وقت النهاية"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_assignment.py:0
+msgid "Enter an override reason for %s."
+msgstr "أدخل سبب التجاوز لـ %s."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_oncall.py:0
+msgid "Enter the call-in times of %s."
+msgstr "أدخل أوقات الاستدعاء لـ %s."
+
+#. module: healthcare_hr_shift
+#: model:healthcare.shift.template,name:healthcare_hr_shift.shift_template_evening
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_template__shift_type__evening
+msgid "Evening"
+msgstr "مسائية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__overtime_hours
+msgid "Extra time approved as overtime."
+msgstr "الوقت الإضافي المعتمد كعمل إضافي."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_template__overtime_allowed
+msgid "Extra time on this shift may be approved as overtime."
+msgstr "يجوز اعتماد الوقت الإضافي في هذه الوردية كعمل إضافي."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__finance
+msgid "Finance"
+msgstr "المالية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__message_follower_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_follower_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__message_follower_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__message_partner_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_partner_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__message_partner_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__activity_type_icon
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_type_icon
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_oncall__activity_type_icon
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_swap__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome، مثال: fa-tasks"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__friday
+msgid "Friday"
+msgstr "الجمعة"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_generate_wizard_view_form
+msgid "Generate Draft Shifts"
+msgstr "إنشاء ورديات مسودة"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_shift_generate_wizard
+#: model:ir.model,name:healthcare_hr_shift.model_healthcare_shift_generate_wizard
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_shift_generate
+msgid "Generate Shifts"
+msgstr "إنشاء الورديات"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/wizard/shift_generate_wizard.py:0
+msgid "Generated Shifts"
+msgstr "الورديات المُنشأة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__grace_minutes
+msgid "Grace Minutes"
+msgstr "دقائق فترة السماح"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__has_message
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__has_message
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__has_message
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__has_message
+msgid "Has Message"
+msgstr "يحتوي على رسالة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__employee_category
+msgid "Healthcare Category"
+msgstr "الفئة الصحية"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.server,name:healthcare_hr_shift.ir_cron_pending_swaps_ir_actions_server
+msgid "Healthcare HR: pending shift swap reminders"
+msgstr "الموارد البشرية الصحية: تذكيرات طلبات تبديل الوردية قيد الانتظار"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.server,name:healthcare_hr_shift.ir_cron_coverage_ir_actions_server
+msgid "Healthcare HR: shift coverage snapshots and shortage alerts"
+msgstr "الموارد البشرية الصحية: لقطات تغطية الورديات وتنبيهات العجز"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__holiday_hours
+msgid "Holiday Hours"
+msgstr "ساعات العطلات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__hr
+msgid "Human Resources"
+msgstr "الموارد البشرية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_validator__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_hr_employee__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_hr_leave__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_company__id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_config_settings__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__activity_exception_icon
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_exception_icon
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__activity_exception_icon
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__activity_exception_icon
+msgid "Icon"
+msgstr "الأيقونة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__activity_exception_icon
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_exception_icon
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_oncall__activity_exception_icon
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_swap__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثنائي."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__message_needaction
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_needaction
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_oncall__message_needaction
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_swap__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم التحديد، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__message_has_sms_error
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_has_sms_error
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_oncall__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_oncall__message_has_sms_error
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_swap__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_swap__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحديد، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__message_is_follower
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_is_follower
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__message_is_follower
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__job_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__job_id
+msgid "Job"
+msgstr "الوظيفة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__override_reason
+msgid "Justification when a scheduling manager publishes despite conflicts."
+msgstr "المبرر عند قيام مدير الجدولة بالنشر رغم وجود تعارضات."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__lab_technician
+msgid "Laboratory Technician"
+msgstr "فني مختبر"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: healthcare_hr_shift
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_leave_balance
+msgid "Leave Balance"
+msgstr "رصيد الإجازات"
+
+#. module: healthcare_hr_shift
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_leave_utilization
+msgid "Leave Utilization"
+msgstr "استخدام الإجازات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_swap__target_assignment_id
+msgid "Leave empty for a one-way hand-over."
+msgstr "اتركه فارغاً للتسليم في اتجاه واحد."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__date
+msgid "Local date on which the shift starts."
+msgstr "التاريخ المحلي الذي تبدأ فيه الوردية."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_template__end_time
+msgid ""
+"Local end time. An end time before the start time ends the next day. For a "
+"24-hour shift use the same time as the start."
+msgstr "وقت النهاية المحلي. وقت النهاية الذي يسبق وقت البداية ينتهي في اليوم التالي. لوردية 24 ساعة استخدم نفس وقت البداية."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_template__start_time
+msgid "Local start time (24h clock)."
+msgstr "وقت البداية المحلي (نظام 24 ساعة)."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_res_company__hc_night_start
+#: model:ir.model.fields,help:healthcare_hr_shift.field_res_config_settings__hc_night_start
+msgid "Local time from which worked hours count as night hours."
+msgstr "الوقت المحلي الذي تُحتسب بعده ساعات العمل كساعات ليلية."
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.res_config_settings_view_form_shift
+msgid "Local times between which worked hours are night hours"
+msgstr "الأوقات المحلية التي تُعد ساعات العمل بينها ساعات ليلية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__management
+msgid "Management"
+msgstr "الإدارة"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_form
+msgid "Manager Approve"
+msgstr "اعتماد المدير"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_swap__state__manager_approved
+msgid "Manager Approved"
+msgstr "معتمد من المدير"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_oncall_view_form
+msgid "Mark Done"
+msgstr "تعيين كمنتهي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_hr_employee__max_weekly_hours
+msgid "Max Weekly Hours"
+msgstr "الحد الأقصى للساعات الأسبوعية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_company__hc_max_shift_hours
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_config_settings__hc_max_shift_hours
+msgid "Maximum Continuous Shift"
+msgstr "الحد الأقصى للوردية المتصلة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_company__hc_max_weekly_hours
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_config_settings__hc_max_weekly_hours
+msgid "Maximum Weekly Hours"
+msgstr "الحد الأقصى للساعات الأسبوعية"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.res_config_settings_view_form_shift
+msgid "Maximum continuous shift (h)"
+msgstr "الحد الأقصى للوردية المتصلة (ساعة)"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.res_config_settings_view_form_shift
+msgid "Maximum weekly hours"
+msgstr "الحد الأقصى للساعات الأسبوعية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__medical_technician
+msgid "Medical Technician"
+msgstr "فني طبي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__message_has_error
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_has_error
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__message_has_error
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.coverage_snapshot_view_list
+msgid "Minimum"
+msgstr "الحد الأدنى"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_snapshot__status__minimum
+msgid "Minimum Met"
+msgstr "تم استيفاء الحد الأدنى"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__minimum_required
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__minimum_required
+msgid "Minimum Required"
+msgstr "الحد الأدنى المطلوب"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__minimum_rest_hours
+msgid "Minimum Rest Hours"
+msgstr "الحد الأدنى لساعات الراحة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_template__minimum_rest_hours
+msgid "Minimum rest required after this shift."
+msgstr "الحد الأدنى للراحة المطلوبة بعد هذه الوردية."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__monday
+msgid "Monday"
+msgstr "الاثنين"
+
+#. module: healthcare_hr_shift
+#: model:healthcare.shift.template,name:healthcare_hr_shift.shift_template_morning
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_template__shift_type__morning
+msgid "Morning"
+msgstr "صباحية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__my_activity_date_deadline
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__my_activity_date_deadline
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__my_activity_date_deadline
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_my_shifts
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_my_shifts
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "My Shifts"
+msgstr "وردياتي"
+
+#. module: healthcare_hr_shift
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_leave_my
+msgid "My Time Off"
+msgstr "إجازاتي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__name
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_swap.py:0
+msgid "New"
+msgstr "جديد"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Next 7 Days"
+msgstr "الأيام السبعة القادمة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__activity_calendar_event_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_calendar_event_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__activity_calendar_event_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "حدث التقويم للنشاط التالي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__activity_date_deadline
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_date_deadline
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__activity_date_deadline
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__activity_summary
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_summary
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__activity_summary
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__activity_type_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_type_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__activity_type_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: healthcare_hr_shift
+#: model:healthcare.shift.template,name:healthcare_hr_shift.shift_template_night
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_template__shift_type__night
+msgid "Night"
+msgstr "ليلية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__night_hours
+msgid "Night Hours"
+msgstr "ساعات ليلية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__night_shift
+msgid "Night Shift"
+msgstr "وردية ليلية"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_shift_report_night
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_report_night
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Night Shifts"
+msgstr "الورديات الليلية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_company__hc_night_end
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_config_settings__hc_night_end
+msgid "Night Window End"
+msgstr "نهاية الفترة الليلية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_company__hc_night_start
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_res_config_settings__hc_night_start
+msgid "Night Window Start"
+msgstr "بداية الفترة الليلية"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.res_config_settings_view_form_shift
+msgid "Night window"
+msgstr "الفترة الليلية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+msgid "Notes..."
+msgstr "ملاحظات..."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__message_needaction_counter
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_needaction_counter
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__message_needaction_counter
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__message_has_error_counter
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_has_error_counter
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__message_has_error_counter
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__message_needaction_counter
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_needaction_counter
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_oncall__message_needaction_counter
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_swap__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__message_has_error_counter
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_has_error_counter
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_oncall__message_has_error_counter
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_swap__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__nurse
+msgid "Nurse"
+msgstr "ممرض"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Nurses"
+msgstr "الممرضون"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_template__shift_type__on_call
+msgid "On Call"
+msgstr "المناوبة عند الطلب"
+
+#. module: healthcare_hr_shift
+#: model:healthcare.shift.template,name:healthcare_hr_shift.shift_template_oncall
+msgid "On Call (Night)"
+msgstr "المناوبة عند الطلب (ليلية)"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_shift_oncall
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_shift_oncall
+msgid "On-Call"
+msgstr "المناوبة عند الطلب"
+
+#. module: healthcare_hr_shift
+#: model:ir.model,name:healthcare_hr_shift.model_healthcare_shift_oncall
+msgid "On-Call Duty"
+msgstr "مهمة المناوبة عند الطلب"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_oncall.py:0
+msgid "On-call %(name)s %(date)s"
+msgstr "المناوبة عند الطلب %(name)s %(date)s"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_oncall.py:0
+msgid "On-call duties sent to payroll cannot be cancelled."
+msgstr "لا يمكن إلغاء مهام المناوبة عند الطلب المرسلة إلى الرواتب."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.constraint,message:healthcare_hr_shift.constraint_healthcare_shift_coverage_snapshot_rule_date_uniq
+msgid "One snapshot per rule and day."
+msgstr "لقطة واحدة لكل قاعدة ولكل يوم."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "Only %(gap).1f h rest after %(other)s (minimum %(req).1f h)."
+msgstr "راحة %(gap).1f ساعة فقط بعد %(other)s (الحد الأدنى %(req).1f ساعة)."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "Only %(gap).1f h rest before %(other)s (minimum %(req).1f h)."
+msgstr "راحة %(gap).1f ساعة فقط قبل %(other)s (الحد الأدنى %(req).1f ساعة)."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_swap.py:0
+msgid "Only %s can accept this swap."
+msgstr "لا يمكن قبول هذا التبديل إلا من قِبل %s."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_assignment.py:0
+msgid ""
+"Only draft, conflicting or cancelled shifts can be deleted; cancel them "
+"first."
+msgstr "لا يمكن حذف إلا الورديات المسودة أو التي بها تعارض أو الملغاة؛ قم بإلغائها أولاً."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_template__job_ids
+msgid "Only employees in these positions may take this shift. Empty = all."
+msgstr "لا يحق تولي هذه الوردية إلا للموظفين في هذه الوظائف. فارغ = الجميع."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_assignment.py:0
+msgid "Only scheduling managers can override conflicts."
+msgstr "لا يمكن تجاوز التعارضات إلا من قِبل مديري الجدولة."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_swap.py:0
+msgid "Only scheduling officers can apply swaps."
+msgstr "لا يمكن تطبيق التبديلات إلا من قِبل مسؤولي الجدولة."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_swap.py:0
+msgid "Only the department manager can approve this swap."
+msgstr "لا يمكن اعتماد هذا التبديل إلا من قِبل مدير القسم."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_assignment.py:0
+msgid "Only worked shifts can be approved (%s)."
+msgstr "لا يمكن اعتماد إلا الورديات التي تم العمل بها (%s)."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_assignment.py:0
+msgid "Open the \"Conflict\" filter to review the reasons."
+msgstr "افتح عامل التصفية \"تعارض\" لمراجعة الأسباب."
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+msgid "Organisation"
+msgstr "المؤسسة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__other
+msgid "Other"
+msgstr "أخرى"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "Overlaps with %s."
+msgstr "يتداخل مع %s."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__override_reason
+msgid "Override Reason"
+msgstr "سبب التجاوز"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_hr_employee__max_weekly_hours
+msgid "Overrides the company limit when set."
+msgstr "يتجاوز حد الشركة عند تعيينه."
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_shift_report_overtime
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_report_overtime
+msgid "Overtime"
+msgstr "العمل الإضافي"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__overtime_allowed
+msgid "Overtime Allowed"
+msgstr "العمل الإضافي مسموح"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__paid_hours
+msgid "Paid Hours"
+msgstr "الساعات المدفوعة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__payroll_overtime_hours
+msgid "Payroll Overtime"
+msgstr "العمل الإضافي للرواتب"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_assignment__state__payroll_posted
+msgid "Payroll Posted"
+msgstr "مرحّل للرواتب"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__payroll_processed
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__payroll_processed
+msgid "Payroll Processed"
+msgstr "تمت معالجته في الرواتب"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_search
+msgid "Pending"
+msgstr "قيد الانتظار"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_swap.py:0
+msgid "Pending shift swap %s awaiting approval"
+msgstr "تبديل الوردية %s قيد الانتظار بانتظار الاعتماد"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.res_config_settings_view_form_shift
+msgid "Per employee, 0 = no limit"
+msgstr "لكل موظف، 0 = بلا حد"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__pharmacist
+msgid "Pharmacist"
+msgstr "صيدلي"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.actions.act_window,help:healthcare_hr_shift.action_shift_assignment
+msgid "Plan the first shifts of your roster"
+msgstr "خطط الورديات الأولى في جدول المناوبات"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_list
+msgid "Planned"
+msgstr "مخطط"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__planned_hours
+msgid "Planned Hours"
+msgstr "الساعات المخططة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__planning_slot_id
+msgid "Planning Slot"
+msgstr "فترة التخطيط"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_snapshot__status__preferred
+msgid "Preferred Met"
+msgstr "تم استيفاء العدد المفضل"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__preferred_required
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__preferred_required
+msgid "Preferred Required"
+msgstr "العدد المفضل المطلوب"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+msgid "Premium Hours"
+msgstr "الساعات الممتازة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__public_holiday_shift
+msgid "Public Holiday Shift"
+msgstr "وردية عطلة رسمية"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/wizard/shift_publish_wizard.py:0
+msgid ""
+"Publication blocked by coverage rules:\n"
+"%s"
+msgstr ""
+"النشر ممنوع بسبب قواعد التغطية:\n"
+"%s"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_list
+msgid "Publish"
+msgstr "نشر"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+msgid "Publish Anyway"
+msgstr "نشر على أي حال"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_shift_publish_wizard
+#: model:ir.model,name:healthcare_hr_shift.model_healthcare_shift_publish_wizard
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_shift_publish
+msgid "Publish Roster"
+msgstr "نشر جدول المناوبات"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+msgid ""
+"Publish this shift despite the conflicts? The override reason is logged."
+msgstr "هل تريد نشر هذه الوردية رغم التعارضات؟ سيتم تسجيل سبب التجاوز."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_assignment__state__published
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Published"
+msgstr "منشور"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_assignment.py:0
+msgid ""
+"Published despite conflicts: %(reason)s\n"
+"%(conflicts)s"
+msgstr ""
+"تم النشر رغم التعارضات: %(reason)s\n"
+"%(conflicts)s"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__radiology_doctor
+msgid "Radiology Doctor"
+msgstr "طبيب أشعة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__radiology_technician
+msgid "Radiology Technician"
+msgstr "فني أشعة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__reason
+msgid "Reason"
+msgstr "السبب"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_rule__employee_category__reception
+msgid "Reception"
+msgstr "الاستقبال"
+
+#. module: healthcare_hr_shift
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_coverage_refresh
+msgid "Refresh Coverage"
+msgstr "تحديث التغطية"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.server,name:healthcare_hr_shift.action_refresh_coverage
+msgid "Refresh Coverage (14 days)"
+msgstr "تحديث التغطية (14 يوماً)"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__refuse_reason
+msgid "Refuse Reason"
+msgstr "سبب الرفض"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_swap__state__refused
+msgid "Refused"
+msgstr "مرفوض"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_swap__state__requested
+msgid "Requested"
+msgstr "مطلوب"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__requester_employee_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_form
+msgid "Requester"
+msgstr "مقدم الطلب"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_hr_employee__allow_24h_shift
+msgid "Required to be scheduled on shifts of 24 hours."
+msgstr "مطلوب لجدولته في ورديات مدتها 24 ساعة."
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+msgid "Reset Approval"
+msgstr "إعادة تعيين الاعتماد"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+msgid "Reset to Draft"
+msgstr "إعادة التعيين إلى مسودة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__activity_user_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_user_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__activity_user_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_template__branch_id
+msgid "Restrict the template to a branch. Empty = all branches."
+msgstr "قصر النموذج على فرع معين. فارغ = جميع الفروع."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_rule__weekdays
+msgid ""
+"Restrict to weekdays (0=Monday ... 6=Sunday), comma separated. Empty = every"
+" day."
+msgstr "قصر على أيام الأسبوع (0=الاثنين ... 6=الأحد)، مفصولة بفواصل. فارغ = كل يوم."
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_gantt
+msgid "Roster"
+msgstr "جدول المناوبات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__rule_id
+msgid "Rule"
+msgstr "القاعدة"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_template_view_form
+msgid "Rules"
+msgstr "القواعد"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__message_has_sms_error
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__message_has_sms_error
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__message_has_sms_error
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل النصية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__saturday
+msgid "Saturday"
+msgstr "السبت"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_oncall_view_form
+msgid "Schedule"
+msgstr "الجدول"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_oncall__state__scheduled
+msgid "Scheduled"
+msgstr "مجدول"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.hr_employee_view_form_shift
+msgid "Scheduling"
+msgstr "الجدولة"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.res_config_settings_view_form_shift
+msgid "Scheduling Rules"
+msgstr "قواعد الجدولة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_res_company__hc_max_weekly_hours
+#: model:ir.model.fields,help:healthcare_hr_shift.field_res_config_settings__hc_max_weekly_hours
+msgid "Scheduling limit per employee and ISO week (0 = no limit)."
+msgstr "حد الجدولة لكل موظف ولكل أسبوع ISO (0 = بلا حد)."
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_form
+msgid "Send Request"
+msgstr "إرسال الطلب"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.coverage_snapshot_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Shift"
+msgstr "الوردية"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_pivot
+msgid "Shift Analysis"
+msgstr "تحليل الورديات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model,name:healthcare_hr_shift.model_healthcare_shift_assignment
+msgid "Shift Assignment"
+msgstr "تكليف الوردية"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_shift_assignment
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_shift_assignment
+msgid "Shift Assignments"
+msgstr "تكليفات الورديات"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_coverage_snapshot
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_report_coverage
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.coverage_snapshot_view_pivot
+msgid "Shift Coverage"
+msgstr "تغطية الورديات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model,name:healthcare_hr_shift.model_healthcare_shift_coverage_rule
+msgid "Shift Coverage Rule"
+msgstr "قاعدة تغطية الوردية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model,name:healthcare_hr_shift.model_healthcare_shift_coverage_snapshot
+msgid "Shift Coverage Snapshot"
+msgstr "لقطة تغطية الوردية"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_coverage_shortage
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_report_shortage
+msgid "Shift Shortage"
+msgstr "عجز الوردية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model,name:healthcare_hr_shift.model_healthcare_shift_swap
+msgid "Shift Swap"
+msgstr "تبديل الوردية"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_shift_swap
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_shift_swap
+msgid "Shift Swaps"
+msgstr "تبديلات الورديات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model,name:healthcare_hr_shift.model_healthcare_shift_template
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__shift_template_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__shift_template_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__shift_template_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__shift_template_id
+msgid "Shift Template"
+msgstr "نموذج الوردية"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_shift_template
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_config_shift_template
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_shift_template
+msgid "Shift Templates"
+msgstr "نماذج الورديات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__shift_type
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__shift_type
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Shift Type"
+msgstr "نوع الوردية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model,name:healthcare_hr_shift.model_healthcare_shift_validator
+msgid "Shift Validation Engine"
+msgstr "محرك التحقق من الورديات"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/coverage_rule.py:0
+msgid "Shift shortage: %(rule)s on %(date)s (%(assigned)s/%(min)s)"
+msgstr "عجز في الوردية: %(rule)s بتاريخ %(date)s (%(assigned)s/%(min)s)"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_swap.py:0
+msgid "Shift swap request from %s"
+msgstr "طلب تبديل الوردية من %s"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_template.py:0
+msgid "Shift times must be between 00:00 and 24:00."
+msgstr "يجب أن تكون أوقات الوردية بين 00:00 و24:00."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__requester_assignment_id
+msgid "Shift to Give"
+msgstr "الوردية المراد تسليمها"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__target_assignment_id
+msgid "Shift to Take"
+msgstr "الوردية المراد استلامها"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/hr_leave.py:0
+msgid "Shift uncovered by approved leave"
+msgstr "وردية غير مغطاة بسبب إجازة معتمدة"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/hr_employee.py:0
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_hr_employee__shift_assignment_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.hr_employee_view_form_shift_button
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_calendar
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_graph
+msgid "Shifts"
+msgstr "الورديات"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_assignment.py:0
+msgid "Shifts already sent to payroll cannot be reset."
+msgstr "لا يمكن إعادة تعيين الورديات المرسلة بالفعل إلى الرواتب."
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_publish_wizard_view_form
+msgid "Shifts to publish"
+msgstr "الورديات المراد نشرها"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__shortage
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_coverage_snapshot__status__short
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.coverage_snapshot_view_list
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.coverage_snapshot_view_search
+msgid "Shortage"
+msgstr "عجز"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_publish_wizard__shortage_summary
+msgid "Shortage Summary"
+msgstr "ملخص العجز"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/coverage_rule.py:0
+msgid "Staff"
+msgstr "الكوادر"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_oncall_view_list
+msgid "Standby"
+msgstr "الانتظار عند الطلب"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__standby_hours
+msgid "Standby Hours"
+msgstr "ساعات الانتظار عند الطلب"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__start_datetime
+msgid "Start Datetime"
+msgstr "تاريخ ووقت البداية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__start_time
+msgid "Start Time"
+msgstr "وقت البداية"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__state
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__state
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__status
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__activity_state
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_state
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_oncall__activity_state
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_swap__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تجاوز تاريخ الاستحقاق\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: الأنشطة المستقبلية."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__sunday
+msgid "Sunday"
+msgstr "الأحد"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_swap.py:0
+msgid "Swapped from %(a)s to %(b)s (%(swap)s)."
+msgstr "تم التبديل من %(a)s إلى %(b)s (%(swap)s)."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_template__public_holiday_shift
+msgid "Template dedicated to public holiday coverage."
+msgstr "نموذج مخصص لتغطية العطلات الرسمية."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_template__weekend_shift
+msgid "Template dedicated to weekend coverage."
+msgstr "نموذج مخصص لتغطية عطلة نهاية الأسبوع."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "The \"%(shift)s\" shift belongs to branch %(branch)s."
+msgstr "الوردية \"%(shift)s\" تابعة للفرع %(branch)s."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_template.py:0
+msgid "The break must be shorter than the shift."
+msgstr "يجب أن تكون الاستراحة أقصر من الوردية."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_oncall.py:0
+msgid "The call must end after it starts."
+msgstr "يجب أن ينتهي الاستدعاء بعد بدايته."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/wizard/shift_generate_wizard.py:0
+msgid "The end date is before the start date."
+msgstr "تاريخ النهاية يسبق تاريخ البداية."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_oncall.py:0
+msgid "The on-call period must end after it starts."
+msgstr "يجب أن تنتهي فترة المناوبة عند الطلب بعد بدايتها."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/coverage_rule.py:0
+msgid "The preferred staffing must be at least the minimum."
+msgstr "يجب ألا يقل العدد المفضل من الكوادر عن الحد الأدنى."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/coverage_rule.py:0
+msgid "The rule end date is before its start date."
+msgstr "تاريخ نهاية القاعدة يسبق تاريخ بدايتها."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_assignment.py:0
+msgid ""
+"The shift cannot be published:\n"
+"%s"
+msgstr ""
+"لا يمكن نشر الوردية:\n"
+"%s"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.constraint,message:healthcare_hr_shift.constraint_healthcare_shift_template_code_company_uniq
+msgid "The shift code must be unique per company."
+msgstr "يجب أن يكون رمز الوردية فريداً لكل شركة."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_validator.py:0
+msgid "The shift lasts %(hours).1f h, above the %(max).1f h limit."
+msgstr "مدة الوردية %(hours).1f ساعة، وهي تتجاوز الحد البالغ %(max).1f ساعة."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.constraint,message:healthcare_hr_shift.constraint_healthcare_shift_assignment_check_dates
+msgid "The shift must end after it starts."
+msgstr "يجب أن تنتهي الوردية بعد بدايتها."
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/shift_swap.py:0
+msgid ""
+"The swap is not possible:\n"
+"%s"
+msgstr ""
+"التبديل غير ممكن:\n"
+"%s"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/wizard/shift_publish_wizard.py:0
+msgid "There is no draft shift to publish in this scope."
+msgstr "لا توجد وردية مسودة للنشر ضمن هذا النطاق."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__thursday
+msgid "Thursday"
+msgstr "الخميس"
+
+#. module: healthcare_hr_shift
+#: model:ir.model,name:healthcare_hr_shift.model_hr_leave
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_leave_requests
+msgid "Time Off"
+msgstr "الإجازات"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__extra_hours
+msgid "Time worked beyond the planned hours (not necessarily payable)."
+msgstr "الوقت المعمول بما يتجاوز الساعات المخططة (ليس بالضرورة مستحق الدفع)."
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_template_view_form
+msgid "Timing"
+msgstr "التوقيت"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "To Approve"
+msgstr "بانتظار الاعتماد"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Today"
+msgstr "اليوم"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_template__grace_minutes
+msgid "Tolerance before a check-in counts as late / check-out as early."
+msgstr "المدة المسموح بها قبل اعتبار تسجيل الدخول متأخراً / تسجيل الخروج مبكراً."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__tuesday
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__activity_exception_decoration
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__activity_exception_decoration
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_oncall__activity_exception_decoration
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_swap__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي في السجل."
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__unit_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__unit_id
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__unit_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Unit"
+msgstr "الوحدة"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.coverage_snapshot_view_search
+msgid "Upcoming"
+msgstr "القادمة"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.actions.act_window,help:healthcare_hr_shift.action_shift_assignment
+msgid ""
+"Use \"Generate Shifts\" to create a roster, then \"Publish Roster\" to "
+"validate and publish it."
+msgstr "استخدم \"إنشاء الورديات\" لإنشاء جدول المناوبات، ثم \"نشر جدول المناوبات\" للتحقق منه ونشره."
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_publish_wizard_view_form
+msgid "Validate & Publish"
+msgstr "تحقق ونشر"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__validation_message
+msgid "Validation Message"
+msgstr "رسالة التحقق"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__website_message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__website_message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__website_message_ids
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_swap__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع الإلكتروني"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_assignment__website_message_ids
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_snapshot__website_message_ids
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_oncall__website_message_ids
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_swap__website_message_ids
+msgid "Website communication history"
+msgstr "سجل التواصل عبر الموقع الإلكتروني"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_generate_wizard__wednesday
+msgid "Wednesday"
+msgstr "الأربعاء"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_coverage_rule__weekdays
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_generate_wizard_view_form
+msgid "Weekdays"
+msgstr "أيام الأسبوع"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__weekend_hours
+msgid "Weekend Hours"
+msgstr "ساعات عطلة نهاية الأسبوع"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_template__weekend_shift
+msgid "Weekend Shift"
+msgstr "وردية عطلة نهاية الأسبوع"
+
+#. module: healthcare_hr_shift
+#: model:ir.actions.act_window,name:healthcare_hr_shift.action_shift_report_weekend
+#: model:ir.ui.menu,name:healthcare_hr_shift.menu_report_weekend
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "Weekend Shifts"
+msgstr "ورديات عطلة نهاية الأسبوع"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_hr_employee__weekend_work_allowed
+msgid "Weekend Work Allowed"
+msgstr "العمل في عطلة نهاية الأسبوع مسموح"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.res_config_settings_view_form_shift
+msgid "Weekend days"
+msgstr "أيام عطلة نهاية الأسبوع"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,help:healthcare_hr_shift.field_healthcare_shift_coverage_rule__block_publication
+msgid ""
+"When set, the roster publication wizard refuses to publish a period with a "
+"shortage on this rule."
+msgstr "عند التفعيل، يرفض معالج نشر جدول المناوبات نشر أي فترة بها عجز في هذه القاعدة."
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_swap_view_form
+msgid "Why do you need this swap?"
+msgstr "لماذا تحتاج إلى هذا التبديل؟"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_search
+msgid "With Overtime"
+msgstr "مع العمل الإضافي"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_assignment_view_list
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_oncall_view_list
+msgid "Worked"
+msgstr "تم العمل"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_assignment__extra_hours
+msgid "Worked Extra Time"
+msgstr "الوقت الإضافي المعمول"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields,field_description:healthcare_hr_shift.field_healthcare_shift_oncall__worked_hours
+msgid "Worked Hours"
+msgstr "ساعات العمل"
+
+#. module: healthcare_hr_shift
+#: model:ir.model.fields.selection,name:healthcare_hr_shift.selection__healthcare_shift_assignment__state__working
+msgid "Working"
+msgstr "قيد العمل"
+
+#. module: healthcare_hr_shift
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_shift.shift_template_view_form
+msgid "e.g. 12 Hour Night"
+msgstr "مثال: ليلية 12 ساعة"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/models/hr_employee.py:0
+msgid "employee_id"
+msgstr "employee_id"
+
+#. module: healthcare_hr_shift
+#. odoo-python
+#: code:addons/healthcare_hr_shift/wizard/shift_generate_wizard.py:0
+msgid "id"
+msgstr "id"

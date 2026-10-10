@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="biometric_batch_view_list" model="ir.ui.view">
+        <field name="name">healthcare.biometric.sync.batch.list</field>
+        <field name="model">healthcare.biometric.sync.batch</field>
+        <field name="arch" type="xml">
+            <list create="0" decoration-danger="state == 'failed'" decoration-warning="state == 'partial'">
+                <field name="name"/>
+                <field name="device_id"/>
+                <field name="source"/>
+                <field name="started"/>
+                <field name="ended" optional="hide"/>
+                <field name="received_count" sum="Received"/>
+                <field name="created_count" sum="Created"/>
+                <field name="duplicate_count" sum="Duplicates"/>
+                <field name="success_count" sum="Processed"/>
+                <field name="pending_count" sum="Pending" optional="show"/>
+                <field name="failed_count" sum="Failed"/>
+                <field name="state" widget="badge" decoration-success="state == 'done'" decoration-info="state == 'running'"
+                       decoration-warning="state == 'partial'" decoration-danger="state == 'failed'"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="biometric_batch_view_form" model="ir.ui.view">
+        <field name="name">healthcare.biometric.sync.batch.form</field>
+        <field name="model">healthcare.biometric.sync.batch</field>
+        <field name="arch" type="xml">
+            <form create="0">
+                <header>
+                    <button name="action_process" type="object" string="Process pending" class="btn-primary"
+                            invisible="not pending_count"/>
+                    <button name="action_retry_failed" type="object" string="Retry failed" invisible="not failed_count"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_logs" type="object" class="oe_stat_button" icon="fa-list">
+                            <field name="created_count" widget="statinfo" string="Raw Logs"/>
+                        </button>
+                    </div>
+                    <div class="oe_title"><h1><field name="name"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="device_id"/>
+                            <field name="source"/>
+                            <field name="started"/>
+                            <field name="ended"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group>
+                            <field name="received_count"/>
+                            <field name="created_count"/>
+                            <field name="duplicate_count"/>
+                            <field name="success_count"/>
+                            <field name="pending_count"/>
+                            <field name="failed_count"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Error Log" name="errors" invisible="not error_log">
+                            <field name="error_log"/>
+                        </page>
+                        <page string="Raw Logs" name="logs">
+                            <field name="log_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="biometric_batch_view_search" model="ir.ui.view">
+        <field name="name">healthcare.biometric.sync.batch.search</field>
+        <field name="model">healthcare.biometric.sync.batch</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="device_id"/>
+                <filter name="with_errors" string="With errors" domain="[('state', 'in', ('partial', 'failed'))]"/>
+                <separator/>
+                <filter name="started" string="Date" date="started"/>
+                <group>
+                    <filter name="group_device" string="Device" context="{'group_by': 'device_id'}"/>
+                    <filter name="group_state" string="Status" context="{'group_by': 'state'}"/>
+                    <filter name="group_source" string="Source" context="{'group_by': 'source'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_biometric_batch" model="ir.actions.act_window">
+        <field name="name">Sync Batches</field>
+        <field name="res_model">healthcare.biometric.sync.batch</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

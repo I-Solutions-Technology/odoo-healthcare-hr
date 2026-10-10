@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="bank_layout_view_list" model="ir.ui.view">
+        <field name="name">healthcare.payroll.bank.layout.list</field>
+        <field name="model">healthcare.payroll.bank.layout</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="file_format"/>
+                <field name="encoding"/>
+                <field name="api_provider"/>
+            </list>
+        </field>
+    </record>
+    <record id="bank_layout_view_form" model="ir.ui.view">
+        <field name="name">healthcare.payroll.bank.layout.form</field>
+        <field name="model">healthcare.payroll.bank.layout</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="file_format"/>
+                            <field name="delimiter" invisible="file_format != 'csv'"/>
+                            <field name="include_header"/>
+                            <field name="encoding" invisible="file_format == 'xlsx'"/>
+                            <field name="line_ending" invisible="file_format == 'xlsx'"/>
+                        </group>
+                        <group>
+                            <field name="decimal_places"/>
+                            <field name="amount_without_separator"/>
+                            <field name="date_format"/>
+                            <field name="api_provider"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                    <field name="column_ids">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="header"/>
+                            <field name="field"/>
+                            <field name="constant_value" invisible="field != 'constant'"/>
+                            <field name="width"/>
+                            <field name="alignment"/>
+                            <field name="pad_char"/>
+                        </list>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_bank_layout" model="ir.actions.act_window">
+        <field name="name">Bank File Layouts</field>
+        <field name="res_model">healthcare.payroll.bank.layout</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

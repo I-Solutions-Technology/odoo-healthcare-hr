@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="ir_cron_reconcile" model="ir.cron">
+        <field name="name">Healthcare HR: reconcile yesterday's attendance</field>
+        <field name="model_id" ref="model_healthcare_attendance_reconciliation"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_reconcile_yesterday()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+    </record>
+    <record id="ir_cron_missing_checkout" model="ir.cron">
+        <field name="name">Healthcare HR: missing checkout alerts</field>
+        <field name="model_id" ref="hr_attendance.model_hr_attendance"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_missing_checkout()</field>
+        <field name="interval_number">4</field>
+        <field name="interval_type">hours</field>
+    </record>
+</odoo>

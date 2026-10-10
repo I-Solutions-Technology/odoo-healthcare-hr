@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_payroll_inputs" name="Payroll Inputs" parent="healthcare_hr_core.menu_payroll" sequence="30"/>
+    <menuitem id="menu_payroll_input_generate" name="Generate Inputs" parent="menu_payroll_inputs"
+              action="action_payroll_input_generate_wizard" sequence="1"/>
+    <menuitem id="menu_payroll_input_list" name="All Inputs" parent="menu_payroll_inputs" action="action_payroll_input" sequence="2"/>
+    <menuitem id="menu_payroll_bonus" name="Bonuses &amp; Deductions" parent="menu_payroll_inputs"
+              action="action_payroll_bonus_deduction" sequence="3"/>
+    <menuitem id="menu_payroll_payslips" name="Payslips" parent="healthcare_hr_core.menu_payroll"
+              action="hr_payroll.action_view_hr_payslip_month_form" sequence="40"/>
+    <menuitem id="menu_payroll_runs" name="Pay Runs" parent="healthcare_hr_core.menu_payroll"
+              action="hr_payroll.action_hr_payslip_run" sequence="41"/>
+    <menuitem id="menu_report_payroll_summary" name="Payroll Summary" parent="healthcare_hr_core.menu_reports"
+              action="action_payroll_summary" sequence="80" groups="healthcare_hr_core.group_hc_payroll_officer"/>
+    <menuitem id="menu_report_payroll_branch" name="Payroll by Branch" parent="healthcare_hr_core.menu_reports"
+              action="action_payroll_by_branch" sequence="81" groups="healthcare_hr_core.group_hc_payroll_officer"/>
+    <menuitem id="menu_report_payroll_department" name="Payroll by Department" parent="healthcare_hr_core.menu_reports"
+              action="action_payroll_by_department" sequence="82" groups="healthcare_hr_core.group_hc_payroll_officer"/>
+</odoo>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="1">
+    <record id="rule_exit_company" model="ir.rule">
+        <field name="name">Exit: multi-company</field>
+        <field name="model_id" ref="model_healthcare_hr_exit"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_exit_self" model="ir.rule">
+        <field name="name">Exit: own</field>
+        <field name="model_id" ref="model_healthcare_hr_exit"/>
+        <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_self_service'))]"/>
+    </record>
+    <record id="rule_exit_user" model="ir.rule">
+        <field name="name">Exit: clearance responsible or managed department</field>
+        <field name="model_id" ref="model_healthcare_hr_exit"/>
+        <field name="domain_force">['|', ('clearance_item_ids.responsible_user_id', '=', user.id), ('department_id.manager_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_user'))]"/>
+    </record>
+    <record id="rule_exit_officer" model="ir.rule">
+        <field name="name">Exit: officer allowed branches</field>
+        <field name="model_id" ref="model_healthcare_hr_exit"/>
+        <field name="domain_force">['|', ('branch_id', '=', False), ('branch_id', 'child_of', user.healthcare_branch_ids.ids)] if user.healthcare_branch_ids else [(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_officer'))]"/>
+    </record>
+    <record id="rule_clearance_item_user" model="ir.rule">
+        <field name="name">Clearance item: responsible</field>
+        <field name="model_id" ref="model_healthcare_hr_clearance_item"/>
+        <field name="domain_force">['|', ('responsible_user_id', '=', user.id), ('exit_id.department_id.manager_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_user'))]"/>
+    </record>
+    <record id="rule_clearance_item_officer" model="ir.rule">
+        <field name="name">Clearance item: officer</field>
+        <field name="model_id" ref="model_healthcare_hr_clearance_item"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_officer'))]"/>
+    </record>
+    <record id="rule_settlement_company" model="ir.rule">
+        <field name="name">Final settlement: multi-company</field>
+        <field name="model_id" ref="model_healthcare_hr_final_settlement"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+</data>
+</odoo>

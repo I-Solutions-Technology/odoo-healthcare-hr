@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="healthcare_hr_core.group_hc_payroll_officer" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('hr_payroll.group_hr_payroll_user'))]"/>
+    </record>
+    <record id="healthcare_hr_core.group_hc_payroll_manager" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('hr_payroll.group_hr_payroll_manager'))]"/>
+    </record>
+</odoo>

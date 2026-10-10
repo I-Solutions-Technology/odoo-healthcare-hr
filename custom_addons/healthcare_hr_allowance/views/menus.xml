@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_allowances" name="Allowances" parent="healthcare_hr_core.menu_payroll" sequence="10"/>
+    <menuitem id="menu_allowance_compute" name="Compute Allowances" parent="menu_allowances" action="action_allowance_compute_wizard" sequence="1"/>
+    <menuitem id="menu_allowance_result" name="Allowance Results" parent="menu_allowances" action="action_allowance_result" sequence="2"/>
+    <menuitem id="menu_allowance_rule" name="Allowance Rules" parent="menu_allowances" action="action_allowance_rule" sequence="3"/>
+    <menuitem id="menu_payroll_overtime" name="Overtime" parent="healthcare_hr_core.menu_payroll"
+              action="healthcare_hr_shift.action_shift_report_overtime" sequence="20"/>
+    <menuitem id="menu_config_allowance_type" name="Allowance Types" parent="healthcare_hr_core.menu_config"
+              action="action_allowance_type" sequence="40" groups="healthcare_hr_core.group_hc_payroll_manager"/>
+    <menuitem id="menu_config_allowance_rule" name="Allowance Rules" parent="healthcare_hr_core.menu_config"
+              action="action_allowance_rule" sequence="41" groups="healthcare_hr_core.group_hc_payroll_manager"/>
+    <menuitem id="menu_report_allowance" name="Allowance Analysis" parent="healthcare_hr_core.menu_reports"
+              action="action_allowance_analysis" sequence="60" groups="healthcare_hr_core.group_hc_payroll_officer"/>
+</odoo>

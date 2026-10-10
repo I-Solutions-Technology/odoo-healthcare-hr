@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="healthcare_hr_core.demo_emp_dr_ahmed" model="hr.employee">
+        <field name="allow_24h_shift" eval="True"/>
+    </record>
+    <record id="healthcare_hr_core.demo_emp_dr_sara" model="hr.employee">
+        <field name="allow_24h_shift" eval="True"/>
+    </record>
+    <record id="demo_coverage_icu_night_nurse" model="healthcare.shift.coverage.rule">
+        <field name="branch_id" ref="healthcare_hr_core.demo_branch_1"/>
+        <field name="department_id" ref="healthcare_hr_core.demo_dept_icu"/>
+        <field name="shift_template_id" ref="shift_template_night12"/>
+        <field name="employee_category">nurse</field>
+        <field name="minimum_required">2</field>
+        <field name="preferred_required">3</field>
+    </record>
+    <record id="demo_coverage_icu_day_nurse" model="healthcare.shift.coverage.rule">
+        <field name="branch_id" ref="healthcare_hr_core.demo_branch_1"/>
+        <field name="department_id" ref="healthcare_hr_core.demo_dept_icu"/>
+        <field name="shift_template_id" ref="shift_template_day12"/>
+        <field name="employee_category">nurse</field>
+        <field name="minimum_required">1</field>
+    </record>
+    <record id="demo_coverage_er_doctor" model="healthcare.shift.coverage.rule">
+        <field name="branch_id" ref="healthcare_hr_core.demo_branch_1"/>
+        <field name="department_id" ref="healthcare_hr_core.demo_dept_er"/>
+        <field name="shift_template_id" ref="shift_template_h24"/>
+        <field name="employee_category">doctor</field>
+        <field name="minimum_required">1</field>
+    </record>
+    <function model="healthcare.shift.assignment" name="_hc_load_demo_roster"/>
+</odoo>

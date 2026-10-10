@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="shift_template_view_form_allowance" model="ir.ui.view">
+        <field name="name">healthcare.shift.template.form.allowance</field>
+        <field name="model">healthcare.shift.template</field>
+        <field name="inherit_id" ref="healthcare_hr_shift.shift_template_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='job_ids']" position="after">
+                <field name="allowance_rule_ids" widget="many2many_tags" groups="healthcare_hr_core.group_hc_payroll_officer"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

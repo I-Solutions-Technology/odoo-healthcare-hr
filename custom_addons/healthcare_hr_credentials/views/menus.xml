@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_credential_all" name="All Credentials" parent="healthcare_hr_core.menu_credentials"
+              action="action_credential" sequence="1"/>
+    <menuitem id="menu_credential_attention" name="Needs Attention" parent="healthcare_hr_core.menu_credentials"
+              action="action_credential_attention" sequence="2" groups="healthcare_hr_core.group_hc_user"/>
+    <menuitem id="menu_config_credential_type" name="Credential Types" parent="healthcare_hr_core.menu_config"
+              action="action_credential_type" sequence="20"/>
+    <menuitem id="menu_report_license_expiry" name="License Expiry" parent="healthcare_hr_core.menu_reports"
+              action="action_license_expiry_report" sequence="50"/>
+    <menuitem id="menu_report_credential_compliance" name="Credential Compliance" parent="healthcare_hr_core.menu_reports"
+              action="action_credential_compliance_report" sequence="51"/>
+</odoo>

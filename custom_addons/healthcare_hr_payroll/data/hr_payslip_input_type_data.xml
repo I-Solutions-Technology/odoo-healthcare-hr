@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="input_type_night" model="hr.payslip.input.type">
+        <field name="name">Night Allowance</field>
+        <field name="code">HC_NIGHT</field>
+        <field name="healthcare_source_type">night_allowance</field>
+        <field name="healthcare_is_deduction" eval="False"/>
+        <field name="country_id" eval="False"/>
+    </record>
+    <record id="input_type_weekend" model="hr.payslip.input.type">
+        <field name="name">Weekend Allowance</field>
+        <field name="code">HC_WEEKEND</field>
+        <field name="healthcare_source_type">weekend_allowance</field>
+        <field name="healthcare_is_deduction" eval="False"/>
+        <field name="country_id" eval="False"/>
+    </record>
+    <record id="input_type_holiday" model="hr.payslip.input.type">
+        <field name="name">Public Holiday Allowance</field>
+        <field name="code">HC_HOLIDAY</field>
+        <field name="healthcare_source_type">holiday_allowance</field>
+        <field name="healthcare_is_deduction" eval="False"/>
+        <field name="country_id" eval="False"/>
+    </record>
+    <record id="input_type_oncall" model="hr.payslip.input.type">
+        <field name="name">On-call Allowance</field>
+        <field name="code">HC_ONCALL</field>
+        <field name="healthcare_source_type">on_call</field>
+        <field name="healthcare_is_deduction" eval="False"/>
+        <field name="country_id" eval="False"/>
+    </record>
+    <record id="input_type_allowance" model="hr.payslip.input.type">
+        <field name="name">Healthcare Allowance</field>
+        <field name="code">HC_ALW</field>
+        <field name="healthcare_source_type">allowance</field>
+        <field name="healthcare_is_deduction" eval="False"/>
+        <field name="country_id" eval="False"/>
+    </record>
+    <record id="input_type_overtime" model="hr.payslip.input.type">
+        <field name="name">Overtime</field>
+        <field name="code">HC_OVERTIME</field>
+        <field name="healthcare_source_type">overtime</field>
+        <field name="healthcare_is_deduction" eval="False"/>
+        <field name="country_id" eval="False"/>
+    </record>
+    <record id="input_type_bonus" model="hr.payslip.input.type">
+        <field name="name">Bonus</field>
+        <field name="code">HC_BONUS</field>
+        <field name="healthcare_source_type">bonus</field>
+        <field name="healthcare_is_deduction" eval="False"/>
+        <field name="country_id" eval="False"/>
+    </record>
+    <record id="input_type_deduction" model="hr.payslip.input.type">
+        <field name="name">Healthcare Deduction</field>
+        <field name="code">HC_DED</field>
+        <field name="healthcare_source_type">deduction</field>
+        <field name="healthcare_is_deduction" eval="True"/>
+        <field name="country_id" eval="False"/>
+    </record>
+    <record id="input_type_loan" model="hr.payslip.input.type">
+        <field name="name">Loan Installment</field>
+        <field name="code">HC_LOAN</field>
+        <field name="healthcare_source_type">loan_installment</field>
+        <field name="healthcare_is_deduction" eval="True"/>
+        <field name="country_id" eval="False"/>
+    </record>
+    <record id="input_type_advance" model="hr.payslip.input.type">
+        <field name="name">Salary Advance Recovery</field>
+        <field name="code">HC_ADVANCE</field>
+        <field name="healthcare_source_type">advance</field>
+        <field name="healthcare_is_deduction" eval="True"/>
+        <field name="country_id" eval="False"/>
+    </record>
+    <function model="hr.payroll.structure" name="_hc_install_rules_on_default_structures"/>
+    <record id="seq_payroll_input_manual" model="ir.sequence">
+        <field name="name">Healthcare Manual Payroll Input</field>
+        <field name="code">healthcare.payroll.input.manual</field>
+        <field name="padding">6</field>
+        <field name="company_id" eval="False"/>
+    </record>
+</odoo>

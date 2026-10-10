@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="onboarding_item_employee_record" model="healthcare.hr.onboarding.item.template">
+        <field name="name">Employee Record</field>
+        <field name="code">employee_record</field>
+        <field name="sequence">10</field>
+        <field name="responsible_role">hr</field>
+        <field name="clinical_only" eval="False"/>
+    </record>
+    <record id="onboarding_item_contract_signed" model="healthcare.hr.onboarding.item.template">
+        <field name="name">Contract Signed</field>
+        <field name="code">contract_signed</field>
+        <field name="sequence">20</field>
+        <field name="responsible_role">hr</field>
+        <field name="clinical_only" eval="False"/>
+    </record>
+    <record id="onboarding_item_id_documents" model="healthcare.hr.onboarding.item.template">
+        <field name="name">ID Documents</field>
+        <field name="code">id_documents</field>
+        <field name="sequence">30</field>
+        <field name="responsible_role">hr</field>
+        <field name="clinical_only" eval="False"/>
+    </record>
+    <record id="onboarding_item_license_verified" model="healthcare.hr.onboarding.item.template">
+        <field name="name">Professional License Verified</field>
+        <field name="code">license_verified</field>
+        <field name="sequence">40</field>
+        <field name="responsible_role">hr</field>
+        <field name="clinical_only" eval="True"/>
+    </record>
+    <record id="onboarding_item_credentials_verified" model="healthcare.hr.onboarding.item.template">
+        <field name="name">Credentials Verified</field>
+        <field name="code">credentials_verified</field>
+        <field name="sequence">50</field>
+        <field name="responsible_role">hr</field>
+        <field name="clinical_only" eval="True"/>
+    </record>
+    <record id="onboarding_item_department_assigned" model="healthcare.hr.onboarding.item.template">
+        <field name="name">Department Assigned</field>
+        <field name="code">department_assigned</field>
+        <field name="sequence">60</field>
+        <field name="responsible_role">department</field>
+        <field name="clinical_only" eval="False"/>
+    </record>
+    <record id="onboarding_item_branch_assigned" model="healthcare.hr.onboarding.item.template">
+        <field name="name">Branch Assigned</field>
+        <field name="code">branch_assigned</field>
+        <field name="sequence">70</field>
+        <field name="responsible_role">hr</field>
+        <field name="clinical_only" eval="False"/>
+    </record>
+    <record id="onboarding_item_shift_eligibility" model="healthcare.hr.onboarding.item.template">
+        <field name="name">Shift Eligibility</field>
+        <field name="code">shift_eligibility</field>
+        <field name="sequence">80</field>
+        <field name="responsible_role">scheduling</field>
+        <field name="clinical_only" eval="True"/>
+    </record>
+    <record id="onboarding_item_biometric_enrollment" model="healthcare.hr.onboarding.item.template">
+        <field name="name">Biometric Enrollment</field>
+        <field name="code">biometric_enrollment</field>
+        <field name="sequence">90</field>
+        <field name="responsible_role">it</field>
+        <field name="clinical_only" eval="False"/>
+    </record>
+    <record id="onboarding_item_system_access" model="healthcare.hr.onboarding.item.template">
+        <field name="name">System Access</field>
+        <field name="code">system_access</field>
+        <field name="sequence">100</field>
+        <field name="responsible_role">it</field>
+        <field name="clinical_only" eval="False"/>
+    </record>
+    <record id="onboarding_item_training_assigned" model="healthcare.hr.onboarding.item.template">
+        <field name="name">Training Assigned</field>
+        <field name="code">training_assigned</field>
+        <field name="sequence">110</field>
+        <field name="responsible_role">training</field>
+        <field name="clinical_only" eval="False"/>
+    </record>
+    <record id="onboarding_item_bank_information" model="healthcare.hr.onboarding.item.template">
+        <field name="name">Payroll Bank Information</field>
+        <field name="code">bank_information</field>
+        <field name="sequence">120</field>
+        <field name="responsible_role">payroll</field>
+        <field name="clinical_only" eval="False"/>
+    </record>
+    <record id="onboarding_item_probation_started" model="healthcare.hr.onboarding.item.template">
+        <field name="name">Probation Started</field>
+        <field name="code">probation_started</field>
+        <field name="sequence">130</field>
+        <field name="responsible_role">hr</field>
+        <field name="clinical_only" eval="False"/>
+    </record>
+</odoo>

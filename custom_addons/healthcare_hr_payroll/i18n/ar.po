@@ -1,0 +1,801 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: \n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.hr_payroll_structure_view_form_healthcare
+msgid "Add Healthcare Input Rules"
+msgstr "إضافة قواعد مدخلات الموارد البشرية الصحية"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.hr_payroll_structure_view_form_healthcare
+msgid ""
+"Adds one rule per healthcare payroll input (allowances, overtime, bonus, "
+"deductions, loans)."
+msgstr "يضيف قاعدة واحدة لكل مدخل رواتب من الموارد البشرية الصحية (البدلات، العمل الإضافي، المكافآت، الخصومات، القروض)."
+
+#. module: healthcare_hr_payroll
+#: model:ir.ui.menu,name:healthcare_hr_payroll.menu_payroll_input_list
+msgid "All Inputs"
+msgstr "جميع المدخلات"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model,name:healthcare_hr_payroll.model_healthcare_allowance_type
+msgid "Allowance Type"
+msgstr "نوع البدل"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__amount
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_form
+msgid "Approve"
+msgstr "اعتماد"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: healthcare_hr_payroll
+#: model:hr.payslip.input.type,name:healthcare_hr_payroll.input_type_bonus
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__source_type__bonus
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__hr_payslip_input_type__healthcare_source_type__bonus
+msgid "Bonus"
+msgstr "مكافأة"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "Bonuses"
+msgstr "المكافآت"
+
+#. module: healthcare_hr_payroll
+#: model:ir.actions.act_window,name:healthcare_hr_payroll.action_payroll_bonus_deduction
+#: model:ir.ui.menu,name:healthcare_hr_payroll.menu_payroll_bonus
+msgid "Bonuses & Deductions"
+msgstr "المكافآت والخصومات"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_hr_payslip__healthcare_branch_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.hr_payslip_view_search_healthcare
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "Branch"
+msgstr "الفرع"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_generate_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__state__cancelled
+msgid "Cancelled"
+msgstr "ملغي"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model,name:healthcare_hr_payroll.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__compute_allowances
+msgid "Compute Allowances"
+msgstr "احتساب البدلات"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model,name:healthcare_hr_payroll.model_res_config_settings
+msgid "Config Settings"
+msgstr "إعدادات التهيئة"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_list
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__state__confirmed
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__date_from
+msgid "Date From"
+msgstr "من تاريخ"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__date_to
+msgid "Date To"
+msgstr "إلى تاريخ"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__source_type__deduction
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__hr_payslip_input_type__healthcare_source_type__deduction
+msgid "Deduction"
+msgstr "خصم"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "Deductions"
+msgstr "الخصومات"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__department_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.hr_payslip_view_search_healthcare
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "Department"
+msgstr "القسم"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_allowance_type__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_hr_payroll_structure__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_hr_payslip__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_hr_payslip_input_type__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_res_company__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__employee_id
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__employee_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome مثل fa-tasks"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_generate_wizard_view_form
+msgid "Generate"
+msgstr "إنشاء"
+
+#. module: healthcare_hr_payroll
+#: model:ir.ui.menu,name:healthcare_hr_payroll.menu_payroll_input_generate
+msgid "Generate Inputs"
+msgstr "إنشاء المدخلات"
+
+#. module: healthcare_hr_payroll
+#: model:ir.actions.act_window,name:healthcare_hr_payroll.action_payroll_input_generate_wizard
+#: model:ir.model,name:healthcare_hr_payroll.model_healthcare_payroll_input_generate_wizard
+msgid "Generate Payroll Inputs"
+msgstr "إنشاء مدخلات الرواتب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__has_message
+msgid "Has Message"
+msgstr "توجد رسالة"
+
+#. module: healthcare_hr_payroll
+#: model:hr.payslip.input.type,name:healthcare_hr_payroll.input_type_allowance
+msgid "Healthcare Allowance"
+msgstr "بدل الموارد البشرية الصحية"
+
+#. module: healthcare_hr_payroll
+#: model:hr.payslip.input.type,name:healthcare_hr_payroll.input_type_deduction
+msgid "Healthcare Deduction"
+msgstr "خصم الموارد البشرية الصحية"
+
+#. module: healthcare_hr_payroll
+#: model:ir.actions.server,name:healthcare_hr_payroll.ir_cron_generate_inputs_ir_actions_server
+msgid "Healthcare HR: generate payroll inputs (current month)"
+msgstr "الموارد البشرية الصحية: إنشاء مدخلات الرواتب (الشهر الحالي)"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_hr_payslip__healthcare_input_ids
+msgid "Healthcare Inputs"
+msgstr "مدخلات الموارد البشرية الصحية"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_hr_payslip_input_type__healthcare_is_deduction
+msgid "Healthcare Is Deduction"
+msgstr "يُعد خصمًا (الموارد البشرية الصحية)"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model,name:healthcare_hr_payroll.model_healthcare_payroll_input
+msgid "Healthcare Payroll Input"
+msgstr "مدخل رواتب الموارد البشرية الصحية"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_hr_payslip_input_type__healthcare_source_type
+msgid "Healthcare Source Type"
+msgstr "نوع مصدر الموارد البشرية الصحية"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.hr_payslip_view_form_healthcare
+msgid "Healthcare Sources"
+msgstr "مصادر الموارد البشرية الصحية"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__source_type__holiday_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__hr_payslip_input_type__healthcare_source_type__holiday_allowance
+msgid "Holiday Allowance"
+msgstr "بدل العطلات"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_res_company__hc_payroll_monthly_hours
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_res_config_settings__hc_payroll_monthly_hours
+msgid ""
+"Hourly rate = monthly wage / this value. Empty = derived from the working "
+"schedule (weekly hours x 52 / 12)."
+msgstr "أجر الساعة = الراتب الشهري / هذه القيمة. إذا تُرك فارغًا يُشتق من جدول العمل (الساعات الأسبوعية × 52 / 12)."
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.res_config_settings_view_form_payroll
+msgid "Hourly rate = wage / monthly hours. Empty = from the working schedule"
+msgstr "أجر الساعة = الراتب / الساعات الشهرية. إذا تُرك فارغًا يُؤخذ من جدول العمل"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input__quantity
+msgid "Hours, shifts or 1."
+msgstr "الساعات أو الورديات أو 1."
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_allowance_type__id
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__id
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__id
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_hr_payroll_structure__id
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_hr_payslip__id
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_hr_payslip_input_type__id
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_res_company__id
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_res_config_settings__id
+msgid "ID"
+msgstr "المعرّف"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__activity_exception_icon
+msgid "Icon"
+msgstr "الأيقونة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثنائي."
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم التحديد، فهناك رسائل جديدة تتطلب انتباهك."
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحديد، فهناك رسائل بها خطأ في التسليم."
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__state__included
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "In Payslip"
+msgstr "ضمن قسيمة الراتب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__input_type_id
+msgid "Input Type"
+msgstr "نوع المدخل"
+
+#. module: healthcare_hr_payroll
+#. odoo-python
+#: code:addons/healthcare_hr_payroll/models/payroll_input.py:0
+msgid ""
+"Inputs already in a payslip cannot be cancelled; cancel the payslip first."
+msgstr "لا يمكن إلغاء المدخلات المدرجة ضمن قسيمة راتب؛ ألغِ قسيمة الراتب أولًا."
+
+#. module: healthcare_hr_payroll
+#. odoo-python
+#: code:addons/healthcare_hr_payroll/models/payroll_input.py:0
+msgid "Inputs already in a payslip cannot be deleted."
+msgstr "لا يمكن حذف المدخلات المدرجة ضمن قسيمة راتب."
+
+#. module: healthcare_hr_payroll
+#. odoo-python
+#: code:addons/healthcare_hr_payroll/models/payroll_input.py:0
+msgid "Inputs already in a payslip cannot be reset."
+msgstr "لا يمكن إعادة المدخلات المدرجة ضمن قسيمة راتب إلى مسودة."
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_form
+msgid "Justification (bonus / deduction)..."
+msgstr "المبرر (المكافأة / الخصم)..."
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__employee_ids
+msgid "Leave empty for every employee."
+msgstr "اتركه فارغًا لتطبيقه على جميع الموظفين."
+
+#. module: healthcare_hr_payroll
+#: model:hr.payslip.input.type,name:healthcare_hr_payroll.input_type_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__source_type__loan_installment
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__hr_payslip_input_type__healthcare_source_type__loan_installment
+msgid "Loan Installment"
+msgstr "قسط القرض"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_res_company__hc_payroll_monthly_hours
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_res_config_settings__hc_payroll_monthly_hours
+msgid "Monthly Hours for Hourly Rate"
+msgstr "الساعات الشهرية لحساب أجر الساعة"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.res_config_settings_view_form_payroll
+msgid "Monthly hours"
+msgstr "الساعات الشهرية"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.res_config_settings_view_form_payroll
+msgid "Multiplier applied to the hourly wage"
+msgstr "المعامل المطبق على أجر الساعة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_res_company__hc_overtime_rate
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_res_config_settings__hc_overtime_rate
+msgid "Multiplier applied to the hourly wage for approved payroll overtime."
+msgstr "المعامل المطبق على أجر الساعة للعمل الإضافي المعتمد في الرواتب."
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "حدث التقويم للنشاط التالي"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: healthcare_hr_payroll
+#: model:hr.payslip.input.type,name:healthcare_hr_payroll.input_type_night
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__source_type__night_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__hr_payslip_input_type__healthcare_source_type__night_allowance
+msgid "Night Allowance"
+msgstr "بدل الوردية الليلية"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__source_type__on_call
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__hr_payslip_input_type__healthcare_source_type__on_call
+msgid "On Call"
+msgstr "المناوبة عند الطلب"
+
+#. module: healthcare_hr_payroll
+#: model:hr.payslip.input.type,name:healthcare_hr_payroll.input_type_oncall
+msgid "On-call Allowance"
+msgstr "بدل المناوبة عند الطلب"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_generate_wizard_view_form
+msgid ""
+"Only approved work data is used. Running it again never duplicates an input."
+msgstr "تُستخدم بيانات العمل المعتمدة فقط. إعادة التشغيل لا تُكرر أي مدخل."
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__source_type__allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__hr_payslip_input_type__healthcare_source_type__allowance
+msgid "Other Allowance"
+msgstr "بدل آخر"
+
+#. module: healthcare_hr_payroll
+#: model:hr.payslip.input.type,name:healthcare_hr_payroll.input_type_overtime
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__source_type__overtime
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__hr_payslip_input_type__healthcare_source_type__overtime
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "Overtime"
+msgstr "العمل الإضافي"
+
+#. module: healthcare_hr_payroll
+#. odoo-python
+#: code:addons/healthcare_hr_payroll/models/payroll_input.py:0
+msgid "Overtime %(date)s (%(hours).2f h)"
+msgstr "العمل الإضافي %(date)s (%(hours).2f ساعة)"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_res_company__hc_overtime_rate
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_res_config_settings__hc_overtime_rate
+msgid "Overtime Rate"
+msgstr "معدل العمل الإضافي"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.res_config_settings_view_form_payroll
+msgid "Overtime rate"
+msgstr "معدل العمل الإضافي"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__state__done
+msgid "Paid"
+msgstr "مدفوع"
+
+#. module: healthcare_hr_payroll
+#: model:ir.ui.menu,name:healthcare_hr_payroll.menu_payroll_runs
+msgid "Pay Runs"
+msgstr "دورات الرواتب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model,name:healthcare_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr "قسيمة الراتب"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.res_config_settings_view_form_payroll
+msgid "Payroll"
+msgstr "الرواتب"
+
+#. module: healthcare_hr_payroll
+#. odoo-python
+#: code:addons/healthcare_hr_payroll/wizard/payroll_input_generate_wizard.py:0
+#: model:ir.actions.act_window,name:healthcare_hr_payroll.action_payroll_input
+#: model:ir.ui.menu,name:healthcare_hr_payroll.menu_payroll_inputs
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_pivot
+msgid "Payroll Inputs"
+msgstr "مدخلات الرواتب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.actions.act_window,name:healthcare_hr_payroll.action_payroll_summary
+#: model:ir.ui.menu,name:healthcare_hr_payroll.menu_report_payroll_summary
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.hr_payslip_view_pivot_healthcare
+msgid "Payroll Summary"
+msgstr "ملخص الرواتب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.actions.act_window,name:healthcare_hr_payroll.action_payroll_by_branch
+#: model:ir.ui.menu,name:healthcare_hr_payroll.menu_report_payroll_branch
+msgid "Payroll by Branch"
+msgstr "الرواتب حسب الفرع"
+
+#. module: healthcare_hr_payroll
+#: model:ir.actions.act_window,name:healthcare_hr_payroll.action_payroll_by_department
+#: model:ir.ui.menu,name:healthcare_hr_payroll.menu_report_payroll_department
+msgid "Payroll by Department"
+msgstr "الرواتب حسب القسم"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__payslip_id
+msgid "Payslip"
+msgstr "قسيمة الراتب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_allowance_type__payslip_input_type_id
+msgid "Payslip Input"
+msgstr "مدخل قسيمة الراتب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model,name:healthcare_hr_payroll.model_hr_payslip_input_type
+msgid "Payslip Input Type"
+msgstr "نوع مدخل قسيمة الراتب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_allowance_type__payslip_input_type_id
+msgid "Payslip input receiving this allowance. Empty = 'Other Allowance'."
+msgstr "مدخل قسيمة الراتب الذي يستقبل هذا البدل. إذا تُرك فارغًا = 'بدل آخر'."
+
+#. module: healthcare_hr_payroll
+#: model:ir.ui.menu,name:healthcare_hr_payroll.menu_payroll_payslips
+msgid "Payslips"
+msgstr "قسائم الرواتب"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "Period"
+msgstr "الفترة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__date_to
+msgid "Period End"
+msgstr "نهاية الفترة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__date_from
+msgid "Period Start"
+msgstr "بداية الفترة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__processing_key
+msgid "Processing Key"
+msgstr "مفتاح المعالجة"
+
+#. module: healthcare_hr_payroll
+#: model:hr.payslip.input.type,name:healthcare_hr_payroll.input_type_holiday
+msgid "Public Holiday Allowance"
+msgstr "بدل العطلات الرسمية"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__quantity
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input_generate_wizard__compute_allowances
+msgid "Recompute and confirm allowances of the period first."
+msgstr "أعد احتساب بدلات الفترة وأكّدها أولًا."
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_hr_payslip_input_type__healthcare_is_deduction
+msgid "Reduces the net salary."
+msgstr "يُخفّض صافي الراتب."
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_form
+msgid "Reset to Draft"
+msgstr "إعادة إلى مسودة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل النصية"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__source_type__advance
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__hr_payslip_input_type__healthcare_source_type__advance
+msgid "Salary Advance"
+msgstr "سلفة راتب"
+
+#. module: healthcare_hr_payroll
+#: model:hr.payslip.input.type,name:healthcare_hr_payroll.input_type_advance
+msgid "Salary Advance Recovery"
+msgstr "استرداد سلفة الراتب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model,name:healthcare_hr_payroll.model_hr_payroll_structure
+msgid "Salary Structure"
+msgstr "هيكل الراتب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_hr_payslip_input_type__healthcare_source_type
+msgid "Set on the input types managed by the Healthcare HR suite."
+msgstr "يُعيَّن على أنواع المدخلات التي تديرها حزمة الموارد البشرية الصحية."
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "Source"
+msgstr "المصدر"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__source_model
+msgid "Source Model"
+msgstr "نموذج المصدر"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__source_res_id
+msgid "Source Record"
+msgstr "سجل المصدر"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__source_type
+msgid "Source Type"
+msgstr "نوع المصدر"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تاريخ الاستحقاق قد مضى\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: أنشطة مستقبلية."
+
+#. module: healthcare_hr_payroll
+#. odoo-python
+#: code:addons/healthcare_hr_payroll/wizard/payroll_input_generate_wizard.py:0
+msgid "The end date is before the start date."
+msgstr "تاريخ الانتهاء يسبق تاريخ البدء."
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.constraint,message:healthcare_hr_payroll.constraint_healthcare_payroll_input_key_uniq
+msgid "This source was already sent to payroll."
+msgstr "تم إرسال هذا المصدر إلى الرواتب مسبقًا."
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "To Approve"
+msgstr "بانتظار الاعتماد"
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.hr_payslip_view_form_healthcare
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_list
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي في السجل."
+
+#. module: healthcare_hr_payroll
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_payroll.payroll_input_view_search
+msgid "Waiting for Payslip"
+msgstr "بانتظار قسيمة الراتب"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,field_description:healthcare_hr_payroll.field_healthcare_payroll_input__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: healthcare_hr_payroll
+#: model:ir.model.fields,help:healthcare_hr_payroll.field_healthcare_payroll_input__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع"
+
+#. module: healthcare_hr_payroll
+#: model:hr.payslip.input.type,name:healthcare_hr_payroll.input_type_weekend
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__healthcare_payroll_input__source_type__weekend_allowance
+#: model:ir.model.fields.selection,name:healthcare_hr_payroll.selection__hr_payslip_input_type__healthcare_source_type__weekend_allowance
+msgid "Weekend Allowance"
+msgstr "بدل عطلة نهاية الأسبوع"
+
+#. module: healthcare_hr_payroll
+#. odoo-python
+#: code:addons/healthcare_hr_payroll/wizard/payroll_input_generate_wizard.py:0
+msgid "id"
+msgstr "id"

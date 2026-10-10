@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_employee_view_form_healthcare" model="ir.ui.view">
+        <field name="name">hr.employee.form.healthcare</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='work_information']" position="before">
+                <page name="healthcare" string="Healthcare">
+                    <group>
+                        <group string="Identification" name="hc_identification">
+                            <field name="employee_number" groups="hr.group_hr_user"/>
+                            <field name="arabic_name"/>
+                            <field name="employee_category"/>
+                            <field name="is_clinical" invisible="1"/>
+                            <field name="employment_status" groups="hr.group_hr_user"/>
+                            <field name="hire_date" groups="hr.group_hr_user"/>
+                        </group>
+                        <group string="Organisation" name="hc_organisation">
+                            <field name="healthcare_branch_id"/>
+                            <field name="healthcare_unit_id"/>
+                            <field name="medical_department_id"/>
+                        </group>
+                        <group string="Clinical Profile" name="hc_clinical" invisible="not is_clinical">
+                            <field name="medical_specialty_id"/>
+                            <field name="sub_specialty_id" invisible="not medical_specialty_id"/>
+                            <field name="professional_registration_number" groups="hr.group_hr_user"/>
+                            <field name="practitioner_reference" groups="hr.group_hr_user"/>
+                        </group>
+                    </group>
+                    <group string="Clinical System Links" groups="hr.group_hr_user" invisible="not is_clinical">
+                        <field name="practitioner_link_ids" nolabel="1" colspan="2" context="{'default_employee_id': id}">
+                            <list editable="bottom">
+                                <field name="external_system"/>
+                                <field name="external_code"/>
+                                <field name="valid_from"/>
+                                <field name="valid_to"/>
+                            </list>
+                        </field>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_employee_view_list_healthcare" model="ir.ui.view">
+        <field name="name">hr.employee.list.healthcare</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='department_id']" position="before">
+                <field name="employee_number" optional="show" groups="hr.group_hr_user"/>
+                <field name="employee_category" optional="show"/>
+                <field name="healthcare_branch_id" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_employee_view_search_healthcare" model="ir.ui.view">
+        <field name="name">hr.employee.search.healthcare</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='department_id']" position="after">
+                <field name="employee_number" groups="hr.group_hr_user"/>
+                <field name="arabic_name"/>
+                <field name="healthcare_branch_id"/>
+                <field name="healthcare_unit_id"/>
+                <field name="medical_specialty_id"/>
+            </xpath>
+            <xpath expr="//search" position="inside">
+                <separator/>
+                <filter name="hc_clinical" string="Clinical Staff" domain="[('is_clinical', '=', True)]"/>
+                <filter name="hc_doctors" string="Doctors" domain="[('employee_category', 'in', ('doctor', 'radiology_doctor'))]"/>
+                <filter name="hc_nurses" string="Nurses" domain="[('employee_category', '=', 'nurse')]"/>
+                <filter name="hc_technicians" string="Technicians" domain="[('employee_category', 'in', ('lab_technician', 'radiology_technician', 'medical_technician'))]"/>
+                <filter name="hc_admin" string="Administrative" domain="[('is_clinical', '=', False)]"/>
+                <separator/>
+                <filter name="hc_probation" string="On Probation" domain="[('employment_status', '=', 'probation')]" groups="hr.group_hr_user"/>
+                <group>
+                    <filter name="group_hc_branch" string="Branch" context="{'group_by': 'healthcare_branch_id'}"/>
+                    <filter name="group_hc_category" string="Healthcare Category" context="{'group_by': 'employee_category'}"/>
+                    <filter name="group_hc_unit" string="Unit" context="{'group_by': 'healthcare_unit_id'}"/>
+                    <filter name="group_hc_specialty" string="Specialty" context="{'group_by': 'medical_specialty_id'}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_healthcare_employee" model="ir.actions.act_window">
+        <field name="name">Employees</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">kanban,list,form,pivot,graph</field>
+        <field name="search_view_id" ref="hr.view_employee_filter"/>
+        <field name="context">{'search_default_group_hc_branch': 0}</field>
+    </record>
+
+    <record id="action_healthcare_employee_master" model="ir.actions.act_window">
+        <field name="name">Employee Master Data</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">list,pivot,graph</field>
+        <field name="context">{'search_default_group_hc_branch': 1}</field>
+    </record>
+</odoo>

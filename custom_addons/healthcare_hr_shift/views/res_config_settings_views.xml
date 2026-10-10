@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_shift" model="ir.ui.view">
+        <field name="name">res.config.settings.form.healthcare.shift</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="healthcare_hr_core.res_config_settings_view_form_healthcare"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='hc_alerts']" position="before">
+                <block title="Scheduling Rules" name="hc_scheduling">
+                    <setting string="Night window" help="Local times between which worked hours are night hours">
+                        <field name="hc_night_start" widget="float_time" class="o_hr_narrow_field"/> -
+                        <field name="hc_night_end" widget="float_time" class="o_hr_narrow_field"/>
+                    </setting>
+                    <setting string="Maximum weekly hours" help="Per employee, 0 = no limit">
+                        <field name="hc_max_weekly_hours"/>
+                    </setting>
+                    <setting string="Maximum continuous shift (h)">
+                        <field name="hc_max_shift_hours"/>
+                    </setting>
+                    <setting string="Default minimum rest (h)">
+                        <field name="hc_default_rest_hours"/>
+                    </setting>
+                    <setting string="Attendance matching window (h)" help="Check-ins up to this long before a shift start are matched to it">
+                        <field name="hc_shift_match_window"/>
+                    </setting>
+                    <setting string="Weekend days" help="Days without working hours in the company working schedule are weekend days"/>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

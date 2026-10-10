@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_payslip_view_form_healthcare" model="ir.ui.view">
+        <field name="name">hr.payslip.form.healthcare</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='salary_computation']" position="after">
+                <page string="Healthcare Sources" name="healthcare_sources">
+                    <field name="healthcare_input_ids">
+                        <list>
+                            <field name="name"/>
+                            <field name="source_type"/>
+                            <field name="quantity"/>
+                            <field name="currency_id" column_invisible="1"/>
+                            <field name="amount" sum="Total"/>
+                            <field name="processing_key" optional="hide"/>
+                            <field name="state"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_payslip_view_pivot_healthcare" model="ir.ui.view">
+        <field name="name">hr.payslip.pivot.healthcare</field>
+        <field name="model">hr.payslip</field>
+        <field name="arch" type="xml">
+            <pivot string="Payroll Summary" sample="1">
+                <field name="healthcare_branch_id" type="row"/>
+                <field name="date_from" interval="month" type="col"/>
+                <field name="gross_wage" type="measure"/>
+                <field name="net_wage" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    <record id="hr_payslip_view_search_healthcare" model="ir.ui.view">
+        <field name="name">hr.payslip.search.healthcare</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <field name="healthcare_branch_id"/>
+                <filter name="hc_group_branch" string="Branch" context="{'group_by': 'healthcare_branch_id'}"/>
+                <filter name="hc_group_department" string="Department" context="{'group_by': 'department_id'}"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="action_payroll_summary" model="ir.actions.act_window">
+        <field name="name">Payroll Summary</field>
+        <field name="res_model">hr.payslip</field>
+        <field name="view_mode">pivot,list,graph</field>
+        <field name="view_id" ref="hr_payslip_view_pivot_healthcare"/>
+        <field name="domain">[('state', 'in', ('validated', 'paid'))]</field>
+    </record>
+    <record id="action_payroll_by_branch" model="ir.actions.act_window">
+        <field name="name">Payroll by Branch</field>
+        <field name="res_model">hr.payslip</field>
+        <field name="view_mode">pivot,graph,list</field>
+        <field name="view_id" ref="hr_payslip_view_pivot_healthcare"/>
+        <field name="domain">[('state', 'in', ('validated', 'paid'))]</field>
+        <field name="context">{'search_default_hc_group_branch': 1}</field>
+    </record>
+    <record id="action_payroll_by_department" model="ir.actions.act_window">
+        <field name="name">Payroll by Department</field>
+        <field name="res_model">hr.payslip</field>
+        <field name="view_mode">pivot,graph,list</field>
+        <field name="domain">[('state', 'in', ('validated', 'paid'))]</field>
+        <field name="context">{'pivot_row_groupby': ['department_id'], 'pivot_measures': ['gross_wage', 'net_wage']}</field>
+    </record>
+</odoo>

@@ -1,0 +1,681 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_dashboard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-ban o_hc_tile_icon\" title=\"Expired Credentials\"/>"
+msgstr "<i class=\"fa fa-ban o_hc_tile_icon\" title=\"الاعتمادات المهنية المنتهية\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-bolt o_hc_tile_icon\" title=\"Conflicts\"/>"
+msgstr "<i class=\"fa fa-bolt o_hc_tile_icon\" title=\"التعارضات\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-briefcase o_hc_tile_icon\" title=\"Administrative\"/>"
+msgstr "<i class=\"fa fa-briefcase o_hc_tile_icon\" title=\"الإداريون\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid ""
+"<i class=\"fa fa-building o_hc_tile_icon\" title=\"Payroll by Branch\"/>\n"
+"                                <span class=\"o_hc_tile_value\">→</span>\n"
+"                                <span class=\"o_hc_tile_label\">Payroll by Branch</span>"
+msgstr ""
+"<i class=\"fa fa-building o_hc_tile_icon\" title=\"الرواتب حسب الفرع\"/>\n"
+"                                <span class=\"o_hc_tile_value\">→</span>\n"
+"                                <span class=\"o_hc_tile_label\">الرواتب حسب الفرع</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-calendar me-2\" title=\"Workforce\"/>Workforce"
+msgstr "<i class=\"fa fa-calendar me-2\" title=\"القوى العاملة\"/>القوى العاملة"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-calendar-check-o o_hc_tile_icon\" title=\"Scheduled Today\"/>"
+msgstr "<i class=\"fa fa-calendar-check-o o_hc_tile_icon\" title=\"المجدولون اليوم\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-calendar-o o_hc_tile_icon\" title=\"Draft Shifts (7 d)\"/>"
+msgstr "<i class=\"fa fa-calendar-o o_hc_tile_icon\" title=\"ورديات مسودة (7 أيام)\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid ""
+"<i class=\"fa fa-calendar-times-o o_hc_tile_icon\" title=\"Expired "
+"Training\"/>"
+msgstr "<i class=\"fa fa-calendar-times-o o_hc_tile_icon\" title=\"التدريب المنتهي\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-check o_hc_tile_icon\" title=\"Present Today\"/>"
+msgstr "<i class=\"fa fa-check o_hc_tile_icon\" title=\"الحاضرون اليوم\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-clock-o me-2\" title=\"Attendance Today\"/>Attendance Today"
+msgstr "<i class=\"fa fa-clock-o me-2\" title=\"الحضور اليوم\"/>الحضور اليوم"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-clock-o o_hc_tile_icon\" title=\"Overtime Cost\"/>"
+msgstr "<i class=\"fa fa-clock-o o_hc_tile_icon\" title=\"تكلفة العمل الإضافي\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid ""
+"<i class=\"fa fa-exclamation-circle o_hc_tile_icon\" title=\"Shortages (14 "
+"d)\"/>"
+msgstr "<i class=\"fa fa-exclamation-circle o_hc_tile_icon\" title=\"حالات العجز (14 يوماً)\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid ""
+"<i class=\"fa fa-exclamation-triangle o_hc_tile_icon\" title=\"Missing "
+"Checkout\"/>"
+msgstr "<i class=\"fa fa-exclamation-triangle o_hc_tile_icon\" title=\"خروج غير مسجل\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-file-text-o o_hc_tile_icon\" title=\"Contracts Expiring\"/>"
+msgstr "<i class=\"fa fa-file-text-o o_hc_tile_icon\" title=\"عقود قاربت على الانتهاء\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-flask o_hc_tile_icon\" title=\"Technicians\"/>"
+msgstr "<i class=\"fa fa-flask o_hc_tile_icon\" title=\"الفنيون\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-graduation-cap o_hc_tile_icon\" title=\"Missing Training\"/>"
+msgstr "<i class=\"fa fa-graduation-cap o_hc_tile_icon\" title=\"التدريب غير المتوفر\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-heartbeat o_hc_tile_icon\" title=\"Nurses\"/>"
+msgstr "<i class=\"fa fa-heartbeat o_hc_tile_icon\" title=\"الممرضون\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-hourglass-end o_hc_tile_icon\" title=\"Probation Ending\"/>"
+msgstr "<i class=\"fa fa-hourglass-end o_hc_tile_icon\" title=\"فترات تجربة قاربت على الانتهاء\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-hourglass-half o_hc_tile_icon\" title=\"Late Today\"/>"
+msgstr "<i class=\"fa fa-hourglass-half o_hc_tile_icon\" title=\"المتأخرون اليوم\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-id-card-o o_hc_tile_icon\" title=\"Licenses Expiring\"/>"
+msgstr "<i class=\"fa fa-id-card-o o_hc_tile_icon\" title=\"تراخيص قاربت على الانتهاء\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-money me-2\" title=\"Payroll (month)\"/>Payroll (month)"
+msgstr "<i class=\"fa fa-money me-2\" title=\"الرواتب (الشهر)\"/>الرواتب (الشهر)"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-money o_hc_tile_icon\" title=\"Net Payroll\"/>"
+msgstr "<i class=\"fa fa-money o_hc_tile_icon\" title=\"صافي الرواتب\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-moon-o o_hc_tile_icon\" title=\"Night Shifts Today\"/>"
+msgstr "<i class=\"fa fa-moon-o o_hc_tile_icon\" title=\"الورديات الليلية اليوم\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-plane o_hc_tile_icon\" title=\"On Leave Today\"/>"
+msgstr "<i class=\"fa fa-plane o_hc_tile_icon\" title=\"في إجازة اليوم\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid ""
+"<i class=\"fa fa-plus-circle o_hc_tile_icon\" title=\"Overtime Shifts "
+"(month)\"/>"
+msgstr "<i class=\"fa fa-plus-circle o_hc_tile_icon\" title=\"ورديات العمل الإضافي (الشهر)\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-plus-square o_hc_tile_icon\" title=\"Allowance Cost\"/>"
+msgstr "<i class=\"fa fa-plus-square o_hc_tile_icon\" title=\"تكلفة البدلات\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-shield me-2\" title=\"Compliance\"/>Compliance"
+msgstr "<i class=\"fa fa-shield me-2\" title=\"الامتثال\"/>الامتثال"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-sign-out o_hc_tile_icon\" title=\"Exits (30 d)\"/>"
+msgstr "<i class=\"fa fa-sign-out o_hc_tile_icon\" title=\"حالات إنهاء الخدمة (30 يوماً)\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid ""
+"<i class=\"fa fa-sitemap o_hc_tile_icon\" title=\"Approved Overtime (h) - by"
+" Department\"/>"
+msgstr "<i class=\"fa fa-sitemap o_hc_tile_icon\" title=\"العمل الإضافي المعتمد (ساعات) - حسب القسم\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-times o_hc_tile_icon\" title=\"Absent Today\"/>"
+msgstr "<i class=\"fa fa-times o_hc_tile_icon\" title=\"الغائبون اليوم\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-user-md o_hc_tile_icon\" title=\"Doctors\"/>"
+msgstr "<i class=\"fa fa-user-md o_hc_tile_icon\" title=\"الأطباء\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-user-plus o_hc_tile_icon\" title=\"New Hires (30 d)\"/>"
+msgstr "<i class=\"fa fa-user-plus o_hc_tile_icon\" title=\"التعيينات الجديدة (30 يوماً)\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-users me-2\" title=\"Headcount\"/>Headcount"
+msgstr "<i class=\"fa fa-users me-2\" title=\"عدد الموظفين\"/>عدد الموظفين"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<i class=\"fa fa-users o_hc_tile_icon\" title=\"Employees\"/>"
+msgstr "<i class=\"fa fa-users o_hc_tile_icon\" title=\"الموظفون\"/>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Absent Today</span>"
+msgstr "<span class=\"o_hc_tile_label\">الغائبون اليوم</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Administrative</span>"
+msgstr "<span class=\"o_hc_tile_label\">الإداريون</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Allowance Cost</span>"
+msgstr "<span class=\"o_hc_tile_label\">تكلفة البدلات</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid ""
+"<span class=\"o_hc_tile_label\">Approved Overtime (h) - by Department</span>"
+msgstr "<span class=\"o_hc_tile_label\">العمل الإضافي المعتمد (ساعات) - حسب القسم</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Conflicts</span>"
+msgstr "<span class=\"o_hc_tile_label\">التعارضات</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Contracts Expiring</span>"
+msgstr "<span class=\"o_hc_tile_label\">عقود قاربت على الانتهاء</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Doctors</span>"
+msgstr "<span class=\"o_hc_tile_label\">الأطباء</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Draft Shifts (7 d)</span>"
+msgstr "<span class=\"o_hc_tile_label\">ورديات مسودة (7 أيام)</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Employees</span>"
+msgstr "<span class=\"o_hc_tile_label\">الموظفون</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Exits (30 d)</span>"
+msgstr "<span class=\"o_hc_tile_label\">حالات إنهاء الخدمة (30 يوماً)</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Expired Credentials</span>"
+msgstr "<span class=\"o_hc_tile_label\">الاعتمادات المهنية المنتهية</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Expired Training</span>"
+msgstr "<span class=\"o_hc_tile_label\">التدريب المنتهي</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Late Today</span>"
+msgstr "<span class=\"o_hc_tile_label\">المتأخرون اليوم</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Licenses Expiring</span>"
+msgstr "<span class=\"o_hc_tile_label\">تراخيص قاربت على الانتهاء</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Missing Checkout</span>"
+msgstr "<span class=\"o_hc_tile_label\">خروج غير مسجل</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Missing Training</span>"
+msgstr "<span class=\"o_hc_tile_label\">التدريب غير المتوفر</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Net Payroll</span>"
+msgstr "<span class=\"o_hc_tile_label\">صافي الرواتب</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">New Hires (30 d)</span>"
+msgstr "<span class=\"o_hc_tile_label\">التعيينات الجديدة (30 يوماً)</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Night Shifts Today</span>"
+msgstr "<span class=\"o_hc_tile_label\">الورديات الليلية اليوم</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Nurses</span>"
+msgstr "<span class=\"o_hc_tile_label\">الممرضون</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">On Leave Today</span>"
+msgstr "<span class=\"o_hc_tile_label\">في إجازة اليوم</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Overtime Cost</span>"
+msgstr "<span class=\"o_hc_tile_label\">تكلفة العمل الإضافي</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Overtime Shifts (month)</span>"
+msgstr "<span class=\"o_hc_tile_label\">ورديات العمل الإضافي (الشهر)</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Present Today</span>"
+msgstr "<span class=\"o_hc_tile_label\">الحاضرون اليوم</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Probation Ending</span>"
+msgstr "<span class=\"o_hc_tile_label\">فترات تجربة قاربت على الانتهاء</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Scheduled Today</span>"
+msgstr "<span class=\"o_hc_tile_label\">المجدولون اليوم</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Shortages (14 d)</span>"
+msgstr "<span class=\"o_hc_tile_label\">حالات العجز (14 يوماً)</span>"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "<span class=\"o_hc_tile_label\">Technicians</span>"
+msgstr "<span class=\"o_hc_tile_label\">الفنيون</span>"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__absent
+msgid "Absent"
+msgstr "غائب"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Absent Today"
+msgstr "الغائبون اليوم"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__administrative
+msgid "Administrative"
+msgstr "إداري"
+
+#. module: healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "All branches"
+msgstr "جميع الفروع"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__allowance_cost
+msgid "Allowance Cost (month)"
+msgstr "تكلفة البدلات (الشهر)"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__overtime_hours
+msgid "Approved Overtime (h, month)"
+msgstr "العمل الإضافي المعتمد (ساعات، الشهر)"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__branch_id
+msgid "Branch"
+msgstr "الفرع"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__conflicts
+msgid "Conflicts"
+msgstr "التعارضات"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__contracts_expiring
+msgid "Contracts Expiring"
+msgstr "عقود قاربت على الانتهاء"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Contracts Expiring (60 d)"
+msgstr "عقود قاربت على الانتهاء (60 يوماً)"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__credentials_expired
+msgid "Credentials Expired"
+msgstr "اعتمادات مهنية منتهية"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__doctors
+msgid "Doctors"
+msgstr "الأطباء"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Draft Shifts (7 d)"
+msgstr "ورديات مسودة (7 أيام)"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__employees
+msgid "Employees"
+msgstr "الموظفون"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__exits
+msgid "Exits"
+msgstr "حالات إنهاء الخدمة"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Exits (30 d)"
+msgstr "حالات إنهاء الخدمة (30 يوماً)"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Expired / Missing Credentials"
+msgstr "اعتمادات مهنية منتهية / غير متوفرة"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Expired Training"
+msgstr "التدريب المنتهي"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+#: model:ir.actions.server,name:healthcare_hr_dashboard.action_dashboard
+#: model:ir.model,name:healthcare_hr_dashboard.model_healthcare_hr_dashboard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_dashboard.dashboard_view_form
+msgid "Healthcare HR Dashboard"
+msgstr "لوحة معلومات الموارد البشرية الصحية"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__late
+msgid "Late"
+msgstr "متأخر"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Late Today"
+msgstr "المتأخرون اليوم"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__licenses_expiring
+msgid "Licenses Expiring"
+msgstr "تراخيص قاربت على الانتهاء"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__missing_checkout
+msgid "Missing Checkout"
+msgstr "خروج غير مسجل"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Missing Training"
+msgstr "التدريب غير المتوفر"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__payroll_total
+msgid "Net Payroll (month)"
+msgstr "صافي الرواتب (الشهر)"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__new_hires
+msgid "New Hires"
+msgstr "التعيينات الجديدة"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "New Hires (30 d)"
+msgstr "التعيينات الجديدة (30 يوماً)"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__night_shifts
+msgid "Night Shifts"
+msgstr "الورديات الليلية"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Night Shifts Today"
+msgstr "الورديات الليلية اليوم"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__nurses
+msgid "Nurses"
+msgstr "الممرضون"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__on_leave
+msgid "On Leave"
+msgstr "في إجازة"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "On Leave Today"
+msgstr "في إجازة اليوم"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__open_shifts
+msgid "Open Shifts"
+msgstr "الورديات المفتوحة"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__overtime_cost
+msgid "Overtime Cost (month)"
+msgstr "تكلفة العمل الإضافي (الشهر)"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__overtime_shifts
+msgid "Overtime Shifts"
+msgstr "ورديات العمل الإضافي"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.ui.menu,name:healthcare_hr_dashboard.menu_dashboard_open
+msgid "Overview"
+msgstr "نظرة عامة"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__payroll_visible
+msgid "Payroll Visible"
+msgstr "الرواتب مرئية"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__present
+msgid "Present"
+msgstr "حاضر"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Present Today"
+msgstr "الحاضرون اليوم"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__probation_ending
+msgid "Probation Ending"
+msgstr "فترات تجربة قاربت على الانتهاء"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Probation Ending (30 d)"
+msgstr "فترات تجربة قاربت على الانتهاء (30 يوماً)"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__scheduled
+msgid "Scheduled"
+msgstr "مجدول"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Scheduled Today"
+msgstr "المجدولون اليوم"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Shift Shortages (14 d)"
+msgstr "حالات عجز الورديات (14 يوماً)"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Shifts with Overtime (month)"
+msgstr "ورديات بها عمل إضافي (الشهر)"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__shortages
+msgid "Shortages"
+msgstr "حالات العجز"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__technicians
+msgid "Technicians"
+msgstr "الفنيون"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__training_expired
+msgid "Training Expired"
+msgstr "تدريب منتهي"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__training_installed
+msgid "Training Installed"
+msgstr "وحدة التدريب مثبتة"
+
+#. module: healthcare_hr_dashboard
+#: model:ir.model.fields,field_description:healthcare_hr_dashboard.field_healthcare_hr_dashboard__training_missing
+msgid "Training Missing"
+msgstr "تدريب غير متوفر"
+
+#. module: healthcare_hr_dashboard
+#. odoo-python
+#: code:addons/healthcare_hr_dashboard/models/dashboard.py:0
+msgid "Unknown indicator."
+msgstr "مؤشر غير معروف."

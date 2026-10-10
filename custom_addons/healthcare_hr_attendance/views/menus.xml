@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_attendance_list" name="Attendances" parent="healthcare_hr_core.menu_attendance"
+              action="hr_attendance.hr_attendance_action" sequence="1"/>
+    <menuitem id="menu_attendance_issues" name="Attendance Issues" parent="healthcare_hr_core.menu_attendance"
+              action="action_attendance_issues" sequence="5" groups="healthcare_hr_core.group_hc_attendance_officer"/>
+    <menuitem id="menu_reconciliation" name="Reconciliation" parent="healthcare_hr_core.menu_attendance"
+              action="action_reconciliation" sequence="10" groups="healthcare_hr_core.group_hc_attendance_officer"/>
+    <menuitem id="menu_overtime_approval" name="Overtime Approval" parent="healthcare_hr_core.menu_attendance"
+              action="action_overtime_approval" sequence="11" groups="healthcare_hr_core.group_hc_attendance_officer"/>
+    <menuitem id="menu_report_absenteeism" name="Absenteeism" parent="healthcare_hr_core.menu_reports"
+              action="action_absenteeism_report" sequence="10"/>
+    <menuitem id="menu_report_late" name="Late Attendance" parent="healthcare_hr_core.menu_reports"
+              action="action_attendance_late" sequence="11" groups="healthcare_hr_core.group_hc_attendance_officer"/>
+    <menuitem id="menu_report_early" name="Early Leave" parent="healthcare_hr_core.menu_reports"
+              action="action_attendance_early" sequence="12" groups="healthcare_hr_core.group_hc_attendance_officer"/>
+</odoo>

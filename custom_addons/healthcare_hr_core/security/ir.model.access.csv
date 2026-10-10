@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_branch_user,branch.user,model_healthcare_hr_branch,base.group_user,1,0,0,0
+access_branch_manager,branch.manager,model_healthcare_hr_branch,group_hc_manager,1,1,1,1
+access_unit_user,unit.user,model_healthcare_hr_unit,base.group_user,1,0,0,0
+access_unit_manager,unit.manager,model_healthcare_hr_unit,group_hc_manager,1,1,1,1
+access_specialty_user,specialty.user,model_healthcare_medical_specialty,base.group_user,1,0,0,0
+access_specialty_manager,specialty.manager,model_healthcare_medical_specialty,group_hc_manager,1,1,1,1
+access_practitioner_link_officer,practitioner.link.officer,model_healthcare_employee_practitioner_link,group_hc_officer,1,1,1,1
+access_practitioner_link_director,practitioner.link.director,model_healthcare_employee_practitioner_link,group_hc_director,1,0,0,0
+access_onboarding_item_user,onboarding.item.user,model_healthcare_hr_onboarding_item_template,group_hc_user,1,0,0,0
+access_onboarding_item_manager,onboarding.item.manager,model_healthcare_hr_onboarding_item_template,group_hc_manager,1,1,1,1
+access_onboarding_user,onboarding.user,model_healthcare_hr_onboarding,group_hc_user,1,0,0,0
+access_onboarding_officer,onboarding.officer,model_healthcare_hr_onboarding,group_hc_officer,1,1,1,1
+access_onboarding_line_user,onboarding.line.user,model_healthcare_hr_onboarding_line,group_hc_user,1,0,0,0
+access_onboarding_line_officer,onboarding.line.officer,model_healthcare_hr_onboarding_line,group_hc_officer,1,1,1,1

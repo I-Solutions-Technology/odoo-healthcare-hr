@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="kpi_template_doctor" model="healthcare.appraisal.kpi.template">
+        <field name="name">Doctors</field>
+        <field name="sequence">10</field>
+        <field name="employee_category">doctor</field>
+    </record>
+    <record id="kpi_template_doctor_attendance" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_doctor"/>
+        <field name="sequence">10</field>
+        <field name="name">Attendance</field>
+        <field name="weight">20</field>
+        <field name="target">95</field>
+        <field name="measurement">attendance_rate</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Attended / planned shifts over the period.</field>
+    </record>
+    <record id="kpi_template_doctor_patient_satisfaction" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_doctor"/>
+        <field name="sequence">20</field>
+        <field name="name">Patient Satisfaction</field>
+        <field name="weight">15</field>
+        <field name="target">90</field>
+        <field name="measurement">manual</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Patient satisfaction survey score (%).</field>
+    </record>
+    <record id="kpi_template_doctor_documentation" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_doctor"/>
+        <field name="sequence">30</field>
+        <field name="name">Documentation Compliance</field>
+        <field name="weight">15</field>
+        <field name="target">95</field>
+        <field name="measurement">manual</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Medical records audit compliance (%).</field>
+    </record>
+    <record id="kpi_template_doctor_training" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_doctor"/>
+        <field name="sequence">40</field>
+        <field name="name">Training Compliance</field>
+        <field name="weight">15</field>
+        <field name="target">100</field>
+        <field name="measurement">training_compliance</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Valid mandatory certifications / required.</field>
+    </record>
+    <record id="kpi_template_doctor_clinical_quality" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_doctor"/>
+        <field name="sequence">50</field>
+        <field name="name">Clinical Quality KPI</field>
+        <field name="weight">20</field>
+        <field name="target">90</field>
+        <field name="measurement">manual</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Department clinical quality indicator (%).</field>
+    </record>
+    <record id="kpi_template_doctor_incident_rate" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_doctor"/>
+        <field name="sequence">60</field>
+        <field name="name">Incident Rate</field>
+        <field name="weight">15</field>
+        <field name="target">2</field>
+        <field name="measurement">manual</field>
+        <field name="higher_is_better" eval="False"/>
+        <field name="description">Reported clinical incidents per 1,000 patient contacts (lower is better).</field>
+    </record>
+    <record id="kpi_template_nurse" model="healthcare.appraisal.kpi.template">
+        <field name="name">Nurses</field>
+        <field name="sequence">20</field>
+        <field name="employee_category">nurse</field>
+    </record>
+    <record id="kpi_template_nurse_attendance" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_nurse"/>
+        <field name="sequence">10</field>
+        <field name="name">Attendance</field>
+        <field name="weight">25</field>
+        <field name="target">95</field>
+        <field name="measurement">attendance_rate</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Attended / planned shifts over the period.</field>
+    </record>
+    <record id="kpi_template_nurse_shift_compliance" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_nurse"/>
+        <field name="sequence">20</field>
+        <field name="name">Shift Compliance (late arrivals)</field>
+        <field name="weight">20</field>
+        <field name="target">5</field>
+        <field name="measurement">late_rate</field>
+        <field name="higher_is_better" eval="False"/>
+        <field name="description">Late shifts / attended shifts (lower is better).</field>
+    </record>
+    <record id="kpi_template_nurse_medication" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_nurse"/>
+        <field name="sequence">30</field>
+        <field name="name">Medication Compliance</field>
+        <field name="weight">20</field>
+        <field name="target">98</field>
+        <field name="measurement">manual</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Medication administration audit compliance (%).</field>
+    </record>
+    <record id="kpi_template_nurse_patient_feedback" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_nurse"/>
+        <field name="sequence">40</field>
+        <field name="name">Patient Feedback</field>
+        <field name="weight">15</field>
+        <field name="target">90</field>
+        <field name="measurement">manual</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Patient feedback score (%).</field>
+    </record>
+    <record id="kpi_template_nurse_training" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_nurse"/>
+        <field name="sequence">50</field>
+        <field name="name">Training Compliance</field>
+        <field name="weight">20</field>
+        <field name="target">100</field>
+        <field name="measurement">training_compliance</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Valid mandatory certifications / required.</field>
+    </record>
+    <record id="kpi_template_administrative" model="healthcare.appraisal.kpi.template">
+        <field name="name">Administrative</field>
+        <field name="sequence">30</field>
+        <field name="employee_category">administrative</field>
+    </record>
+    <record id="kpi_template_administrative_task_completion" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_administrative"/>
+        <field name="sequence">10</field>
+        <field name="name">Task Completion</field>
+        <field name="weight">30</field>
+        <field name="target">95</field>
+        <field name="measurement">manual</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Tasks completed on time (%).</field>
+    </record>
+    <record id="kpi_template_administrative_attendance" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_administrative"/>
+        <field name="sequence">20</field>
+        <field name="name">Attendance</field>
+        <field name="weight">25</field>
+        <field name="target">95</field>
+        <field name="measurement">attendance_rate</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Attended / planned shifts over the period.</field>
+    </record>
+    <record id="kpi_template_administrative_kpi_achievement" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_administrative"/>
+        <field name="sequence">30</field>
+        <field name="name">KPI Achievement</field>
+        <field name="weight">25</field>
+        <field name="target">100</field>
+        <field name="measurement">manual</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Achievement of the objectives agreed with the manager (%).</field>
+    </record>
+    <record id="kpi_template_administrative_service_quality" model="healthcare.appraisal.kpi.template.line">
+        <field name="template_id" ref="kpi_template_administrative"/>
+        <field name="sequence">40</field>
+        <field name="name">Service Quality</field>
+        <field name="weight">20</field>
+        <field name="target">90</field>
+        <field name="measurement">manual</field>
+        <field name="higher_is_better" eval="True"/>
+        <field name="description">Internal / patient service quality score (%).</field>
+    </record>
+</odoo>

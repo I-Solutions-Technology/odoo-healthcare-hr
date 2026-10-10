@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="biometric_device_view_list" model="ir.ui.view">
+        <field name="name">healthcare.biometric.device.list</field>
+        <field name="model">healthcare.biometric.device</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="vendor"/>
+                <field name="model" optional="hide"/>
+                <field name="branch_id"/>
+                <field name="connection_type"/>
+                <field name="timezone" optional="show"/>
+                <field name="last_sync"/>
+                <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                <field name="active" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="biometric_device_view_form" model="ir.ui.view">
+        <field name="name">healthcare.biometric.device.form</field>
+        <field name="model">healthcare.biometric.device</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_sync_now" type="object" string="Sync now" class="btn-primary"
+                            invisible="connection_type != 'api_pull'"
+                            groups="healthcare_hr_core.group_hc_attendance_manager"/>
+                    <button name="%(action_biometric_import_wizard)d" type="action" string="Import File"
+                            context="{'default_device_id': id}"
+                            invisible="connection_type not in ('file_import', 'sdk')"/>
+                    <button name="action_process_pending" type="object" string="Process pending"
+                            invisible="not pending_count"/>
+                    <button name="action_generate_push_token" type="object" string="Generate push token"
+                            invisible="connection_type != 'api_push'" groups="healthcare_hr_core.group_hc_admin"
+                            confirm="A new token revokes the current one: the device must be reconfigured. Continue?"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_logs" type="object" class="oe_stat_button" icon="fa-list">
+                            <field name="log_count" widget="statinfo" string="Raw Logs"/>
+                        </button>
+                        <button name="action_view_logs" type="object" class="oe_stat_button" icon="fa-hourglass-half"
+                                context="{'search_default_pending': 1}" invisible="not pending_count">
+                            <field name="pending_count" widget="statinfo" string="Pending"/>
+                        </button>
+                        <button name="action_view_logs" type="object" class="oe_stat_button text-danger" icon="fa-exclamation-triangle"
+                                context="{'search_default_error': 1}" invisible="not error_count">
+                            <field name="error_count" widget="statinfo" string="Errors"/>
+                        </button>
+                        <button name="action_view_batches" type="object" class="oe_stat_button" icon="fa-refresh">
+                            <field name="batch_count" widget="statinfo" string="Sync Batches"/>
+                        </button>
+                    </div>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="e.g. Main entrance - fingerprint"/></h1>
+                    </div>
+                    <group>
+                        <group string="Device">
+                            <field name="code"/>
+                            <field name="vendor"/>
+                            <field name="model"/>
+                            <field name="branch_id"/>
+                            <field name="timezone"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                        <group string="Connection">
+                            <field name="connection_type"/>
+                            <field name="ip_address" invisible="connection_type not in ('sdk', 'api_pull')"/>
+                            <field name="port" invisible="connection_type not in ('sdk', 'api_pull')"/>
+                            <field name="api_url" invisible="connection_type != 'api_pull'"
+                                   required="connection_type == 'api_pull' and vendor == 'generic'"/>
+                            <field name="api_username" invisible="connection_type != 'api_pull'"/>
+                            <field name="api_secret" password="True" invisible="connection_type != 'api_pull'"
+                                   groups="healthcare_hr_core.group_hc_admin"/>
+                            <field name="has_push_token" invisible="connection_type != 'api_push'"/>
+                            <field name="last_sync"/>
+                        </group>
+                    </group>
+                    <div class="text-muted" invisible="connection_type != 'api_push'">
+                        The device or its middleware posts JSON to <code>/healthcare/biometric/push</code> with the
+                        headers <code>X-Device-Code</code> and <code>X-Device-Token</code>. Only the token hash is stored.
+                    </div>
+                    <div class="text-muted">
+                        Punches are stored as raw logs and only create / close attendances; attendance is then
+                        reconciled against the planned shifts before anything reaches payroll.
+                    </div>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="biometric_device_view_search" model="ir.ui.view">
+        <field name="name">healthcare.biometric.device.search</field>
+        <field name="model">healthcare.biometric.device</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" filter_domain="['|', ('name', 'ilike', self), ('code', 'ilike', self)]"/>
+                <field name="branch_id"/>
+                <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter name="group_branch" string="Branch" context="{'group_by': 'branch_id'}"/>
+                    <filter name="group_vendor" string="Vendor" context="{'group_by': 'vendor'}"/>
+                    <filter name="group_connection" string="Connection" context="{'group_by': 'connection_type'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_biometric_device" model="ir.actions.act_window">
+        <field name="name">Biometric Devices</field>
+        <field name="res_model">healthcare.biometric.device</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Register a fingerprint, RFID or face recognition device</p>
+            <p>Punches received from devices become raw logs, then attendances matched to the planned shifts.</p>
+        </field>
+    </record>
+</odoo>

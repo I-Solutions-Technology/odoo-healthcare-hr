@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="ir_cron_coverage" model="ir.cron">
+        <field name="name">Healthcare HR: shift coverage snapshots and shortage alerts</field>
+        <field name="model_id" ref="model_healthcare_shift_coverage_rule"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_coverage()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+    </record>
+    <record id="ir_cron_pending_swaps" model="ir.cron">
+        <field name="name">Healthcare HR: pending shift swap reminders</field>
+        <field name="model_id" ref="model_healthcare_shift_swap"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_pending_swap_alerts()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+    </record>
+</odoo>

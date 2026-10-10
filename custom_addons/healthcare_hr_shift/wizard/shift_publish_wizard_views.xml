@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="shift_publish_wizard_view_form" model="ir.ui.view">
+        <field name="name">healthcare.shift.publish.wizard.form</field>
+        <field name="model">healthcare.shift.publish.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                    </group>
+                    <group>
+                        <field name="branch_id"/>
+                        <field name="department_id"/>
+                        <field name="draft_count" string="Shifts to publish"/>
+                    </group>
+                </group>
+                <div class="alert alert-warning" role="alert" invisible="not shortage_summary or blocking">
+                    <strong>Coverage shortages (warning only):</strong>
+                    <field name="shortage_summary" nolabel="1"/>
+                </div>
+                <div class="alert alert-danger" role="alert" invisible="not blocking">
+                    <strong>Publication blocked by coverage rules:</strong>
+                    <field name="shortage_summary" nolabel="1"/>
+                </div>
+                <field name="blocking" invisible="1"/>
+                <footer>
+                    <button name="action_publish" type="object" string="Validate &amp; Publish" class="btn-primary"/>
+                    <button special="cancel" string="Cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_shift_publish_wizard" model="ir.actions.act_window">
+        <field name="name">Publish Roster</field>
+        <field name="res_model">healthcare.shift.publish.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

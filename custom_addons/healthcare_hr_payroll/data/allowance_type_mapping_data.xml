@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="healthcare_hr_allowance.allowance_type_night" model="healthcare.allowance.type">
+        <field name="payslip_input_type_id" ref="input_type_night"/>
+    </record>
+    <record id="healthcare_hr_allowance.allowance_type_weekend" model="healthcare.allowance.type">
+        <field name="payslip_input_type_id" ref="input_type_weekend"/>
+    </record>
+    <record id="healthcare_hr_allowance.allowance_type_holiday" model="healthcare.allowance.type">
+        <field name="payslip_input_type_id" ref="input_type_holiday"/>
+    </record>
+    <record id="healthcare_hr_allowance.allowance_type_oncall" model="healthcare.allowance.type">
+        <field name="payslip_input_type_id" ref="input_type_oncall"/>
+    </record>
+    <record id="healthcare_hr_allowance.allowance_type_callin" model="healthcare.allowance.type">
+        <field name="payslip_input_type_id" ref="input_type_oncall"/>
+    </record>
+</odoo>

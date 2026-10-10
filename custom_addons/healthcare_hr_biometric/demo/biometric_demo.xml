@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="demo_device_branch_1" model="healthcare.biometric.device">
+        <field name="name">Main Entrance - Fingerprint</field>
+        <field name="code">DEV-B1-01</field>
+        <field name="vendor">zkteco</field>
+        <field name="model">SpeedFace-V5L</field>
+        <field name="branch_id" ref="healthcare_hr_core.demo_branch_1"/>
+        <field name="connection_type">api_push</field>
+    </record>
+    <record id="demo_device_branch_2" model="healthcare.biometric.device">
+        <field name="name">Staff Gate - RFID / Face</field>
+        <field name="code">DEV-B2-01</field>
+        <field name="vendor">generic</field>
+        <field name="model">Middleware JSON</field>
+        <field name="branch_id" ref="healthcare_hr_core.demo_branch_2"/>
+        <field name="connection_type">file_import</field>
+    </record>
+    <record id="demo_mapping_dr_ahmed" model="healthcare.biometric.employee.mapping">
+        <field name="device_id" ref="demo_device_branch_1"/>
+        <field name="device_employee_code">1001</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_dr_ahmed"/>
+    </record>
+    <record id="demo_mapping_dr_sara" model="healthcare.biometric.employee.mapping">
+        <field name="device_id" ref="demo_device_branch_1"/>
+        <field name="device_employee_code">1002</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_dr_sara"/>
+    </record>
+    <record id="demo_mapping_nurse_mona" model="healthcare.biometric.employee.mapping">
+        <field name="device_id" ref="demo_device_branch_1"/>
+        <field name="device_employee_code">1003</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_nurse_mona"/>
+    </record>
+    <record id="demo_mapping_nurse_hala" model="healthcare.biometric.employee.mapping">
+        <field name="device_id" ref="demo_device_branch_1"/>
+        <field name="device_employee_code">1004</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_nurse_hala"/>
+    </record>
+    <record id="demo_mapping_nurse_omar" model="healthcare.biometric.employee.mapping">
+        <field name="device_id" ref="demo_device_branch_1"/>
+        <field name="device_employee_code">1005</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_nurse_omar"/>
+    </record>
+    <record id="demo_mapping_nurse_laila" model="healthcare.biometric.employee.mapping">
+        <field name="device_id" ref="demo_device_branch_1"/>
+        <field name="device_employee_code">1006</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_nurse_laila"/>
+    </record>
+    <record id="demo_mapping_pharm_karim" model="healthcare.biometric.employee.mapping">
+        <field name="device_id" ref="demo_device_branch_1"/>
+        <field name="device_employee_code">1007</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_pharm_karim"/>
+    </record>
+    <record id="demo_mapping_lab_yasmin" model="healthcare.biometric.employee.mapping">
+        <field name="device_id" ref="demo_device_branch_1"/>
+        <field name="device_employee_code">1008</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_lab_yasmin"/>
+    </record>
+    <record id="demo_mapping_rad_tarek" model="healthcare.biometric.employee.mapping">
+        <field name="device_id" ref="demo_device_branch_1"/>
+        <field name="device_employee_code">1009</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_rad_tarek"/>
+    </record>
+    <record id="demo_mapping_adm_nour" model="healthcare.biometric.employee.mapping">
+        <field name="device_id" ref="demo_device_branch_1"/>
+        <field name="device_employee_code">1010</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_adm_nour"/>
+    </record>
+    <record id="demo_mapping_adm_rana" model="healthcare.biometric.employee.mapping">
+        <field name="device_id" ref="demo_device_branch_1"/>
+        <field name="device_employee_code">1011</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_adm_rana"/>
+    </record>
+    <!-- company-wide badge codes: valid on every device -->
+    <record id="demo_mapping_all_dr_ahmed" model="healthcare.biometric.employee.mapping">
+        <field name="device_employee_code">1001</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_dr_ahmed"/>
+    </record>
+    <record id="demo_mapping_all_dr_sara" model="healthcare.biometric.employee.mapping">
+        <field name="device_employee_code">1002</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_dr_sara"/>
+    </record>
+    <record id="demo_mapping_all_nurse_mona" model="healthcare.biometric.employee.mapping">
+        <field name="device_employee_code">1003</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_nurse_mona"/>
+    </record>
+    <record id="demo_mapping_all_nurse_hala" model="healthcare.biometric.employee.mapping">
+        <field name="device_employee_code">1004</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_nurse_hala"/>
+    </record>
+    <record id="demo_mapping_all_nurse_omar" model="healthcare.biometric.employee.mapping">
+        <field name="device_employee_code">1005</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_nurse_omar"/>
+    </record>
+    <record id="demo_mapping_all_nurse_laila" model="healthcare.biometric.employee.mapping">
+        <field name="device_employee_code">1006</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_nurse_laila"/>
+    </record>
+    <record id="demo_mapping_all_pharm_karim" model="healthcare.biometric.employee.mapping">
+        <field name="device_employee_code">1007</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_pharm_karim"/>
+    </record>
+    <record id="demo_mapping_all_lab_yasmin" model="healthcare.biometric.employee.mapping">
+        <field name="device_employee_code">1008</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_lab_yasmin"/>
+    </record>
+    <record id="demo_mapping_all_rad_tarek" model="healthcare.biometric.employee.mapping">
+        <field name="device_employee_code">1009</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_rad_tarek"/>
+    </record>
+    <record id="demo_mapping_all_adm_nour" model="healthcare.biometric.employee.mapping">
+        <field name="device_employee_code">1010</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_adm_nour"/>
+    </record>
+    <record id="demo_mapping_all_adm_rana" model="healthcare.biometric.employee.mapping">
+        <field name="device_employee_code">1011</field>
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_adm_rana"/>
+    </record>
+    <function model="healthcare.biometric.device" name="_hc_load_demo_biometric"/>
+</odoo>

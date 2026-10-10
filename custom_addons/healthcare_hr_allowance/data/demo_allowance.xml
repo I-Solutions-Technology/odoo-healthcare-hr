@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="demo_rule_night" model="healthcare.allowance.rule">
+        <field name="name">Night allowance (per night hour)</field>
+        <field name="type_id" ref="allowance_type_night"/>
+        <field name="calculation_method">per_hour</field>
+        <field name="hour_basis">night_hours</field>
+        <field name="amount">25</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="demo_rule_weekend" model="healthcare.allowance.rule">
+        <field name="name">Weekend allowance (per shift)</field>
+        <field name="type_id" ref="allowance_type_weekend"/>
+        <field name="calculation_method">per_shift</field>
+        <field name="shift_basis">weekend</field>
+        <field name="amount">150</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="demo_rule_icu" model="healthcare.allowance.rule">
+        <field name="name">ICU allowance (per ICU shift)</field>
+        <field name="type_id" ref="allowance_type_icu"/>
+        <field name="calculation_method">per_shift</field>
+        <field name="shift_basis">all</field>
+        <field name="department_id" ref="healthcare_hr_core.demo_dept_icu"/>
+        <field name="amount">100</field>
+        <field name="maximum">2000</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="demo_rule_oncall" model="healthcare.allowance.rule">
+        <field name="name">On-call standby (per hour)</field>
+        <field name="type_id" ref="allowance_type_oncall"/>
+        <field name="calculation_method">per_hour</field>
+        <field name="hour_basis">oncall_standby_hours</field>
+        <field name="amount">20</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="demo_rule_callin" model="healthcare.allowance.rule">
+        <field name="name">Call-in (per worked hour)</field>
+        <field name="type_id" ref="allowance_type_callin"/>
+        <field name="calculation_method">per_hour</field>
+        <field name="hour_basis">oncall_worked_hours</field>
+        <field name="amount">80</field>
+        <field name="sequence">41</field>
+    </record>
+    <record id="demo_rule_transport" model="healthcare.allowance.rule">
+        <field name="name">Transportation (10% of basic)</field>
+        <field name="type_id" ref="allowance_type_transport"/>
+        <field name="calculation_method">percentage_basic</field>
+        <field name="percentage">10</field>
+        <field name="maximum">3000</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="demo_rule_infection" model="healthcare.allowance.rule">
+        <field name="name">Infection risk - nurses (fixed)</field>
+        <field name="type_id" ref="allowance_type_infection"/>
+        <field name="calculation_method">fixed</field>
+        <field name="employee_category">nurse</field>
+        <field name="amount">500</field>
+        <field name="sequence">60</field>
+    </record>
+</odoo>

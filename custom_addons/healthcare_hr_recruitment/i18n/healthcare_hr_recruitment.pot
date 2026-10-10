@@ -1,0 +1,482 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_recruitment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: healthcare_hr_recruitment
+#. odoo-python
+#: code:addons/healthcare_hr_recruitment/models/hr_applicant.py:0
+msgid "%(name)s: %(status)s%(missing)s"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#. odoo-python
+#: code:addons/healthcare_hr_recruitment/models/applicant_credential.py:0
+msgid "Add the %s number or a scanned document before verifying."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__administrative
+msgid "Administrative"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model,name:healthcare_hr_recruitment.model_hr_applicant
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__applicant_id
+msgid "Applicant"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model,name:healthcare_hr_recruitment.model_healthcare_applicant_credential
+msgid "Applicant Credential"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__hc_credential_line_ids
+msgid "Applicant Credentials"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.ui.menu,name:healthcare_hr_recruitment.menu_hc_applications
+msgid "Applications"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model_terms:ir.actions.act_window,help:healthcare_hr_recruitment.action_recruitment_funnel
+msgid ""
+"Applications by pipeline stage, from application to credential verification "
+"and hiring."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__arabic_name
+msgid "Arabic Name"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__classification__assistant_nurse
+msgid "Assistant Nurse"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__call_center
+msgid "Call Center"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__company_id
+msgid "Company"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__classification__consultant
+msgid "Consultant"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__credential_number
+msgid "Credential Number"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__credential_type_id
+msgid "Credential Type"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:hr.recruitment.stage,name:healthcare_hr_recruitment.stage_credential_verification
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__credential_verification_status
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_form_healthcare
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_search_healthcare
+msgid "Credential Verification"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_recruitment_stage__hc_credential_verification
+msgid "Credential Verification Stage"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#. odoo-python
+#: code:addons/healthcare_hr_recruitment/models/hr_applicant.py:0
+msgid ""
+"Credentials must be verified before hiring (Credential Verification stage):\n"
+"%s"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_search_healthcare
+msgid "Credentials to Verify"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,help:healthcare_hr_recruitment.field_hr_applicant__required_credential_type_ids
+msgid "Defaults to the mandatory credential types of the job position."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_recruitment_stage__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__doctor
+msgid "Doctor"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__attachment_ids
+msgid "Documents"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#. odoo-python
+#: code:addons/healthcare_hr_recruitment/models/hr_applicant.py:0
+msgid "Enter the verification note (reason) first."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__expiry_date
+msgid "Expiry Date"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__credential_verification_status__failed
+msgid "Failed"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__finance
+msgid "Finance"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__classification__general_practitioner
+msgid "General Practitioner"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,help:healthcare_hr_recruitment.field_hr_applicant__classification
+msgid "Grade granted by the health authority / professional council."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_form_healthcare
+msgid "Healthcare"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__employee_category
+msgid "Healthcare Category"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_form_healthcare
+msgid ""
+"Hiring (hired stage or employee creation) is blocked until the credential verification\n"
+"                        is \"Verified\". Verified credentials are copied to the employee as verified credentials."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__hr
+msgid "Human Resources"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__id
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__id
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_recruitment_stage__id
+msgid "ID"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__credential_verification_status__in_progress
+#: model:hr.recruitment.stage,legend_normal:healthcare_hr_recruitment.stage_credential_verification
+msgid "In Progress"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__issue_date
+msgid "Issue Date"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__issuing_authority
+msgid "Issuing Authority"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.ui.menu,name:healthcare_hr_recruitment.menu_hc_job_position
+msgid "Job Positions"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__lab_technician
+msgid "Laboratory Technician"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__management
+msgid "Management"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_form_healthcare
+msgid ""
+"Mark the credential verification as failed? Enter the reason in the "
+"Healthcare tab first."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__medical_technician
+msgid "Medical Technician"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model_terms:ir.actions.act_window,help:healthcare_hr_recruitment.action_recruitment_funnel
+msgid "No application yet"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__classification__non_clinical
+msgid "Non Clinical"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__credential_verification_status__not_started
+msgid "Not Started"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__note
+msgid "Note"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__nurse
+msgid "Nurse"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__other
+msgid "Other"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__classification__pharmacist
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__pharmacist
+msgid "Pharmacist"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__classification
+msgid "Professional Classification"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__professional_license
+msgid "Professional License No."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_form_healthcare
+msgid "Professional Profile"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#. odoo-python
+#: code:addons/healthcare_hr_recruitment/models/hr_applicant.py:0
+msgid "Provided during recruitment (application %s)."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__radiology_doctor
+msgid "Radiology Doctor"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__radiology_technician
+msgid "Radiology Technician"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__employee_category__reception
+msgid "Reception"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.actions.act_window,name:healthcare_hr_recruitment.action_recruitment_funnel
+#: model:ir.ui.menu,name:healthcare_hr_recruitment.menu_report_recruitment_funnel
+msgid "Recruitment Funnel"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model,name:healthcare_hr_recruitment.model_hr_recruitment_stage
+msgid "Recruitment Stages"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__classification__registered_nurse
+msgid "Registered Nurse"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__required
+msgid "Required"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__required_credential_type_ids
+msgid "Required Credentials"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_form_healthcare
+msgid "Reset"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_form_healthcare
+msgid "Reset Verification"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__classification__resident
+msgid "Resident"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__classification__specialist
+msgid "Specialist"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__healthcare_specialty_id
+msgid "Specialty"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,help:healthcare_hr_recruitment.field_hr_recruitment_stage__hc_credential_verification
+msgid ""
+"Stage in which HR verifies the licenses and certifications of the applicant."
+" Applicants can only move to a hired stage once their credentials are "
+"verified."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__classification__technician
+msgid "Technician"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#. odoo-python
+#: code:addons/healthcare_hr_recruitment/models/applicant_credential.py:0
+msgid "The %s of the applicant is expired."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#. odoo-python
+#: code:addons/healthcare_hr_recruitment/models/applicant_credential.py:0
+msgid "The expiry date cannot be before the issue date."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__verification_date
+msgid "Verification Date"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__hc_verification_failed
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_form_healthcare
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_search_healthcare
+msgid "Verification Failed"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__hc_verification_note
+msgid "Verification Note"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__verified
+#: model:ir.model.fields.selection,name:healthcare_hr_recruitment.selection__hr_applicant__credential_verification_status__verified
+msgid "Verified"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_healthcare_applicant_credential__verified_by
+msgid "Verified By"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#. odoo-python
+#: code:addons/healthcare_hr_recruitment/models/hr_applicant.py:0
+msgid "Verified during recruitment (application %s)."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,help:healthcare_hr_recruitment.field_hr_applicant__credential_verification_status
+msgid ""
+"Verified: every required credential has a verified, non expired line (or "
+"nothing is required and every provided line is verified). Hiring is blocked "
+"until then."
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_recruitment.hr_applicant_view_form_healthcare
+msgid "Verify"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:ir.model.fields,field_description:healthcare_hr_recruitment.field_hr_applicant__years_experience
+msgid "Years of Experience"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:hr.recruitment.stage,legend_done:healthcare_hr_recruitment.stage_credential_verification
+msgid "Ready for Next Stage"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:hr.recruitment.stage,legend_waiting:healthcare_hr_recruitment.stage_credential_verification
+msgid "Waiting"
+msgstr ""
+
+#. module: healthcare_hr_recruitment
+#: model:hr.recruitment.stage,legend_blocked:healthcare_hr_recruitment.stage_credential_verification
+msgid "Blocked"
+msgstr ""

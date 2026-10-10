@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="clearance_department_view_list" model="ir.ui.view">
+        <field name="name">healthcare.hr.clearance.department.list</field>
+        <field name="model">healthcare.hr.clearance.department</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="responsible_user_id"/>
+                <field name="mandatory"/>
+                <field name="checklist"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_clearance_department" model="ir.actions.act_window">
+        <field name="name">Clearance Departments</field>
+        <field name="res_model">healthcare.hr.clearance.department</field>
+        <field name="view_mode">list</field>
+    </record>
+    <record id="settlement_component_view_list" model="ir.ui.view">
+        <field name="name">healthcare.hr.settlement.component.list</field>
+        <field name="model">healthcare.hr.settlement.component</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="component_type"/>
+                <field name="computation"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+    <record id="settlement_component_view_form" model="ir.ui.view">
+        <field name="name">healthcare.hr.settlement.component.form</field>
+        <field name="model">healthcare.hr.settlement.component</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                            <field name="component_type"/>
+                            <field name="computation"/>
+                        </group>
+                        <group>
+                            <field name="daily_wage_basis"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <group string="Formula" invisible="computation != 'formula'">
+                        <field name="formula" widget="code" options="{'mode': 'python'}" nolabel="1" colspan="2"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_settlement_component" model="ir.actions.act_window">
+        <field name="name">Settlement Components</field>
+        <field name="res_model">healthcare.hr.settlement.component</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

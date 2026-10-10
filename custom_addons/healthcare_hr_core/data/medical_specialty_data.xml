@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="specialty_internal_medicine" model="healthcare.medical.specialty">
+        <field name="name">Internal Medicine</field>
+        <field name="code">INTERNAL_MEDICINE</field>
+    </record>
+    <record id="specialty_cardiology" model="healthcare.medical.specialty">
+        <field name="name">Cardiology</field>
+        <field name="code">CARDIOLOGY</field>
+        <field name="parent_id" ref="specialty_internal_medicine"/>
+    </record>
+    <record id="specialty_nephrology" model="healthcare.medical.specialty">
+        <field name="name">Nephrology</field>
+        <field name="code">NEPHROLOGY</field>
+        <field name="parent_id" ref="specialty_internal_medicine"/>
+    </record>
+    <record id="specialty_gastroenterology" model="healthcare.medical.specialty">
+        <field name="name">Gastroenterology</field>
+        <field name="code">GASTROENTEROLOGY</field>
+        <field name="parent_id" ref="specialty_internal_medicine"/>
+    </record>
+    <record id="specialty_surgery" model="healthcare.medical.specialty">
+        <field name="name">General Surgery</field>
+        <field name="code">SURGERY</field>
+    </record>
+    <record id="specialty_orthopedics" model="healthcare.medical.specialty">
+        <field name="name">Orthopedic Surgery</field>
+        <field name="code">ORTHOPEDICS</field>
+        <field name="parent_id" ref="specialty_surgery"/>
+    </record>
+    <record id="specialty_neurosurgery" model="healthcare.medical.specialty">
+        <field name="name">Neurosurgery</field>
+        <field name="code">NEUROSURGERY</field>
+        <field name="parent_id" ref="specialty_surgery"/>
+    </record>
+    <record id="specialty_pediatrics" model="healthcare.medical.specialty">
+        <field name="name">Pediatrics</field>
+        <field name="code">PEDIATRICS</field>
+    </record>
+    <record id="specialty_neonatology" model="healthcare.medical.specialty">
+        <field name="name">Neonatology</field>
+        <field name="code">NEONATOLOGY</field>
+        <field name="parent_id" ref="specialty_pediatrics"/>
+    </record>
+    <record id="specialty_obgyn" model="healthcare.medical.specialty">
+        <field name="name">Obstetrics &amp; Gynecology</field>
+        <field name="code">OBGYN</field>
+    </record>
+    <record id="specialty_emergency" model="healthcare.medical.specialty">
+        <field name="name">Emergency Medicine</field>
+        <field name="code">EMERGENCY</field>
+    </record>
+    <record id="specialty_anesthesia" model="healthcare.medical.specialty">
+        <field name="name">Anesthesiology</field>
+        <field name="code">ANESTHESIA</field>
+    </record>
+    <record id="specialty_critical_care" model="healthcare.medical.specialty">
+        <field name="name">Critical Care Medicine</field>
+        <field name="code">CRITICAL_CARE</field>
+        <field name="parent_id" ref="specialty_anesthesia"/>
+    </record>
+    <record id="specialty_radiology" model="healthcare.medical.specialty">
+        <field name="name">Radiology</field>
+        <field name="code">RADIOLOGY</field>
+    </record>
+    <record id="specialty_interventional_radiology" model="healthcare.medical.specialty">
+        <field name="name">Interventional Radiology</field>
+        <field name="code">INTERVENTIONAL_RADIOLOGY</field>
+        <field name="parent_id" ref="specialty_radiology"/>
+    </record>
+    <record id="specialty_pathology" model="healthcare.medical.specialty">
+        <field name="name">Pathology &amp; Laboratory Medicine</field>
+        <field name="code">PATHOLOGY</field>
+    </record>
+    <record id="specialty_family_medicine" model="healthcare.medical.specialty">
+        <field name="name">Family Medicine</field>
+        <field name="code">FAMILY_MEDICINE</field>
+    </record>
+    <record id="specialty_dentistry" model="healthcare.medical.specialty">
+        <field name="name">Dentistry</field>
+        <field name="code">DENTISTRY</field>
+    </record>
+    <record id="specialty_nursing" model="healthcare.medical.specialty">
+        <field name="name">Nursing</field>
+        <field name="code">NURSING</field>
+    </record>
+    <record id="specialty_icu_nursing" model="healthcare.medical.specialty">
+        <field name="name">Critical Care Nursing</field>
+        <field name="code">ICU_NURSING</field>
+        <field name="parent_id" ref="specialty_nursing"/>
+    </record>
+    <record id="specialty_er_nursing" model="healthcare.medical.specialty">
+        <field name="name">Emergency Nursing</field>
+        <field name="code">ER_NURSING</field>
+        <field name="parent_id" ref="specialty_nursing"/>
+    </record>
+    <record id="specialty_pharmacy" model="healthcare.medical.specialty">
+        <field name="name">Clinical Pharmacy</field>
+        <field name="code">PHARMACY</field>
+    </record>
+</odoo>

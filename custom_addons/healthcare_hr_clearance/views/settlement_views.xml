@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="settlement_view_list" model="ir.ui.view">
+        <field name="name">healthcare.hr.final.settlement.list</field>
+        <field name="model">healthcare.hr.final.settlement</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="last_working_date"/>
+                <field name="exit_reason"/>
+                <field name="currency_id" column_invisible="1"/>
+                <field name="total_earnings" sum="Earnings"/>
+                <field name="total_deductions" sum="Deductions"/>
+                <field name="net_amount" sum="Net"/>
+                <field name="state" widget="badge" decoration-success="state == 'paid'" decoration-info="state in ('computed', 'confirmed')"/>
+            </list>
+        </field>
+    </record>
+    <record id="settlement_view_form" model="ir.ui.view">
+        <field name="name">healthcare.hr.final.settlement.form</field>
+        <field name="model">healthcare.hr.final.settlement</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_compute" type="object" string="Compute" class="btn-primary" invisible="state not in ('draft', 'computed')"/>
+                    <button name="action_confirm" type="object" string="Confirm" class="btn-primary" invisible="state != 'computed'"
+                            groups="healthcare_hr_core.group_hc_payroll_manager"/>
+                    <button name="action_mark_paid" type="object" string="Mark as Paid" invisible="state != 'confirmed'"
+                            groups="healthcare_hr_core.group_hc_payroll_officer"/>
+                    <button name="%(action_report_final_settlement)d" type="action" string="Print" invisible="state == 'draft'"/>
+                    <button name="action_reset" type="object" string="Reset to Draft" invisible="state not in ('computed', 'confirmed')"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,computed,confirmed,paid"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name" readonly="1"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="exit_id" readonly="1"/>
+                            <field name="employee_id"/>
+                            <field name="department_id"/>
+                            <field name="last_working_date"/>
+                            <field name="exit_reason"/>
+                        </group>
+                        <group>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="total_earnings"/>
+                            <field name="total_deductions"/>
+                            <field name="net_amount" class="fw-bold"/>
+                            <field name="payment_date" readonly="state == 'paid'"/>
+                            <field name="payment_reference" readonly="state == 'paid'"/>
+                        </group>
+                    </group>
+                    <field name="line_ids" readonly="state not in ('draft', 'computed')">
+                        <list editable="bottom" decoration-danger="amount &lt; 0">
+                            <field name="sequence" widget="handle"/>
+                            <field name="component_id" optional="show"/>
+                            <field name="name"/>
+                            <field name="computation_note"/>
+                            <field name="currency_id" column_invisible="1"/>
+                            <field name="amount" sum="Net"/>
+                        </list>
+                    </field>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+    <record id="action_final_settlement" model="ir.actions.act_window">
+        <field name="name">Final Settlements</field>
+        <field name="res_model">healthcare.hr.final.settlement</field>
+        <field name="view_mode">list,form,pivot</field>
+    </record>
+</odoo>

@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bank_layout_officer,bank.layout.officer,model_healthcare_payroll_bank_layout,healthcare_hr_core.group_hc_payroll_officer,1,0,0,0
+access_bank_layout_manager,bank.layout.manager,model_healthcare_payroll_bank_layout,healthcare_hr_core.group_hc_payroll_manager,1,1,1,1
+access_bank_layout_column_officer,bank.layout.column.officer,model_healthcare_payroll_bank_layout_column,healthcare_hr_core.group_hc_payroll_officer,1,0,0,0
+access_bank_layout_column_manager,bank.layout.column.manager,model_healthcare_payroll_bank_layout_column,healthcare_hr_core.group_hc_payroll_manager,1,1,1,1
+access_bank_batch_officer,bank.batch.officer,model_healthcare_payroll_bank_batch,healthcare_hr_core.group_hc_payroll_officer,1,1,1,1
+access_bank_line_officer,bank.line.officer,model_healthcare_payroll_bank_line,healthcare_hr_core.group_hc_payroll_officer,1,1,1,1

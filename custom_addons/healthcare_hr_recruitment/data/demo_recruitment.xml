@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="demo_applicant_nurse_reem" model="hr.applicant">
+        <field name="partner_name">Reem Saber</field>
+        <field name="arabic_name">ريم صابر</field>
+        <field name="email_from">reem.saber@example.com</field>
+        <field name="job_id" ref="healthcare_hr_core.demo_job_icu_nurse"/>
+        <field name="department_id" ref="healthcare_hr_core.demo_dept_icu"/>
+        <field name="healthcare_specialty_id" ref="healthcare_hr_core.specialty_icu_nursing"/>
+        <field name="classification">registered_nurse</field>
+        <field name="years_experience">6</field>
+        <field name="professional_license">RN-55021</field>
+        <field name="stage_id" ref="stage_credential_verification"/>
+    </record>
+    <record id="demo_applicant_nurse_reem_license" model="healthcare.applicant.credential">
+        <field name="applicant_id" ref="demo_applicant_nurse_reem"/>
+        <field name="credential_type_id" ref="healthcare_hr_credentials.credential_type_medical_license"/>
+        <field name="credential_number">RN-55021</field>
+        <field name="issuing_authority">Ministry of Health</field>
+        <field name="expiry_date" eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="verified" eval="True"/>
+    </record>
+    <record id="demo_applicant_nurse_reem_bls" model="healthcare.applicant.credential">
+        <field name="applicant_id" ref="demo_applicant_nurse_reem"/>
+        <field name="credential_type_id" ref="healthcare_hr_credentials.credential_type_bls"/>
+        <field name="credential_number">BLS-8841</field>
+        <field name="issuing_authority">American Heart Association</field>
+        <field name="expiry_date" eval="(DateTime.today() + relativedelta(years=1)).strftime('%Y-%m-%d')"/>
+    </record>
+
+    <record id="demo_applicant_doctor_khaled" model="hr.applicant">
+        <field name="partner_name">Dr. Khaled Mansour</field>
+        <field name="email_from">khaled.mansour@example.com</field>
+        <field name="job_id" ref="healthcare_hr_core.demo_job_er_physician"/>
+        <field name="department_id" ref="healthcare_hr_core.demo_dept_er"/>
+        <field name="healthcare_specialty_id" ref="healthcare_hr_core.specialty_emergency"/>
+        <field name="classification">specialist</field>
+        <field name="years_experience">9</field>
+        <field name="stage_id" ref="hr_recruitment.stage_job2"/>
+    </record>
+</odoo>

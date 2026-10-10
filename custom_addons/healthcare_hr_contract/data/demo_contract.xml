@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="healthcare_hr_core.demo_emp_dr_ahmed" model="hr.employee">
+        <field name="contract_date_start" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-%m-%d')"/>
+        <field name="wage">45000</field>
+        <field name="contract_type_id" ref="hr.contract_type_permanent"/>
+        <field name="renewal_type">manual</field>
+        <field name="medical_license_required" eval="True"/>
+        <field name="insurance_required" eval="True"/>
+    </record>
+    <record id="healthcare_hr_core.demo_emp_dr_sara" model="hr.employee">
+        <field name="contract_date_start" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-%m-%d')"/>
+        <field name="contract_date_end" eval="(DateTime.today() + relativedelta(days=40)).strftime('%Y-%m-%d')"/>
+        <field name="wage">60000</field>
+        <field name="contract_type_id" ref="contract_type_consultant"/>
+        <field name="renewal_type">manual</field>
+        <field name="medical_license_required" eval="True"/>
+        <field name="insurance_required" eval="True"/>
+    </record>
+    <record id="healthcare_hr_core.demo_emp_nurse_mona" model="hr.employee">
+        <field name="contract_date_start" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-%m-%d')"/>
+        <field name="wage">14000</field>
+        <field name="contract_type_id" ref="contract_type_full_time"/>
+        <field name="renewal_type">manual</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="healthcare_hr_core.demo_emp_nurse_hala" model="hr.employee">
+        <field name="contract_date_start" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-%m-%d')"/>
+        <field name="wage">13500</field>
+        <field name="contract_type_id" ref="contract_type_full_time"/>
+        <field name="renewal_type">manual</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="healthcare_hr_core.demo_emp_nurse_omar" model="hr.employee">
+        <field name="contract_date_start" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-%m-%d')"/>
+        <field name="contract_date_end" eval="(DateTime.today() + relativedelta(days=300)).strftime('%Y-%m-%d')"/>
+        <field name="wage">12000</field>
+        <field name="contract_type_id" ref="contract_type_full_time"/>
+        <field name="renewal_type">manual</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="healthcare_hr_core.demo_emp_nurse_laila" model="hr.employee">
+        <field name="contract_date_start" eval="(DateTime.today() - relativedelta(days=30)).strftime('%Y-%m-%d')"/>
+        <field name="contract_date_end" eval="(DateTime.today() + relativedelta(days=335)).strftime('%Y-%m-%d')"/>
+        <field name="wage">11000</field>
+        <field name="contract_type_id" ref="contract_type_full_time"/>
+        <field name="renewal_type">manual</field>
+        <field name="medical_license_required" eval="True"/>
+        <field name="trial_date_end" eval="(DateTime.today() + relativedelta(days=10)).strftime('%Y-%m-%d')"/>
+        <field name="probation_start_date" eval="(DateTime.today() - relativedelta(days=30)).strftime('%Y-%m-%d')"/>
+        <field name="probation_status">started</field>
+        <field name="employment_status">probation</field>
+    </record>
+    <record id="healthcare_hr_core.demo_emp_pharm_karim" model="hr.employee">
+        <field name="contract_date_start" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-%m-%d')"/>
+        <field name="wage">16000</field>
+        <field name="contract_type_id" ref="hr.contract_type_permanent"/>
+        <field name="renewal_type">manual</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="healthcare_hr_core.demo_emp_lab_yasmin" model="hr.employee">
+        <field name="contract_date_start" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-%m-%d')"/>
+        <field name="wage">10000</field>
+        <field name="contract_type_id" ref="contract_type_full_time"/>
+        <field name="renewal_type">manual</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="healthcare_hr_core.demo_emp_rad_tarek" model="hr.employee">
+        <field name="contract_date_start" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-%m-%d')"/>
+        <field name="wage">11500</field>
+        <field name="contract_type_id" ref="contract_type_full_time"/>
+        <field name="renewal_type">manual</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="healthcare_hr_core.demo_emp_adm_nour" model="hr.employee">
+        <field name="contract_date_start" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-%m-%d')"/>
+        <field name="wage">15000</field>
+        <field name="contract_type_id" ref="hr.contract_type_permanent"/>
+        <field name="renewal_type">manual</field>
+    </record>
+    <record id="healthcare_hr_core.demo_emp_adm_rana" model="hr.employee">
+        <field name="contract_date_start" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-%m-%d')"/>
+        <field name="contract_date_end" eval="(DateTime.today() + relativedelta(days=25)).strftime('%Y-%m-%d')"/>
+        <field name="wage">7000</field>
+        <field name="contract_type_id" ref="contract_type_part_time"/>
+        <field name="renewal_type">manual</field>
+    </record>
+</odoo>

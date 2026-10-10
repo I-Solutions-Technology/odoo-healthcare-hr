@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payroll_input_generate_wizard_view_form" model="ir.ui.view">
+        <field name="name">healthcare.payroll.input.generate.wizard.form</field>
+        <field name="model">healthcare.payroll.input.generate.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                        <field name="compute_allowances"/>
+                    </group>
+                    <group>
+                        <field name="employee_ids" widget="many2many_tags"/>
+                    </group>
+                </group>
+                <p class="text-muted">Only approved work data is used. Running it again never duplicates an input.</p>
+                <footer>
+                    <button name="action_generate" type="object" string="Generate" class="btn-primary"/>
+                    <button special="cancel" string="Cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_payroll_input_generate_wizard" model="ir.actions.act_window">
+        <field name="name">Generate Payroll Inputs</field>
+        <field name="res_model">healthcare.payroll.input.generate.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

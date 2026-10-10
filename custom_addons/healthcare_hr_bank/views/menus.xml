@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_bank_batch" name="Bank Batches" parent="healthcare_hr_core.menu_payroll" action="action_bank_batch" sequence="60"/>
+    <menuitem id="menu_config_bank_layout" name="Bank File Layouts" parent="healthcare_hr_core.menu_config"
+              action="action_bank_layout" sequence="70" groups="healthcare_hr_core.group_hc_payroll_manager"/>
+</odoo>

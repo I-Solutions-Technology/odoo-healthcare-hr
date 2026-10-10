@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="exit_view_list" model="ir.ui.view">
+        <field name="name">healthcare.hr.exit.list</field>
+        <field name="model">healthcare.hr.exit</field>
+        <field name="arch" type="xml">
+            <list decoration-muted="state == 'cancelled'" decoration-success="state == 'done'">
+                <field name="name"/>
+                <field name="employee_id" widget="many2one_avatar_employee"/>
+                <field name="department_id"/>
+                <field name="branch_id" optional="show"/>
+                <field name="exit_reason"/>
+                <field name="last_working_date"/>
+                <field name="clearance_progress" widget="progressbar"/>
+                <field name="state" widget="badge" decoration-info="state in ('initiated', 'clearance')"
+                       decoration-warning="state in ('settlement', 'hr_approval')" decoration-success="state == 'done'"/>
+            </list>
+        </field>
+    </record>
+    <record id="exit_view_form" model="ir.ui.view">
+        <field name="name">healthcare.hr.exit.form</field>
+        <field name="model">healthcare.hr.exit</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_start_clearance" type="object" string="Start Clearance" class="btn-primary"
+                            invisible="state != 'initiated'" groups="healthcare_hr_core.group_hc_officer"/>
+                    <button name="action_create_settlement" type="object" string="Final Settlement" class="btn-primary"
+                            invisible="state not in ('settlement', 'hr_approval')"
+                            groups="healthcare_hr_core.group_hc_payroll_officer,healthcare_hr_core.group_hc_officer"/>
+                    <button name="action_hr_approve" type="object" string="HR Approve &amp; Archive" class="btn-primary"
+                            invisible="state != 'hr_approval'" groups="healthcare_hr_core.group_hc_manager"
+                            confirm="The employee will be archived, the contract ended and future shifts cancelled. Continue?"/>
+                    <button name="action_cancel" type="object" string="Cancel" invisible="state in ('done', 'cancelled')"
+                            groups="healthcare_hr_core.group_hc_officer"/>
+                    <field name="state" widget="statusbar" statusbar_visible="initiated,clearance,settlement,hr_approval,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name" readonly="1"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="employee_id" readonly="state != 'initiated'"/>
+                            <field name="department_id"/>
+                            <field name="job_id"/>
+                            <field name="branch_id"/>
+                        </group>
+                        <group>
+                            <field name="exit_reason" readonly="state not in ('initiated', 'clearance')"/>
+                            <field name="departure_reason_id"/>
+                            <field name="request_date" readonly="state != 'initiated'"/>
+                            <field name="last_working_date" readonly="state not in ('initiated', 'clearance')"/>
+                            <field name="notice_days"/>
+                            <field name="clearance_progress" widget="progressbar"/>
+                            <field name="settlement_id" invisible="not settlement_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Clearance" name="clearance">
+                            <field name="clearance_item_ids">
+                                <list create="0" decoration-success="state == 'cleared'" decoration-danger="state == 'blocked'">
+                                    <field name="clearance_department_id"/>
+                                    <field name="responsible_user_id" widget="many2one_avatar_user"/>
+                                    <field name="checklist" optional="show"/>
+                                    <field name="mandatory"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="amount_due" sum="Obligations"/>
+                                    <field name="note"/>
+                                    <field name="state" widget="badge" decoration-success="state == 'cleared'" decoration-danger="state == 'blocked'"/>
+                                    <button name="action_clear" type="object" string="Clear" icon="fa-check" invisible="state == 'cleared'"/>
+                                    <button name="action_block" type="object" string="Block" icon="fa-ban" invisible="state != 'pending'"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Details" name="details">
+                            <field name="description" placeholder="Exit interview, handover notes..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+    <record id="exit_view_search" model="ir.ui.view">
+        <field name="name">healthcare.hr.exit.search</field>
+        <field name="model">healthcare.hr.exit</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="employee_id"/>
+                <field name="department_id"/>
+                <filter name="open" string="In Progress" domain="[('state', 'not in', ('done', 'cancelled'))]"/>
+                <filter name="done" string="Archived" domain="[('state', '=', 'done')]"/>
+                <filter name="last_working_date" string="Last Working Date" date="last_working_date"/>
+                <group>
+                    <filter name="group_reason" string="Exit Reason" context="{'group_by': 'exit_reason'}"/>
+                    <filter name="group_department" string="Department" context="{'group_by': 'department_id'}"/>
+                    <filter name="group_branch" string="Branch" context="{'group_by': 'branch_id'}"/>
+                    <filter name="group_state" string="Status" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="exit_view_pivot" model="ir.ui.view">
+        <field name="name">healthcare.hr.exit.pivot</field>
+        <field name="model">healthcare.hr.exit</field>
+        <field name="arch" type="xml">
+            <pivot string="Employee Turnover" sample="1">
+                <field name="last_working_date" interval="month" type="row"/>
+                <field name="exit_reason" type="col"/>
+            </pivot>
+        </field>
+    </record>
+    <record id="action_exit" model="ir.actions.act_window">
+        <field name="name">Employee Exits</field>
+        <field name="res_model">healthcare.hr.exit</field>
+        <field name="view_mode">list,form,pivot</field>
+        <field name="context">{'search_default_open': 1}</field>
+    </record>
+    <record id="action_turnover_report" model="ir.actions.act_window">
+        <field name="name">Employee Turnover</field>
+        <field name="res_model">healthcare.hr.exit</field>
+        <field name="view_mode">pivot,graph,list</field>
+        <field name="domain">[('state', '!=', 'cancelled')]</field>
+    </record>
+    <record id="clearance_item_view_list" model="ir.ui.view">
+        <field name="name">healthcare.hr.clearance.item.list</field>
+        <field name="model">healthcare.hr.clearance.item</field>
+        <field name="arch" type="xml">
+            <list create="0" decoration-success="state == 'cleared'" decoration-danger="state == 'blocked'">
+                <field name="exit_id"/>
+                <field name="employee_id"/>
+                <field name="clearance_department_id"/>
+                <field name="responsible_user_id"/>
+                <field name="currency_id" column_invisible="1"/>
+                <field name="amount_due"/>
+                <field name="note"/>
+                <field name="state"/>
+                <button name="action_clear" type="object" string="Clear" icon="fa-check" invisible="state == 'cleared'"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_my_clearance_items" model="ir.actions.act_window">
+        <field name="name">My Clearance Tasks</field>
+        <field name="res_model">healthcare.hr.clearance.item</field>
+        <field name="view_mode">list</field>
+        <field name="domain">[('responsible_user_id', '=', uid), ('state', '!=', 'cleared')]</field>
+    </record>
+</odoo>

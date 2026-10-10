@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_loan_self,loan.self,model_healthcare_hr_loan,healthcare_hr_core.group_hc_self_service,1,1,1,0
+access_loan_officer,loan.officer,model_healthcare_hr_loan,healthcare_hr_core.group_hc_payroll_officer,1,1,1,1
+access_loan_installment_self,loan.installment.self,model_healthcare_hr_loan_installment,healthcare_hr_core.group_hc_self_service,1,0,0,0
+access_loan_installment_officer,loan.installment.officer,model_healthcare_hr_loan_installment,healthcare_hr_core.group_hc_payroll_officer,1,1,1,1

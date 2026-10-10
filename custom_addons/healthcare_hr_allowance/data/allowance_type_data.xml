@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="allowance_type_night" model="healthcare.allowance.type">
+        <field name="name">Night Shift</field>
+        <field name="code">NIGHT</field>
+        <field name="category">night_shift</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="allowance_type_weekend" model="healthcare.allowance.type">
+        <field name="name">Weekend</field>
+        <field name="code">WEEKEND</field>
+        <field name="category">weekend</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="allowance_type_holiday" model="healthcare.allowance.type">
+        <field name="name">Public Holiday</field>
+        <field name="code">HOLIDAY</field>
+        <field name="category">public_holiday</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="allowance_type_risk" model="healthcare.allowance.type">
+        <field name="name">Risk</field>
+        <field name="code">RISK</field>
+        <field name="category">risk</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="allowance_type_transport" model="healthcare.allowance.type">
+        <field name="name">Transportation</field>
+        <field name="code">TRANSPORT</field>
+        <field name="category">transportation</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="allowance_type_housing" model="healthcare.allowance.type">
+        <field name="name">Housing</field>
+        <field name="code">HOUSING</field>
+        <field name="category">housing</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="allowance_type_responsibility" model="healthcare.allowance.type">
+        <field name="name">Responsibility</field>
+        <field name="code">RESPONSIBILITY</field>
+        <field name="category">responsibility</field>
+        <field name="sequence">70</field>
+    </record>
+    <record id="allowance_type_oncall" model="healthcare.allowance.type">
+        <field name="name">On Call</field>
+        <field name="code">ONCALL</field>
+        <field name="category">on_call</field>
+        <field name="sequence">80</field>
+    </record>
+    <record id="allowance_type_callin" model="healthcare.allowance.type">
+        <field name="name">Call In</field>
+        <field name="code">CALLIN</field>
+        <field name="category">call_in</field>
+        <field name="sequence">90</field>
+    </record>
+    <record id="allowance_type_remote" model="healthcare.allowance.type">
+        <field name="name">Remote Area</field>
+        <field name="code">REMOTE</field>
+        <field name="category">remote_area</field>
+        <field name="sequence">100</field>
+    </record>
+    <record id="allowance_type_infection" model="healthcare.allowance.type">
+        <field name="name">Infection Risk</field>
+        <field name="code">INFECTION</field>
+        <field name="category">infection_risk</field>
+        <field name="sequence">110</field>
+    </record>
+    <record id="allowance_type_icu" model="healthcare.allowance.type">
+        <field name="name">ICU</field>
+        <field name="code">ICU</field>
+        <field name="category">icu</field>
+        <field name="sequence">120</field>
+    </record>
+    <record id="allowance_type_er" model="healthcare.allowance.type">
+        <field name="name">ER</field>
+        <field name="code">ER</field>
+        <field name="category">er</field>
+        <field name="sequence">130</field>
+    </record>
+    <record id="allowance_type_or" model="healthcare.allowance.type">
+        <field name="name">Operating Room</field>
+        <field name="code">OR</field>
+        <field name="category">operating_room</field>
+        <field name="sequence">140</field>
+    </record>
+    <record id="allowance_type_performance" model="healthcare.allowance.type">
+        <field name="name">Performance</field>
+        <field name="code">PERFORMANCE</field>
+        <field name="category">performance</field>
+        <field name="sequence">150</field>
+    </record>
+    <record id="allowance_type_other" model="healthcare.allowance.type">
+        <field name="name">Other</field>
+        <field name="code">OTHER</field>
+        <field name="category">other</field>
+        <field name="sequence">160</field>
+    </record>
+</odoo>

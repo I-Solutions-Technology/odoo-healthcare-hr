@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="demo_hospital_a" model="healthcare.hr.branch">
+        <field name="name">Hospital A</field>
+        <field name="code">HOSA</field>
+        <field name="branch_type">hospital</field>
+    </record>
+    <record id="demo_branch_1" model="healthcare.hr.branch">
+        <field name="name">Branch 1</field>
+        <field name="code">HOSA-B1</field>
+        <field name="branch_type">branch</field>
+        <field name="parent_id" ref="demo_hospital_a"/>
+    </record>
+    <record id="demo_branch_2" model="healthcare.hr.branch">
+        <field name="name">Branch 2</field>
+        <field name="code">HOSA-B2</field>
+        <field name="branch_type">branch</field>
+        <field name="parent_id" ref="demo_hospital_a"/>
+    </record>
+    <record id="demo_dept_er" model="hr.department">
+        <field name="name">ER</field>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="healthcare_department_type">clinical</field>
+    </record>
+    <record id="demo_dept_icu" model="hr.department">
+        <field name="name">ICU</field>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="healthcare_department_type">nursing</field>
+    </record>
+    <record id="demo_dept_radiology" model="hr.department">
+        <field name="name">Radiology</field>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="healthcare_department_type">diagnostic</field>
+    </record>
+    <record id="demo_dept_laboratory" model="hr.department">
+        <field name="name">Laboratory</field>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="healthcare_department_type">diagnostic</field>
+    </record>
+    <record id="demo_dept_pharmacy" model="hr.department">
+        <field name="name">Pharmacy</field>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="healthcare_department_type">pharmacy</field>
+    </record>
+    <record id="demo_dept_outpatient" model="hr.department">
+        <field name="name">Outpatient</field>
+        <field name="healthcare_branch_id" ref="demo_branch_2"/>
+        <field name="healthcare_department_type">clinical</field>
+    </record>
+    <record id="demo_dept_administration" model="hr.department">
+        <field name="name">Administration</field>
+        <field name="healthcare_branch_id" ref="demo_hospital_a"/>
+        <field name="healthcare_department_type">administrative</field>
+    </record>
+    <record id="demo_unit_er_triage" model="healthcare.hr.unit">
+        <field name="name">ER Triage</field>
+        <field name="code">ER_TRIAGE</field>
+        <field name="unit_type">emergency</field>
+        <field name="department_id" ref="demo_dept_er"/>
+        <field name="branch_id" ref="demo_branch_1"/>
+    </record>
+    <record id="demo_unit_icu_a" model="healthcare.hr.unit">
+        <field name="name">ICU Bay A</field>
+        <field name="code">ICU_A</field>
+        <field name="unit_type">critical_care</field>
+        <field name="department_id" ref="demo_dept_icu"/>
+        <field name="branch_id" ref="demo_branch_1"/>
+    </record>
+    <record id="demo_unit_xray" model="healthcare.hr.unit">
+        <field name="name">X-Ray</field>
+        <field name="code">XRAY</field>
+        <field name="unit_type">diagnostic</field>
+        <field name="department_id" ref="demo_dept_radiology"/>
+        <field name="branch_id" ref="demo_branch_1"/>
+    </record>
+    <record id="demo_unit_opd_clinics" model="healthcare.hr.unit">
+        <field name="name">OPD Clinics</field>
+        <field name="code">OPD_CLINICS</field>
+        <field name="unit_type">clinical</field>
+        <field name="department_id" ref="demo_dept_outpatient"/>
+        <field name="branch_id" ref="demo_branch_2"/>
+    </record>
+    <record id="demo_job_er_physician" model="hr.job">
+        <field name="name">Emergency Physician</field>
+        <field name="employee_category">doctor</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="demo_job_icu_consultant" model="hr.job">
+        <field name="name">ICU Consultant</field>
+        <field name="employee_category">doctor</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="demo_job_staff_nurse" model="hr.job">
+        <field name="name">Staff Nurse</field>
+        <field name="employee_category">nurse</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="demo_job_icu_nurse" model="hr.job">
+        <field name="name">ICU Nurse</field>
+        <field name="employee_category">nurse</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="demo_job_pharmacist" model="hr.job">
+        <field name="name">Pharmacist</field>
+        <field name="employee_category">pharmacist</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="demo_job_lab_tech" model="hr.job">
+        <field name="name">Laboratory Technician</field>
+        <field name="employee_category">lab_technician</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="demo_job_rad_tech" model="hr.job">
+        <field name="name">Radiology Technician</field>
+        <field name="employee_category">radiology_technician</field>
+        <field name="medical_license_required" eval="True"/>
+    </record>
+    <record id="demo_job_hr_admin" model="hr.job">
+        <field name="name">HR Administrator</field>
+        <field name="employee_category">hr</field>
+        <field name="medical_license_required" eval="False"/>
+    </record>
+    <record id="demo_job_receptionist" model="hr.job">
+        <field name="name">Receptionist</field>
+        <field name="employee_category">reception</field>
+        <field name="medical_license_required" eval="False"/>
+    </record>
+    <record id="demo_emp_dr_ahmed" model="hr.employee">
+        <field name="name">Dr. Ahmed Hassan</field>
+        <field name="arabic_name">د. أحمد حسن</field>
+        <field name="job_id" ref="demo_job_er_physician"/>
+        <field name="department_id" ref="demo_dept_er"/>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="employee_category">doctor</field>
+        <field name="hire_date" eval="(DateTime.today() - relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="tz">Africa/Cairo</field>
+        <field name="medical_specialty_id" ref="specialty_emergency"/>
+        <field name="healthcare_unit_id" ref="demo_unit_er_triage"/>
+    </record>
+    <record id="demo_emp_dr_sara" model="hr.employee">
+        <field name="name">Dr. Sara Khalil</field>
+        <field name="arabic_name">د. سارة خليل</field>
+        <field name="job_id" ref="demo_job_icu_consultant"/>
+        <field name="department_id" ref="demo_dept_icu"/>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="employee_category">doctor</field>
+        <field name="hire_date" eval="(DateTime.today() - relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="tz">Africa/Cairo</field>
+        <field name="medical_specialty_id" ref="specialty_critical_care"/>
+        <field name="healthcare_unit_id" ref="demo_unit_icu_a"/>
+    </record>
+    <record id="demo_emp_nurse_mona" model="hr.employee">
+        <field name="name">Mona Ali</field>
+        <field name="arabic_name">منى علي</field>
+        <field name="job_id" ref="demo_job_icu_nurse"/>
+        <field name="department_id" ref="demo_dept_icu"/>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="employee_category">nurse</field>
+        <field name="hire_date" eval="(DateTime.today() - relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="tz">Africa/Cairo</field>
+        <field name="medical_specialty_id" ref="specialty_icu_nursing"/>
+        <field name="healthcare_unit_id" ref="demo_unit_icu_a"/>
+    </record>
+    <record id="demo_emp_nurse_hala" model="hr.employee">
+        <field name="name">Hala Youssef</field>
+        <field name="arabic_name">هالة يوسف</field>
+        <field name="job_id" ref="demo_job_icu_nurse"/>
+        <field name="department_id" ref="demo_dept_icu"/>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="employee_category">nurse</field>
+        <field name="hire_date" eval="(DateTime.today() - relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="tz">Africa/Cairo</field>
+        <field name="medical_specialty_id" ref="specialty_icu_nursing"/>
+        <field name="healthcare_unit_id" ref="demo_unit_icu_a"/>
+    </record>
+    <record id="demo_emp_nurse_omar" model="hr.employee">
+        <field name="name">Omar Farouk</field>
+        <field name="arabic_name">عمر فاروق</field>
+        <field name="job_id" ref="demo_job_staff_nurse"/>
+        <field name="department_id" ref="demo_dept_er"/>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="employee_category">nurse</field>
+        <field name="hire_date" eval="(DateTime.today() - relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="tz">Africa/Cairo</field>
+        <field name="medical_specialty_id" ref="specialty_er_nursing"/>
+        <field name="healthcare_unit_id" ref="demo_unit_er_triage"/>
+    </record>
+    <record id="demo_emp_nurse_laila" model="hr.employee">
+        <field name="name">Laila Mahmoud</field>
+        <field name="arabic_name">ليلى محمود</field>
+        <field name="job_id" ref="demo_job_staff_nurse"/>
+        <field name="department_id" ref="demo_dept_outpatient"/>
+        <field name="healthcare_branch_id" ref="demo_branch_2"/>
+        <field name="employee_category">nurse</field>
+        <field name="hire_date" eval="(DateTime.today() - relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="tz">Africa/Cairo</field>
+        <field name="medical_specialty_id" ref="specialty_nursing"/>
+        <field name="healthcare_unit_id" ref="demo_unit_opd_clinics"/>
+    </record>
+    <record id="demo_emp_pharm_karim" model="hr.employee">
+        <field name="name">Karim Nabil</field>
+        <field name="arabic_name">كريم نبيل</field>
+        <field name="job_id" ref="demo_job_pharmacist"/>
+        <field name="department_id" ref="demo_dept_pharmacy"/>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="employee_category">pharmacist</field>
+        <field name="hire_date" eval="(DateTime.today() - relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="tz">Africa/Cairo</field>
+        <field name="medical_specialty_id" ref="specialty_pharmacy"/>
+    </record>
+    <record id="demo_emp_lab_yasmin" model="hr.employee">
+        <field name="name">Yasmin Adel</field>
+        <field name="arabic_name">ياسمين عادل</field>
+        <field name="job_id" ref="demo_job_lab_tech"/>
+        <field name="department_id" ref="demo_dept_laboratory"/>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="employee_category">lab_technician</field>
+        <field name="hire_date" eval="(DateTime.today() - relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="tz">Africa/Cairo</field>
+    </record>
+    <record id="demo_emp_rad_tarek" model="hr.employee">
+        <field name="name">Tarek Samir</field>
+        <field name="arabic_name">طارق سمير</field>
+        <field name="job_id" ref="demo_job_rad_tech"/>
+        <field name="department_id" ref="demo_dept_radiology"/>
+        <field name="healthcare_branch_id" ref="demo_branch_1"/>
+        <field name="employee_category">radiology_technician</field>
+        <field name="hire_date" eval="(DateTime.today() - relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="tz">Africa/Cairo</field>
+        <field name="healthcare_unit_id" ref="demo_unit_xray"/>
+    </record>
+    <record id="demo_emp_adm_nour" model="hr.employee">
+        <field name="name">Nour Ibrahim</field>
+        <field name="arabic_name">نور إبراهيم</field>
+        <field name="job_id" ref="demo_job_hr_admin"/>
+        <field name="department_id" ref="demo_dept_administration"/>
+        <field name="healthcare_branch_id" ref="demo_hospital_a"/>
+        <field name="employee_category">hr</field>
+        <field name="hire_date" eval="(DateTime.today() - relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="tz">Africa/Cairo</field>
+    </record>
+    <record id="demo_emp_adm_rana" model="hr.employee">
+        <field name="name">Rana Fathy</field>
+        <field name="arabic_name">رنا فتحي</field>
+        <field name="job_id" ref="demo_job_receptionist"/>
+        <field name="department_id" ref="demo_dept_outpatient"/>
+        <field name="healthcare_branch_id" ref="demo_branch_2"/>
+        <field name="employee_category">reception</field>
+        <field name="hire_date" eval="(DateTime.today() - relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+        <field name="tz">Africa/Cairo</field>
+    </record>
+</odoo>

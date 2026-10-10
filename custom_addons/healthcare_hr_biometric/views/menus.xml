@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_biometric" name="Biometric" parent="healthcare_hr_core.menu_attendance" sequence="20"
+              groups="healthcare_hr_core.group_hc_attendance_officer"/>
+    <menuitem id="menu_biometric_device" name="Devices" parent="menu_biometric" action="action_biometric_device" sequence="1"/>
+    <menuitem id="menu_biometric_log" name="Raw Logs" parent="menu_biometric" action="action_biometric_log" sequence="2"/>
+    <menuitem id="menu_biometric_batch" name="Sync Batches" parent="menu_biometric" action="action_biometric_batch" sequence="3"/>
+    <menuitem id="menu_biometric_mapping" name="Employee Mapping" parent="menu_biometric" action="action_biometric_mapping" sequence="4"/>
+    <menuitem id="menu_biometric_import" name="Import File" parent="menu_biometric" action="action_biometric_import_wizard" sequence="5"/>
+
+    <menuitem id="menu_config_biometric" name="Biometric" parent="healthcare_hr_core.menu_config" sequence="30"
+              groups="healthcare_hr_core.group_hc_attendance_manager,healthcare_hr_core.group_hc_admin"/>
+    <menuitem id="menu_config_biometric_device" name="Devices" parent="menu_config_biometric" action="action_biometric_device" sequence="1"/>
+    <menuitem id="menu_config_biometric_mapping" name="Employee Mapping" parent="menu_config_biometric" action="action_biometric_mapping" sequence="2"/>
+</odoo>

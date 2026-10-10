@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_hc_job_position" name="Job Positions" parent="healthcare_hr_core.menu_recruitment"
+              action="hr_recruitment.action_hr_job" sequence="1" groups="hr_recruitment.group_hr_recruitment_user"/>
+    <menuitem id="menu_hc_applications" name="Applications" parent="healthcare_hr_core.menu_recruitment"
+              action="hr_recruitment.crm_case_categ0_act_job" sequence="2"
+              groups="hr_recruitment.group_hr_recruitment_user,hr_recruitment.group_hr_recruitment_interviewer"/>
+    <menuitem id="menu_report_recruitment_funnel" name="Recruitment Funnel" parent="healthcare_hr_core.menu_reports"
+              action="action_recruitment_funnel" sequence="70" groups="hr_recruitment.group_hr_recruitment_user"/>
+</odoo>

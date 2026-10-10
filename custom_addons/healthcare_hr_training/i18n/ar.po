@@ -1,0 +1,951 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_training
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/training_assignment.py:0
+msgid "%(training)s expires on %(date)s: %(name)s"
+msgstr "ينتهي %(training)s بتاريخ %(date)s: %(name)s"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__compliance_rate
+msgid ""
+"100 when compliant, 0 otherwise: the average over a group is the compliance "
+"rate."
+msgstr "100 عند الامتثال، و0 خلاف ذلك: المتوسط على مستوى المجموعة يمثل نسبة الامتثال."
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.hr_employee_view_form_training
+msgid "<span class=\"o_stat_text\">Open Trainings</span>"
+msgstr "<span class=\"o_stat_text\">التدريبات المفتوحة</span>"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__administrative
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__administrative
+msgid "Administrative"
+msgstr "إداري"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_requirement__department_id
+msgid "Administrative or medical (clinical) department of the employee."
+msgstr "القسم الإداري أو الطبي (السريري) للموظف."
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_requirement_view_form
+msgid "Applies to"
+msgstr "ينطبق على"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_requirement_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_requirement_view_search
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_assignment__state__assigned
+msgid "Assigned"
+msgstr "مسند"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__assigned_date
+msgid "Assigned Date"
+msgstr "تاريخ الإسناد"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__assignment_count
+msgid "Assignment Count"
+msgstr "عدد التكليفات"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__assignment_ids
+#: model:ir.ui.menu,name:healthcare_hr_training.menu_training_assignment
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_requirement_view_form
+msgid "Assignments"
+msgstr "التكليفات"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.actions.act_window,help:healthcare_hr_training.action_training_assignment
+msgid "Assignments are generated daily from the Training Requirement Matrix."
+msgstr "يتم إنشاء التكليفات يومياً من مصفوفة متطلبات التدريب."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__branch_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_compliance_report_view_search
+msgid "Branch"
+msgstr "الفرع"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__call_center
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__call_center
+msgid "Call Center"
+msgstr "مركز الاتصال"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_form
+msgid "Cancel Waiver"
+msgstr "إلغاء الإعفاء"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__attachment_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_form
+msgid "Certificate"
+msgstr "الشهادة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__certificate_number
+msgid "Certificate Number"
+msgstr "رقم الشهادة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__credential_type_id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__credential_type_id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__credential_type_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_requirement_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_requirement_view_search
+msgid "Certification"
+msgstr "الشهادة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_assignment__state__completed
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+msgid "Completed"
+msgstr "مكتمل"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__compliant
+msgid "Completed and not expired, or waived."
+msgstr "مكتمل وغير منتهي، أو معفى."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__completion_date
+msgid "Completion Date"
+msgstr "تاريخ الإكمال"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__expiry_date
+msgid "Completion date + renewal period of the requirement."
+msgstr "تاريخ الإكمال + فترة تجديد المتطلب."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__compliance_rate
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__compliance_rate
+msgid "Compliance %"
+msgstr "نسبة الامتثال %"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.actions.act_window,help:healthcare_hr_training.action_training_compliance_report
+msgid ""
+"Compliance rate by department = share of (employee, mandatory requirement) pairs covered by a\n"
+"               valid credential, a completed training or a waiver."
+msgstr ""
+"نسبة الامتثال حسب القسم = حصة أزواج (الموظف، المتطلب الإلزامي) المغطاة باعتماد مهني\n"
+"               ساري أو تدريب مكتمل أو إعفاء."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__compliant
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__compliant
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__status__compliant
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_form
+msgid "Compliant"
+msgstr "ممتثل"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__covered_until
+msgid "Covered Until"
+msgstr "مغطى حتى"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__credential_id
+msgid "Credential"
+msgstr "الاعتماد المهني"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__credential_status
+msgid "Credential Status"
+msgstr "حالة الاعتماد المهني"
+
+#. module: healthcare_hr_training
+#: model:ir.model,name:healthcare_hr_training.model_healthcare_hr_credential_type
+msgid "Credential Type"
+msgstr "نوع الاعتماد المهني"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__credential_id
+msgid "Credential created or renewed when the training was completed."
+msgstr "الاعتماد المهني الذي تم إنشاؤه أو تجديده عند إكمال التدريب."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__credential_type_id
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_requirement__credential_type_id
+msgid "Credential type renewed when the training is completed."
+msgstr "نوع الاعتماد المهني الذي يُجدَّد عند إكمال التدريب."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__due_days
+msgid "Days to Complete"
+msgstr "أيام الإكمال"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.actions.act_window,help:healthcare_hr_training.action_training_requirement
+msgid "Define which certification each job, category or department needs"
+msgstr "حدد الشهادة التي تحتاجها كل وظيفة أو فئة أو قسم"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__department_id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__department_id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__department_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_compliance_report_view_search
+msgid "Department"
+msgstr "القسم"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_hr_credential_type__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_hr_employee__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__doctor
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__doctor
+msgid "Doctor"
+msgstr "طبيب"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__due_date
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_requirement__due_days
+msgid "Due date of a new assignment = assignment date + this number of days."
+msgstr "تاريخ استحقاق التكليف الجديد = تاريخ التكليف + هذا العدد من الأيام."
+
+#. module: healthcare_hr_training
+#: model:ir.model,name:healthcare_hr_training.model_hr_employee
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__employee_id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_requirement_view_form
+msgid ""
+"Empty criteria match every employee. Completing the training renews the employee's\n"
+"                        credential of the selected certification type."
+msgstr ""
+"المعايير الفارغة تنطبق على جميع الموظفين. إكمال التدريب يجدد الاعتماد المهني\n"
+"                        للموظف من نوع الشهادة المحدد."
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/training_assignment.py:0
+msgid "Enter a waiver reason for %s."
+msgstr "أدخل سبب الإعفاء لـ %s."
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/training_assignment.py:0
+msgid "Enter the certificate number or attach the certificate of %s."
+msgstr "أدخل رقم الشهادة أو أرفق شهادة %s."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_assignment__state__expired
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+msgid "Expired"
+msgstr "منتهي"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__status__expiring
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_compliance_report_view_search
+msgid "Expiring"
+msgstr "على وشك الانتهاء"
+
+#. module: healthcare_hr_training
+#: model:ir.actions.act_window,name:healthcare_hr_training.action_expiring_certification_report
+#: model:ir.ui.menu,name:healthcare_hr_training.menu_report_expiring_certification
+msgid "Expiring Certifications"
+msgstr "الشهادات التي على وشك الانتهاء"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__expiry_date
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+msgid "Expiry Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_compliance_report__covered_until
+msgid "Expiry of the best valid credential or completed training."
+msgstr "تاريخ انتهاء أفضل اعتماد مهني ساري أو تدريب مكتمل."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__finance
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__finance
+msgid "Finance"
+msgstr "المالية"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome، مثال: fa-tasks"
+
+#. module: healthcare_hr_training
+#: model:ir.actions.server,name:healthcare_hr_training.action_generate_training_assignments
+msgid "Generate training assignments"
+msgstr "إنشاء تكليفات التدريب"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__has_message
+msgid "Has Message"
+msgstr "يحتوي على رسالة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__employee_category
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__employee_category
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__employee_category
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_requirement_view_search
+msgid "Healthcare Category"
+msgstr "الفئة الصحية"
+
+#. module: healthcare_hr_training
+#: model:ir.actions.server,name:healthcare_hr_training.ir_cron_training_ir_actions_server
+msgid "Healthcare HR: training assignments, expiry and alerts"
+msgstr "الموارد البشرية الصحية: تكليفات التدريب وانتهاء الصلاحية والتنبيهات"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__hr
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__hr
+msgid "Human Resources"
+msgstr "الموارد البشرية"
+
+#. module: healthcare_hr_training
+#: model:healthcare.training.requirement,name:healthcare_hr_training.demo_training_req_icu_nurse_acls
+msgid "ICU Nurse - ACLS"
+msgstr "ممرض ICU - ACLS"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_hr_credential_type__id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__id
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_hr_employee__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__activity_exception_icon
+msgid "Icon"
+msgstr "الأيقونة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثنائي."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم التحديد، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحديد، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_assignment__state__in_progress
+msgid "In Progress"
+msgstr "قيد التنفيذ"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__status__in_training
+msgid "In Training"
+msgstr "قيد التدريب"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__is_overdue
+msgid "Is Overdue"
+msgstr "متأخر"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__job_id
+msgid "Job"
+msgstr "الوظيفة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__job_id
+msgid "Job Position"
+msgstr "المسمى الوظيفي"
+
+#. module: healthcare_hr_training
+#: model:healthcare.training.requirement,name:healthcare_hr_training.demo_training_req_lab_tech_infection
+msgid "Lab Technician - Infection Control"
+msgstr "فني مختبر - مكافحة العدوى"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__lab_technician
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__lab_technician
+msgid "Laboratory Technician"
+msgstr "فني مختبر"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__management
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__management
+msgid "Management"
+msgstr "الإدارة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__mandatory
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__mandatory
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__mandatory
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_compliance_report_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_requirement_view_search
+msgid "Mandatory"
+msgstr "إلزامي"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_form
+msgid "Mark Completed"
+msgstr "تعيين كمكتمل"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__medical_technician
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__medical_technician
+msgid "Medical Technician"
+msgstr "فني طبي"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__status__missing
+msgid "Missing"
+msgstr "مفقود"
+
+#. module: healthcare_hr_training
+#: model:ir.actions.act_window,name:healthcare_hr_training.action_missing_training_report
+#: model:ir.ui.menu,name:healthcare_hr_training.menu_report_missing_training
+msgid "Missing Training"
+msgstr "تدريب مفقود"
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/training_assignment.py:0
+msgid "Missing mandatory training %(training)s: %(name)s"
+msgstr "تدريب إلزامي مفقود %(training)s: %(name)s"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__mandatory
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_requirement__mandatory
+msgid "Missing mandatory training raises alerts and appears in reports."
+msgstr "التدريب الإلزامي المفقود يُصدر تنبيهات ويظهر في التقارير."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: healthcare_hr_training
+#: model:ir.actions.act_window,name:healthcare_hr_training.action_my_training
+#: model:ir.ui.menu,name:healthcare_hr_training.menu_my_training
+msgid "My Training"
+msgstr "تدريبي"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__name
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "حدث التقويم للنشاط التالي"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.actions.act_window,help:healthcare_hr_training.action_training_assignment
+msgid "No training assignment yet"
+msgstr "لا توجد تكليفات تدريب حتى الآن"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.actions.act_window,help:healthcare_hr_training.action_training_compliance_report
+msgid "No training requirement in scope"
+msgstr "لا توجد متطلبات تدريب ضمن النطاق"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_compliance_report_view_search
+msgid "Not Compliant"
+msgstr "غير ممتثل"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__note
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_requirement_view_form
+msgid "Notes..."
+msgstr "ملاحظات..."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__nurse
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__nurse
+msgid "Nurse"
+msgstr "ممرض"
+
+#. module: healthcare_hr_training
+#: model:healthcare.training.requirement,name:healthcare_hr_training.demo_training_req_nurse_bls
+msgid "Nurse - BLS"
+msgstr "ممرض - BLS"
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/training_assignment.py:0
+msgid "Only assigned or in-progress trainings can be completed (%s)."
+msgstr "لا يمكن إكمال إلا التدريبات المسندة أو قيد التنفيذ (%s)."
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/training_assignment.py:0
+msgid "Only open trainings can be waived."
+msgstr "لا يمكن الإعفاء إلا من التدريبات المفتوحة."
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+msgid "Open"
+msgstr "مفتوح"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__other
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__other
+msgid "Other"
+msgstr "أخرى"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+msgid "Overdue"
+msgstr "متأخر"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__pharmacist
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__pharmacist
+msgid "Pharmacist"
+msgstr "صيدلي"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__radiology_doctor
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__radiology_doctor
+msgid "Radiology Doctor"
+msgstr "طبيب أشعة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__radiology_technician
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__radiology_technician
+msgid "Radiology Technician"
+msgstr "فني أشعة"
+
+#. module: healthcare_hr_training
+#: model:healthcare.training.requirement,name:healthcare_hr_training.demo_training_req_rad_tech_radiation
+msgid "Radiology Technician - Radiation Safety"
+msgstr "فني أشعة - السلامة الإشعاعية"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__employee_category__reception
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_requirement__employee_category__reception
+msgid "Reception"
+msgstr "الاستقبال"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__renewal_period_months
+msgid "Renewal Period (months)"
+msgstr "فترة التجديد (بالأشهر)"
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/training_assignment.py:0
+msgid "Renewed by the completed training %s."
+msgstr "تم التجديد بموجب التدريب المكتمل %s."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__requirement_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_compliance_report_view_search
+msgid "Requirement"
+msgstr "المتطلب"
+
+#. module: healthcare_hr_training
+#: model:ir.ui.menu,name:healthcare_hr_training.menu_training_requirement
+msgid "Requirement Matrix"
+msgstr "مصفوفة المتطلبات"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_form
+msgid "Result"
+msgstr "النتيجة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل النصية"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__score
+msgid "Score"
+msgstr "الدرجة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_form
+msgid "Start"
+msgstr "بدء"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__status
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_compliance_report_view_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تجاوز تاريخ الاستحقاق\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: الأنشطة المستقبلية."
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/training_assignment.py:0
+msgid "The completion date of %s cannot be in the future."
+msgstr "لا يمكن أن يكون تاريخ إكمال %s في المستقبل."
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/training_requirement.py:0
+msgid "The number of days to complete cannot be negative."
+msgstr "لا يمكن أن يكون عدد أيام الإكمال سالباً."
+
+#. module: healthcare_hr_training
+#: model:ir.model.constraint,message:healthcare_hr_training.constraint_healthcare_training_requirement_renewal_positive
+msgid "The renewal period cannot be negative."
+msgstr "لا يمكن أن تكون فترة التجديد سالبة."
+
+#. module: healthcare_hr_training
+#: model:ir.model.constraint,message:healthcare_hr_training.constraint_healthcare_training_assignment_unique_open_assignment
+msgid ""
+"This employee already has an open assignment for this training requirement."
+msgstr "لدى هذا الموظف بالفعل تكليف مفتوح لمتطلب التدريب هذا."
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/hr_employee.py:0
+msgid "Training"
+msgstr "التدريب"
+
+#. module: healthcare_hr_training
+#: model:ir.model,name:healthcare_hr_training.model_healthcare_training_assignment
+msgid "Training Assignment"
+msgstr "تكليف التدريب"
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/training_requirement.py:0
+#: model:ir.actions.act_window,name:healthcare_hr_training.action_training_assignment
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_hr_employee__training_assignment_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_graph
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_pivot
+msgid "Training Assignments"
+msgstr "تكليفات التدريب"
+
+#. module: healthcare_hr_training
+#: model:ir.actions.act_window,name:healthcare_hr_training.action_training_compliance_report
+#: model:ir.ui.menu,name:healthcare_hr_training.menu_report_training_compliance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_compliance_report_view_graph
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_compliance_report_view_pivot
+msgid "Training Compliance"
+msgstr "الامتثال للتدريب"
+
+#. module: healthcare_hr_training
+#: model:ir.model,name:healthcare_hr_training.model_healthcare_training_compliance_report
+msgid "Training Compliance Analysis"
+msgstr "تحليل الامتثال للتدريب"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__due_date
+msgid "Training Due Date"
+msgstr "تاريخ استحقاق التدريب"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_hr_employee__training_open_count
+msgid "Training Open Count"
+msgstr "عدد التدريبات المفتوحة"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__provider
+msgid "Training Provider"
+msgstr "مقدم التدريب"
+
+#. module: healthcare_hr_training
+#: model:ir.model,name:healthcare_hr_training.model_healthcare_training_requirement
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_compliance_report__requirement_id
+msgid "Training Requirement"
+msgstr "متطلب التدريب"
+
+#. module: healthcare_hr_training
+#: model:ir.actions.act_window,name:healthcare_hr_training.action_training_requirement
+msgid "Training Requirement Matrix"
+msgstr "مصفوفة متطلبات التدريب"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_hr_credential_type__training_requirement_ids
+#: model:ir.ui.menu,name:healthcare_hr_training.menu_config_training_requirement
+msgid "Training Requirements"
+msgstr "متطلبات التدريب"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي في السجل."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_requirement__renewal_period_months
+msgid "Validity of the certification after completion. 0 = does not expire."
+msgstr "مدة صلاحية الشهادة بعد الإكمال. 0 = لا تنتهي."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_requirement__auto_verify_credential
+msgid "Verify Credential on Completion"
+msgstr "التحقق من الاعتماد المهني عند الإكمال"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_form
+msgid "Waive"
+msgstr "إعفاء"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_assignment_view_form
+msgid ""
+"Waive this training? Enter the reason in the Waiver Reason field first."
+msgstr "هل تريد الإعفاء من هذا التدريب؟ أدخل السبب في حقل سبب الإعفاء أولاً."
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_assignment__state__waived
+#: model:ir.model.fields.selection,name:healthcare_hr_training.selection__healthcare_training_compliance_report__status__waived
+msgid "Waived"
+msgstr "معفى"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__waiver_reason
+msgid "Waiver Reason"
+msgstr "سبب الإعفاء"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,field_description:healthcare_hr_training.field_healthcare_training_assignment__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع الإلكتروني"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_assignment__website_message_ids
+msgid "Website communication history"
+msgstr "سجل التواصل عبر الموقع الإلكتروني"
+
+#. module: healthcare_hr_training
+#: model:ir.model.fields,help:healthcare_hr_training.field_healthcare_training_requirement__auto_verify_credential
+msgid ""
+"When set, the credential renewed by a completed training is marked verified "
+"immediately (internal or trusted provider). Otherwise it stays 'Under "
+"Verification' until an HR officer verifies the certificate."
+msgstr "عند التفعيل، يُعلَّم الاعتماد المهني المجدد بموجب تدريب مكتمل على أنه تم التحقق منه فوراً (مقدم داخلي أو موثوق). وإلا يبقى في حالة 'قيد التحقق' حتى يتحقق مسؤول الموارد البشرية من الشهادة."
+
+#. module: healthcare_hr_training
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_training.training_requirement_view_form
+msgid "e.g. ICU Nurse - ACLS"
+msgstr "مثال: ممرض ICU - ACLS"
+
+#. module: healthcare_hr_training
+#: model_terms:ir.actions.act_window,help:healthcare_hr_training.action_training_requirement
+msgid ""
+"e.g. Nurse: BLS, ICU nurse: ACLS, Radiology technician: Radiation Safety."
+msgstr "مثال: ممرض: BLS، ممرض ICU: ACLS، فني أشعة: السلامة الإشعاعية."
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/hr_employee.py:0
+msgid "employee_id"
+msgstr "employee_id"
+
+#. module: healthcare_hr_training
+#. odoo-python
+#: code:addons/healthcare_hr_training/models/training_requirement.py:0
+msgid "requirement_id"
+msgstr "requirement_id"

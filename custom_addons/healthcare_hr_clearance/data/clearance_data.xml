@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="seq_exit" model="ir.sequence">
+        <field name="name">Employee Exit</field>
+        <field name="code">healthcare.hr.exit</field>
+        <field name="prefix">EXIT/%(year)s/</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+    <record id="clearance_department_hr" model="healthcare.hr.clearance.department">
+        <field name="name">HR</field>
+        <field name="code">HR</field>
+        <field name="sequence">10</field>
+        <field name="checklist">ID card, personnel file, exit interview</field>
+    </record>
+    <record id="clearance_department_fin" model="healthcare.hr.clearance.department">
+        <field name="name">Finance</field>
+        <field name="code">FIN</field>
+        <field name="sequence">20</field>
+        <field name="checklist">Advances, petty cash, custody</field>
+    </record>
+    <record id="clearance_department_it" model="healthcare.hr.clearance.department">
+        <field name="name">IT</field>
+        <field name="code">IT</field>
+        <field name="sequence">30</field>
+        <field name="checklist">Accounts disabled, laptop, badges</field>
+    </record>
+    <record id="clearance_department_dept" model="healthcare.hr.clearance.department">
+        <field name="name">Department</field>
+        <field name="code">DEPT</field>
+        <field name="sequence">40</field>
+        <field name="checklist">Handover of patients, duties and documents</field>
+    </record>
+    <record id="clearance_department_medeq" model="healthcare.hr.clearance.department">
+        <field name="name">Medical Equipment</field>
+        <field name="code">MEDEQ</field>
+        <field name="sequence">50</field>
+        <field name="checklist">Pagers, instruments, dosimeters, keys</field>
+    </record>
+    <record id="clearance_department_sec" model="healthcare.hr.clearance.department">
+        <field name="name">Security</field>
+        <field name="code">SEC</field>
+        <field name="sequence">60</field>
+        <field name="checklist">Access cards, locker keys, parking</field>
+    </record>
+    <record id="clearance_department_admin" model="healthcare.hr.clearance.department">
+        <field name="name">Administration</field>
+        <field name="code">ADMIN</field>
+        <field name="sequence">70</field>
+        <field name="checklist">Housing, uniforms, library</field>
+    </record>
+    <record id="settlement_component_final_salary" model="healthcare.hr.settlement.component">
+        <field name="name">Final Salary</field>
+        <field name="code">FINAL_SALARY</field>
+        <field name="sequence">10</field>
+        <field name="component_type">earning</field>
+        <field name="computation">final_salary</field>
+    </record>
+    <record id="settlement_component_unused_leave" model="healthcare.hr.settlement.component">
+        <field name="name">Unused Leave</field>
+        <field name="code">UNUSED_LEAVE</field>
+        <field name="sequence">20</field>
+        <field name="component_type">earning</field>
+        <field name="computation">unused_leave</field>
+    </record>
+    <record id="settlement_component_pending_ot" model="healthcare.hr.settlement.component">
+        <field name="name">Pending Overtime</field>
+        <field name="code">PENDING_OT</field>
+        <field name="sequence">30</field>
+        <field name="component_type">earning</field>
+        <field name="computation">pending_overtime</field>
+    </record>
+    <record id="settlement_component_pending_alw" model="healthcare.hr.settlement.component">
+        <field name="name">Pending Allowances</field>
+        <field name="code">PENDING_ALW</field>
+        <field name="sequence">40</field>
+        <field name="component_type">earning</field>
+        <field name="computation">pending_allowances</field>
+    </record>
+    <record id="settlement_component_bonuses" model="healthcare.hr.settlement.component">
+        <field name="name">Bonuses</field>
+        <field name="code">BONUSES</field>
+        <field name="sequence">50</field>
+        <field name="component_type">earning</field>
+        <field name="computation">bonuses</field>
+    </record>
+    <record id="settlement_component_eos" model="healthcare.hr.settlement.component">
+        <field name="name">End of Service</field>
+        <field name="code">EOS</field>
+        <field name="sequence">60</field>
+        <field name="component_type">earning</field>
+        <field name="computation">formula</field>
+        <field name="formula"># Configure according to the applicable labour law, e.g.:
+# result = daily_wage * 15 * min(service_years, 5) + daily_wage * 30 * max(service_years - 5, 0)
+result = 0</field>
+    </record>
+    <record id="settlement_component_deductions" model="healthcare.hr.settlement.component">
+        <field name="name">Deductions</field>
+        <field name="code">DEDUCTIONS</field>
+        <field name="sequence">70</field>
+        <field name="component_type">deduction</field>
+        <field name="computation">deductions</field>
+    </record>
+    <record id="settlement_component_loans" model="healthcare.hr.settlement.component">
+        <field name="name">Outstanding Loans</field>
+        <field name="code">LOANS</field>
+        <field name="sequence">80</field>
+        <field name="component_type">deduction</field>
+        <field name="computation">outstanding_loans</field>
+    </record>
+    <record id="settlement_component_advances" model="healthcare.hr.settlement.component">
+        <field name="name">Salary Advances</field>
+        <field name="code">ADVANCES</field>
+        <field name="sequence">90</field>
+        <field name="component_type">deduction</field>
+        <field name="computation">salary_advances</field>
+    </record>
+    <record id="settlement_component_obligations" model="healthcare.hr.settlement.component">
+        <field name="name">Clearance Obligations</field>
+        <field name="code">OBLIGATIONS</field>
+        <field name="sequence">100</field>
+        <field name="component_type">deduction</field>
+        <field name="computation">clearance_obligations</field>
+    </record>
+    <record id="settlement_component_other" model="healthcare.hr.settlement.component">
+        <field name="name">Other Obligations</field>
+        <field name="code">OTHER</field>
+        <field name="sequence">110</field>
+        <field name="component_type">deduction</field>
+        <field name="computation">manual</field>
+    </record>
+</odoo>

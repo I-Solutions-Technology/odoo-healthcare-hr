@@ -1,0 +1,829 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_attendance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: healthcare_hr_attendance
+#. odoo-python
+#: code:addons/healthcare_hr_attendance/models/reconciliation.py:0
+msgid "%(count)s attendance issue(s) to review for %(date)s"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#. odoo-python
+#: code:addons/healthcare_hr_attendance/models/reconciliation.py:0
+msgid "%s is already approved."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.constraint,message:healthcare_hr_attendance.constraint_healthcare_attendance_reconciliation_line_assignment_uniq
+msgid "A shift appears once per reconciliation."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_attendance_reconciliation_line__status__absent
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_shift_assignment__attendance_status__absent
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__attendance_status__absent
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.shift_assignment_view_search_attendance
+msgid "Absent"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.actions.act_window,name:healthcare_hr_attendance.action_absenteeism_report
+#: model:ir.ui.menu,name:healthcare_hr_attendance.menu_report_absenteeism
+msgid "Absenteeism"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_form
+msgid "Approve Work Data"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_attendance_reconciliation__state__approved
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__reconciliation_state__approved
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_line_view_list
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_form
+msgid "Approved"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__approved_by
+msgid "Approved By"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__approved_overtime_hours
+msgid "Approved Overtime"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__approved_overtime_edited
+msgid "Approved Overtime Edited"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#. odoo-python
+#: code:addons/healthcare_hr_attendance/models/reconciliation.py:0
+msgid ""
+"Approved overtime for %(name)s must be between 0 and the worked extra time "
+"(%(extra).2f h)."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.res_config_settings_view_form_attendance
+msgid "Approved overtime is rounded down to this step"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_res_company__hc_overtime_rounding_minutes
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_res_config_settings__hc_overtime_rounding_minutes
+msgid "Approved overtime is rounded down to this step for payroll."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_form
+msgid "Approved shifts become payroll input and are locked. Continue?"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__assignment_id
+msgid "Assignment"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model,name:healthcare_hr_attendance.model_hr_attendance
+msgid "Attendance"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.res_config_settings_view_form_attendance
+msgid "Attendance & Overtime Policy"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.actions.act_window,name:healthcare_hr_attendance.action_attendance_issues
+#: model:ir.ui.menu,name:healthcare_hr_attendance.menu_attendance_issues
+msgid "Attendance Issues"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model,name:healthcare_hr_attendance.model_healthcare_attendance_reconciliation
+msgid "Attendance Reconciliation"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model,name:healthcare_hr_attendance.model_healthcare_attendance_reconciliation_line
+msgid "Attendance Reconciliation Line"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_shift_assignment__attendance_status
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__attendance_status
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.hr_attendance_view_search_healthcare
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.shift_assignment_view_search_attendance
+msgid "Attendance Status"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_shift_assignment__attendance_ids
+#: model:ir.ui.menu,name:healthcare_hr_attendance.menu_attendance_list
+msgid "Attendances"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__branch_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.hr_attendance_view_search_healthcare
+msgid "Branch"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model,name:healthcare_hr_attendance.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__company_id
+msgid "Company"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#. odoo-python
+#: code:addons/healthcare_hr_attendance/models/hr_attendance.py:0
+msgid "Complete the check-out time or correct the attendance."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_form
+msgid "Compute"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#. odoo-python
+#: code:addons/healthcare_hr_attendance/models/reconciliation.py:0
+msgid "Compute the reconciliation before approving it."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model,name:healthcare_hr_attendance.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__date
+msgid "Date"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__date_from
+msgid "Date From"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__date_to
+msgid "Date To"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__scheduled_end
+msgid "Datetime End"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__scheduled_start
+msgid "Datetime Start"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__department_id
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__department_id
+msgid "Department"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_shift_assignment__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_company__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_attendance_reconciliation__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.hr_attendance_view_list_healthcare
+msgid "Early"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.actions.act_window,name:healthcare_hr_attendance.action_attendance_early
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_attendance_reconciliation_line__status__early_leave
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_shift_assignment__attendance_status__early_leave
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__attendance_status__early_leave
+#: model:ir.ui.menu,name:healthcare_hr_attendance.menu_report_early
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.hr_attendance_view_search_healthcare
+msgid "Early Leave"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__early_leave_minutes
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_shift_assignment__early_leave_minutes
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__early_leave_minutes
+msgid "Early Leave Minutes"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__employee_id
+msgid "Employee"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__reconciliation_state__excluded
+msgid "Excluded"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.hr_attendance_view_list_healthcare
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_line_view_list
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_form
+msgid "Extra"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__extra_time_hours
+msgid "Extra Time vs Shift"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.res_config_settings_view_form_attendance
+msgid "Extra time below this is not proposed as overtime"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_res_company__hc_overtime_min_minutes
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_res_config_settings__hc_overtime_min_minutes
+msgid "Extra time below this threshold is not proposed as overtime."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.actions.server,name:healthcare_hr_attendance.ir_cron_missing_checkout_ir_actions_server
+msgid "Healthcare HR: missing checkout alerts"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.actions.server,name:healthcare_hr_attendance.ir_cron_reconcile_ir_actions_server
+msgid "Healthcare HR: reconcile yesterday's attendance"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__holiday_hours
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__holiday_hours
+msgid "Holiday Hours"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_res_company__hc_missing_checkout_hours
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_res_config_settings__hc_missing_checkout_hours
+msgid ""
+"Hours after the planned shift end (or 16 h after check-in when unplanned) "
+"after which an open attendance is flagged as missing checkout."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__id
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__id
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_shift_assignment__id
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__id
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_company__id
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_config_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__issue_count
+msgid "Issue Count"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_list
+msgid "Issues"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_attendance_reconciliation_line__status__late
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_shift_assignment__attendance_status__late
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__attendance_status__late
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.hr_attendance_view_list_healthcare
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.hr_attendance_view_search_healthcare
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.shift_assignment_view_list_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.shift_assignment_view_search_attendance
+msgid "Late"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.actions.act_window,name:healthcare_hr_attendance.action_attendance_late
+#: model:ir.ui.menu,name:healthcare_hr_attendance.menu_report_late
+msgid "Late Attendance"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__late_minutes
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_shift_assignment__late_minutes
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__late_minutes
+msgid "Late Minutes"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__line_count
+msgid "Line Count"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__line_ids
+msgid "Lines"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__date
+msgid "Local date on which the shift starts."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_attendance_reconciliation_line__status__missing_checkout
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_shift_assignment__attendance_status__missing_checkout
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__attendance_status__missing_checkout
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.hr_attendance_view_search_healthcare
+msgid "Missing Checkout"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_company__hc_missing_checkout_hours
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_config_settings__hc_missing_checkout_hours
+msgid "Missing Checkout After (h)"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.res_config_settings_view_form_attendance
+msgid "Missing checkout after (h)"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#. odoo-python
+#: code:addons/healthcare_hr_attendance/models/hr_attendance.py:0
+msgid "Missing checkout on %s"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__name
+msgid "Name"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#. odoo-python
+#: code:addons/healthcare_hr_attendance/models/reconciliation.py:0
+msgid "New"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__night_hours
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__night_hours
+msgid "Night Hours"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.hr_attendance_view_search_healthcare
+msgid "Not Reconciled"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__note
+msgid "Note"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_attendance_reconciliation_line__status__on_leave
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_shift_assignment__attendance_status__on_leave
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__attendance_status__on_leave
+msgid "On Leave"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_line_view_pivot
+msgid "Overtime"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.actions.act_window,name:healthcare_hr_attendance.action_overtime_approval
+#: model:ir.ui.menu,name:healthcare_hr_attendance.menu_overtime_approval
+msgid "Overtime Approval"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_company__hc_overtime_min_minutes
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_config_settings__hc_overtime_min_minutes
+msgid "Overtime Threshold (min)"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.res_config_settings_view_form_attendance
+msgid "Overtime threshold (min)"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_attendance_reconciliation_line__status__partial
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_shift_assignment__attendance_status__partial
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__attendance_status__partial
+msgid "Partial"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_company__hc_overtime_rounding_minutes
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_config_settings__hc_overtime_rounding_minutes
+msgid "Payroll Overtime Rounding (min)"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.res_config_settings_view_form_attendance
+msgid "Payroll overtime rounding (min)"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__reconciliation_state__pending
+msgid "Pending"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_form
+msgid "Planned"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__planned_hours
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__planned_hours
+msgid "Planned Hours"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__planned_shift_id
+msgid "Planned Shift"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_res_company__hc_overtime_auto_propose
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_res_config_settings__hc_overtime_auto_propose
+msgid ""
+"Pre-fill approved overtime with the extra time on shifts that allow "
+"overtime. The approver can still change it before approval."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_attendance_reconciliation_line__status__present
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_shift_assignment__attendance_status__present
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__attendance_status__present
+msgid "Present"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_company__hc_overtime_auto_propose
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_res_config_settings__hc_overtime_auto_propose
+msgid "Propose Overtime Automatically"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.res_config_settings_view_form_attendance
+msgid "Propose overtime automatically"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_form
+msgid "Recompute"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__reconciliation_state__reconciled
+msgid "Reconciled"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.actions.act_window,name:healthcare_hr_attendance.action_reconciliation
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__reconciliation_id
+#: model:ir.ui.menu,name:healthcare_hr_attendance.menu_reconciliation
+msgid "Reconciliation"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__reconciliation_state
+msgid "Reconciliation State"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_form
+msgid "Reset"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model,name:healthcare_hr_attendance.model_healthcare_shift_assignment
+msgid "Shift Assignment"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.hr_attendance_view_form_healthcare
+msgid "Shift Reconciliation"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__shift_template_id
+msgid "Shift Template"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_hr_attendance__planned_shift_id
+msgid ""
+"Shift this attendance is matched to. Computed from the check-in, can be "
+"corrected manually."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_list
+msgid "Shifts"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#. odoo-python
+#: code:addons/healthcare_hr_attendance/models/reconciliation.py:0
+msgid "Some shifts are already in payroll; the batch cannot be reset."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__state
+msgid "State"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__status
+msgid "Status"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#. odoo-python
+#: code:addons/healthcare_hr_attendance/models/reconciliation.py:0
+msgid "The reconciliation is approved."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_hr_attendance__extra_time_hours
+msgid ""
+"Time worked outside the planned shift. The standard 'Worked Extra Hours' is "
+"computed against the working schedule; this one against the healthcare "
+"shift."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_attendance_reconciliation__state__computed
+msgid "To Review"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_attendance_reconciliation_line__status__unplanned
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__healthcare_shift_assignment__attendance_status__unplanned
+#: model:ir.model.fields.selection,name:healthcare_hr_attendance.selection__hr_attendance__attendance_status__unplanned
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.hr_attendance_view_search_healthcare
+msgid "Unplanned"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,help:healthcare_hr_attendance.field_healthcare_attendance_reconciliation__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__weekend_hours
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_hr_attendance__weekend_hours
+msgid "Weekend Hours"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_form
+msgid "Worked"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__extra_hours
+msgid "Worked Extra Time"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model:ir.model.fields,field_description:healthcare_hr_attendance.field_healthcare_attendance_reconciliation_line__worked_hours
+msgid "Worked Hours"
+msgstr ""
+
+#. module: healthcare_hr_attendance
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_attendance.reconciliation_view_form
+msgid ""
+"Worked extra time is never paid automatically: only \"Approved Overtime\" "
+"(rounded by the payroll policy) reaches payroll."
+msgstr ""

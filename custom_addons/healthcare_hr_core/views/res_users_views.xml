@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_users_view_form_healthcare" model="ir.ui.view">
+        <field name="name">res.users.form.healthcare</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Healthcare Branches" name="healthcare_branches">
+                    <field name="healthcare_branch_ids" widget="many2many_tags"/>
+                    <div class="text-muted">Empty = access to every branch of the allowed companies.</div>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

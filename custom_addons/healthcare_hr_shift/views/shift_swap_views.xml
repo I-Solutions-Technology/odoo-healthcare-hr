@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="shift_swap_view_list" model="ir.ui.view">
+        <field name="name">healthcare.shift.swap.list</field>
+        <field name="model">healthcare.shift.swap</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="requester_employee_id" widget="many2one_avatar_employee"/>
+                <field name="requester_assignment_id"/>
+                <field name="target_employee_id" widget="many2one_avatar_employee"/>
+                <field name="target_assignment_id" optional="show"/>
+                <field name="department_id" optional="show"/>
+                <field name="state" widget="badge" decoration-info="state in ('requested', 'accepted', 'manager_approved')"
+                       decoration-success="state == 'applied'" decoration-danger="state == 'refused'"/>
+            </list>
+        </field>
+    </record>
+    <record id="shift_swap_view_form" model="ir.ui.view">
+        <field name="name">healthcare.shift.swap.form</field>
+        <field name="model">healthcare.shift.swap</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_request" type="object" string="Send Request" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_accept" type="object" string="Accept" class="btn-primary" invisible="state != 'requested'"/>
+                    <button name="action_manager_approve" type="object" string="Manager Approve" class="btn-primary"
+                            invisible="state != 'accepted'" groups="healthcare_hr_core.group_hc_department_manager,healthcare_hr_core.group_hc_scheduling_manager"/>
+                    <button name="action_apply" type="object" string="Approve &amp; Apply" class="btn-primary"
+                            invisible="state != 'manager_approved'" groups="healthcare_hr_core.group_hc_scheduling_officer"/>
+                    <button name="action_refuse" type="object" string="Refuse"
+                            invisible="state not in ('requested', 'accepted', 'manager_approved')"/>
+                    <button name="action_cancel" type="object" string="Cancel" invisible="state in ('applied', 'cancelled', 'refused')"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,requested,accepted,manager_approved,applied"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name" readonly="1"/></h1></div>
+                    <div class="alert alert-warning" role="alert" invisible="not validation_message">
+                        <field name="validation_message" nolabel="1"/>
+                    </div>
+                    <group>
+                        <group string="Requester">
+                            <field name="requester_assignment_id" readonly="state != 'draft'"/>
+                            <field name="requester_employee_id"/>
+                            <field name="department_id"/>
+                        </group>
+                        <group string="Colleague">
+                            <field name="target_employee_id" readonly="state != 'draft'"/>
+                            <field name="target_assignment_id" readonly="state != 'draft'"/>
+                        </group>
+                    </group>
+                    <field name="reason" placeholder="Why do you need this swap?" readonly="state != 'draft'"/>
+                    <group invisible="state != 'refused'">
+                        <field name="refuse_reason"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+    <record id="shift_swap_view_search" model="ir.ui.view">
+        <field name="name">healthcare.shift.swap.search</field>
+        <field name="model">healthcare.shift.swap</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="requester_employee_id"/>
+                <field name="target_employee_id"/>
+                <filter name="pending" string="Pending" domain="[('state', 'in', ('requested', 'accepted', 'manager_approved'))]"/>
+                <group>
+                    <filter name="group_state" string="Status" context="{'group_by': 'state'}"/>
+                    <filter name="group_department" string="Department" context="{'group_by': 'department_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_shift_swap" model="ir.actions.act_window">
+        <field name="name">Shift Swaps</field>
+        <field name="res_model">healthcare.shift.swap</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'search_default_pending': 1}</field>
+    </record>
+</odoo>

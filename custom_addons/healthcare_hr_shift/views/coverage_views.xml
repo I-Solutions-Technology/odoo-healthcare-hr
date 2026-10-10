@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="coverage_rule_view_list" model="ir.ui.view">
+        <field name="name">healthcare.shift.coverage.rule.list</field>
+        <field name="model">healthcare.shift.coverage.rule</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="branch_id"/>
+                <field name="department_id"/>
+                <field name="unit_id" optional="show"/>
+                <field name="shift_template_id"/>
+                <field name="employee_category"/>
+                <field name="job_id" optional="show"/>
+                <field name="minimum_required"/>
+                <field name="preferred_required"/>
+                <field name="weekdays" optional="hide"/>
+                <field name="effective_from" optional="hide"/>
+                <field name="effective_to" optional="hide"/>
+                <field name="block_publication" optional="show"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_coverage_rule" model="ir.actions.act_window">
+        <field name="name">Coverage Rules</field>
+        <field name="res_model">healthcare.shift.coverage.rule</field>
+        <field name="view_mode">list</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Define minimum staffing, e.g. ICU / Night / Nurse &gt;= 8</p>
+        </field>
+    </record>
+
+    <record id="coverage_snapshot_view_list" model="ir.ui.view">
+        <field name="name">healthcare.shift.coverage.snapshot.list</field>
+        <field name="model">healthcare.shift.coverage.snapshot</field>
+        <field name="arch" type="xml">
+            <list create="0" edit="0" decoration-danger="status == 'short'" decoration-success="status == 'preferred'">
+                <field name="date"/>
+                <field name="rule_id"/>
+                <field name="branch_id" optional="show"/>
+                <field name="department_id"/>
+                <field name="shift_template_id"/>
+                <field name="minimum_required" sum="Minimum"/>
+                <field name="preferred_required" optional="hide"/>
+                <field name="assigned" sum="Assigned"/>
+                <field name="shortage" sum="Shortage"/>
+                <field name="status" widget="badge" decoration-danger="status == 'short'" decoration-success="status == 'preferred'"
+                       decoration-info="status == 'minimum'"/>
+            </list>
+        </field>
+    </record>
+    <record id="coverage_snapshot_view_pivot" model="ir.ui.view">
+        <field name="name">healthcare.shift.coverage.snapshot.pivot</field>
+        <field name="model">healthcare.shift.coverage.snapshot</field>
+        <field name="arch" type="xml">
+            <pivot string="Shift Coverage">
+                <field name="department_id" type="row"/>
+                <field name="date" interval="day" type="col"/>
+                <field name="shortage" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    <record id="coverage_snapshot_view_search" model="ir.ui.view">
+        <field name="name">healthcare.shift.coverage.snapshot.search</field>
+        <field name="model">healthcare.shift.coverage.snapshot</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="rule_id"/>
+                <field name="department_id"/>
+                <field name="branch_id"/>
+                <filter name="short" string="Shortage" domain="[('status', '=', 'short')]"/>
+                <filter name="upcoming" string="Upcoming" domain="[('date', '&gt;=', context_today().strftime('%Y-%m-%d'))]"/>
+                <group>
+                    <filter name="group_department" string="Department" context="{'group_by': 'department_id'}"/>
+                    <filter name="group_template" string="Shift" context="{'group_by': 'shift_template_id'}"/>
+                    <filter name="group_date" string="Date" context="{'group_by': 'date:day'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_coverage_snapshot" model="ir.actions.act_window">
+        <field name="name">Shift Coverage</field>
+        <field name="res_model">healthcare.shift.coverage.snapshot</field>
+        <field name="view_mode">list,pivot</field>
+        <field name="context">{'search_default_upcoming': 1}</field>
+    </record>
+    <record id="action_coverage_shortage" model="ir.actions.act_window">
+        <field name="name">Shift Shortage</field>
+        <field name="res_model">healthcare.shift.coverage.snapshot</field>
+        <field name="view_mode">list,pivot</field>
+        <field name="context">{'search_default_short': 1, 'search_default_upcoming': 1}</field>
+    </record>
+    <record id="action_refresh_coverage" model="ir.actions.server">
+        <field name="name">Refresh Coverage (14 days)</field>
+        <field name="model_id" ref="model_healthcare_shift_coverage_rule"/>
+        <field name="group_ids" eval="[(4, ref('healthcare_hr_core.group_hc_scheduling_officer'))]"/>
+        <field name="state">code</field>
+        <field name="code">model._refresh_snapshots(datetime.date.today(), datetime.date.today() + datetime.timedelta(days=14))
+action = env['ir.actions.actions']._for_xml_id('healthcare_hr_shift.action_coverage_snapshot')</field>
+    </record>
+</odoo>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="reconciliation_view_list" model="ir.ui.view">
+        <field name="name">healthcare.attendance.reconciliation.list</field>
+        <field name="model">healthcare.attendance.reconciliation</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="branch_id"/>
+                <field name="department_id"/>
+                <field name="line_count" string="Shifts"/>
+                <field name="issue_count" string="Issues"/>
+                <field name="state" widget="badge" decoration-info="state == 'computed'" decoration-success="state == 'approved'"/>
+            </list>
+        </field>
+    </record>
+    <record id="reconciliation_view_form" model="ir.ui.view">
+        <field name="name">healthcare.attendance.reconciliation.form</field>
+        <field name="model">healthcare.attendance.reconciliation</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_compute" type="object" string="Compute" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_compute" type="object" string="Recompute" invisible="state != 'computed'"/>
+                    <button name="action_approve" type="object" string="Approve Work Data" class="btn-primary" invisible="state != 'computed'"
+                            confirm="Approved shifts become payroll input and are locked. Continue?"/>
+                    <button name="action_reset" type="object" string="Reset" invisible="state == 'draft'"
+                            groups="healthcare_hr_core.group_hc_attendance_manager"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name" readonly="1"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="date_from" readonly="state != 'draft'"/>
+                            <field name="date_to" readonly="state != 'draft'"/>
+                        </group>
+                        <group>
+                            <field name="branch_id" readonly="state != 'draft'"/>
+                            <field name="department_id" readonly="state != 'draft'"/>
+                            <field name="company_id" groups="base.group_multi_company" readonly="state != 'draft'"/>
+                            <field name="approved_by" invisible="not approved_by"/>
+                        </group>
+                    </group>
+                    <div class="text-muted mb-2">
+                        Worked extra time is never paid automatically: only "Approved Overtime" (rounded by the payroll policy) reaches payroll.
+                    </div>
+                    <field name="line_ids" readonly="state == 'approved'">
+                        <list editable="bottom" create="0" delete="0"
+                              decoration-danger="status in ('absent', 'missing_checkout')"
+                              decoration-warning="status in ('late', 'early_leave', 'partial')"
+                              decoration-muted="status == 'on_leave'">
+                            <field name="date" readonly="1"/>
+                            <field name="employee_id" readonly="1" widget="many2one_avatar_employee"/>
+                            <field name="shift_template_id" readonly="1"/>
+                            <field name="department_id" optional="hide" readonly="1"/>
+                            <field name="status" readonly="1"/>
+                            <field name="planned_hours" readonly="1" widget="float_time" sum="Planned"/>
+                            <field name="worked_hours" readonly="1" widget="float_time" sum="Worked"/>
+                            <field name="late_minutes" readonly="1" sum="Late"/>
+                            <field name="early_leave_minutes" readonly="1" optional="show"/>
+                            <field name="extra_hours" readonly="1" widget="float_time" sum="Extra"/>
+                            <field name="approved_overtime_hours" widget="float_time" sum="Approved"/>
+                            <field name="night_hours" readonly="1" widget="float_time" optional="show"/>
+                            <field name="weekend_hours" readonly="1" widget="float_time" optional="hide"/>
+                            <field name="holiday_hours" readonly="1" widget="float_time" optional="hide"/>
+                            <field name="note"/>
+                        </list>
+                    </field>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+    <record id="action_reconciliation" model="ir.actions.act_window">
+        <field name="name">Reconciliation</field>
+        <field name="res_model">healthcare.attendance.reconciliation</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="reconciliation_line_view_pivot" model="ir.ui.view">
+        <field name="name">healthcare.attendance.reconciliation.line.pivot</field>
+        <field name="model">healthcare.attendance.reconciliation.line</field>
+        <field name="arch" type="xml">
+            <pivot string="Overtime">
+                <field name="department_id" type="row"/>
+                <field name="extra_hours" type="measure"/>
+                <field name="approved_overtime_hours" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    <record id="action_overtime_approval" model="ir.actions.act_window">
+        <field name="name">Overtime Approval</field>
+        <field name="res_model">healthcare.attendance.reconciliation.line</field>
+        <field name="view_mode">list,pivot</field>
+        <field name="domain">[('extra_hours', '&gt;', 0), ('reconciliation_id.state', '=', 'computed')]</field>
+    </record>
+    <record id="reconciliation_line_view_list" model="ir.ui.view">
+        <field name="name">healthcare.attendance.reconciliation.line.list</field>
+        <field name="model">healthcare.attendance.reconciliation.line</field>
+        <field name="arch" type="xml">
+            <list editable="bottom" create="0" delete="0">
+                <field name="reconciliation_id" readonly="1"/>
+                <field name="date" readonly="1"/>
+                <field name="employee_id" readonly="1"/>
+                <field name="department_id" readonly="1"/>
+                <field name="status" readonly="1"/>
+                <field name="extra_hours" readonly="1" widget="float_time" sum="Extra"/>
+                <field name="approved_overtime_hours" widget="float_time" sum="Approved"/>
+                <field name="note"/>
+            </list>
+        </field>
+    </record>
+</odoo>

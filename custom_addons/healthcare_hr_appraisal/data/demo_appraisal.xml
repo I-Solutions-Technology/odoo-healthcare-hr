@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- KPI lines are loaded from the "Nurses" template on creation -->
+    <record id="demo_appraisal_nurse_mona" model="hr.appraisal">
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_nurse_mona"/>
+        <field name="manager_ids" eval="[(6, 0, [ref('healthcare_hr_core.demo_emp_dr_sara')])]"/>
+        <field name="date_close" eval="(DateTime.today() + relativedelta(days=14)).strftime('%Y-%m-%d')"/>
+    </record>
+    <record id="demo_appraisal_dr_ahmed" model="hr.appraisal">
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_dr_ahmed"/>
+        <field name="manager_ids" eval="[(6, 0, [ref('healthcare_hr_core.demo_emp_dr_sara')])]"/>
+        <field name="date_close" eval="(DateTime.today() + relativedelta(days=30)).strftime('%Y-%m-%d')"/>
+    </record>
+</odoo>

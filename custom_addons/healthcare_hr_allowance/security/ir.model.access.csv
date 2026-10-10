@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_allowance_type_user,allowance.type.user,model_healthcare_allowance_type,healthcare_hr_core.group_hc_user,1,0,0,0
+access_allowance_type_manager,allowance.type.manager,model_healthcare_allowance_type,healthcare_hr_core.group_hc_payroll_manager,1,1,1,1
+access_allowance_rule_officer,allowance.rule.officer,model_healthcare_allowance_rule,healthcare_hr_core.group_hc_payroll_officer,1,0,0,0
+access_allowance_rule_manager,allowance.rule.manager,model_healthcare_allowance_rule,healthcare_hr_core.group_hc_payroll_manager,1,1,1,1
+access_allowance_result_officer,allowance.result.officer,model_healthcare_allowance_result,healthcare_hr_core.group_hc_payroll_officer,1,1,1,1
+access_allowance_compute_wizard,allowance.compute.wizard,model_healthcare_allowance_compute_wizard,healthcare_hr_core.group_hc_payroll_officer,1,1,1,1

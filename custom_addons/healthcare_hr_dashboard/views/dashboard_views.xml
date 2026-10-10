@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="dashboard_view_form" model="ir.ui.view">
+        <field name="name">healthcare.hr.dashboard.form</field>
+        <field name="model">healthcare.hr.dashboard</field>
+        <field name="arch" type="xml">
+            <form string="Healthcare HR Dashboard" create="0" delete="0" class="o_hc_dashboard">
+                <sheet>
+                    <div class="o_hc_filters d-flex flex-wrap gap-3 align-items-center mb-3">
+                        <h2 class="mb-0 me-auto">Healthcare HR Dashboard</h2>
+                        <label for="branch_id" class="mb-0"/>
+                        <field name="branch_id" placeholder="All branches" options="{'no_create': True}" class="o_hc_filter"/>
+                        <label for="date" class="mb-0"/>
+                        <field name="date" class="o_hc_filter"/>
+                        <field name="company_id" invisible="1"/>
+                        <field name="currency_id" invisible="1"/>
+                        <field name="training_installed" invisible="1"/>
+                        <field name="payroll_visible" invisible="1"/>
+                    </div>
+                    <div class="o_hc_section">
+                        <h4 class="o_hc_section_title"><i class="fa fa-users me-2" title="Headcount"/>Headcount</h4>
+                        <div class="o_hc_tiles">
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'employees'}" class="o_hc_tile">
+                                <i class="fa fa-users o_hc_tile_icon" title="Employees"/>
+                                <span class="o_hc_tile_value"><field name="employees"/></span>
+                                <span class="o_hc_tile_label">Employees</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'doctors'}" class="o_hc_tile">
+                                <i class="fa fa-user-md o_hc_tile_icon" title="Doctors"/>
+                                <span class="o_hc_tile_value"><field name="doctors"/></span>
+                                <span class="o_hc_tile_label">Doctors</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'nurses'}" class="o_hc_tile">
+                                <i class="fa fa-heartbeat o_hc_tile_icon" title="Nurses"/>
+                                <span class="o_hc_tile_value"><field name="nurses"/></span>
+                                <span class="o_hc_tile_label">Nurses</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'technicians'}" class="o_hc_tile">
+                                <i class="fa fa-flask o_hc_tile_icon" title="Technicians"/>
+                                <span class="o_hc_tile_value"><field name="technicians"/></span>
+                                <span class="o_hc_tile_label">Technicians</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'administrative'}" class="o_hc_tile">
+                                <i class="fa fa-briefcase o_hc_tile_icon" title="Administrative"/>
+                                <span class="o_hc_tile_value"><field name="administrative"/></span>
+                                <span class="o_hc_tile_label">Administrative</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'new_hires'}" class="o_hc_tile">
+                                <i class="fa fa-user-plus o_hc_tile_icon" title="New Hires (30 d)"/>
+                                <span class="o_hc_tile_value"><field name="new_hires"/></span>
+                                <span class="o_hc_tile_label">New Hires (30 d)</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'exits'}" class="o_hc_tile">
+                                <i class="fa fa-sign-out o_hc_tile_icon" title="Exits (30 d)"/>
+                                <span class="o_hc_tile_value"><field name="exits"/></span>
+                                <span class="o_hc_tile_label">Exits (30 d)</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="o_hc_section">
+                        <h4 class="o_hc_section_title"><i class="fa fa-clock-o me-2" title="Attendance Today"/>Attendance Today</h4>
+                        <div class="o_hc_tiles">
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'present'}" class="o_hc_tile">
+                                <i class="fa fa-check o_hc_tile_icon" title="Present Today"/>
+                                <span class="o_hc_tile_value"><field name="present"/></span>
+                                <span class="o_hc_tile_label">Present Today</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'absent'}" class="o_hc_tile o_hc_tile_alert">
+                                <i class="fa fa-times o_hc_tile_icon" title="Absent Today"/>
+                                <span class="o_hc_tile_value"><field name="absent"/></span>
+                                <span class="o_hc_tile_label">Absent Today</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'late'}" class="o_hc_tile">
+                                <i class="fa fa-hourglass-half o_hc_tile_icon" title="Late Today"/>
+                                <span class="o_hc_tile_value"><field name="late"/></span>
+                                <span class="o_hc_tile_label">Late Today</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'on_leave'}" class="o_hc_tile">
+                                <i class="fa fa-plane o_hc_tile_icon" title="On Leave Today"/>
+                                <span class="o_hc_tile_value"><field name="on_leave"/></span>
+                                <span class="o_hc_tile_label">On Leave Today</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'missing_checkout'}" class="o_hc_tile o_hc_tile_alert">
+                                <i class="fa fa-exclamation-triangle o_hc_tile_icon" title="Missing Checkout"/>
+                                <span class="o_hc_tile_value"><field name="missing_checkout"/></span>
+                                <span class="o_hc_tile_label">Missing Checkout</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'overtime_shifts'}" class="o_hc_tile">
+                                <i class="fa fa-plus-circle o_hc_tile_icon" title="Overtime Shifts (month)"/>
+                                <span class="o_hc_tile_value"><field name="overtime_shifts"/></span>
+                                <span class="o_hc_tile_label">Overtime Shifts (month)</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="o_hc_section">
+                        <h4 class="o_hc_section_title"><i class="fa fa-calendar me-2" title="Workforce"/>Workforce</h4>
+                        <div class="o_hc_tiles">
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'scheduled'}" class="o_hc_tile">
+                                <i class="fa fa-calendar-check-o o_hc_tile_icon" title="Scheduled Today"/>
+                                <span class="o_hc_tile_value"><field name="scheduled"/></span>
+                                <span class="o_hc_tile_label">Scheduled Today</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'shortages'}" class="o_hc_tile o_hc_tile_alert">
+                                <i class="fa fa-exclamation-circle o_hc_tile_icon" title="Shortages (14 d)"/>
+                                <span class="o_hc_tile_value"><field name="shortages"/></span>
+                                <span class="o_hc_tile_label">Shortages (14 d)</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'open_shifts'}" class="o_hc_tile">
+                                <i class="fa fa-calendar-o o_hc_tile_icon" title="Draft Shifts (7 d)"/>
+                                <span class="o_hc_tile_value"><field name="open_shifts"/></span>
+                                <span class="o_hc_tile_label">Draft Shifts (7 d)</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'conflicts'}" class="o_hc_tile o_hc_tile_alert">
+                                <i class="fa fa-bolt o_hc_tile_icon" title="Conflicts"/>
+                                <span class="o_hc_tile_value"><field name="conflicts"/></span>
+                                <span class="o_hc_tile_label">Conflicts</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'night_shifts'}" class="o_hc_tile">
+                                <i class="fa fa-moon-o o_hc_tile_icon" title="Night Shifts Today"/>
+                                <span class="o_hc_tile_value"><field name="night_shifts"/></span>
+                                <span class="o_hc_tile_label">Night Shifts Today</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="o_hc_section">
+                        <h4 class="o_hc_section_title"><i class="fa fa-shield me-2" title="Compliance"/>Compliance</h4>
+                        <div class="o_hc_tiles">
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'contracts_expiring'}" class="o_hc_tile">
+                                <i class="fa fa-file-text-o o_hc_tile_icon" title="Contracts Expiring"/>
+                                <span class="o_hc_tile_value"><field name="contracts_expiring"/></span>
+                                <span class="o_hc_tile_label">Contracts Expiring</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'probation_ending'}" class="o_hc_tile">
+                                <i class="fa fa-hourglass-end o_hc_tile_icon" title="Probation Ending"/>
+                                <span class="o_hc_tile_value"><field name="probation_ending"/></span>
+                                <span class="o_hc_tile_label">Probation Ending</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'licenses_expiring'}" class="o_hc_tile">
+                                <i class="fa fa-id-card-o o_hc_tile_icon" title="Licenses Expiring"/>
+                                <span class="o_hc_tile_value"><field name="licenses_expiring"/></span>
+                                <span class="o_hc_tile_label">Licenses Expiring</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'credentials_expired'}" class="o_hc_tile o_hc_tile_alert">
+                                <i class="fa fa-ban o_hc_tile_icon" title="Expired Credentials"/>
+                                <span class="o_hc_tile_value"><field name="credentials_expired"/></span>
+                                <span class="o_hc_tile_label">Expired Credentials</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'training_missing'}" class="o_hc_tile o_hc_tile_alert" invisible="not training_installed">
+                                <i class="fa fa-graduation-cap o_hc_tile_icon" title="Missing Training"/>
+                                <span class="o_hc_tile_value"><field name="training_missing"/></span>
+                                <span class="o_hc_tile_label">Missing Training</span>
+                            </button>
+                            <button name="action_open_kpi" type="object" context="{'kpi': 'training_expired'}" class="o_hc_tile o_hc_tile_alert" invisible="not training_installed">
+                                <i class="fa fa-calendar-times-o o_hc_tile_icon" title="Expired Training"/>
+                                <span class="o_hc_tile_value"><field name="training_expired"/></span>
+                                <span class="o_hc_tile_label">Expired Training</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="o_hc_section" invisible="not payroll_visible">
+                        <h4 class="o_hc_section_title"><i class="fa fa-money me-2" title="Payroll (month)"/>Payroll (month)</h4>
+                        <div class="o_hc_tiles">
+                            <button name="action_open_payroll" type="object" class="o_hc_tile" context="{'target_action': 'healthcare_hr_payroll.action_payroll_summary'}">
+                                <i class="fa fa-money o_hc_tile_icon" title="Net Payroll"/>
+                                <span class="o_hc_tile_value"><field name="payroll_total" widget="monetary"/></span>
+                                <span class="o_hc_tile_label">Net Payroll</span>
+                            </button>
+                            <button name="action_open_payroll" type="object" class="o_hc_tile" context="{'target_action': 'healthcare_hr_payroll.action_payroll_input'}">
+                                <i class="fa fa-clock-o o_hc_tile_icon" title="Overtime Cost"/>
+                                <span class="o_hc_tile_value"><field name="overtime_cost" widget="monetary"/></span>
+                                <span class="o_hc_tile_label">Overtime Cost</span>
+                            </button>
+                            <button name="action_open_payroll" type="object" class="o_hc_tile" context="{'target_action': 'healthcare_hr_allowance.action_allowance_analysis'}">
+                                <i class="fa fa-plus-square o_hc_tile_icon" title="Allowance Cost"/>
+                                <span class="o_hc_tile_value"><field name="allowance_cost" widget="monetary"/></span>
+                                <span class="o_hc_tile_label">Allowance Cost</span>
+                            </button>
+                            <button name="action_open_payroll" type="object" class="o_hc_tile" context="{'target_action': 'healthcare_hr_payroll.action_payroll_by_department'}">
+                                <i class="fa fa-sitemap o_hc_tile_icon" title="Approved Overtime (h) - by Department"/>
+                                <span class="o_hc_tile_value"><field name="overtime_hours" widget="float_time"/></span>
+                                <span class="o_hc_tile_label">Approved Overtime (h) - by Department</span>
+                            </button>
+                            <button name="action_open_payroll" type="object" class="o_hc_tile" context="{'target_action': 'healthcare_hr_payroll.action_payroll_by_branch'}">
+                                <i class="fa fa-building o_hc_tile_icon" title="Payroll by Branch"/>
+                                <span class="o_hc_tile_value">&#8594;</span>
+                                <span class="o_hc_tile_label">Payroll by Branch</span>
+                            </button>
+                        </div>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_dashboard" model="ir.actions.server">
+        <field name="name">Healthcare HR Dashboard</field>
+        <field name="model_id" ref="model_healthcare_hr_dashboard"/>
+        <field name="state">code</field>
+        <field name="code">action = model.action_open_dashboard()</field>
+        <field name="path">healthcare-hr-dashboard</field>
+    </record>
+    <menuitem id="menu_dashboard_open" name="Overview" parent="healthcare_hr_core.menu_dashboard"
+              action="action_dashboard" sequence="1" groups="healthcare_hr_core.group_hc_user"/>
+</odoo>

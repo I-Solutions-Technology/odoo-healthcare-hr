@@ -1,0 +1,818 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_contract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.probation_review_view_form
+msgid ""
+"A termination recommendation never ends the employment automatically: HR "
+"receives an activity to decide and open the exit process."
+msgstr "توصية إنهاء الخدمة لا تُنهي التوظيف تلقائياً أبداً: يتلقى قسم الموارد البشرية نشاطاً لاتخاذ القرار وفتح إجراءات إنهاء الخدمة."
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.probation_review_view_form
+msgid "Approve"
+msgstr "اعتماد"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__healthcare_hr_probation_review__state__approved
+msgid "Approved"
+msgstr "معتمد"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__approved_by
+msgid "Approved By"
+msgstr "اعتمد بواسطة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__attendance_score
+msgid "Attendance Score"
+msgstr "درجة الانضباط في الحضور"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__hr_version__renewal_type__automatic
+msgid "Automatic"
+msgstr "تلقائي"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__branch_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.probation_review_view_search
+msgid "Branch"
+msgstr "الفرع"
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.contract_renew_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.probation_review_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__healthcare_hr_probation_review__state__cancel
+msgid "Cancelled"
+msgstr "ملغي"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__comments
+msgid "Comments"
+msgstr "التعليقات"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__competency_score
+msgid "Competency Score"
+msgstr "درجة الكفاءة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__conduct_score
+msgid "Conduct Score"
+msgstr "درجة السلوك"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__healthcare_hr_probation_review__recommendation__pass
+msgid "Confirm Employment"
+msgstr "تثبيت التوظيف"
+
+#. module: healthcare_hr_contract
+#: model:hr.contract.type,name:healthcare_hr_contract.contract_type_consultant
+msgid "Consultant"
+msgstr "استشاري"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__version_id
+msgid "Contract"
+msgstr "العقد"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__contract_id
+msgid "Contract (alias)"
+msgstr "العقد (اسم بديل)"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__current_end_date
+msgid "Contract End Date"
+msgstr "تاريخ نهاية العقد"
+
+#. module: healthcare_hr_contract
+#: model:ir.actions.act_window,name:healthcare_hr_contract.action_healthcare_contract_expiry
+#: model:ir.ui.menu,name:healthcare_hr_contract.menu_contract_expiry
+#: model:ir.ui.menu,name:healthcare_hr_contract.menu_report_contract_expiry
+msgid "Contract Expiry"
+msgstr "انتهاء العقد"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__contract_expiry_alert_days
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__contract_expiry_alert_days
+msgid "Contract Expiry Alert Days"
+msgstr "أيام التنبيه بانتهاء العقد"
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_version_view_search_healthcare
+msgid "Contract Type"
+msgstr "نوع العقد"
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/hr_version.py:0
+msgid "Contract expires in %(days)s days: %(name)s"
+msgstr "ينتهي العقد خلال %(days)s يوماً: %(name)s"
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/hr_version.py:0
+msgid "Contract renewed until %s."
+msgstr "تم تجديد العقد حتى %s."
+
+#. module: healthcare_hr_contract
+#: model:ir.actions.act_window,name:healthcare_hr_contract.action_healthcare_contracts
+#: model:ir.ui.menu,name:healthcare_hr_contract.menu_contracts_list
+msgid "Contracts"
+msgstr "العقود"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_hr_employee__contract_expiry_alert_days
+#: model:ir.model.fields,help:healthcare_hr_contract.field_hr_version__contract_expiry_alert_days
+msgid ""
+"Days before the contract end date at which a renewal activity is raised. "
+"Empty = company default."
+msgstr "الأيام قبل تاريخ نهاية العقد التي يُنشأ عندها نشاط التجديد. فارغ = الإعداد الافتراضي للشركة."
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/probation_review.py:0
+msgid ""
+"Decide on the recommendation and, if confirmed, start the exit process."
+msgstr "اتخذ قراراً بشأن التوصية، وفي حال التأكيد ابدأ إجراءات إنهاء الخدمة."
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__healthcare_hr_probation_review__state__draft
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__hr_version__probation_status__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_hr_employee__renewal_period_months
+#: model:ir.model.fields,help:healthcare_hr_contract.field_hr_version__renewal_period_months
+msgid "Duration added by an automatic or manual renewal."
+msgstr "المدة المضافة عبر التجديد التلقائي أو اليدوي."
+
+#. module: healthcare_hr_contract
+#: model:ir.model,name:healthcare_hr_contract.model_hr_employee
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__employee_id
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: healthcare_hr_contract
+#: model:ir.model,name:healthcare_hr_contract.model_hr_version
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__current_end_date
+msgid "End date of the contract (if it's a fixed-term contract)."
+msgstr "تاريخ نهاية العقد (إذا كان عقداً محدد المدة)."
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_version_view_search_healthcare
+msgid "Expiring in 60 days"
+msgstr "ينتهي خلال 60 يوماً"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__healthcare_hr_probation_review__recommendation__extend
+msgid "Extend Probation"
+msgstr "تمديد فترة التجربة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__hr_version__probation_status__extended
+msgid "Extended"
+msgstr "ممدد"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__message_follower_ids
+msgid "Followers"
+msgstr "المتابِعون"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابِعون (الشركاء)"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome مثل fa-tasks"
+
+#. module: healthcare_hr_contract
+#: model:hr.contract.type,name:healthcare_hr_contract.contract_type_full_time
+msgid "Full-Time"
+msgstr "دوام كامل"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__has_message
+msgid "Has Message"
+msgstr "يحتوي على رسالة"
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_employee_view_form_healthcare_contract
+msgid "Healthcare Contract Terms"
+msgstr "شروط العقد الصحي"
+
+#. module: healthcare_hr_contract
+#: model:ir.actions.server,name:healthcare_hr_contract.ir_cron_contract_alerts_ir_actions_server
+msgid "Healthcare HR: probation and contract expiry alerts"
+msgstr "الموارد البشرية الصحية: تنبيهات فترة التجربة وانتهاء العقود"
+
+#. module: healthcare_hr_contract
+#: model:hr.contract.type,name:healthcare_hr_contract.contract_type_hourly
+msgid "Hourly"
+msgstr "بالساعة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__id
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__id
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__id
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__id
+msgid "ID"
+msgstr "ID"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_exception_icon
+msgid "Icon"
+msgstr "الأيقونة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "الأيقونة للإشارة إلى نشاط استثنائي."
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_probation_review__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا كان محدداً، فهناك رسائل جديدة تتطلب انتباهك."
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_probation_review__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_probation_review__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا كان محدداً، فقد حدث خطأ في تسليم بعض الرسائل."
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__insurance_required
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__insurance_required
+msgid "Insurance Required"
+msgstr "يتطلب تأميناً"
+
+#. module: healthcare_hr_contract
+#: model:hr.contract.type,name:healthcare_hr_contract.contract_type_intern
+msgid "Intern"
+msgstr "متدرب"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__message_is_follower
+msgid "Is Follower"
+msgstr "متابِع"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__new_wage
+msgid "Leave empty to keep the current wage."
+msgstr "اتركه فارغاً للإبقاء على الأجر الحالي."
+
+#. module: healthcare_hr_contract
+#: model:hr.contract.type,name:healthcare_hr_contract.contract_type_locum
+msgid "Locum Doctor"
+msgstr "طبيب مناوب مؤقت"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_hr_employee__insurance_required
+#: model:ir.model.fields,help:healthcare_hr_contract.field_hr_version__insurance_required
+msgid "Malpractice insurance required for this contract."
+msgstr "يتطلب هذا العقد تأمين ضد الأخطاء الطبية."
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__hr_version__renewal_type__manual
+msgid "Manual"
+msgstr "يدوي"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__medical_license_required
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__medical_license_required
+msgid "Medical License Required"
+msgstr "يتطلب ترخيص مزاولة المهنة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__months
+msgid "Months"
+msgstr "أشهر"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "موعد نشاطي النهائي"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__extension_end_date
+msgid "New Probation End"
+msgstr "نهاية فترة التجربة الجديدة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__new_wage
+msgid "New Wage"
+msgstr "الأجر الجديد"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "فعالية تقويم النشاط التالي"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__hr_version__probation_status__none
+msgid "No Probation"
+msgstr "بدون فترة تجربة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__hr_version__renewal_type__non_renewable
+msgid "Non Renewable"
+msgstr "غير قابل للتجديد"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_hr_employee__renewal_notice_days
+#: model:ir.model.fields,help:healthcare_hr_contract.field_hr_version__renewal_notice_days
+msgid "Notice to give the employee before a non renewal."
+msgstr "الإشعار الواجب إعطاؤه للموظف قبل عدم التجديد."
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_probation_review__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_probation_review__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_version_view_search_healthcare
+msgid "On Probation"
+msgstr "في فترة التجربة"
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/probation_review.py:0
+msgid "Only submitted reviews can be approved."
+msgstr "لا يمكن اعتماد إلا التقييمات المقدمة."
+
+#. module: healthcare_hr_contract
+#: model:hr.contract.type,name:healthcare_hr_contract.contract_type_outsourced
+msgid "Outsourced"
+msgstr "إسناد خارجي"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_probation_review__score
+msgid "Overall score out of 100. Informative only."
+msgstr "الدرجة الإجمالية من 100. للعلم فقط."
+
+#. module: healthcare_hr_contract
+#: model:hr.contract.type,name:healthcare_hr_contract.contract_type_part_time
+msgid "Part-Time"
+msgstr "دوام جزئي"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__hr_version__probation_status__passed
+msgid "Passed"
+msgstr "اجتاز"
+
+#. module: healthcare_hr_contract
+#: model:ir.ui.menu,name:healthcare_hr_contract.menu_probation
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_employee_view_form_healthcare_contract
+msgid "Probation"
+msgstr "فترة التجربة"
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_employee_view_form_healthcare_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_version_view_list_healthcare
+msgid "Probation End"
+msgstr "نهاية فترة التجربة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__probation_end_date
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__probation_end_date
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__probation_end_date
+msgid "Probation End Date"
+msgstr "تاريخ نهاية فترة التجربة"
+
+#. module: healthcare_hr_contract
+#: model:ir.actions.act_window,name:healthcare_hr_contract.action_healthcare_probation
+#: model:ir.ui.menu,name:healthcare_hr_contract.menu_report_probation_expiry
+msgid "Probation Expiry"
+msgstr "انتهاء فترة التجربة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model,name:healthcare_hr_contract.model_healthcare_hr_probation_review
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__probation_review_ids
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__probation_review_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_employee_view_form_healthcare_contract
+msgid "Probation Review"
+msgstr "تقييم فترة التجربة"
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_version_view_search_healthcare
+msgid "Probation Review Due"
+msgstr "تقييم فترة التجربة مستحق"
+
+#. module: healthcare_hr_contract
+#: model:ir.actions.act_window,name:healthcare_hr_contract.action_probation_review
+#: model:ir.ui.menu,name:healthcare_hr_contract.menu_probation_review
+msgid "Probation Reviews"
+msgstr "تقييمات فترة التجربة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__probation_start_date
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__probation_start_date
+msgid "Probation Start Date"
+msgstr "تاريخ بدء فترة التجربة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__hr_version__probation_status__started
+msgid "Probation Started"
+msgstr "بدأت فترة التجربة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__probation_status
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__probation_status
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_version_view_search_healthcare
+msgid "Probation Status"
+msgstr "حالة فترة التجربة"
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/hr_version.py:0
+msgid "Probation end date: %s. Create and complete the probation review."
+msgstr "تاريخ نهاية فترة التجربة: %s. أنشئ تقييم فترة التجربة وأكمله."
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/hr_version.py:0
+msgid "Probation ends in %(days)s days: %(name)s"
+msgstr "تنتهي فترة التجربة خلال %(days)s يوماً: %(name)s"
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/probation_review.py:0
+msgid "Probation review - %(name)s (%(date)s)"
+msgstr "تقييم فترة التجربة - %(name)s (%(date)s)"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__professional_license_required
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__professional_license_required
+msgid "Professional License Required"
+msgstr "يتطلب ترخيصاً مهنياً"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__healthcare_hr_probation_review__recommendation__terminate
+msgid "Recommend Termination"
+msgstr "التوصية بإنهاء الخدمة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__recommendation
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.probation_review_view_search
+msgid "Recommendation"
+msgstr "التوصية"
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.contract_renew_wizard_view_form
+msgid "Renew"
+msgstr "تجديد"
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/hr_employee.py:0
+#: model:ir.model,name:healthcare_hr_contract.model_healthcare_hr_contract_renew_wizard
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_employee_view_form_healthcare_contract
+msgid "Renew Contract"
+msgstr "تجديد العقد"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__renewal_notice_days
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__renewal_notice_days
+msgid "Renewal Notice Days"
+msgstr "أيام إشعار التجديد"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__renewal_period_months
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__renewal_period_months
+msgid "Renewal Period Months"
+msgstr "مدة التجديد بالأشهر"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_employee__renewal_type
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_hr_version__renewal_type
+msgid "Renewal Type"
+msgstr "نوع التجديد"
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/hr_version.py:0
+msgid "Renewal policy: %s"
+msgstr "سياسة التجديد: %s"
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.probation_review_view_form
+msgid "Reset to Draft"
+msgstr "إعادة إلى مسودة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__review_date
+msgid "Review Date"
+msgstr "تاريخ التقييم"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__hr_version__probation_status__review_due
+msgid "Review Due"
+msgstr "التقييم مستحق"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__hr_version__probation_status__reviewed
+msgid "Reviewed"
+msgstr "تم التقييم"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__reviewer_id
+msgid "Reviewer"
+msgstr "المقيّم"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل النصية"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_hr_employee__probation_end_date
+#: model:ir.model.fields,help:healthcare_hr_contract.field_hr_version__probation_end_date
+msgid "Same as the standard 'End of Trial Period'."
+msgstr "مطابق لحقل 'نهاية فترة التجربة' القياسي."
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__score
+msgid "Score"
+msgstr "الدرجة"
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/probation_review.py:0
+msgid "Scores must be between 0 and 100."
+msgstr "يجب أن تكون الدرجات بين 0 و100."
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/probation_review.py:0
+msgid "Select a recommendation before submitting."
+msgstr "اختر توصية قبل التقديم."
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/probation_review.py:0
+msgid "Set the new probation end date for an extension."
+msgstr "حدد تاريخ نهاية فترة التجربة الجديد للتمديد."
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/hr_version.py:0
+msgid "Set the probation end date on %s first."
+msgstr "حدد تاريخ نهاية فترة التجربة في %s أولاً."
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.hr_employee_view_form_healthcare_contract
+msgid "Start Probation"
+msgstr "بدء فترة التجربة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخرة: تجاوز تاريخ الاستحقاق\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط لها: أنشطة مستقبلية."
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.probation_review_view_form
+msgid "Strengths, gaps and objectives..."
+msgstr "نقاط القوة والفجوات والأهداف..."
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.probation_review_view_form
+msgid "Submit"
+msgstr "تقديم"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__healthcare_hr_probation_review__state__submitted
+msgid "Submitted"
+msgstr "مقدم"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields.selection,name:healthcare_hr_contract.selection__hr_version__probation_status__terminate_recommended
+msgid "Termination Recommended"
+msgstr "أوصي بإنهاء الخدمة"
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/probation_review.py:0
+msgid "Termination recommended after probation: %s"
+msgstr "أوصي بإنهاء الخدمة بعد فترة التجربة: %s"
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/hr_version.py:0
+msgid "The contract of %s has no end date."
+msgstr "عقد %s ليس له تاريخ نهاية."
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/hr_version.py:0
+msgid "The contract of %s is not renewable."
+msgstr "عقد %s غير قابل للتجديد."
+
+#. module: healthcare_hr_contract
+#. odoo-python
+#: code:addons/healthcare_hr_contract/models/hr_version.py:0
+msgid "The probation end date cannot be before its start date."
+msgstr "لا يمكن أن يكون تاريخ نهاية فترة التجربة قبل تاريخ بدايتها."
+
+#. module: healthcare_hr_contract
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_contract.probation_review_view_search
+msgid "To Approve"
+msgstr "بانتظار الاعتماد"
+
+#. module: healthcare_hr_contract
+#: model:hr.contract.type,name:healthcare_hr_contract.contract_type_trainee
+msgid "Trainee"
+msgstr "متدرب"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_probation_review__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي في السجل."
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_contract_renew_wizard__version_id
+msgid "Version"
+msgstr "الإصدار"
+
+#. module: healthcare_hr_contract
+#: model:hr.contract.type,name:healthcare_hr_contract.contract_type_visiting
+msgid "Visiting Doctor"
+msgstr "طبيب زائر"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,field_description:healthcare_hr_contract.field_healthcare_hr_probation_review__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع الإلكتروني"
+
+#. module: healthcare_hr_contract
+#: model:ir.model.fields,help:healthcare_hr_contract.field_healthcare_hr_probation_review__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع الإلكتروني"

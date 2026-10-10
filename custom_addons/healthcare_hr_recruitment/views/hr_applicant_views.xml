@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_applicant_view_form_healthcare" model="ir.ui.view">
+        <field name="name">hr.applicant.form.healthcare</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_hc_verification_failed" type="object" string="Verification Failed"
+                        invisible="credential_verification_status in ('failed', 'verified') or not active"
+                        groups="hr_recruitment.group_hr_recruitment_user"
+                        confirm="Mark the credential verification as failed? Enter the reason in the Healthcare tab first."/>
+                <button name="action_hc_reset_verification" type="object" string="Reset Verification"
+                        invisible="credential_verification_status != 'failed'"
+                        groups="hr_recruitment.group_hr_recruitment_user"/>
+            </xpath>
+            <xpath expr="//notebook/page[@name='application_details']" position="before">
+                <page string="Healthcare" name="healthcare">
+                    <group>
+                        <group string="Professional Profile">
+                            <field name="arabic_name"/>
+                            <field name="employee_category"/>
+                            <field name="healthcare_specialty_id"/>
+                            <field name="classification"/>
+                            <field name="years_experience"/>
+                            <field name="professional_license"/>
+                        </group>
+                        <group string="Credential Verification">
+                            <field name="credential_verification_status" widget="badge"
+                                   decoration-success="credential_verification_status == 'verified'"
+                                   decoration-info="credential_verification_status == 'in_progress'"
+                                   decoration-danger="credential_verification_status == 'failed'"/>
+                            <field name="required_credential_type_ids" widget="many2many_tags"/>
+                            <field name="hc_verification_note"/>
+                            <field name="hc_verification_failed" invisible="1"/>
+                        </group>
+                    </group>
+                    <field name="hc_credential_line_ids">
+                        <list editable="bottom" decoration-success="verified" decoration-warning="required and not verified">
+                            <field name="credential_type_id"/>
+                            <field name="required" column_invisible="1"/>
+                            <field name="credential_number"/>
+                            <field name="issuing_authority"/>
+                            <field name="issue_date" optional="hide"/>
+                            <field name="expiry_date"/>
+                            <field name="attachment_ids" widget="many2many_binary" optional="show"/>
+                            <field name="verified"/>
+                            <field name="verified_by" optional="hide"/>
+                            <button name="action_verify" type="object" string="Verify" icon="fa-check"
+                                    invisible="verified" groups="hr_recruitment.group_hr_recruitment_user"/>
+                            <button name="action_reset_verification" type="object" string="Reset" icon="fa-undo"
+                                    invisible="not verified" groups="hr_recruitment.group_hr_recruitment_user"/>
+                        </list>
+                    </field>
+                    <div class="text-muted">
+                        Hiring (hired stage or employee creation) is blocked until the credential verification
+                        is "Verified". Verified credentials are copied to the employee as verified credentials.
+                    </div>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_applicant_view_list_healthcare" model="ir.ui.view">
+        <field name="name">hr.applicant.list.healthcare</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.crm_case_tree_view_job"/>
+        <field name="arch" type="xml">
+            <field name="stage_id" position="after">
+                <field name="credential_verification_status" optional="show" widget="badge"
+                       decoration-success="credential_verification_status == 'verified'"
+                       decoration-info="credential_verification_status == 'in_progress'"
+                       decoration-danger="credential_verification_status == 'failed'"/>
+            </field>
+        </field>
+    </record>
+    <record id="hr_applicant_view_search_healthcare" model="ir.ui.view">
+        <field name="name">hr.applicant.search.healthcare</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_search_bis"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <field name="healthcare_specialty_id"/>
+                <filter name="hc_to_verify" string="Credentials to Verify"
+                        domain="[('credential_verification_status', 'in', ('not_started', 'in_progress'))]"/>
+                <filter name="hc_verification_failed" string="Verification Failed"
+                        domain="[('credential_verification_status', '=', 'failed')]"/>
+                <filter name="hc_group_verification" string="Credential Verification"
+                        context="{'group_by': 'credential_verification_status'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

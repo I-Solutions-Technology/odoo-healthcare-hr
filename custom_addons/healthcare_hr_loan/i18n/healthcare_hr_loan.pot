@@ -1,0 +1,641 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_loan
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/payroll_input.py:0
+msgid "%(loan)s installment %(seq)s"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/loan.py:0
+msgid "%s already has deducted installments."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.hr_employee_view_form_loan
+msgid "<span class=\"o_stat_text\">Loan Balance</span>"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/loan.py:0
+msgid "A salary advance is recovered in at most 3 installments."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan__state__active
+msgid "Active"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__amount
+msgid "Amount"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/loan.py:0
+msgid "Amount handed to the employee. Deductions start on %s."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__approval_date
+msgid "Approval Date"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Approve"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan__state__approved
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_list
+msgid "Approved"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__approved_amount
+msgid "Approved Amount"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__approved_by
+msgid "Approved By"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/loan.py:0
+msgid "At least one installment is required."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__branch_id
+msgid "Branch"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Cancel"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan__state__cancelled
+msgid "Cancelled"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__company_id
+msgid "Company"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan__state__completed
+msgid "Completed"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__currency_id
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan__payment_date
+msgid "Date the money was handed to the employee."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__department_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_search
+msgid "Department"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_payroll_input__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_hr_employee__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__due_date
+msgid "Due Date"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Early Settlement"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model,name:healthcare_hr_loan.model_hr_employee
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__employee_id
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__employee_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_search
+msgid "Employee"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model,name:healthcare_hr_loan.model_healthcare_hr_loan
+msgid "Employee Loan / Salary Advance"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__first_deduction_date
+msgid "First Deduction Date"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model,name:healthcare_hr_loan.model_healthcare_payroll_input
+msgid "Healthcare Payroll Input"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__id
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__id
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_payroll_input__id
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_hr_employee__id
+msgid "ID"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan_installment__state__included
+msgid "In Payslip"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__installment_amount
+msgid "Installment Amount"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__installment_count
+msgid "Installment Count"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/loan.py:0
+msgid "Installment postponed to %s."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__installment_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Installments"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/loan.py:0
+msgid "Installments of %s were already deducted."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__loan_id
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_hr_employee__loan_ids
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan__loan_type__loan
+msgid "Loan"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model,name:healthcare_hr_loan.model_healthcare_hr_loan_installment
+msgid "Loan Installment"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_hr_employee__loan_remaining_amount
+msgid "Loan Remaining Amount"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__loan_type
+msgid "Loan Type"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/loan.py:0
+msgid "Loan amounts must be positive."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/hr_employee.py:0
+#: model:ir.ui.menu,name:healthcare_hr_loan.menu_loans
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_search
+msgid "Loans"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.actions.act_window,name:healthcare_hr_loan.action_loan
+msgid "Loans & Advances"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Mark as Paid"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Mark every pending installment as settled outside payroll?"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.actions.act_window,name:healthcare_hr_loan.action_my_loans
+#: model:ir.ui.menu,name:healthcare_hr_loan.menu_my_loans
+msgid "My Loan Requests"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_search
+msgid "My Requests"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__name
+msgid "Name"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/loan.py:0
+msgid "New"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/loan.py:0
+msgid "Only pending installments can be postponed."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan__state__paid
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan_installment__state__paid
+msgid "Paid"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__paid_amount
+msgid "Paid Amount"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan_installment__settled
+msgid "Paid by early / final settlement instead of payroll."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__payment_date
+msgid "Payment Date"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__payment_reference
+msgid "Payment Reference"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__payroll_input_id
+msgid "Payroll Input"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan_installment__state__pending
+msgid "Pending"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Postpone"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__reason
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Reason"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Refuse"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan__state__refused
+msgid "Refused"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_list
+msgid "Remaining"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__remaining_amount
+msgid "Remaining Amount"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/loan.py:0
+msgid "Remaining balance settled."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__request_date
+msgid "Request Date"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__requested_amount
+msgid "Requested Amount"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Reset to Draft"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_search
+msgid "Running"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan__loan_type__advance
+msgid "Salary Advance"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_search
+msgid "Salary Advances"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__settled
+msgid "Settled"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__state
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan_installment__state
+msgid "State"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_search
+msgid "Status"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Submit"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields.selection,name:healthcare_hr_loan.selection__healthcare_hr_loan__state__submitted
+msgid "Submitted"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/loan.py:0
+msgid "The installment is already in a payslip."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_search
+msgid "To Approve"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_loan.loan_view_form
+msgid "Total"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,field_description:healthcare_hr_loan.field_healthcare_hr_loan__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#: model:ir.model.fields,help:healthcare_hr_loan.field_healthcare_hr_loan__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: healthcare_hr_loan
+#. odoo-python
+#: code:addons/healthcare_hr_loan/models/hr_employee.py:0
+msgid "employee_id"
+msgstr ""

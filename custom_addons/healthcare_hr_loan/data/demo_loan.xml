@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="demo_loan_mona" model="healthcare.hr.loan">
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_nurse_mona"/>
+        <field name="loan_type">loan</field>
+        <field name="requested_amount">12000</field>
+        <field name="installment_count">6</field>
+        <field name="first_deduction_date" eval="(DateTime.today() + relativedelta(day=31)).strftime('%Y-%m-%d')"/>
+        <field name="reason">Family emergency</field>
+    </record>
+    <record id="demo_advance_omar" model="healthcare.hr.loan">
+        <field name="employee_id" ref="healthcare_hr_core.demo_emp_nurse_omar"/>
+        <field name="loan_type">advance</field>
+        <field name="requested_amount">3000</field>
+        <field name="installment_count">2</field>
+        <field name="first_deduction_date" eval="(DateTime.today() + relativedelta(months=1, day=31)).strftime('%Y-%m-%d')"/>
+        <field name="reason">Rent advance</field>
+    </record>
+    <function model="healthcare.hr.loan" name="action_submit" eval="[[ref('demo_loan_mona'), ref('demo_advance_omar')]]"/>
+    <function model="healthcare.hr.loan" name="action_approve" eval="[[ref('demo_loan_mona')]]"/>
+    <function model="healthcare.hr.loan" name="action_mark_paid" eval="[[ref('demo_loan_mona')]]"/>
+</odoo>

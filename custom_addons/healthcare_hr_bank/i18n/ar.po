@@ -1,0 +1,781 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_bank
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: \n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid "%s line(s) have errors: fix the bank accounts or remove the lines."
+msgstr "%s سطر (أسطر) بها أخطاء: صحّح الحسابات البنكية أو احذف الأسطر."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout__encoding__ascii
+msgid "ASCII"
+msgstr "ASCII"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__account_number
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__account_number
+msgid "Account Number"
+msgstr "رقم الحساب"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__alignment
+msgid "Alignment"
+msgstr "المحاذاة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__amount_without_separator
+msgid "Amount Without Separator"
+msgstr "المبلغ بدون فاصل عشري"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__api_provider
+msgid "Api Provider"
+msgstr "مزود API"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__arabic_name
+msgid "Arabic Name"
+msgstr "الاسم العربي"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__bank_id
+msgid "Bank"
+msgstr "البنك"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__bank_account_id
+msgid "Bank Account"
+msgstr "الحساب البنكي"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__bank_bic
+msgid "Bank BIC / SWIFT"
+msgstr "رمز BIC / SWIFT للبنك"
+
+#. module: healthcare_hr_bank
+#: model:ir.actions.act_window,name:healthcare_hr_bank.action_bank_batch
+#: model:ir.ui.menu,name:healthcare_hr_bank.menu_bank_batch
+msgid "Bank Batches"
+msgstr "دفعات التحويل البنكي"
+
+#. module: healthcare_hr_bank
+#: model:ir.actions.act_window,name:healthcare_hr_bank.action_bank_layout
+#: model:ir.ui.menu,name:healthcare_hr_bank.menu_config_bank_layout
+msgid "Bank File Layouts"
+msgstr "تنسيقات الملفات البنكية"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__bank_name
+msgid "Bank Name"
+msgstr "اسم البنك"
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid "Bank account not trusted (enable \"Send Money\" after verification)."
+msgstr "الحساب البنكي غير موثوق (فعّل \"إرسال الأموال\" بعد التحقق)."
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid "Bank file exported: %(n)s line(s), total %(total)s."
+msgstr "تم تصدير الملف البنكي: %(n)s سطر (أسطر)، الإجمالي %(total)s."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__batch_id
+msgid "Batch"
+msgstr "الدفعة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_batch__reference
+msgid "Batch reference communicated to the bank."
+msgstr "مرجع الدفعة المُبلغ للبنك."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__branch_id
+msgid "Branch"
+msgstr "الفرع"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__branch_code
+msgid "Branch Code"
+msgstr "رمز الفرع"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout__line_ending__crlf
+msgid "CRLF"
+msgstr "CRLF"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout__file_format__csv
+msgid "CSV"
+msgstr "CSV"
+
+#. module: healthcare_hr_bank
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_batch__state__cancelled
+msgid "Cancelled"
+msgstr "ملغي"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__column_ids
+msgid "Columns"
+msgstr "الأعمدة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: healthcare_hr_bank
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_form
+msgid "Confirm Payment"
+msgstr "تأكيد الدفع"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__constant_value
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__constant
+msgid "Constant Value"
+msgstr "قيمة ثابتة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__currency_id
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__currency_id
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__currency
+msgid "Currency"
+msgstr "العملة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__date_format
+msgid "Date Format"
+msgstr "تنسيق التاريخ"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__decimal_places
+msgid "Decimal Places"
+msgstr "المنازل العشرية"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__delimiter
+msgid "Delimiter"
+msgstr "الفاصل"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_batch__state__done
+msgid "Done"
+msgstr "منتهي"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_batch__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__employee_name
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__employee_number
+msgid "Employee Number"
+msgstr "الرقم الوظيفي"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__encoding
+msgid "Encoding"
+msgstr "الترميز"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_line__state__error
+msgid "Error"
+msgstr "خطأ"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__error_count
+msgid "Error Count"
+msgstr "عدد الأخطاء"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__error_message
+msgid "Error Message"
+msgstr "رسالة الخطأ"
+
+#. module: healthcare_hr_bank
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_list
+msgid "Errors"
+msgstr "الأخطاء"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout__file_format__xlsx
+msgid "Excel (XLSX)"
+msgstr "Excel (XLSX)"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__export_file
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_form
+msgid "Export File"
+msgstr "ملف التصدير"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__export_filename
+msgid "Export Filename"
+msgstr "اسم ملف التصدير"
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid "Export the file first."
+msgstr "صدّر الملف أولًا."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_batch__state__exported
+msgid "Exported"
+msgstr "تم التصدير"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_layout__api_provider
+msgid ""
+"Extension point: a bank connector module adds its provider here and "
+"implements _send_<provider> on the batch."
+msgstr "نقطة توسعة: تضيف وحدة الربط البنكي مزودها هنا وتنفّذ الدالة _send_<provider> على الدفعة."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__field
+msgid "Field"
+msgstr "الحقل"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__file_format
+msgid "File Format"
+msgstr "صيغة الملف"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout__api_provider__none
+msgid "File Only"
+msgstr "ملف فقط"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout__file_format__txt
+msgid "Fixed-width TXT"
+msgstr "TXT بعرض ثابت"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__width
+msgid "Fixed-width TXT only."
+msgstr "لملفات TXT بعرض ثابت فقط."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome مثل fa-tasks"
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid "Generate the lines first."
+msgstr "أنشئ الأسطر أولًا."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_batch__state__generated
+msgid "Generated"
+msgstr "تم الإنشاء"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__has_message
+msgid "Has Message"
+msgstr "توجد رسالة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__header
+msgid "Header"
+msgstr "العنوان"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__iban
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__iban
+msgid "IBAN"
+msgstr "IBAN"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__id
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__id
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__id
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__id
+msgid "ID"
+msgstr "المعرّف"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_exception_icon
+msgid "Icon"
+msgstr "الأيقونة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثنائي."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم التحديد، فهناك رسائل جديدة تتطلب انتباهك."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحديد، فهناك رسائل بها خطأ في التسليم."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__include_header
+msgid "Include Header"
+msgstr "تضمين سطر العناوين"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout__line_ending__lf
+msgid "LF"
+msgstr "LF"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__layout_id
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__layout_id
+msgid "Layout"
+msgstr "التنسيق"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__alignment__left
+msgid "Left"
+msgstr "يسار"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__line_count
+msgid "Line Count"
+msgstr "عدد الأسطر"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__line_ending
+msgid "Line Ending"
+msgstr "نهاية السطر"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__line_ids
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_list
+msgid "Lines"
+msgstr "الأسطر"
+
+#. module: healthcare_hr_bank
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_form
+msgid "Load Payslips"
+msgstr "تحميل قسائم الرواتب"
+
+#. module: healthcare_hr_bank
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_form
+msgid "Mark as Sent"
+msgstr "تعيين كمرسل"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__name
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__national_id
+msgid "National ID"
+msgstr "رقم الهوية الوطنية"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__amount
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__amount
+msgid "Net Salary"
+msgstr "صافي الراتب"
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid "New"
+msgstr "جديد"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "حدث التقويم للنشاط التالي"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid "No bank account on the employee."
+msgstr "لا يوجد حساب بنكي للموظف."
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid "No connector installed for provider %s."
+msgstr "لا توجد وحدة ربط مثبتة للمزود %s."
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid "Nothing to export."
+msgstr "لا يوجد ما يُصدَّر."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid "Only draft batches can be regenerated."
+msgstr "يمكن إعادة إنشاء الدفعات في حالة المسودة فقط."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__pad_char
+msgid "Pad Char"
+msgstr "حرف الحشو"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__payslip_run_id
+msgid "Pay Run"
+msgstr "دورة الرواتب"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__payment_date
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__payment_date
+msgid "Payment Date"
+msgstr "تاريخ الدفع"
+
+#. module: healthcare_hr_bank
+#: model:ir.model,name:healthcare_hr_bank.model_healthcare_payroll_bank_batch
+msgid "Payroll Bank Batch"
+msgstr "دفعة التحويل البنكي للرواتب"
+
+#. module: healthcare_hr_bank
+#: model:ir.model,name:healthcare_hr_bank.model_healthcare_payroll_bank_layout_column
+msgid "Payroll Bank File Column"
+msgstr "عمود الملف البنكي للرواتب"
+
+#. module: healthcare_hr_bank
+#: model:ir.model,name:healthcare_hr_bank.model_healthcare_payroll_bank_layout
+msgid "Payroll Bank File Layout"
+msgstr "تنسيق الملف البنكي للرواتب"
+
+#. module: healthcare_hr_bank
+#: model:ir.model,name:healthcare_hr_bank.model_healthcare_payroll_bank_line
+msgid "Payroll Bank Line"
+msgstr "سطر التحويل البنكي للرواتب"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__payslip_id
+msgid "Payslip"
+msgstr "قسيمة الراتب"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__date_from
+msgid "Payslips From"
+msgstr "قسائم الرواتب من"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__date_to
+msgid "Payslips To"
+msgstr "قسائم الرواتب إلى"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__reference
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__reference
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__field__reference
+msgid "Reference"
+msgstr "المرجع"
+
+#. module: healthcare_hr_bank
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_form
+msgid "Reset to Draft"
+msgstr "إعادة إلى مسودة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout_column__alignment__right
+msgid "Right"
+msgstr "يمين"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل النصية"
+
+#. module: healthcare_hr_bank
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_form
+msgid "Send via API"
+msgstr "إرسال عبر API"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_batch__state__sent
+msgid "Sent to Bank"
+msgstr "مرسل للبنك"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__state
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_line__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تاريخ الاستحقاق قد مضى\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: أنشطة مستقبلية."
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid "The bank rejected the batch: %s"
+msgstr "رفض البنك الدفعة: %s"
+
+#. module: healthcare_hr_bank
+#. odoo-python
+#: code:addons/healthcare_hr_bank/models/bank_batch.py:0
+msgid ""
+"This layout is file-only: upload the exported file to the bank portal, then "
+"mark the batch as sent."
+msgstr "هذا التنسيق للملفات فقط: ارفع الملف المُصدَّر إلى بوابة البنك، ثم عيّن الدفعة كمرسلة."
+
+#. module: healthcare_hr_bank
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_list
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__total_amount
+msgid "Total Amount"
+msgstr "المبلغ الإجمالي"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_batch__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي في السجل."
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout__encoding__utf-8
+msgid "UTF-8"
+msgstr "UTF-8"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout__encoding__utf-8-sig
+msgid "UTF-8 with BOM (Excel)"
+msgstr "UTF-8 مع BOM (Excel)"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_line__state__valid
+msgid "Valid"
+msgstr "صالح"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_batch__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_batch__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,field_description:healthcare_hr_bank.field_healthcare_payroll_bank_layout_column__width
+msgid "Width"
+msgstr "العرض"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields.selection,name:healthcare_hr_bank.selection__healthcare_payroll_bank_layout__encoding__cp1256
+msgid "Windows-1256 (Arabic)"
+msgstr "Windows-1256 (العربية)"
+
+#. module: healthcare_hr_bank
+#: model:ir.model.fields,help:healthcare_hr_bank.field_healthcare_payroll_bank_layout__amount_without_separator
+msgid "Write 1234.50 as 123450 (common in fixed-width bank files)."
+msgstr "كتابة 1234.50 بالشكل 123450 (شائع في الملفات البنكية ذات العرض الثابت)."
+
+#. module: healthcare_hr_bank
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_bank.bank_batch_view_form
+msgid ""
+"employee(s) cannot be paid by transfer: fix their bank account or delete the"
+" line."
+msgstr "موظف (موظفين) لا يمكن الدفع لهم بالتحويل: صحّح حساباتهم البنكية أو احذف السطر."

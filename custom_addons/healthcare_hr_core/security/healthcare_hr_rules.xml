@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="1">
+    <!-- Multi-company -->
+    <record id="rule_branch_company" model="ir.rule">
+        <field name="name">Healthcare branch: multi-company</field>
+        <field name="model_id" ref="model_healthcare_hr_branch"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_unit_company" model="ir.rule">
+        <field name="name">Healthcare unit: multi-company</field>
+        <field name="model_id" ref="model_healthcare_hr_unit"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_practitioner_link_company" model="ir.rule">
+        <field name="name">Practitioner link: multi-company</field>
+        <field name="model_id" ref="model_healthcare_employee_practitioner_link"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_onboarding_company" model="ir.rule">
+        <field name="name">Onboarding: multi-company</field>
+        <field name="model_id" ref="model_healthcare_hr_onboarding"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <!-- Branch-level access. An empty "Allowed Healthcare Branches" list means all branches. -->
+    <record id="rule_onboarding_branch_user" model="ir.rule">
+        <field name="name">Onboarding: allowed branches</field>
+        <field name="model_id" ref="model_healthcare_hr_onboarding"/>
+        <field name="domain_force">['|', ('branch_id', '=', False), ('branch_id', 'child_of', user.healthcare_branch_ids.ids)] if user.healthcare_branch_ids else [(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_hc_user'))]"/>
+    </record>
+    <record id="rule_onboarding_all_manager" model="ir.rule">
+        <field name="name">Onboarding: all branches (HR manager / director)</field>
+        <field name="model_id" ref="model_healthcare_hr_onboarding"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_hc_manager')), (4, ref('group_hc_director'))]"/>
+    </record>
+
+    <record id="rule_employee_branch_officer" model="ir.rule">
+        <field name="name">Employee: Healthcare HR officer limited to allowed branches</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="domain_force">['|', '|', ('user_id', '=', user.id), ('healthcare_branch_id', '=', False), ('healthcare_branch_id', 'child_of', user.healthcare_branch_ids.ids)] if user.healthcare_branch_ids else [(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_hc_officer'))]"/>
+    </record>
+    <record id="rule_employee_all_manager" model="ir.rule">
+        <field name="name">Employee: Healthcare HR manager / director all branches</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_hc_manager')), (4, ref('group_hc_director'))]"/>
+    </record>
+</data>
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_hc_appraisal" name="Appraisals" parent="healthcare_hr_core.menu_performance"
+              action="hr_appraisal.open_view_hr_appraisal_tree" sequence="1"/>
+    <menuitem id="menu_hc_kpi_template" name="KPI Templates" parent="healthcare_hr_core.menu_performance"
+              action="action_kpi_template" sequence="10"
+              groups="healthcare_hr_core.group_hc_manager,hr_appraisal.group_hr_appraisal_manager"/>
+    <menuitem id="menu_config_kpi_template" name="Appraisal KPI Templates" parent="healthcare_hr_core.menu_config"
+              action="action_kpi_template" sequence="30"/>
+</odoo>

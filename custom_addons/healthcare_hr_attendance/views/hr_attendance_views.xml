@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_attendance_view_list_healthcare" model="ir.ui.view">
+        <field name="name">hr.attendance.list.healthcare</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='worked_hours']" position="after">
+                <field name="planned_shift_id" optional="show"/>
+                <field name="late_minutes" optional="show" sum="Late"/>
+                <field name="early_leave_minutes" optional="show" sum="Early"/>
+                <field name="extra_time_hours" optional="hide" widget="float_time" sum="Extra"/>
+                <field name="night_hours" optional="hide" widget="float_time"/>
+                <field name="attendance_status" optional="show" widget="badge"
+                       decoration-success="attendance_status == 'present'"
+                       decoration-warning="attendance_status in ('late', 'early_leave', 'partial')"
+                       decoration-danger="attendance_status in ('missing_checkout', 'absent')"
+                       decoration-info="attendance_status in ('unplanned', 'on_leave')"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_attendance_view_form_healthcare" model="ir.ui.view">
+        <field name="name">hr.attendance.form.healthcare</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="inside">
+                <group string="Shift Reconciliation" name="hc_shift">
+                    <group>
+                        <field name="planned_shift_id"/>
+                        <field name="scheduled_start"/>
+                        <field name="scheduled_end"/>
+                        <field name="attendance_status"/>
+                        <field name="reconciliation_state"/>
+                    </group>
+                    <group>
+                        <field name="late_minutes"/>
+                        <field name="early_leave_minutes"/>
+                        <field name="extra_time_hours" widget="float_time"/>
+                        <field name="night_hours" widget="float_time"/>
+                        <field name="weekend_hours" widget="float_time"/>
+                        <field name="holiday_hours" widget="float_time"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_attendance_view_search_healthcare" model="ir.ui.view">
+        <field name="name">hr.attendance.search.healthcare</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <field name="branch_id"/>
+                <separator/>
+                <filter name="hc_late" string="Late" domain="[('late_minutes', '&gt;', 0)]"/>
+                <filter name="hc_early" string="Early Leave" domain="[('early_leave_minutes', '&gt;', 0)]"/>
+                <filter name="hc_missing_checkout" string="Missing Checkout" domain="[('attendance_status', '=', 'missing_checkout')]"/>
+                <filter name="hc_unplanned" string="Unplanned" domain="[('attendance_status', '=', 'unplanned')]"/>
+                <filter name="hc_pending" string="Not Reconciled" domain="[('reconciliation_state', 'in', ('pending', 'reconciled'))]"/>
+                <group>
+                    <filter name="hc_group_status" string="Attendance Status" context="{'group_by': 'attendance_status'}"/>
+                    <filter name="hc_group_branch" string="Branch" context="{'group_by': 'branch_id'}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+    <record id="action_attendance_late" model="ir.actions.act_window">
+        <field name="name">Late Attendance</field>
+        <field name="res_model">hr.attendance</field>
+        <field name="view_mode">list,pivot,graph</field>
+        <field name="context">{'search_default_hc_late': 1, 'pivot_measures': ['late_minutes', '__count']}</field>
+    </record>
+    <record id="action_attendance_early" model="ir.actions.act_window">
+        <field name="name">Early Leave</field>
+        <field name="res_model">hr.attendance</field>
+        <field name="view_mode">list,pivot,graph</field>
+        <field name="context">{'search_default_hc_early': 1, 'pivot_measures': ['early_leave_minutes', '__count']}</field>
+    </record>
+    <record id="action_attendance_issues" model="ir.actions.act_window">
+        <field name="name">Attendance Issues</field>
+        <field name="res_model">hr.attendance</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('attendance_status', 'in', ('missing_checkout', 'unplanned', 'partial'))]</field>
+        <field name="context">{'search_default_hc_group_status': 1}</field>
+    </record>
+</odoo>

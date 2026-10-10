@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_attendance" model="ir.ui.view">
+        <field name="name">res.config.settings.form.healthcare.attendance</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="healthcare_hr_core.res_config_settings_view_form_healthcare"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='hc_alerts']" position="before">
+                <block title="Attendance &amp; Overtime Policy" name="hc_overtime">
+                    <setting string="Overtime threshold (min)" help="Extra time below this is not proposed as overtime">
+                        <field name="hc_overtime_min_minutes"/>
+                    </setting>
+                    <setting string="Payroll overtime rounding (min)" help="Approved overtime is rounded down to this step">
+                        <field name="hc_overtime_rounding_minutes"/>
+                    </setting>
+                    <setting string="Propose overtime automatically">
+                        <field name="hc_overtime_auto_propose"/>
+                    </setting>
+                    <setting string="Missing checkout after (h)">
+                        <field name="hc_missing_checkout_hours"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

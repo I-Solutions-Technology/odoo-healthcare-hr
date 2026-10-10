@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="1">
+    <record id="rule_shift_company" model="ir.rule">
+        <field name="name">Shift: multi-company</field>
+        <field name="model_id" ref="model_healthcare_shift_assignment"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_shift_self" model="ir.rule">
+        <field name="name">Shift: own</field>
+        <field name="model_id" ref="model_healthcare_shift_assignment"/>
+        <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_self_service'))]"/>
+    </record>
+    <record id="rule_shift_user" model="ir.rule">
+        <field name="name">Shift: allowed branches</field>
+        <field name="model_id" ref="model_healthcare_shift_assignment"/>
+        <field name="domain_force">['|', ('branch_id', '=', False), ('branch_id', 'child_of', user.healthcare_branch_ids.ids)] if user.healthcare_branch_ids else [(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_user'))]"/>
+    </record>
+    <record id="rule_shift_dept_manager" model="ir.rule">
+        <field name="name">Shift: managed departments</field>
+        <field name="model_id" ref="model_healthcare_shift_assignment"/>
+        <field name="domain_force">['|', ('department_id.manager_id.user_id', '=', user.id), ('employee_id.parent_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_department_manager'))]"/>
+    </record>
+    <record id="rule_shift_all" model="ir.rule">
+        <field name="name">Shift: all branches</field>
+        <field name="model_id" ref="model_healthcare_shift_assignment"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_manager')), (4, ref('healthcare_hr_core.group_hc_director')), (4, ref('healthcare_hr_core.group_hc_scheduling_manager'))]"/>
+    </record>
+    <record id="rule_oncall_company" model="ir.rule">
+        <field name="name">On-call: multi-company</field>
+        <field name="model_id" ref="model_healthcare_shift_oncall"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_oncall_self" model="ir.rule">
+        <field name="name">On-call: own</field>
+        <field name="model_id" ref="model_healthcare_shift_oncall"/>
+        <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_self_service'))]"/>
+    </record>
+    <record id="rule_oncall_user" model="ir.rule">
+        <field name="name">On-call: allowed branches</field>
+        <field name="model_id" ref="model_healthcare_shift_oncall"/>
+        <field name="domain_force">['|', ('branch_id', '=', False), ('branch_id', 'child_of', user.healthcare_branch_ids.ids)] if user.healthcare_branch_ids else [(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_user'))]"/>
+    </record>
+    <record id="rule_oncall_dept_manager" model="ir.rule">
+        <field name="name">On-call: managed departments</field>
+        <field name="model_id" ref="model_healthcare_shift_oncall"/>
+        <field name="domain_force">['|', ('department_id.manager_id.user_id', '=', user.id), ('employee_id.parent_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_department_manager'))]"/>
+    </record>
+    <record id="rule_oncall_all" model="ir.rule">
+        <field name="name">On-call: all branches</field>
+        <field name="model_id" ref="model_healthcare_shift_oncall"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_manager')), (4, ref('healthcare_hr_core.group_hc_director')), (4, ref('healthcare_hr_core.group_hc_scheduling_manager'))]"/>
+    </record>
+    <record id="rule_swap_company" model="ir.rule">
+        <field name="name">Swap: multi-company</field>
+        <field name="model_id" ref="model_healthcare_shift_swap"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_swap_self" model="ir.rule">
+        <field name="name">Swap: requester or colleague</field>
+        <field name="model_id" ref="model_healthcare_shift_swap"/>
+        <field name="domain_force">['|', ('requester_employee_id.user_id', '=', user.id), ('target_employee_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_self_service'))]"/>
+    </record>
+    <record id="rule_swap_dept_manager" model="ir.rule">
+        <field name="name">Swap: managed departments</field>
+        <field name="model_id" ref="model_healthcare_shift_swap"/>
+        <field name="domain_force">[('department_id.manager_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_department_manager'))]"/>
+    </record>
+    <record id="rule_swap_officer" model="ir.rule">
+        <field name="name">Swap: scheduling officer branches</field>
+        <field name="model_id" ref="model_healthcare_shift_swap"/>
+        <field name="domain_force">['|', ('branch_id', '=', False), ('branch_id', 'child_of', user.healthcare_branch_ids.ids)] if user.healthcare_branch_ids else [(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_scheduling_officer'))]"/>
+    </record>
+    <record id="rule_swap_all" model="ir.rule">
+        <field name="name">Swap: all branches</field>
+        <field name="model_id" ref="model_healthcare_shift_swap"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_scheduling_manager')), (4, ref('healthcare_hr_core.group_hc_director'))]"/>
+    </record>
+    <record id="rule_coverage_rule_company" model="ir.rule">
+        <field name="name">Coverage rule: multi-company</field>
+        <field name="model_id" ref="model_healthcare_shift_coverage_rule"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_coverage_snapshot_company" model="ir.rule">
+        <field name="name">Coverage snapshot: multi-company</field>
+        <field name="model_id" ref="model_healthcare_shift_coverage_snapshot"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_template_company" model="ir.rule">
+        <field name="name">Shift template: multi-company</field>
+        <field name="model_id" ref="model_healthcare_shift_template"/>
+        <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+    </record>
+</data>
+</odoo>

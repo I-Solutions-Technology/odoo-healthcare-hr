@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_exit_list" name="Exits" parent="healthcare_hr_core.menu_exit" action="action_exit" sequence="1"
+              groups="healthcare_hr_core.group_hc_user"/>
+    <menuitem id="menu_my_clearance" name="My Clearance Tasks" parent="healthcare_hr_core.menu_exit" action="action_my_clearance_items" sequence="2"
+              groups="healthcare_hr_core.group_hc_user"/>
+    <menuitem id="menu_final_settlement" name="Final Settlements" parent="healthcare_hr_core.menu_exit" action="action_final_settlement" sequence="3"
+              groups="healthcare_hr_core.group_hc_officer,healthcare_hr_core.group_hc_payroll_officer"/>
+    <menuitem id="menu_config_clearance_department" name="Clearance Departments" parent="healthcare_hr_core.menu_config"
+              action="action_clearance_department" sequence="60"/>
+    <menuitem id="menu_config_settlement_component" name="Settlement Components" parent="healthcare_hr_core.menu_config"
+              action="action_settlement_component" sequence="61"/>
+    <menuitem id="menu_report_turnover" name="Employee Turnover" parent="healthcare_hr_core.menu_reports"
+              action="action_turnover_report" sequence="5"/>
+    <menuitem id="menu_report_final_settlement" name="Final Settlement" parent="healthcare_hr_core.menu_reports"
+              action="action_final_settlement" sequence="90" groups="healthcare_hr_core.group_hc_officer,healthcare_hr_core.group_hc_payroll_officer"/>
+</odoo>

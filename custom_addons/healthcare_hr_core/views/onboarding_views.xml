@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="onboarding_view_list" model="ir.ui.view">
+        <field name="name">healthcare.hr.onboarding.list</field>
+        <field name="model">healthcare.hr.onboarding</field>
+        <field name="arch" type="xml">
+            <list decoration-muted="state == 'cancel'" decoration-success="state == 'done'">
+                <field name="employee_id" widget="many2one_avatar_employee"/>
+                <field name="branch_id"/>
+                <field name="department_id"/>
+                <field name="start_date"/>
+                <field name="responsible_id" widget="many2one_avatar_user"/>
+                <field name="progress" widget="progressbar"/>
+                <field name="state" widget="badge" decoration-info="state == 'in_progress'" decoration-success="state == 'done'"/>
+            </list>
+        </field>
+    </record>
+    <record id="onboarding_view_form" model="ir.ui.view">
+        <field name="name">healthcare.hr.onboarding.form</field>
+        <field name="model">healthcare.hr.onboarding</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_start" type="object" string="Start" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_done" type="object" string="Complete" class="btn-primary" invisible="state != 'in_progress'"/>
+                    <button name="action_cancel" type="object" string="Cancel" invisible="state in ('done', 'cancel')"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,in_progress,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name" readonly="1"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="employee_id" readonly="state != 'draft'"/>
+                            <field name="branch_id"/>
+                            <field name="department_id"/>
+                        </group>
+                        <group>
+                            <field name="start_date"/>
+                            <field name="responsible_id"/>
+                            <field name="progress" widget="progressbar"/>
+                        </group>
+                    </group>
+                    <field name="line_ids">
+                        <list editable="bottom" decoration-success="done" create="0">
+                            <field name="sequence" widget="handle"/>
+                            <field name="name"/>
+                            <field name="mandatory"/>
+                            <field name="done" widget="boolean_toggle"/>
+                            <field name="done_by" optional="show"/>
+                            <field name="done_date" optional="show"/>
+                            <field name="note"/>
+                        </list>
+                    </field>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+    <record id="onboarding_view_search" model="ir.ui.view">
+        <field name="name">healthcare.hr.onboarding.search</field>
+        <field name="model">healthcare.hr.onboarding</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="employee_id"/>
+                <field name="branch_id"/>
+                <filter name="open" string="Open" domain="[('state', 'in', ('draft', 'in_progress'))]"/>
+                <group>
+                    <filter name="group_branch" string="Branch" context="{'group_by': 'branch_id'}"/>
+                    <filter name="group_state" string="Status" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_onboarding" model="ir.actions.act_window">
+        <field name="name">Onboarding</field>
+        <field name="res_model">healthcare.hr.onboarding</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'search_default_open': 1}</field>
+    </record>
+
+    <record id="onboarding_item_view_list" model="ir.ui.view">
+        <field name="name">healthcare.hr.onboarding.item.template.list</field>
+        <field name="model">healthcare.hr.onboarding.item.template</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="responsible_role"/>
+                <field name="mandatory"/>
+                <field name="clinical_only"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_onboarding_item" model="ir.actions.act_window">
+        <field name="name">Onboarding Checklist Items</field>
+        <field name="res_model">healthcare.hr.onboarding.item.template</field>
+        <field name="view_mode">list</field>
+    </record>
+</odoo>

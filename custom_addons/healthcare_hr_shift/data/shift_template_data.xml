@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="shift_template_morning" model="healthcare.shift.template">
+        <field name="name">Morning</field>
+        <field name="code">MOR</field>
+        <field name="sequence">10</field>
+        <field name="shift_type">morning</field>
+        <field name="start_time">8</field>
+        <field name="end_time">16</field>
+        <field name="break_minutes">30</field>
+        <field name="minimum_rest_hours">8</field>
+        <field name="color">1</field>
+        <field name="company_id" eval="False"/>
+    </record>
+    <record id="shift_template_evening" model="healthcare.shift.template">
+        <field name="name">Evening</field>
+        <field name="code">EVE</field>
+        <field name="sequence">20</field>
+        <field name="shift_type">evening</field>
+        <field name="start_time">16</field>
+        <field name="end_time">24</field>
+        <field name="break_minutes">30</field>
+        <field name="minimum_rest_hours">8</field>
+        <field name="color">2</field>
+        <field name="company_id" eval="False"/>
+    </record>
+    <record id="shift_template_night" model="healthcare.shift.template">
+        <field name="name">Night</field>
+        <field name="code">NGT</field>
+        <field name="sequence">30</field>
+        <field name="shift_type">night</field>
+        <field name="start_time">0</field>
+        <field name="end_time">8</field>
+        <field name="break_minutes">30</field>
+        <field name="minimum_rest_hours">11</field>
+        <field name="color">4</field>
+        <field name="company_id" eval="False"/>
+    </record>
+    <record id="shift_template_day12" model="healthcare.shift.template">
+        <field name="name">12 Hour Day</field>
+        <field name="code">D12</field>
+        <field name="sequence">40</field>
+        <field name="shift_type">twelve_hour</field>
+        <field name="start_time">8</field>
+        <field name="end_time">20</field>
+        <field name="break_minutes">60</field>
+        <field name="minimum_rest_hours">11</field>
+        <field name="color">3</field>
+        <field name="company_id" eval="False"/>
+    </record>
+    <record id="shift_template_night12" model="healthcare.shift.template">
+        <field name="name">12 Hour Night</field>
+        <field name="code">N12</field>
+        <field name="sequence">50</field>
+        <field name="shift_type">twelve_hour</field>
+        <field name="start_time">20</field>
+        <field name="end_time">8</field>
+        <field name="break_minutes">60</field>
+        <field name="minimum_rest_hours">11</field>
+        <field name="color">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+    <record id="shift_template_h24" model="healthcare.shift.template">
+        <field name="name">24 Hour</field>
+        <field name="code">H24</field>
+        <field name="sequence">60</field>
+        <field name="shift_type">twenty_four_hour</field>
+        <field name="start_time">8</field>
+        <field name="end_time">8</field>
+        <field name="break_minutes">120</field>
+        <field name="minimum_rest_hours">24</field>
+        <field name="color">6</field>
+        <field name="company_id" eval="False"/>
+    </record>
+    <record id="shift_template_oncall" model="healthcare.shift.template">
+        <field name="name">On Call (Night)</field>
+        <field name="code">ONC</field>
+        <field name="sequence">70</field>
+        <field name="shift_type">on_call</field>
+        <field name="start_time">20</field>
+        <field name="end_time">8</field>
+        <field name="break_minutes">0</field>
+        <field name="minimum_rest_hours">0</field>
+        <field name="color">7</field>
+        <field name="company_id" eval="False"/>
+    </record>
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="ir_cron_contract_alerts" model="ir.cron">
+        <field name="name">Healthcare HR: probation and contract expiry alerts</field>
+        <field name="model_id" ref="hr.model_hr_version"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_healthcare_contract_alerts()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+    </record>
+</odoo>

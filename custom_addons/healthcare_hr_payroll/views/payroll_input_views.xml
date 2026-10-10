@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payroll_input_view_list" model="ir.ui.view">
+        <field name="name">healthcare.payroll.input.list</field>
+        <field name="model">healthcare.payroll.input</field>
+        <field name="arch" type="xml">
+            <list decoration-muted="state == 'cancelled'" decoration-success="state == 'done'" decoration-info="state == 'draft'">
+                <header>
+                    <button name="action_confirm" type="object" string="Confirm"/>
+                </header>
+                <field name="employee_id" widget="many2one_avatar_employee"/>
+                <field name="name"/>
+                <field name="source_type"/>
+                <field name="input_type_id" optional="hide"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="quantity" optional="show"/>
+                <field name="currency_id" column_invisible="1"/>
+                <field name="amount" sum="Total"/>
+                <field name="department_id" optional="hide"/>
+                <field name="branch_id" optional="hide"/>
+                <field name="payslip_id" optional="show"/>
+                <field name="processing_key" optional="hide"/>
+                <field name="state" widget="badge" decoration-info="state in ('draft', 'confirmed')" decoration-warning="state == 'included'"
+                       decoration-success="state == 'done'"/>
+            </list>
+        </field>
+    </record>
+    <record id="payroll_input_view_form" model="ir.ui.view">
+        <field name="name">healthcare.payroll.input.form</field>
+        <field name="model">healthcare.payroll.input</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_confirm" type="object" string="Approve" class="btn-primary" invisible="state != 'draft'"
+                            groups="healthcare_hr_core.group_hc_payroll_manager"/>
+                    <button name="action_draft" type="object" string="Reset to Draft" invisible="state not in ('confirmed', 'cancelled')"/>
+                    <button name="action_cancel" type="object" string="Cancel" invisible="state not in ('draft', 'confirmed')"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,included,done"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" readonly="state not in ('draft',)"/>
+                            <field name="employee_id" readonly="state != 'draft'"/>
+                            <field name="source_type" readonly="state != 'draft'"/>
+                            <field name="input_type_id" readonly="state != 'draft'"/>
+                            <field name="date_from" readonly="state != 'draft'"/>
+                            <field name="date_to" readonly="state != 'draft'"/>
+                        </group>
+                        <group>
+                            <field name="quantity" readonly="state != 'draft'"/>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="amount" readonly="state != 'draft'"/>
+                            <field name="source_model" invisible="not source_model"/>
+                            <field name="source_res_id" invisible="not source_model"/>
+                            <field name="processing_key"/>
+                            <field name="payslip_id"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                    <field name="note" placeholder="Justification (bonus / deduction)..."/>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+    <record id="payroll_input_view_pivot" model="ir.ui.view">
+        <field name="name">healthcare.payroll.input.pivot</field>
+        <field name="model">healthcare.payroll.input</field>
+        <field name="arch" type="xml">
+            <pivot string="Payroll Inputs" sample="1">
+                <field name="department_id" type="row"/>
+                <field name="source_type" type="col"/>
+                <field name="amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    <record id="payroll_input_view_search" model="ir.ui.view">
+        <field name="name">healthcare.payroll.input.search</field>
+        <field name="model">healthcare.payroll.input</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="employee_id"/>
+                <field name="name"/>
+                <field name="processing_key"/>
+                <filter name="to_approve" string="To Approve" domain="[('state', '=', 'draft')]"/>
+                <filter name="pending" string="Waiting for Payslip" domain="[('state', '=', 'confirmed')]"/>
+                <filter name="included" string="In Payslip" domain="[('state', 'in', ('included', 'done'))]"/>
+                <separator/>
+                <filter name="bonus" string="Bonuses" domain="[('source_type', '=', 'bonus')]"/>
+                <filter name="deduction" string="Deductions" domain="[('source_type', 'in', ('deduction', 'loan_installment', 'advance'))]"/>
+                <filter name="overtime" string="Overtime" domain="[('source_type', '=', 'overtime')]"/>
+                <separator/>
+                <filter name="date_to" string="Period" date="date_to"/>
+                <group>
+                    <filter name="group_employee" string="Employee" context="{'group_by': 'employee_id'}"/>
+                    <filter name="group_source" string="Source" context="{'group_by': 'source_type'}"/>
+                    <filter name="group_department" string="Department" context="{'group_by': 'department_id'}"/>
+                    <filter name="group_branch" string="Branch" context="{'group_by': 'branch_id'}"/>
+                    <filter name="group_state" string="Status" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_payroll_input" model="ir.actions.act_window">
+        <field name="name">Payroll Inputs</field>
+        <field name="res_model">healthcare.payroll.input</field>
+        <field name="view_mode">list,pivot,form</field>
+    </record>
+    <record id="action_payroll_bonus_deduction" model="ir.actions.act_window">
+        <field name="name">Bonuses &amp; Deductions</field>
+        <field name="res_model">healthcare.payroll.input</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('source_type', 'in', ('bonus', 'deduction'))]</field>
+        <field name="context">{'default_source_type': 'bonus'}</field>
+    </record>
+</odoo>

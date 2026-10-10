@@ -1,0 +1,1257 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* healthcare_hr_biometric
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 09:21+0000\n"
+"PO-Revision-Date: 2026-09-24 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "%s pending log(s) processed."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.actions.act_window,help:healthcare_hr_biometric.action_biometric_mapping
+msgid ""
+"A mapping without device applies to every device of the company; a device-"
+"specific mapping wins."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "A new push token was generated; the previous one is revoked."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+msgid ""
+"A new token revokes the current one: the device must be reconfigured. "
+"Continue?"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_device__connection_type__api_pull
+msgid "API Pull (Odoo pulls from the vendor API)"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_device__connection_type__api_push
+msgid "API Push (device / middleware pushes to Odoo)"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__api_secret
+msgid "API Secret"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__api_url
+msgid "API URL"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__api_username
+msgid "API Username"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__active
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__active
+msgid "Active"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_mapping_view_list
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_mapping_view_search
+msgid "All devices"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid "Already checked in since %s."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid "Already checked out at %s."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_device__vendor__anviz
+msgid "Anviz"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_mapping_view_search
+msgid "Archived"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__attendance_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_form
+msgid "Attendance"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__batch_ids
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__batch_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_search
+msgid "Batch"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__batch_count
+msgid "Batch Count"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.ui.menu,name:healthcare_hr_biometric.menu_biometric
+#: model:ir.ui.menu,name:healthcare_hr_biometric.menu_config_biometric
+msgid "Biometric"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model,name:healthcare_hr_biometric.model_healthcare_biometric_device
+msgid "Biometric Device"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.actions.act_window,name:healthcare_hr_biometric.action_biometric_device
+msgid "Biometric Devices"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model,name:healthcare_hr_biometric.model_healthcare_biometric_employee_mapping
+msgid "Biometric Employee Mapping"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model,name:healthcare_hr_biometric.model_healthcare_biometric_log
+msgid "Biometric Raw Log"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model,name:healthcare_hr_biometric.model_healthcare_biometric_sync_batch
+msgid "Biometric Sync Batch"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Biometric sync failed on %s"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__branch_id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__branch_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_mapping_view_search
+msgid "Branch"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__file
+msgid "CSV File"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_import_wizard_view_form
+msgid "Cancel"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__event_type__check_in
+msgid "Check In"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__event_type__check_out
+msgid "Check Out"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid "Check-out at %(when)s but %(employee)s has no open attendance."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid "Check-out at %(when)s is not after the open check-in at %(check_in)s."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__code
+msgid "Code"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_import_wizard_view_form
+msgid ""
+"Columns: <code>employee_code,timestamp,event_type</code>. Timestamps (e.g. 2026-01-31 08:00:00)\n"
+"                    are in the device timezone; event_type is check_in, check_out or unknown. Rows already imported\n"
+"                    are skipped, invalid rows are kept as error logs."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_import_wizard__delimiter__,
+msgid "Comma"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__company_id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__company_id
+msgid "Company"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_search
+msgid "Connection"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__connection_type
+msgid "Connection Type"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Connection to %(url)s failed: %(error)s"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__process_now
+msgid "Convert the imported punches into attendances right away."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Copy it now, it will not be shown again: %s"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__created_count
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_list
+msgid "Created"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__create_uid
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__create_date
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_search
+msgid "Date"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_search
+msgid "Day"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__delimiter
+msgid "Delimiter"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__device_id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__device_id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__device_id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__device_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_mapping_view_search
+msgid "Device"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Device %s is not configured for API pull."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__device_employee_code
+msgid "Device Employee Code"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__model
+msgid "Device Model"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.ui.menu,name:healthcare_hr_biometric.menu_biometric_device
+#: model:ir.ui.menu,name:healthcare_hr_biometric.menu_config_biometric_device
+msgid "Devices"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__display_name
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__processing_status__done
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_sync_batch__state__done
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_search
+msgid "Done"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__processing_status__duplicate
+msgid "Duplicate"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__duplicate_count
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_list
+msgid "Duplicates"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_search
+msgid "Duplicates / Ignored"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__employee_id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__employee_id
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_search
+msgid "Employee"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid ""
+"Employee %(employee)s has an open attendance since %(since)s with no check-"
+"out (older than %(hours)sh). Complete or correct it, then retry this log."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__device_employee_code
+msgid "Employee Code"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.actions.act_window,name:healthcare_hr_biometric.action_biometric_mapping
+#: model:ir.ui.menu,name:healthcare_hr_biometric.menu_biometric_mapping
+#: model:ir.ui.menu,name:healthcare_hr_biometric.menu_config_biometric_mapping
+msgid "Employee Mapping"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__ended
+msgid "Ended"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__processing_status__error
+msgid "Error"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__error_count
+msgid "Error Count"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__error_log
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_form
+msgid "Error Log"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__error_message
+msgid "Error Message"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_search
+msgid "Errors"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_search
+msgid "Event Date"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__event_datetime
+msgid "Event Time"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__event_type
+msgid "Event Type"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid "Event time %s (UTC) is in the future."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__failed_count
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_sync_batch__state__failed
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_list
+msgid "Failed"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__source__file
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_sync_batch__source__file
+msgid "File Import"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_device__connection_type__file_import
+msgid "File Import (CSV upload)"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__filename
+msgid "Filename"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+msgid "Generate push token"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_device__vendor__generic
+msgid "Generic"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__has_push_token
+msgid "Has Push Token"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.actions.server,name:healthcare_hr_biometric.ir_cron_process_logs_ir_actions_server
+msgid "Healthcare HR: process biometric punches"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.actions.server,name:healthcare_hr_biometric.ir_cron_pull_devices_ir_actions_server
+msgid "Healthcare HR: pull biometric devices"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_device__vendor__hikvision
+msgid "Hikvision"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__id
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__id
+msgid "ID"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__ip_address
+msgid "IP Address"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__message_has_error
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__processing_status__ignored
+msgid "Ignored"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_import_wizard_view_form
+msgid "Import"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model,name:healthcare_hr_biometric.model_healthcare_biometric_import_wizard
+msgid "Import Biometric Punches (CSV)"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.ui.menu,name:healthcare_hr_biometric.menu_biometric_import
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+msgid "Import File"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.actions.act_window,name:healthcare_hr_biometric.action_biometric_import_wizard
+msgid "Import Punches"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__invalid_payload
+msgid "Invalid Payload"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid ""
+"Invalid row: expected an object with employee_code, timestamp, event_type."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__last_sync
+msgid "Last Sync"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__write_uid
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__write_date
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_employee_mapping__device_id
+msgid ""
+"Leave empty to use this code on every device of the company. A device-"
+"specific mapping always wins over a company-wide one."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__log_ids
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__log_ids
+msgid "Log"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__log_count
+msgid "Log Count"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__success_count
+msgid "Logs processed into attendance (done, duplicate or ignored)."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__source__manual
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_sync_batch__source__manual
+msgid "Manual"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.actions.act_window,help:healthcare_hr_biometric.action_biometric_mapping
+msgid "Map device employee codes to employees"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/wizard/biometric_import_wizard.py:0
+msgid ""
+"Missing column(s): %s. Expected header: employee_code,timestamp,event_type"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Missing required field(s): %s"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__name
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__name
+msgid "Name"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "No pull adapter for vendor %s."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.actions.act_window,help:healthcare_hr_biometric.action_biometric_log
+msgid "No punch received yet"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_device__connection_type__sdk
+msgid "On-premise SDK connector"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Only healthcare system administrators can generate push tokens."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid ""
+"Out-of-order check-in at %(when)s: a later attendance already starts at "
+"%(later)s. Enter this attendance manually if it is genuine."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_sync_batch__state__partial
+msgid "Partial"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__pending_count
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__processing_status__pending
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_list
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_search
+msgid "Pending"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__pending_count
+msgid "Pending Count"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__port
+msgid "Port"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_list
+msgid "Process"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_import_wizard__process_now
+msgid "Process Now"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+msgid "Process pending"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__processed
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__success_count
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_list
+msgid "Processed"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__processing_status
+msgid "Processing Status"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__source__pull
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_sync_batch__source__pull
+msgid "Pull"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid "Punch inside or right after the attendance %(start)s - %(end)s."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid "Punch inside the existing attendance %(start)s - %(end)s."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+msgid ""
+"Punches are stored as raw logs and only create / close attendances; attendance is then\n"
+"                        reconciled against the planned shifts before anything reaches payroll."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.actions.act_window,help:healthcare_hr_biometric.action_biometric_log
+msgid ""
+"Punches pushed, pulled or imported from biometric devices appear here before"
+" becoming attendances."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.actions.act_window,help:healthcare_hr_biometric.action_biometric_device
+msgid ""
+"Punches received from devices become raw logs, then attendances matched to "
+"the planned shifts."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__source__push
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_sync_batch__source__push
+msgid "Push"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__push_token_hash
+msgid "Push Token Hash"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Push token for %s"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.actions.act_window,name:healthcare_hr_biometric.action_biometric_log
+#: model:ir.ui.menu,name:healthcare_hr_biometric.menu_biometric_log
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+msgid "Raw Logs"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__raw_payload
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_form
+msgid "Raw Payload"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__created_count
+msgid "Raw logs created (valid or invalid)."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__received_count
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_list
+msgid "Received"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.actions.act_window,help:healthcare_hr_biometric.action_biometric_device
+msgid "Register a fingerprint, RFID or face recognition device"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid "Repeated scan right after the check-in."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_log__employee_id
+msgid "Resolved from the employee mapping when the log is processed."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_form
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_list
+msgid "Retry"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__retry_count
+msgid "Retry Count"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_form
+msgid "Retry failed"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Row %(row)s: %(error)s"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__received_count
+msgid "Rows received from the device."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__duplicate_count
+msgid "Rows skipped because the same punch was already received."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_sync_batch__state__running
+msgid "Running"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__push_token_hash
+msgid "SHA-256 of the push token. The clear token is shown only once."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_import_wizard__delimiter__;
+msgid "Semicolon"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Set the API URL of device %s."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_log__source
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__source
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_search
+msgid "Source"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__started
+msgid "Started"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_sync_batch__state
+msgid "State"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_search
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_search
+msgid "Status"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_log__event_datetime
+msgid "Stored in UTC."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_device__vendor__suprema
+msgid "Suprema"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.actions.act_window,name:healthcare_hr_biometric.action_biometric_batch
+#: model:ir.ui.menu,name:healthcare_hr_biometric.menu_biometric_batch
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+msgid "Sync Batches"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+msgid "Sync now"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_import_wizard__delimiter__
+msgid "Tab"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__code
+msgid ""
+"Technical identifier sent by the device / middleware (X-Device-Code header)."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid ""
+"The Anviz adapter is not implemented yet: use the generic JSON middleware or"
+" the push endpoint."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid ""
+"The Hikvision adapter is not implemented yet: use the generic JSON "
+"middleware or the push endpoint."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid ""
+"The Suprema adapter is not implemented yet: use the generic JSON middleware "
+"or the push endpoint."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid ""
+"The ZKTeco adapter is not implemented yet: use the generic JSON middleware "
+"or the push endpoint."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "The device API did not return valid JSON."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.constraint,message:healthcare_hr_biometric.constraint_healthcare_biometric_device_code_company_uniq
+msgid "The device code must be unique per company."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+msgid ""
+"The device or its middleware posts JSON to <code>/healthcare/biometric/push</code> with the\n"
+"                        headers <code>X-Device-Code</code> and <code>X-Device-Token</code>. Only the token hash is stored."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/wizard/biometric_import_wizard.py:0
+msgid "The file contains no punch."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/wizard/biometric_import_wizard.py:0
+msgid "The file must be a UTF-8 encoded CSV file."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid "The log has no employee code or no event time."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_log__invalid_payload
+msgid ""
+"The row itself is invalid (missing data, bad timestamp or type): retrying "
+"cannot fix it, the device must resend it."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid ""
+"These logs cannot be retried: invalid payloads must be resent by the device "
+"and a log can be retried at most %s times."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.constraint,message:healthcare_hr_biometric.constraint_healthcare_biometric_employee_mapping_company_code_uniq
+msgid "This employee code already has a company-wide mapping."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.constraint,message:healthcare_hr_biometric.constraint_healthcare_biometric_employee_mapping_device_code_uniq
+msgid "This employee code is already mapped on this device."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.constraint,message:healthcare_hr_biometric.constraint_healthcare_biometric_log_event_uniq
+msgid "This punch was already received from this device."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Timestamp %s (UTC) is in the future; check the device clock."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__timezone
+msgid "Timezone"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__timezone
+msgid ""
+"Timezone of the device clock: naive timestamps sent by the device are "
+"interpreted in this timezone and stored in UTC."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/wizard/biometric_import_wizard.py:0
+msgid "Too many rows: import at most %s punches per file."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Unexpected API response: expected a list of events."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_log__event_type__unknown
+msgid "Unknown / Toggle"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_log_view_search
+msgid "Unknown employee"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_log.py:0
+msgid "Unknown employee code %(code)s on device %(device)s"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Unknown event type %r (expected check_in, check_out or unknown)."
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "Unparseable timestamp %r"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__vendor
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_search
+msgid "Vendor"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,field_description:healthcare_hr_biometric.field_healthcare_biometric_device__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields,help:healthcare_hr_biometric.field_healthcare_biometric_device__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_batch_view_search
+msgid "With errors"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model:ir.model.fields.selection,name:healthcare_hr_biometric.selection__healthcare_biometric_device__vendor__zkteco
+msgid "ZKTeco"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#: model_terms:ir.ui.view,arch_db:healthcare_hr_biometric.biometric_device_view_form
+msgid "e.g. Main entrance - fingerprint"
+msgstr ""
+
+#. module: healthcare_hr_biometric
+#. odoo-python
+#: code:addons/healthcare_hr_biometric/models/biometric_device.py:0
+msgid "missing or invalid timestamp"
+msgstr ""

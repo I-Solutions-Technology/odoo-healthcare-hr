@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_credential_type_user,credential.type.user,model_healthcare_hr_credential_type,base.group_user,1,0,0,0
+access_credential_type_manager,credential.type.manager,model_healthcare_hr_credential_type,healthcare_hr_core.group_hc_manager,1,1,1,1
+access_credential_self,credential.self,model_healthcare_hr_credential,healthcare_hr_core.group_hc_self_service,1,0,0,0
+access_credential_user,credential.user,model_healthcare_hr_credential,healthcare_hr_core.group_hc_user,1,0,0,0
+access_credential_officer,credential.officer,model_healthcare_hr_credential,healthcare_hr_core.group_hc_officer,1,1,1,1

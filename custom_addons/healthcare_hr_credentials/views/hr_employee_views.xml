@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_employee_view_form_credentials" model="ir.ui.view">
+        <field name="name">hr.employee.form.credentials</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_credentials" type="object" class="oe_stat_button" icon="fa-id-card-o"
+                        groups="hr.group_hr_user">
+                    <div class="o_stat_info">
+                        <span class="o_stat_value"><field name="credential_count"/></span>
+                        <span class="o_stat_text">Credentials</span>
+                        <span class="o_stat_text text-danger" invisible="not credential_issue_count">
+                            <field name="credential_issue_count"/> to fix
+                        </span>
+                    </div>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>

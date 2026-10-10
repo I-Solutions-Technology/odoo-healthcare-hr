@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_kpi_template_user,kpi.template.user,model_healthcare_appraisal_kpi_template,base.group_user,1,0,0,0
+access_kpi_template_hc_manager,kpi.template.hc.manager,model_healthcare_appraisal_kpi_template,healthcare_hr_core.group_hc_manager,1,1,1,1
+access_kpi_template_appraisal_manager,kpi.template.appraisal.manager,model_healthcare_appraisal_kpi_template,hr_appraisal.group_hr_appraisal_manager,1,1,1,1
+access_kpi_template_line_user,kpi.template.line.user,model_healthcare_appraisal_kpi_template_line,base.group_user,1,0,0,0
+access_kpi_template_line_hc_manager,kpi.template.line.hc.manager,model_healthcare_appraisal_kpi_template_line,healthcare_hr_core.group_hc_manager,1,1,1,1
+access_kpi_template_line_appraisal_manager,kpi.template.line.appraisal.manager,model_healthcare_appraisal_kpi_template_line,hr_appraisal.group_hr_appraisal_manager,1,1,1,1
+access_kpi_line_user,kpi.line.user,model_healthcare_appraisal_kpi_line,base.group_user,1,1,1,0
+access_kpi_line_appraisal_user,kpi.line.appraisal.user,model_healthcare_appraisal_kpi_line,hr_appraisal.group_hr_appraisal_user,1,1,1,1

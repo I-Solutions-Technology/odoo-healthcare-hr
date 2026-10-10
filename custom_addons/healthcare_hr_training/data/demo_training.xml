@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="demo_training_req_nurse_bls" model="healthcare.training.requirement">
+        <field name="name">Nurse - BLS</field>
+        <field name="sequence">10</field>
+        <field name="employee_category">nurse</field>
+        <field name="credential_type_id" ref="healthcare_hr_credentials.credential_type_bls"/>
+        <field name="mandatory" eval="True"/>
+        <field name="renewal_period_months">24</field>
+    </record>
+    <record id="demo_training_req_icu_nurse_acls" model="healthcare.training.requirement">
+        <field name="name">ICU Nurse - ACLS</field>
+        <field name="sequence">20</field>
+        <field name="employee_category">nurse</field>
+        <field name="department_id" ref="healthcare_hr_core.demo_dept_icu"/>
+        <field name="credential_type_id" ref="healthcare_hr_credentials.credential_type_acls"/>
+        <field name="mandatory" eval="True"/>
+        <field name="renewal_period_months">24</field>
+    </record>
+    <record id="demo_training_req_rad_tech_radiation" model="healthcare.training.requirement">
+        <field name="name">Radiology Technician - Radiation Safety</field>
+        <field name="sequence">30</field>
+        <field name="employee_category">radiology_technician</field>
+        <field name="credential_type_id" ref="healthcare_hr_credentials.credential_type_radiation_safety"/>
+        <field name="mandatory" eval="True"/>
+        <field name="renewal_period_months">12</field>
+    </record>
+    <record id="demo_training_req_lab_tech_infection" model="healthcare.training.requirement">
+        <field name="name">Lab Technician - Infection Control</field>
+        <field name="sequence">40</field>
+        <field name="employee_category">lab_technician</field>
+        <field name="credential_type_id" ref="healthcare_hr_credentials.credential_type_infection_control"/>
+        <field name="mandatory" eval="True"/>
+        <field name="renewal_period_months">12</field>
+        <field name="auto_verify_credential" eval="True"/>
+    </record>
+    <function model="healthcare.training.assignment" name="_generate_assignments"/>
+</odoo>

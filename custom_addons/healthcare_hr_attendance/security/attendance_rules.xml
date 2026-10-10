@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="1">
+    <record id="rule_reconciliation_company" model="ir.rule">
+        <field name="name">Reconciliation: multi-company</field>
+        <field name="model_id" ref="model_healthcare_attendance_reconciliation"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_reconciliation_branch" model="ir.rule">
+        <field name="name">Reconciliation: allowed branches</field>
+        <field name="model_id" ref="model_healthcare_attendance_reconciliation"/>
+        <field name="domain_force">['|', ('branch_id', '=', False), ('branch_id', 'child_of', user.healthcare_branch_ids.ids)] if user.healthcare_branch_ids else [(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_user'))]"/>
+    </record>
+    <record id="rule_assignment_attendance_officer" model="ir.rule">
+        <field name="name">Shift: attendance officer allowed branches</field>
+        <field name="model_id" ref="healthcare_hr_shift.model_healthcare_shift_assignment"/>
+        <field name="domain_force">['|', ('branch_id', '=', False), ('branch_id', 'child_of', user.healthcare_branch_ids.ids)] if user.healthcare_branch_ids else [(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('healthcare_hr_core.group_hc_attendance_officer'))]"/>
+    </record>
+</data>
+</odoo>

@@ -1,5 +1,8 @@
 # Healthcare HR Management Suite for Odoo 19
 
+> **Axis:** Odoo & business process development · **Sector:** Healthcare — hospital and clinic HR
+> **Type:** I Solutions Technology product · **Status:** In development on a local Odoo 19 instance (16 modules) · **Visibility:** Private
+
 > Hospital and clinic HR on standard Odoo 19: medical rosters with a validation engine, biometric
 > attendance, reconciliation, healthcare allowances, payroll inputs, credentials, training,
 > recruitment, appraisal, loans, exit and bank payroll, in 16 modules.
